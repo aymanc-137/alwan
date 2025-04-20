@@ -6,7 +6,7 @@
 | cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
 #}
 {% set important_links = theme.settings.get('important_links') %}
-<header class="store-header mx-auto w-5/6 bg-[#ECF7FF] rounded-2xl">
+<header class="store-header">
   {# Top Nav #}
   <div class="top-navbar">
     <div class="container flex justify-between">
@@ -46,8 +46,8 @@
   </div>
 
   {# Main Nav #}
-  <div id="mainnav" class="main-nav-container shadow-default bg-white">
-      <div class="inner bg-inherit">
+  <div id="mainnav" class="main-nav-container ">
+      <div class="inner bg-inherit border-b-2 border border-black my-5 mx-auto w-5/6 !bg-[#ECF7FF] rounded-3xl">
           <div class="container">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">
