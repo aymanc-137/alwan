@@ -965,6 +965,13 @@
                     "maxLength": 30
                 }
             ]
+        },
+        {
+            "key": "bd921942-db67-44b0-a8e5-18ceb623722a",
+            "title": "روابط أقسام - ألوان",
+            "icon": "sicon-store",
+            "path": "home.category-links",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
