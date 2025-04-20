@@ -224,9 +224,13 @@
   font-size: smaller;
 }
 
-// .s-user-menu-trigger-avatar   {
-//   @apply w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700;
-// }
+.s-user-menu-trigger-avatar  .s-user-menu-trigger-avatar {
+  
+  border-width: 3px !important;
+  @apply  border-black;
+  
+}
 .s-user-menu-trigger{
   @apply bg-transparent border-none outline-none;
 }
+ 
