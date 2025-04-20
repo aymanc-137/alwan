@@ -208,3 +208,28 @@
     }
   }
 }
+
+
+// cart summary
+.s-cart-summary-total{
+  @apply text-black font-[600];
+}
+
+.s-cart-summary-count{
+  @apply -top-0.5 ltr:-left-1.5 rtl:-right-1.5 bg-red-800;
+  height: 0.9rem;
+  width: 0.9rem;
+  font-size: smaller;
+}
+
+#nav-cart{
+  @apply flex items-center rtl:mr-4 ltr:ml-4 relative whitespace-nowrap;
+
+  .icon{
+    @apply rtl:ml-2 ltr:mr-2;
+  }
+
+  span{
+    @apply absolute top-1 rtl:-right-2 ltr:-left-2;
+  }
+}
