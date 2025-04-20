@@ -114,3 +114,23 @@
 {% if store.scope %}
     <salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
 {% endif %}
+
+<script>
+    // Using Twig's translation function to get localized 'Brands' text
+    document.addEventListener('DOMContentLoaded', function() {
+        // Wait a bit for the menu to fully render
+        setTimeout(function() {
+            // Find all brand menu items (both mobile and desktop versions)
+            var brandElements = document.querySelectorAll('li#brands');
+            if (brandElements && brandElements.length) {
+                brandElements.forEach(function(brandElement) {
+                    var span = brandElement.querySelector('a span');
+                    if (span && (!span.textContent.trim() || span.textContent.trim() === 'null')) {
+                        // Set the translated text using Twig
+                        span.textContent = '{{ trans("common.Brands") }}';
+                    }
+                });
+            }
+        }, 500);
+    });
+</script>
