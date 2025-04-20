@@ -224,10 +224,11 @@
   font-size: smaller;
 }
 
-.s-user-menu-trigger-avatar  .s-user-menu-trigger-avatar {
+.s-user-menu-avatar-wrap .s-user-menu-trigger-avatar {
   
-  border-width: 3px !important;
-  @apply  border-black;
+  border-width: 2px !important;
+  border-color: black;
+  //@apply  border-black;
   
 }
 .s-user-menu-trigger{
