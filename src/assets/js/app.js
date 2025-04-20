@@ -72,21 +72,6 @@ class App extends AppHelpers {
   }
 
   commonThings() {
-
-    salla.lang.onLoaded(() => {
-      //mobileMenu.navigation({ title: salla.lang.get('blocks.header.main_menu') });
-      //this.addBrandText();
-  
-      document.querySelectorAll('li#brands').forEach(brandElement => {
-        // Find the span inside the anchor within the brands li element
-        const span = brandElement.querySelector('a span');
-        // If the span exists and is empty or contains 'null', replace with 'brands'
-        if (span && (!span.textContent.trim() || span.textContent.trim() === 'null')) {
-          span.textContent = salla.lang.get('blocks.header.brands');
-        }
-      });
-    });
-
     this.cleanContentArticles('.content-entry');
   }
 
@@ -160,7 +145,19 @@ isElementLoaded(selector){
  
   const mobileMenu = new MobileMenu(menu, "(max-width: 1024px)", "( slidingSubmenus: false)");
 
+  salla.lang.onLoaded(() => {
+    mobileMenu.navigation({ title: salla.lang.get('blocks.header.main_menu') });
+    //this.addBrandText();
 
+    document.querySelectorAll('li#brands').forEach(brandElement => {
+      // Find the span inside the anchor within the brands li element
+      const span = brandElement.querySelector('a span');
+      // If the span exists and is empty or contains 'null', replace with 'brands'
+      if (span && (!span.textContent.trim() || span.textContent.trim() === 'null')) {
+        span.textContent = salla.lang.get('common.Brands');
+      }
+    });
+  });
   const drawer = mobileMenu.offcanvas({ position: salla.config.get('theme.is_rtl') ? "right" : 'left' });
 
   this.onClick("a[href='#mobile-menu']", event => {
