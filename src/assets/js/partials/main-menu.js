@@ -5,10 +5,17 @@ class NavigationMenu extends HTMLElement {
             .then(() => {
                 this.menus = [];
                 this.displayAllText = salla.lang.get('blocks.home.display_all');
+                const currentLang = document.documentElement.lang || 'ar';
+                const brandsTranslation = currentLang === 'en' ? 'Brands' : 'الماركات التجارية';
 
                 return salla.api.component.getMenus()
                 .then(({ data }) => {
                     this.menus = data;
+
+                    const brandsMenu = this.menus.find(menu => menu.id === 'brands');
+                    if (brandsMenu) {
+                        brandsMenu.title = brandsTranslation;
+                    }
                     return this.render()
                 }).catch((error) => salla.logger.error('salla-menu::Error fetching menus', error));
             });
