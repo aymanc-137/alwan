@@ -399,9 +399,14 @@ salla-modal {
   }
 }
 
-.category-link:hover{
-  transform: translate3d(-0.1rem, -0.1rem, 0px);
-  transition-duration: 0.3s;
+.category-link{
+  position: relative;
+  background-color: #fff; /* Ensure the foreground has a solid background to cover the red */
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: transform;
+
+  &:hover{
+    transform: translate3d(-0.3rem, -0.3rem, 0px);
+  }
 }
