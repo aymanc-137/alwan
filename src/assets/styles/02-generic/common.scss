@@ -398,3 +398,10 @@ salla-modal {
     @apply text-primary hover:text-primary-d;
   }
 }
+
+.category-link:hover{
+  transform: translate3d(-0.1rem, -0.1rem, 0px);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform;
+}
