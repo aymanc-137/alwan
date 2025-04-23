@@ -4808,6 +4808,30 @@ input[type=radio].sr-only:checked ~ div.radio-images__badge {
 .header-btn__icon.icon{margin-right:9px}
 .header-btn__icon.icon:where([dir="rtl"], [dir="rtl"] *){margin-left:9px;margin-right:0;margin-right:initial}
 salla-user-menu{flex-shrink:0}
+salla-user-menu .s-user-menu-avatar-wrap {
+  position: relative;
+}
+salla-user-menu .s-user-menu-avatar-wrap .s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] {
+  display: none !important;
+}
+.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] ~ salla-user-menu .s-user-menu-avatar-wrap::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/girl.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1.5px solid #141414;
+  border-radius: 999px;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 salla-user-menu .s-user-menu-trigger-icon {
   position: relative;
 }
@@ -4817,18 +4841,14 @@ salla-user-menu .s-user-menu-trigger-icon svg {
 salla-user-menu .s-user-menu-trigger-icon::before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/girl.svg");
+  width: 16px;
+  height: 16px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-right: 5px;
   margin-left: 5px;
-}
-salla-user-menu .s-user-menu-trigger:hover .s-user-menu-trigger-icon::before {
-  transform: translateY(3px);
-  transition: transform 0.3s ease;
+  margin-right: 5px;
 }
 .s-cart-summary-total{font-weight:600;--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity, 1))}
 .s-cart-summary-count{top:-0.125rem;--tw-bg-opacity:1;background-color:rgba(153, 27, 27, 1);background-color:rgba(153, 27, 27, var(--tw-bg-opacity, 1))}
