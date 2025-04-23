@@ -400,13 +400,30 @@ salla-modal {
 }
 
 .category-link{
+ 
+
+  border-radius: 100px 109px 12.5px 12.5px;
+     
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+   
+
+    border-color: #000000;
+    background-color: #05DDDC;
+
+
+
+  div, .footer-content-text{
   position: relative;
-  background-color: #fff; /* Ensure the foreground has a solid background to cover the red */
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: transform;
-
+ 
+  }
+ 
   &:hover{
-    transform: translate3d(-0.3rem, -0.3rem, 0px);
+    div, .footer-content-text{
+      transform: translate3d(-0.3rem, -0.3rem, 0px);
+    }
   }
 }
