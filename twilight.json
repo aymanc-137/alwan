@@ -983,6 +983,22 @@
                     "icon": "sicon-image",
                     "value": null,
                     "required": false
+                },
+                {
+                    "id": "category",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "التصنيفات",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "Categories",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": true,
+                    "value": []
                 }
             ]
         }
