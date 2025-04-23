@@ -26,7 +26,7 @@ class App extends AppHelpers {
     this.changeMenuDirection()
     initTootTip();
     this.loadModalImgOnclick();
-    this.replaceCartIcon();
+    //this.replaceCartIcon();
 
     salla.comment.event.onAdded(() => window.location.reload());
 

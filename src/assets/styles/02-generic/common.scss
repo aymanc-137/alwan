@@ -427,3 +427,29 @@ salla-modal {
     }
   }
 }
+
+.s-button-btn{
+  border-width: 2px;
+  border-color: #000000;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  background-color: #61C0C1;
+  color: #e6e6e6;
+  font-size: 20px;
+
+}
+
+.sicon-shopping-bag::before {
+  content: none !important; /* Hide the original content */
+}
+
+.sicon-shopping-bag::before {
+  content: '' !important;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+   width: 2em;
+  height: 2em;
+}

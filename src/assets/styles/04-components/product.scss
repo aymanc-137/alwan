@@ -413,7 +413,13 @@ salla-quantity-input[max='1']{
 }
 
  .s-product-card-wishlist-btn{
+  @apply transition-all duration-300;
+
+  &:hover{
+    @apply scale-110;
+  }
   opacity: 1 !important;
+
   .s-product-card-wishlist-btn  {
 
      // @apply border-black border border-2-r border-2-b;
@@ -422,11 +428,8 @@ salla-quantity-input[max='1']{
      border-style: solid;
      border-bottom-width: 2px;
      border-right-width: 2px;
-    @apply transition-all duration-300;
 
-    &:hover{
-      @apply scale-110;
-    }
+
   }
  }
  
@@ -442,8 +445,18 @@ salla-quantity-input[max='1']{
   border-radius: 10px !important;
 }
 
-.s-product-card-wishlist-added{
-  #bg-heart-color-fill{
-    fill :#F8B5EB !important;
+.s-product-card-wishlist-added { 
+  @apply transition-all duration-300;
+  @apply hover:!scale-110;
+
+  svg{
+    #bg-heart-color-fill{
+      fill :#F76D57 !important;
+    }
   }
+
+}
+
+.s-button-text{
+  @apply flex gap-6;
 }

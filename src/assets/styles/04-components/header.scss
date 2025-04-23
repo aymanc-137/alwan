@@ -164,6 +164,36 @@
 
 salla-user-menu{
   @apply shrink-0;
+  
+  // Custom user menu down arrow replacement
+  .s-user-menu-trigger-icon {
+    position: relative;
+    
+    // Hide the original SVG
+    svg {
+      display: none;
+    }
+    
+    // Create new down arrow icon
+    &::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/girl.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+  
+  // Add hover effect for user menu
+  .s-user-menu-trigger:hover .s-user-menu-trigger-icon::before {
+    transform: translateY(3px);
+    transition: transform 0.3s ease;
+  }
 }
 
 // cart summary
@@ -173,6 +203,36 @@ salla-user-menu{
 
 .s-cart-summary-count{
   @apply -top-0.5 ltr:-left-1.5 rtl:-right-1.5 bg-red-800;
+}
+
+// Custom cart icon replacement
+.s-cart-summary-wrapper {
+  #s-cart-icon {
+    position: relative;
+    
+    // Hide the original SVG
+    svg {
+      display: none;
+    }
+    
+    // Create new cart icon
+    .s-cart-summary-icon::before {
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping-cart%20(1).svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Add hover effect (based on user preference for revealing colors with movement)
+    // &:hover .s-cart-summary-icon::before {
+    //   @apply scale-110;
+    //   transition: transform 0.3s ease;
+    // }
+  }
 }
 
 #nav-cart{
@@ -193,4 +253,4 @@ salla-user-menu{
   .s-search-results{
     @apply z-10;
   }
-}
+}  
