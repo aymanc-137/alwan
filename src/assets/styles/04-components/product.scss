@@ -414,8 +414,36 @@ salla-quantity-input[max='1']{
 
  .s-product-card-wishlist-btn{
   opacity: 1 !important;
-  
- }
+  .s-product-card-wishlist-btn  {
 
+     // @apply border-black border border-2-r border-2-b;
+     border-color: #000000;
+     border-width: 1px;
+     border-style: solid;
+     border-bottom-width: 2px;
+     border-right-width: 2px;
+    @apply transition-all duration-300;
+
+    &:hover{
+      @apply scale-110;
+    }
+  }
+ }
  
- 
+ .s-product-card-vertical {
+  .s-product-card-wishlist-btn {
+    button{
+
+      background-color: #F8B5EB !important;
+    }
+  }
+ }
+ .s-button-icon{
+  border-radius: 10px !important;
+}
+
+.s-product-card-wishlist-added{
+  #bg-heart-color-fill{
+    fill :#F8B5EB;
+  }
+}
