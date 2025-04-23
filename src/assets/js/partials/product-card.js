@@ -181,7 +181,7 @@ class ProductCard extends HTMLElement {
             />
             ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
           </a>
-          ${this.fullImage ? `<a href="${this.product?.url}" aria-label=${this.product.name} class=" "></a>`:''}
+          ${this.fullImage ? `<a href="${this.product?.url}" aria-label=${this.product.name} class="s-product-card-overlay"></a>`:''}
           ${!this.horizontal && !this.fullImage ?
             `<salla-button
               shape="icon"
@@ -281,6 +281,7 @@ class ProductCard extends HTMLElement {
                   color="light" 
                   id="card-wishlist-btn-${this.product.id}-horizontal"
                   aria-label="Add or remove to wishlist"
+                  style="opacity: 1;"
                   class="s-product-card-wishlist-btn animated ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
                   onclick="salla.wishlist.toggle(${this.product.id})"
                   data-id="${this.product.id}">
