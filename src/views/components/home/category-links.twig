@@ -1,5 +1,6 @@
 <div class="flex my-5 mx-auto w-5/6 relative ">
 
+{% for component in component.category %}
 	<div class="w-52 category-link relative z-10">
 		<div class="rounded-t-full relative border-2 border-b-0 border-r-4 border-black h-64 w-full overflow-hidden flex-col  ">
 			<img src="{{ component.image }}" class="bg-purple-400 w-full h-full object-cover" alt="">
@@ -13,10 +14,11 @@
 					</g>
 				</g>
 			</svg>
-			<h2 class="w-5/6 text-center  my-auto    ">ألعاب الأطفال</h2>
+			<h2 class="w-5/6 text-center  my-auto    ">{{ component.name }}</h2>
 		</div>
 
 	</div>
 
+{% endfor %}
 
 </div>
