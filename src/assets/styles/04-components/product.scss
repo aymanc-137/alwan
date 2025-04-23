@@ -404,3 +404,20 @@ salla-quantity-input[max='1']{
     @apply cursor-not-allowed
   }
 }
+
+.s-product-card-image {
+  img{
+  @apply border border-black;
+  }
+  background-color: transparent;
+}
+
+ .s-product-card-wishlist-btn{
+  button{
+   background-color: white !important;
+  }
+ }
+
+ .s-button-light-outline {
+  border-color: white !important;
+ }

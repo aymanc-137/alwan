@@ -70,7 +70,7 @@
       }
 
       .s-product-card-entry{
-        @apply border border-gray-100;
+        @apply border border-gray-100  ;
       }
 
       .btn {
@@ -234,4 +234,6 @@
 .s-user-menu-trigger{
   @apply bg-transparent border-none outline-none;
 }
- 
+.s-product-card-entry{
+@apply bg-[#8ebdec] border-2 border-black border-b-4 border-r-4;
+}
