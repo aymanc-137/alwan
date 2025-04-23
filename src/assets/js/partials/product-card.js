@@ -152,10 +152,20 @@ class ProductCard extends HTMLElement {
      *  Show quantity.
      */
     this.showQuantity = this.hasAttribute('showQuantity');
+
+    /**
+     *  Background colors.
+     */
+    this.bgColors=['#FAF3E1','#DBFB3E','#9BD3D0','#FEC447','#FFA2C4','#FECCB4','#DBFB3E','#B0D4A8','#CFBBFB','#05DDDC'];
+ 
   }
 
   render(){
-    this.classList.add('s-product-card-entry'); 
+    console.log(this.bgColors);
+    this.classList.add('s-product-card-entry');
+    this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
+    this.style.backgroundColor = this.bgColor;
+
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
     this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-horizontal') : '';
@@ -168,7 +178,7 @@ class ProductCard extends HTMLElement {
     this.product?.is_out_of_stock?  this.classList.add('s-product-card-out-of-stock') : '';
     this.isInWishlist = !salla.config.isGuest() && salla.storage.get('salla::wishlist', []).includes(Number(this.product.id));
     this.innerHTML = `
-        <div class="p-3 ${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}">
+        <div class="p-3 ${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}" >
           <a href="${this.product?.url}">
             <img class=" rounded-2xl s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
               ? 'contain'

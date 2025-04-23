@@ -5079,7 +5079,7 @@ input[type=radio].sr-only:checked ~ div.main-menu .sub-menu {
   border-color: black;
 }
 .s-user-menu-trigger{border-style:none;background-color:transparent;outline:2px solid transparent;outline-offset:2px}
-.s-product-card-entry{border-width:2px;border-bottom-width:4px;border-right-width:4px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1));--tw-bg-opacity:1;background-color:rgba(142, 189, 236, 1);background-color:rgba(142, 189, 236, var(--tw-bg-opacity, 1))}
+.s-product-card-entry{border-width:2px;border-bottom-width:4px;border-right-width:4px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 .dropdown__trigger{height:2.5rem;width:2.5rem;overflow:hidden;border-radius:9999px;font-weight:500}
 .dropdown__trigger:focus{--tw-ring-offset-color:transparent}
 .dropdown__trigger.filter{height:auto;width:auto;overflow:visible;border-radius:0px}
