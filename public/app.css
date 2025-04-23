@@ -505,6 +505,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .z-\[2\]{z-index:2}
 .col-span-2{grid-column:span 2 / span 2}
 .m-0{margin:0px}
+.m-5{margin:1.25rem}
 .m-8{margin:2rem}
 .m-auto{margin:auto}
 .-mx-6{margin-left:-1.5rem;margin-right:-1.5rem}
@@ -512,6 +513,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .mx-1\.5{margin-left:0.375rem;margin-right:0.375rem}
 .mx-2{margin-left:0.5rem;margin-right:0.5rem}
 .mx-auto{margin-left:auto;margin-right:auto}
+.my-20{margin-top:5rem;margin-bottom:5rem}
 .my-5{margin-top:1.25rem;margin-bottom:1.25rem}
 .my-auto{margin-top:auto;margin-bottom:auto}
 .-mb-52{margin-bottom:-13rem}
@@ -718,7 +720,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .bg-green-50{--tw-bg-opacity:1;background-color:rgba(240, 253, 244, 1);background-color:rgba(240, 253, 244, var(--tw-bg-opacity, 1))}
 .bg-inherit{background-color:inherit}
 .bg-primary{background-color:#414042;background-color:var(--color-primary)}
-.bg-purple-400{--tw-bg-opacity:1;background-color:rgba(192, 132, 252, 1);background-color:rgba(192, 132, 252, var(--tw-bg-opacity, 1))}
 .bg-white{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
 .bg-cover{background-size:cover}
 .bg-center{background-position:center}
@@ -4124,7 +4125,6 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   border-right-width: 4px;
   border-bottom-width: 4px;
   border-color: #000000;
-  background-color: #05DDDC;
 }
 .category-link div, .category-link .footer-content-text {
   position: relative;
@@ -5956,7 +5956,7 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
 .s-product-card-image {
   background-color: transparent;
 }
-.s-product-card-image img{border-width:1px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.s-product-card-image img{max-height:18rem;border-width:1px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 .s-product-card-wishlist-btn{
   opacity: 1 !important}
 .s-product-card-wishlist-btn{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}

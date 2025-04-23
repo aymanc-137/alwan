@@ -407,7 +407,7 @@ salla-quantity-input[max='1']{
 
 .s-product-card-image {
   img{
-  @apply border border-black;
+  @apply border border-black max-h-72;
   }
   background-color: transparent;
 }

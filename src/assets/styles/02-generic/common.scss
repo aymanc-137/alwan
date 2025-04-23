@@ -398,8 +398,14 @@ salla-modal {
     @apply text-primary hover:text-primary-d;
   }
 }
+ .categorylin-container{
+  .s-slider-container{
+    //@apply overflow-visible;
+  }
+ }
 
-.category-link{
+ 
+ .category-link{
  
 
   border-radius: 100px 109px 12.5px 12.5px;
@@ -409,7 +415,7 @@ salla-modal {
    
 
     border-color: #000000;
-    background-color: #05DDDC;
+    //background-color: #05DDDC;
 
 
 
@@ -427,6 +433,7 @@ salla-modal {
     }
   }
 }
+
 
 .s-button-btn{
   border-width: 2px;

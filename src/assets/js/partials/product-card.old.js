@@ -212,7 +212,10 @@ class ProductCard extends HTMLElement {
                 </svg>
                 
               </salla-button>
-              ` : ``
+
+
+              
+` : ``
           }
         </div>
         <div class="s-product-card-content">
@@ -273,9 +276,7 @@ class ProductCard extends HTMLElement {
 
 
           ${!this.hideAddBtn ?
-            `<div class="s-product-card-content-footer gap-2 flex justify-between">
- 
-
+            `<div class="s-product-card-content-footer gap-2">
               <salla-add-product-button fill="solid" color="primary" width="wide"
                 product-id="${this.product.id}"
                 product-status="${this.product.status}"
