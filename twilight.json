@@ -145,6 +145,18 @@
             "selected": true
         },
         {
+            "id": "wishlist-btn",
+            "type": "boolean",
+            "format": "switch",
+            "label": "زر المفضلة بالقرب من إضافة للسلة",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": true,
+            "required": false
+        },
+        {
             "id": "slider_background_size",
             "type": "items",
             "format": "dropdown-list",
