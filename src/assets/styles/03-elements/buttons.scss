@@ -1,9 +1,18 @@
 /*
 * Buttons
 */
+salla-add-product-button{
+  @apply transition duration-300;
+  &:hover{
+    @apply scale-110;
+  }
+  &[width="wide"] {
+    @apply w-[75%];
+  }
+}
 salla-button {
   &[width="wide"] {
-    @apply w-full xs:w-[50%];
+    @apply w-full;
   }
 
   &[width="small"] {

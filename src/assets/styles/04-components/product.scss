@@ -464,6 +464,8 @@ salla-quantity-input[max='1']{
     height: 3rem !important;
     width: 3rem !important;
     button{
+      @apply transition-all duration-300 hover:!scale-110;
+
       border-color: #000000;
       border-width: 1px;
       border-style: solid;
@@ -479,8 +481,10 @@ salla-quantity-input[max='1']{
 }
 
 .s-product-card-wishlist-added { 
-  @apply transition-all duration-300;
-  @apply hover:!scale-110;
+  // transition-property: all !important;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  // transition-duration: 150ms !important;
+  // @apply hover:!scale-110;
 
   svg{
     #bg-heart-color-fill{
@@ -491,7 +495,7 @@ salla-quantity-input[max='1']{
 }
 
 .s-button-text{
-  @apply flex gap-6;
+  @apply flex gap-1;
 }
 
  

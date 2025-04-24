@@ -97,7 +97,7 @@ class ProductCard extends HTMLElement {
               </div>`
     }
     else{
-      price = `<h4 class="s-product-card-price">${this.getPriceFormat(this.product?.price)}</h4>`
+      price = `<h4 class="s-product-card-price text-2xl">${this.getPriceFormat(this.product?.price)}</h4>`
     }
 
     return price;
@@ -219,7 +219,7 @@ class ProductCard extends HTMLElement {
               ` : ``
           }
         </div>
-        <div class="s-product-card-content">
+        <div class="s-product-card-content bg-[#EDF7F8] m-3 rounded-3xl border-black border">
           ${this.isSpecial && this.product?.quantity ?
             `<div class="s-product-card-content-pie">
               <span>
@@ -233,7 +233,7 @@ class ProductCard extends HTMLElement {
             </div>`
             : ``}
 
-          <div class="s-product-card-content-main ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
+          <div class="  s-product-card-content-main ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
             <h3 class="s-product-card-content-title">
               <a href="${this.product?.url}">${this.product?.name}</a>
             </h3>
@@ -277,7 +277,7 @@ class ProductCard extends HTMLElement {
 
 
           ${!this.hideAddBtn ?
-            `<div class="s-product-card-content-footer flex justify-between">
+            `<div class="s-product-card-content-footer  ">
  
 
               <salla-add-product-button fill="solid" color="primary" width="wide"

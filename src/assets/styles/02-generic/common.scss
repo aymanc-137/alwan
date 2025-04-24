@@ -460,3 +460,8 @@ salla-modal {
    width: 2em;
   height: 2em;
 }
+.s-product-card-content-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
