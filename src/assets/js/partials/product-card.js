@@ -18,6 +18,8 @@ class ProductCard extends HTMLElement {
   onReady(){
       this.fitImageHeight = salla.config.get('store.settings.product.fit_type');
       this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
+      this.wishlistBtn =  salla.config.get('theme.settings.wishlist_btn');
+
       this.getProps()
 
 	  this.source = salla.config.get("page.slug");
@@ -192,7 +194,8 @@ class ProductCard extends HTMLElement {
             ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
           </a>
           ${this.fullImage ? `<a href="${this.product?.url}" aria-label=${this.product.name} class="s-product-card-overlay"></a>`:''}
-          ${!this.horizontal && !this.fullImage ?
+         
+          ${!this.horizontal && !this.fullImage && !this.wishlistBtn?
             `<salla-button
               shape="icon"
               fill="solid"
@@ -287,7 +290,7 @@ class ProductCard extends HTMLElement {
               </salla-add-product-button>
 
 
-              ${!this.horizontal || true ?
+              ${!this.horizontal || this.wishlistBtn ?
                 `<salla-button 
                   shape="icon" 
                   fill="solid" 
