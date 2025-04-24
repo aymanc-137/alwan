@@ -105,7 +105,7 @@
       left: 0;
       width: 100%;
       z-index: 29;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    //  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
       transform: translate3d(0, -100%, 0);
 
       @media (max-width: 1024px){
@@ -133,9 +133,9 @@
   &.fixed-header {
     .inner {
       transform: translate3d(0, 0, 0);
-      @apply  mx-auto w-5/6;
+      @apply  mx-auto w-[90%];
       .inner-wrapper{
-        @apply border-b-2 border my-5 !bg-[#fff5f0] rounded-3xl;
+        @apply border-b-2 border-r-2 border border-black my-5 !bg-[#fff5f0] rounded-3xl;
 
       }
       @media (max-width: 1024px){
