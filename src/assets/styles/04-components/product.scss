@@ -317,6 +317,7 @@
 }
 
 
+
 // Horizontal card
 .s-product-card-horizontal{
   .s-product-card-content{
@@ -441,6 +442,31 @@ salla-quantity-input[max='1']{
     }
   }
  }
+
+
+  
+  .ns-product-card-wishlist-bt {
+    button{
+
+      background-color: #F8B5EB !important;
+    }
+  }
+
+
+  .main-wish-btn{
+    height: 3rem !important;
+    width: 3rem !important;
+    button{
+      border-color: #000000;
+      border-width: 1px;
+      border-style: solid;
+      border-bottom-width: 3px;
+      border-right-width: 3px;
+      @apply hover:scale-110  ;
+      background-color: #F8B5EB !important;
+    }
+  }
+ 
  .s-button-icon{
   border-radius: 10px !important;
 }

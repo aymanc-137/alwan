@@ -6,6 +6,9 @@ salla-button {
     @apply w-full;
   }
 
+  &[width="small"] {
+  
+  }
   &.copied {
     .s-button-text{
       @apply text-green-600;
