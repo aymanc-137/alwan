@@ -133,7 +133,7 @@
   &.fixed-header {
     .inner {
       transform: translate3d(0, 0, 0);
-
+      @apply border-b-2 border border-black my-5 mx-auto w-5/6 !bg-[#fff5f0] rounded-3xl;
       @media (max-width: 1024px){
         transform: none;
         top: 0;
