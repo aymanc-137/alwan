@@ -1,0 +1,102 @@
+{#
+| Variable          | Type    | Description                                                      |
+|-------------------|---------|------------------------------------------------------------------|
+| items             | array   | List of sliders                                                  |
+| items[].url       | string  |                                                                  |
+| items[].link_type | ?String | category,product,offers,page,external_link,brand                 |
+| items[].image.url | string  |                                                                  |
+| items[].image.alt | string  |                                                                  |
+| position          | Int     | Sorting number start from zero                                   |
+#}
+ 
+ <section class="{{ is_repeated ? 'repeated-block' : '' }} slanted-layers ">
+  
+      <salla-slider 
+        type="carousel" 
+        class="home-slider main-slider !w-full  "
+        centered 
+        auto-play 
+        show-controls="false"
+        pagination
+         id="photos-{{ position }}-slider"> 
+        <div slot="items">
+
+          {% for index, item in component.slides_ads %}
+           {% if item.url and not item.button_title %}
+           <a href="{{ item.url }}" class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[85vh] bg-center bg-cover bg-no-repeat cursor-pointer" style="background-image: url({{ item.image }});">
+           {% else %}
+           <div class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[85vh] bg-center bg-cover bg-no-repeat" style="background-image: url({{ item.image }});">
+           {% endif %}
+               
+                {% set postion = 'text-center' %}
+
+                  {% if item.postion[0] == "right" %}
+                    
+                        {% set postion = 'ltr:text-start  rtl:text-end' %}
+                    
+                        {% elseif item.postion[0] == "left" %}
+
+                        {% set postion = 'ltr:text-end rtl:text-start' %}
+                        
+                {% endif %}
+
+                
+                <div class="md:w-4/6 place-self-center {{postion}}">
+                  <h1 class="md:text-6xl  font-extrabold my-2 text-[var(--color-primary)]">{{item.title}}</h1>
+
+                  <h2>{{item.description}}</h2>
+                  {% if item.button_title %}
+                    <salla-button href="{{item.url }}" color="primary" class="btn--rounded-full !text-white my-2">
+                      {{item.button_title}}
+                    </salla-button>
+                  {% endif %}
+                  
+                
+                </div>
+
+          {% if item.url and not item.button_title %}
+          </a>
+          {% else %}
+          </div>
+          {% endif %}
+          {% endfor %}
+          
+        </div>
+      </salla-slider>
+  </section> 
+
+{% if component.bg_color %}
+  <style>
+    .slanted-layers {
+  width: 100%;
+   position: relative;
+  
+  background: #effffc;
+  overflow: hidden;
+}
+    .slanted-layers::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background: #BBDBD5; /* 335355 Lighter variation */
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+</style>
+{% else %}
+
+<style>
+  .slanted-layers {
+  width: 100%;
+   position: relative;
+  
+  background: #BBDBD5;
+  overflow: hidden;
+}
+</style>
+
+{% endif %}
+

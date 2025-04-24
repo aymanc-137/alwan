@@ -1013,6 +1013,187 @@
                     "value": []
                 }
             ]
+        },
+        {
+            "key": "f13c0337-8968-491b-bb99-74b1f036e1d5",
+            "title": "صور متحركة  - نقاء",
+            "icon": "sicon-image1",
+            "path": "home.slider-ads",
+            "image": "https://cdn.lamsaweb.com/cdnNaqaa/Screenshot from 2025-04-16 20-56-50.png",
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div  style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.sa/form-builder/qG4Qj7KF5VquOkIIdRe9MYjzk37u9qHh83ItC0qb.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/naqaa' target='_blank'> دليل العنصر </a></h4>"
+                },
+                {
+                    "id": "bg_color",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تدرج لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "selected": false,
+                    "required": false
+                },
+                {
+                    "id": "slides_ads",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "صور  متحركة مع روابط",
+                    "description": "اضافة اعلان",
+                    "labelHTML": null,
+                    "item_label": "إعلان مع صورة",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "slides_ads.url",
+                            "label": "رابط الإعلان",
+                            "description": "",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "format": "variable-list",
+                            "type": "items",
+                            "searchable": true,
+                            "source": "custom",
+                            "sources": [
+                                    {
+                                        "label": "منتج",
+                                        "key": "products",
+                                        "value": "products"
+                                    },
+                                    {
+                                        "label": "تصنيف",
+                                        "key": "categories",
+                                        "value": "categories"
+                                    },
+                                    {
+                                        "label": "ماركة تجارية",
+                                        "key": "brands",
+                                        "value": "brands"
+                                    },
+                                    {
+                                        "label": "التخفيضات",
+                                        "key": "offers_link",
+                                        "value": "offers_link"
+                                    },
+                                    {
+                                        "label": "الماركات التجارية",
+                                        "key": "brands_link",
+                                        "value": "brands_link"
+                                    },
+                                    {
+                                        "label": "رابط خارجي",
+                                        "key": "custom",
+                                        "value": "custom"
+                                    }
+                            ]
+                        },
+                        {
+                            "id": "slides_ads.button_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "نص الرابط",
+                            "description": "نص الزر",
+                            "labelHTML": null,
+                            "placeholder": "تسوق الان",
+                            "icon": "sicon-format-text-alt",
+                            "value": "تسوق الان",
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "100"
+                        },
+                        {
+                            "id": "slides_ads.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "عنوان الإعلان",
+                            "description": "عنوان الإعلان",
+                            "labelHTML": null,
+                            "placeholder": "عنوان الإعلان",
+                            "icon": "sicon-format-text-alt",
+                            "value": "عنوان الإعلان",
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "100"
+                        },
+                        {
+                            "id": "slides_ads.postion",
+                            "type": "items",
+                            "format": "dropdown-list",
+                            "label": "اتجاه النص",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [
+                                {
+                                    "label": "نص الى الايمين",
+                                    "value": "right",
+                                    "key": "a295ad4f-fc84-4c12-a433-190f5f77c56c"
+                                }
+                            ],
+                            "options": [
+                                {
+                                    "label": "نص الى الايمين",
+                                    "value": "right",
+                                    "key": "a295ad4f-fc84-4c12-a433-190f5f77c56c"
+                                },
+                                {
+                                    "label": "نص منتصف",
+                                    "value": "center",
+                                    "key": "3dffe01b-1eb1-4969-845d-1c75a5845d30"
+                                }
+                            ],
+                            "source": "Manual",
+                            "multichoice": false,
+                            "searchable": false,
+                            "required": false
+                        },
+                        {
+                            "id": "slides_ads.description",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "وصف الإعلان",
+                            "description": "وصف الإعلان",
+                            "labelHTML": null,
+                            "placeholder": "وصف الإعلان",
+                            "icon": "sicon-typography",
+                            "value": "تسوقي عروض المنتجات الطبيعية",
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": 20,
+                            "maxLength": "1000"
+                        },
+                        {
+                            "id": "slides_ads.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة الخلفية",
+                            "description": "صورة الخلفيى",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": "https://cdn.salla.sa/form-builder/H4ipMdG5IDKwSTc7Ro5YLnEYDqCGWQmupzSfKcm8.png",
+                            "required": true
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
