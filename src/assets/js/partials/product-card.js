@@ -18,8 +18,10 @@ class ProductCard extends HTMLElement {
   onReady(){
       this.fitImageHeight = salla.config.get('store.settings.product.fit_type');
       this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
-      this.wishlistBtn =  salla.config.get('theme.settings.wishlist_btn');
+      // Try to get wishlistBtn from salla.config, fallback to localStorage
+      this.wishlistBtn = salla.config.get('theme.settings.get("wishlist_btn")') || localStorage.getItem('wishlist_btn');
 
+      console.log(this.wishlistBtn)
       this.getProps()
 
 	  this.source = salla.config.get("page.slug");
@@ -163,8 +165,7 @@ class ProductCard extends HTMLElement {
   }
 
   render(){
-    console.log(this.bgColors);
-    this.classList.add('s-product-card-entry');
+     this.classList.add('s-product-card-entry');
     this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
     this.style.backgroundColor = this.bgColor;
 
@@ -279,7 +280,7 @@ class ProductCard extends HTMLElement {
             `<div class="s-product-card-content-footer flex justify-between">
  
 
-              <salla-add-product-button fill="solid" color="primary" width="small"
+              <salla-add-product-button fill="solid" color="primary" width="wide"
                 product-id="${this.product.id}"
                 product-status="${this.product.status}"
                 product-type="${this.product.type}">
@@ -290,7 +291,7 @@ class ProductCard extends HTMLElement {
               </salla-add-product-button>
 
 
-              ${!this.horizontal || this.wishlistBtn ?
+              ${!this.horizontal && this.wishlistBtn ?
                 `<salla-button 
                   shape="icon" 
                   fill="solid" 
@@ -321,7 +322,7 @@ class ProductCard extends HTMLElement {
                   color="light" 
                   id="card-wishlist-btn-${this.product.id}-horizontal"
                   aria-label="Add or remove to wishlist"
-                  class=" s-product-card-wishlist-btn   animated ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
+                  class=" main-wish-btn animated ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
                   onclick="salla.wishlist.toggle(${this.product.id})"
                   data-id="${this.product.id}">
 

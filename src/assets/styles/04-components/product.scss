@@ -443,7 +443,14 @@ salla-quantity-input[max='1']{
   }
  }
 
+ .s-product-card-horizontal {
+  .s-product-card-wishlist-btn {
+    button{
 
+      background-color: #F8B5EB !important;
+    }
+  }
+ }
   
   .ns-product-card-wishlist-bt {
     button{

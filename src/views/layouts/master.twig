@@ -70,6 +70,8 @@
         window.header_is_sticky = "{{theme.settings.get('header_is_sticky', 'Default Value')}}"
         window.imageZoom = "{{theme.settings.get('imageZoom')}}"
         window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
+        // Store wishlist button setting in localStorage for product-card.js
+        localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
     </script>
     
     {% hook 'head:start' %}

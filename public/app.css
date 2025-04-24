@@ -697,7 +697,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-2{border-width:2px}
 .border-b{border-bottom-width:1px}
 .border-b-0{border-bottom-width:0px}
-.border-b-2{border-bottom-width:2px}
 .border-b-4{border-bottom-width:4px}
 .border-b-\[1px\]{border-bottom-width:1px}
 .border-l{border-left-width:1px}
@@ -4142,7 +4141,6 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   border-bottom-width: 4px;
   background-color: #61C0C1;
   color: #e6e6e6;
-  font-size: 20px;
 }
 .sicon-shopping-bag::before {
   content: none !important;
@@ -4420,6 +4418,8 @@ textarea.form-input{height:6rem}
 * Buttons
 */
 salla-button[width=wide]{width:100%}
+@media (min-width: 480px){
+salla-button[width=wide]{width:50%}}
 salla-button.copied .s-button-text{--tw-text-opacity:1;color:rgba(22, 163, 74, 1);color:rgba(22, 163, 74, var(--tw-text-opacity, 1))}
 salla-button.copied i:before {
   content: "\ea9d";
@@ -5973,6 +5973,9 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
   border-right-width: 2px;
 }
 .s-product-card-vertical .s-product-card-wishlist-btn button {
+  background-color: #F8B5EB !important;
+}
+.s-product-card-horizontal .s-product-card-wishlist-btn button {
   background-color: #F8B5EB !important;
 }
 .ns-product-card-wishlist-bt button {

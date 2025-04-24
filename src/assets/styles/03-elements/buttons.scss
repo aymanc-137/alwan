@@ -3,7 +3,7 @@
 */
 salla-button {
   &[width="wide"] {
-    @apply w-full;
+    @apply w-full xs:w-[50%];
   }
 
   &[width="small"] {
