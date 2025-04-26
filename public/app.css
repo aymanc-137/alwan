@@ -4870,7 +4870,225 @@ salla-user-menu .s-user-menu-trigger-icon::before {
   margin-left: 5px;
   margin-right: 5px;
 }
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item i {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item i svg {
+  display: none;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(1) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/smart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(1) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(1) i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(2) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/office-material.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(2) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(2) i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(3) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/checkout.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(3) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(3) i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(4) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping-cart (2).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(4) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(4) i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(5) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(5) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(5) i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/power-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  margin-left: 3px;
+}
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  margin-right: 3px;
+}
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:hover i::before {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
 .s-cart-summary-total{font-weight:600;--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity, 1))}
+.s-user-menu-inline .s-user-menu-dropdown-item i {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item i svg {
+  display: none;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(1) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/smart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(1) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(1) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(2) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/office-material.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(2) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(2) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(3) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/checkout.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(3) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(3) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(4) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping-cart (2).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(4) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(4) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(5) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(5) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(5) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/power-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:hover i::before {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
 .s-cart-summary-count{top:-0.125rem;--tw-bg-opacity:1;background-color:rgba(153, 27, 27, 1);background-color:rgba(153, 27, 27, var(--tw-bg-opacity, 1))}
 .s-cart-summary-count:where([dir="ltr"], [dir="ltr"] *){left:-0.375rem}
 .s-cart-summary-count:where([dir="rtl"], [dir="rtl"] *){right:-0.375rem}

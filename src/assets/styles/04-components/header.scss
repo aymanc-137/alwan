@@ -230,11 +230,312 @@ salla-user-menu{
       margin-right: 5px;
     }
   }
+  
+  // User menu dropdown SVG replacements
+  .s-user-menu-dropdown {
+    // Close button icon replacement
+    // .s-user-menu-dropdown-header-close {
+    //   position: relative;
+      
+    //   svg {
+    //     display: none;
+    //   }
+      
+    //   &::before {
+    //     content: '';
+    //     display: block;
+    //     width: 32px;
+    //     height: 32px;
+    //     background-image: url("https://cdn.lamsaweb.com/cdnAlwan/power-button.svg");
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: contain;
+    //   }
+      
+    //   &:hover::before {
+    //     transform: rotate(90deg);
+    //     transition: transform 0.3s ease;
+    //   }
+    // }
+    
+    // Menu item icons replacement
+    .s-user-menu-dropdown-item {
+      i {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        
+        svg {
+          display: none;
+        }
+      }
+      
+      // Notifications icon
+      &:nth-child(1) i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+ 
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/smart.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Orders icon
+      &:nth-child(2) i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/office-material.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Pending orders icon
+      &:nth-child(3) i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/checkout.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Wishlist icon
+      &:nth-child(4) i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+          
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping-cart (2).svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Profile icon
+      &:nth-child(5) i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+       
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Logout icon
+      &.s-user-menu-dropdown-item-logout i::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+          
+        [dir="rtl"] & {
+          margin-left: 3px;
+        }
+        [dir="ltr"] & {
+          margin-right: 3px;
+        }
+        background-image: url("https://cdn.lamsaweb.com/cdnAlwan/power-button.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      
+      // Hover effect based on user preference for movement + revealing colors
+      &:hover i::before {
+        transform: translateY(-2px);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
 }
 
 // cart summary
 .s-cart-summary-total{
   @apply text-black font-[600];
+}
+
+// Sidebar inline user menu icons replacement
+.s-user-menu-inline {
+  .s-user-menu-dropdown-item {
+    i {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+        display: none;
+      }
+    }
+    
+    // Notifications icon
+    &:nth-child(1) i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/smart.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Orders icon
+    &:nth-child(2) i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/office-material.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Pending orders icon
+    &:nth-child(3) i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/checkout.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Wishlist icon
+    &:nth-child(4) i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+        
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping-cart (2).svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Profile icon
+    &:nth-child(5) i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+     
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Logout icon
+    &.s-user-menu-dropdown-item-logout i::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+        
+      [dir="rtl"] & {
+        margin-left: 3px;
+      }
+      [dir="ltr"] & {
+        margin-right: 3px;
+      }
+      background-image: url("https://cdn.lamsaweb.com/cdnAlwan/power-button.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    
+    // Hover effect based on user preference for movement with revealing colors
+    &:hover i::before {
+      transform: translateY(-2px);
+      transition: transform 0.3s ease;
+    }
+  }
 }
 
 .s-cart-summary-count{

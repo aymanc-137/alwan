@@ -43,10 +43,14 @@
                  
                 <div class="md:w-4/6 place-self-center {{postion}}">
                   <h1
-                  style="font-family: CooperArabic;"
+                  style="font-family: CooperArabic; 
+                  
+              text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
+                 " 
+                 {# text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); #}
                    class="text-blue-400 md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
 
-                  <h2>{{item.description}}</h2>
+                  <h2 class="my-5">{{item.description}}</h2>
                   {% if item.button_title %}
                     <salla-button href="{{item.url }}" color="primary" class="btn--rounded-full !text-white my-2">
                       {{item.button_title}}
