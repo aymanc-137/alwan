@@ -40,9 +40,11 @@
                         
                 {% endif %}
 
-                
+                 
                 <div class="md:w-4/6 place-self-center {{postion}}">
-                  <h1 class="md:text-6xl  font-extrabold my-2 text-[var(--color-primary)]">{{item.title}}</h1>
+                  <h1
+                  style="font-family: CooperArabic;"
+                   class="text-blue-400 md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
 
                   <h2>{{item.description}}</h2>
                   {% if item.button_title %}

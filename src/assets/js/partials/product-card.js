@@ -160,14 +160,15 @@ class ProductCard extends HTMLElement {
     /**
      *  Background colors.
      */
-    this.bgColors=['#FAF3E1','#DBFB3E','#9BD3D0','#FEC447','#FFA2C4','#FECCB4','#DBFB3E','#B0D4A8','#CFBBFB','#05DDDC'];
+    this.bgColors=['#EAF8F8','#FAF3E1','#9BD3D0','#FECCB5','#FBE7B2','#FDFDF2','#FEC447','#FFA2C4','#FECCB4','#EAFD92','#F5DEA9','#F4F2D9','#E0D8F3','#05DDDC','#8ACCD5','#F8F8E1','#FFC1DA','#FF90BB'];
  
   }
 
   render(){
      this.classList.add('s-product-card-entry');
     this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
-    this.style.backgroundColor = this.bgColor;
+    //this.style.backgroundColor = this.bgColor  EDF7F8;
+    this.style.backgroundColor = '#F8F8E1';
 
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
@@ -219,7 +220,7 @@ class ProductCard extends HTMLElement {
               ` : ``
           }
         </div>
-        <div class="s-product-card-content bg-[#EDF7F8] m-3 rounded-3xl border-black border">
+        <div class="s-product-card-content bg-[#ffffff] m-3 rounded-3xl border-black border">
           ${this.isSpecial && this.product?.quantity ?
             `<div class="s-product-card-content-pie">
               <span>

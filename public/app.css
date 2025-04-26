@@ -714,8 +714,8 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-gray-200{--tw-border-opacity:1;border-color:rgba(229, 231, 235, 1);border-color:rgba(229, 231, 235, var(--tw-border-opacity, 1))}
 .border-green-300{--tw-border-opacity:1;border-color:rgba(134, 239, 172, 1);border-color:rgba(134, 239, 172, var(--tw-border-opacity, 1))}
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
-.bg-\[\#ECF7FF\]{--tw-bg-opacity:1;background-color:rgba(236, 247, 255, 1);background-color:rgba(236, 247, 255, var(--tw-bg-opacity, 1))}
-.bg-\[\#EDF7F8\]{--tw-bg-opacity:1;background-color:rgba(237, 247, 248, 1);background-color:rgba(237, 247, 248, var(--tw-bg-opacity, 1))}
+.bg-\[\#fff5f0\]{--tw-bg-opacity:1;background-color:rgba(255, 245, 240, 1);background-color:rgba(255, 245, 240, var(--tw-bg-opacity, 1))}
+.bg-\[\#ffffff\]{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
 .bg-\[\(--color-text\)\]{background-color:(--color-text)}
 .bg-black{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);background-color:rgba(0, 0, 0, var(--tw-bg-opacity, 1))}
 .bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239, 246, 255, 1);background-color:rgba(239, 246, 255, var(--tw-bg-opacity, 1))}
@@ -815,6 +815,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .\!text-white{--tw-text-opacity:1 !important;color:rgba(255, 255, 255, 1) !important;color:rgba(255, 255, 255, var(--tw-text-opacity, 1)) !important}
 .text-\[var\(--color-primary\)\]{color:#414042;color:var(--color-primary)}
 .text-amber-400{--tw-text-opacity:1;color:rgba(251, 191, 36, 1);color:rgba(251, 191, 36, var(--tw-text-opacity, 1))}
+.text-blue-400{--tw-text-opacity:1;color:rgba(96, 165, 250, 1);color:rgba(96, 165, 250, var(--tw-text-opacity, 1))}
 .text-blue-500{--tw-text-opacity:1;color:rgba(59, 130, 246, 1);color:rgba(59, 130, 246, var(--tw-text-opacity, 1))}
 .text-danger{--tw-text-opacity:1;color:rgba(174, 10, 10, 1);color:rgba(174, 10, 10, var(--tw-text-opacity, 1))}
 .text-dark{--tw-text-opacity:1;color:rgba(29, 31, 31, 1);color:rgba(29, 31, 31, var(--tw-text-opacity, 1))}
@@ -4143,12 +4144,13 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   transform: translate3d(-0.9rem, -0.3rem, 0px);
 }
 .s-button-btn {
-  border-width: 2px;
+  border-width: 1px;
   border-color: #000000;
-  border-right-width: 4px;
-  border-bottom-width: 4px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
   background-color: #61C0C1;
-  color: #e6e6e6;
+  color: #ffffff;
+  font-size: 12px;
 }
 .sicon-shopping-bag::before {
   content: none !important;
@@ -4431,7 +4433,7 @@ textarea.form-input{height:6rem}
 * Buttons
 */
 salla-add-product-button{transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
-salla-add-product-button:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+salla-add-product-button:hover:not(.product-page-button){--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 salla-add-product-button[width=wide]{width:75%}
 salla-button[width=wide]{width:100%}
 salla-button.copied .s-button-text{--tw-text-opacity:1;color:rgba(22, 163, 74, 1);color:rgba(22, 163, 74, var(--tw-text-opacity, 1))}
@@ -4806,7 +4808,7 @@ input[type=radio].sr-only:checked ~ div.radio-images__badge {
   margin-right:auto;
   width:90%;
 }
-.main-nav-container.fixed-header .inner .inner-wrapper{--tw-bg-opacity:1 !important;background-color:rgba(255, 245, 240, 1) !important;background-color:rgba(255, 245, 240, var(--tw-bg-opacity, 1)) !important}
+.main-nav-container.fixed-header .inner .inner-wrapper{--tw-bg-opacity:1 !important;background-color:rgba(236, 247, 255, 1) !important;background-color:rgba(236, 247, 255, var(--tw-bg-opacity, 1)) !important}
 .main-nav-container.fixed-header .inner .inner-wrapper{margin-top:1.25rem;margin-bottom:1.25rem;border-radius:1.5rem;border-width:1px;border-bottom-width:2px;border-right-width:2px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 @media (max-width: 1024px) {
   .main-nav-container.fixed-header .inner {
@@ -4932,7 +4934,7 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;font-size:0.875rem;line-height:1.25rem;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
+  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;font-size:0.75rem;line-height:1rem;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
   .main-menu li > a:hover{color:#414042;color:var(--color-primary);text-decoration-line:none}
   .main-menu li.root-level{display:inline-block}
   .main-menu li.root-level > a{padding-top:0px;padding-bottom:2rem;font-weight:700}
@@ -5097,7 +5099,7 @@ input[type=radio].sr-only:checked ~ div.main-menu .sub-menu {
   border-color: black;
 }
 .s-user-menu-trigger{border-style:none;background-color:transparent;outline:2px solid transparent;outline-offset:2px}
-.s-product-card-entry{border-width:2px;border-bottom-width:4px;border-right-width:4px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.s-product-card-entry{border-width:1px;border-bottom-width:3px;border-right-width:3px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 .dropdown__trigger{height:2.5rem;width:2.5rem;overflow:hidden;border-radius:9999px;font-weight:500}
 .dropdown__trigger:focus{--tw-ring-offset-color:transparent}
 .dropdown__trigger.filter{height:auto;width:auto;overflow:visible;border-radius:0px}

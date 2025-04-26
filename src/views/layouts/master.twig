@@ -88,19 +88,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
 
-    <style>
+<style>
 
-
+/* text-shadow: 1px 1px 2px black; */
 @font-face {
     font-family: 'GraphicSchoolRegular';
     src: url({{ 'fonts/GraphicSchool-Regular.ttf' | asset }});
     font-weight: 400;
     font-style: normal;
 }        
+
+@font-face {
+    font-family: 'BackToSchool';
+    src: url({{ 'fonts/BackToSchool.otf' | asset }});
+    font-weight: 400;
+    font-style: normal;
+}        
+@font-face {
+    font-family: 'CooperArabic';
+    src: url({{ 'fonts/CooperArabic.ttf' | asset }});
+    font-weight: 400;
+    font-style: normal;
+}       
      
         :root {
-            --font-main: 'Changa';
+            --font-main: 'CooperArabic';
             --color-primary: {{ theme.color.primary }};
             --color-primary-dark: {{ theme.color.darker(0.15) }};
             --color-primary-light: {{ theme.color.lighter(0.15) }};
@@ -111,8 +125,8 @@
     {% hook 'head:end' %}
 </head>
                 {# F4E2D8
-                  DBFB3E #}
-<body id="app" class="bg-[#ECF7FF] antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
+                  DBFB3E   ECF7FF#}
+<body id="app" class="bg-[#fff5f0] antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
   {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
   {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
   {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}

@@ -3,7 +3,7 @@
 */
 salla-add-product-button{
   @apply transition duration-300;
-  &:hover{
+  &:hover:not(.product-page-button){
     @apply scale-110;
   }
   &[width="wide"] {
