@@ -79,14 +79,8 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": {
-                "ar": "إظهار شريط الإعلان أسفل السلايدر",
-                "en": "Show advertisement bar under slider"
-            },
-            "description": {
-                "ar": "إذا تم التفعيل، سيتم عرض شريط الإعلان أسفل السلايدر في الصفحة الرئيسية.",
-                "en": "If enabled, the advertisement bar will appear under the slider on the homepage."
-            },
+            "label": "إظهار شريط الإعلان أسفل السلايدر",
+            "description": "إذا تم التفعيل، سيتم عرض شريط الإعلان أسفل السلايدر في الصفحة الرئيسية.",
             "id": "advert_bar_under",
             "format": "switch",
             "required": false,
