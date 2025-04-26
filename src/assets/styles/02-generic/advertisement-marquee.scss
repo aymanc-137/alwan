@@ -1,0 +1,141 @@
+// Advertisement Marquee Styles
+.s-advertisement-wrapper {
+  // Target the advertisement element specifically
+  .s-advertisement {
+    background-color: rgba(0, 0, 0, 0.5) !important; // Force semi-transparent background
+    
+    .s-advertisement-content {
+      width: 100%;
+      direction: ltr;
+      display: flex;
+      align-items: center;
+      height: 46px;
+      
+      // Style for the close button
+      .s-advertisement-action {
+        background-color: red;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+  
+  // Marquee container styles
+  .marqeen-container {
+    position: relative;
+    width: 100%;
+   // padding: 0.25rem;
+    border-radius: 0;
+    overflow: hidden;
+    height: 100%;
+    
+    // Direction-specific container styles
+    &[data-direction=horizontal] {
+      min-height: 46px;
+      height: 46px;
+      aspect-ratio: unset;
+      min-width: 300px;
+    }
+    
+    &[data-direction=vertical] {
+      aspect-ratio: 9 / 16;
+      min-width: 180px;
+      min-height: 300px;
+    }
+    
+    // List styles
+    ul {
+      display: flex;
+      gap: 2.5rem; // Increased gap between items
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      height: 100%;
+    }
+    
+    // List item styles
+    li {
+      height: 100%;
+      background: transparent;
+      border-radius: 0;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      min-width: max-content;
+      padding: 0 1.5rem; // Increased padding
+      margin: 0 0.5rem; // Added margin
+     // direction: rtl !important;
+    }
+  }
+}
+
+// Track translation animations
+.s-advertisement-wrapper {
+  [data-translate=track] {
+    overflow: hidden;
+    
+    &[data-direction=horizontal] ul {
+      --destination-x: -50%;
+      animation: ad-marqeen-track-translate calc(var(--ads-speed, 10) * 1s) infinite linear; // Slower animation
+      // Make it twice as wide to create looping effect
+      width: 200%;
+    }
+    
+    &[data-direction=vertical] ul {
+      --destination-y: -100%;
+      animation: ad-marqeen-track-translate calc(var(--ads-speed, 10) * 1s) infinite linear;
+    }
+  }
+}
+
+// Keyframes for track translation - renamed to avoid conflicts
+@keyframes ad-marqeen-track-translate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--destination-x, 0));
+  }
+}
+
+// RTL support for marquee [dir="rtl"]
+//  .s-advertisement-wrapper {
+//   [data-translate=track] {
+//     &[data-direction=horizontal] ul {
+//       --destination-x: 50%;
+//       animation: ad-marqeen-track-translate-rtl calc(var(--ads-speed, 10) * 1s) infinite linear; // Slower animation
+//     }
+//   }
+// }
+
+// @keyframes ad-marqeen-track-translate-rtl {
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(var(--destination-x, 0));
+//   }
+// }
+
+.s-advertisement-content{
+  max-width: 100% !important;
+ //width: 100vw; 
+ @apply overflow-hidden  ;
+
+  .s-advertisement-content-main{
+    //flex: none !important;
+    @apply flex;
+   //  @apply overflow-hidden marquee-content;
+  }
+}

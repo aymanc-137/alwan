@@ -7,6 +7,9 @@
 #}
 {% set important_links = theme.settings.get('important_links') %}
 <header class="store-header">
+    {% if not theme.settings.get('advert_bar_under') %}
+        <salla-advertisement id="salla-advertisement-bar"></salla-advertisement>
+    {% endif %}
 
         {% if theme.settings.get('show_mega_menu',false)%}
 
@@ -52,6 +55,11 @@
 
   {# Main Nav #}
   <div id="mainnav" class="main-nav-container ">
+    {# Place slider-ads.twig here if not already included #}
+    {% include 'components/home/slider-ads.twig' %}
+    {% if theme.settings.get('advert_bar_under') %}
+        <salla-advertisement id="salla-advertisement-bar"></salla-advertisement>
+    {% endif %}
       <div class="inner bg-inherit w-[90%] mx-auto ">
           <div class="inner-wrapper mx-auto">
               <div class="flex items-stretch justify-between relative">
@@ -113,3 +121,249 @@
     <salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
 {% endif %}
  
+   
+<script>
+
+    // Advertisement Marquee Functionality
+    (function() {
+        // Helper function to wait for an element to appear in the DOM with retries
+        const waitForElement = (selector, options = {}) => {
+            const {
+                timeout = 30000,     // Increased timeout to 30 seconds
+                checkInterval = 250, // Check more frequently
+                maxRetries = 3,      // Allow up to 3 retries
+                retryDelay = 5000    // Wait 5 seconds between retries
+            } = options;
+            
+            let retryCount = 0;
+            
+            const tryToFindElement = () => {
+                return new Promise((resolve, reject) => {
+                    // First check if element already exists
+                    const element = document.querySelector(selector);
+                    if (element) {
+                        return resolve(element);
+                    }
+                    
+                    // Use both MutationObserver and backup polling for maximum reliability
+                    let timeoutId;
+                    let intervalId;
+                    
+                    // Function to clean up all listeners
+                    const cleanup = () => {
+                        if (observer) observer.disconnect();
+                        if (timeoutId) clearTimeout(timeoutId);
+                        if (intervalId) clearInterval(intervalId);
+                    };
+                    
+                    // Set a timeout for rejection
+                    timeoutId = setTimeout(() => {
+                        cleanup();
+                        reject(new Error(`Element ${selector} not found within ${timeout}ms`));
+                    }, timeout);
+                    
+                    // Use MutationObserver as primary method
+                    const observer = new MutationObserver((mutations) => {
+                        const element = document.querySelector(selector);
+                        if (element) {
+                            cleanup();
+                            resolve(element);
+                        }
+                    });
+                    
+                    // Observe document for changes
+                    observer.observe(document.documentElement, {
+                        childList: true,
+                        subtree: true,
+                        attributes: true, // Also watch for class changes
+                        attributeFilter: ['class'] // Only care about class attribute changes
+                    });
+                    
+                    // As a backup, also use interval checking (some components might not trigger MutationObserver)
+                    intervalId = setInterval(() => {
+                        const element = document.querySelector(selector);
+                        if (element) {
+                            cleanup();
+                            resolve(element);
+                        }
+                    }, checkInterval);
+                    
+                    // Special case for components that might be loaded after JavaScript execution
+                    // Check once page is fully loaded including all resources
+                    window.addEventListener('load', () => {
+                        const element = document.querySelector(selector);
+                        if (element) {
+                            cleanup();
+                            resolve(element);
+                        }
+                    }, { once: true });
+                });
+            };
+            
+            // Function to handle retries
+            const findElementWithRetry = async () => {
+                try {
+                    return await tryToFindElement();
+                } catch (error) {
+                    if (retryCount < maxRetries) {
+                        console.log(`Retry ${retryCount + 1}/${maxRetries} finding element: ${selector}`);
+                        retryCount++;
+                        // Wait before retrying
+                        await new Promise(resolve => setTimeout(resolve, retryDelay));
+                        return findElementWithRetry();
+                    }
+                    throw error;
+                }
+            };
+            
+            return findElementWithRetry();
+        };
+        
+        // Function to create the marquee for advertisement
+        const initAdMarquee = async () => {
+            try {
+                // Try to find the advertisement element with better error handling
+                const adElement = await waitForElement('salla-advertisement.hydrated', {
+                    timeout: 30000,    // 30 seconds timeout
+                    maxRetries: 3,      // 3 retries
+                    retryDelay: 5000    // 5 seconds between retries
+                });
+                
+                // Validate the element exists and is a proper DOM element
+                if (!adElement || !(adElement instanceof Element)) {
+                    console.log('Ad element found but is not valid, skipping marquee initialization');
+                    return;
+                }
+                
+                console.log('Advertisement element found, initializing marquee');
+                
+                // Add wrapper class for CSS encapsulation
+                adElement.classList.add('s-advertisement-wrapper');
+                
+                // Modify the background color to add opacity
+                const adDiv = adElement.querySelector('.s-advertisement');
+                if (adDiv && adDiv.style && adDiv.style.backgroundColor) {
+                    // Convert rgb to rgba with 0.5 opacity
+                    const bgColor = adDiv.style.backgroundColor;
+                    if (bgColor.startsWith('rgb(')) {
+                        const rgbValues = bgColor.substring(4, bgColor.length - 1).split(',');
+                        if (rgbValues.length === 3) {
+                            adDiv.style.backgroundColor = `rgba(${rgbValues[0].trim()}, ${rgbValues[1].trim()}, ${rgbValues[2].trim()}, 0.5)`;
+                        }
+                    }
+                }
+
+                // Get the main content element that we want to duplicate
+                const contentElement = adElement.querySelector('.s-advertisement-content-main');
+                if (!contentElement) {
+                    console.log('Content element not found, skipping marquee initialization');
+                    return;
+                }
+
+                // Get the original content HTML
+                const originalHTML = contentElement.innerHTML;
+                
+                // Create the marquee container
+                const marqueeContainer = document.createElement('div');
+                marqueeContainer.className = 'marqeen-container';
+                marqueeContainer.setAttribute('data-direction', 'horizontal');
+                marqueeContainer.setAttribute('data-translate', 'track');
+                marqueeContainer.setAttribute('data-play-state', 'running');
+                marqueeContainer.setAttribute('data-speed', '20'); // Speed of the marquee (lower = faster)
+
+                // Create the list for marquee items
+                const marqueeList = document.createElement('ul');
+                
+                // Create multiple copies of the content
+                // Get RTL status
+                const isRTL = document.dir === 'rtl' || document.documentElement.lang === 'ar';
+                
+                // Create two sets of items for a seamless infinite effect
+                // First set
+                for (let i = 0; i < 10; i++) {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'flex items-center justify-center';
+                    listItem.style.height = '100%';
+                    listItem.style.background = 'transparent';
+                    listItem.style.border = 'none';
+                    listItem.innerHTML = originalHTML;
+                    marqueeList.appendChild(listItem);
+                }
+                
+                // Second identical set to create seamless loop
+                for (let i = 0; i < 10; i++) {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'flex items-center justify-center';
+                    listItem.style.height = '100%';
+                    listItem.style.background = 'transparent';
+                    listItem.style.border = 'none';
+                    listItem.innerHTML = originalHTML;
+                    marqueeList.appendChild(listItem);
+                }
+                
+                // Add the list to the marquee container
+                marqueeContainer.appendChild(marqueeList);
+                
+                // Replace the original content with our marquee
+                const adContentElement = adElement.querySelector('.s-advertisement-content');
+                if (adContentElement) {
+                    // Let CSS handle styling through our SCSS encapsulation
+                    // Just ensure basic positioning is correct
+                    marqueeContainer.style.width = '100%';
+                    marqueeContainer.style.height = '100%';
+                    adContentElement.style.display = 'flex';
+                    
+                    // Get the close button and move it to the right position
+                    const closeButton = adElement.querySelector('.s-advertisement-action');
+                    if (closeButton) {
+                        // Remove from its original position
+                        closeButton.parentNode.removeChild(closeButton);
+                        
+                        // Add the button BEFORE the marquee container - styling handled by SCSS
+                        adContentElement.prepend(closeButton);
+                    }
+                    
+                    // Clear original content (except for the close button we just added)
+                    let child = adContentElement.firstChild;
+                    while (child) {
+                        let nextChild = child.nextSibling;
+                        if (child !== closeButton) {
+                            adContentElement.removeChild(child);
+                        }
+                        child = nextChild;
+                    }
+                    
+                    // Add the marquee container after the close button
+                    adContentElement.appendChild(marqueeContainer);
+                    console.log('Marquee initialized successfully');
+                }
+            } catch (error) {
+                console.error('Error initializing ad marquee:', error);
+            }
+        };
+
+        // Try multiple approaches to ensure the code runs
+        // 1. Run when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initAdMarquee);
+        } else {
+            // DOM already loaded, run immediately
+            initAdMarquee();
+        }
+
+        // 2. Try again after a short delay (for components that load after DOMContentLoaded)
+        setTimeout(initAdMarquee, 2000);
+        
+        // 3. Try one more time when all resources are loaded
+        window.addEventListener('load', () => {
+            setTimeout(initAdMarquee, 1000);
+        });
+        
+        // 4. Final attempt after page is fully loaded and initialized
+        window.addEventListener('load', () => {
+            setTimeout(initAdMarquee, 5000);
+        });
+    })();
+
+
+</script>
