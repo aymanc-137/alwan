@@ -7,10 +7,6 @@
 #}
 {% set important_links = theme.settings.get('important_links') %}
 <header class="store-header">
-    {% if not theme.settings.get('advert_bar_under') %}
-        <salla-advertisement id="salla-advertisement-bar"></salla-advertisement>
-    {% endif %}
-
         {% if theme.settings.get('show_mega_menu',false)%}
 
         {# Top Nav #}
@@ -56,10 +52,6 @@
   {# Main Nav #}
   <div id="mainnav" class="main-nav-container ">
     {# Place slider-ads.twig here if not already included #}
-    {% include 'components/home/slider-ads.twig' %}
-    {% if theme.settings.get('advert_bar_under') %}
-        <salla-advertisement id="salla-advertisement-bar"></salla-advertisement>
-    {% endif %}
       <div class="inner bg-inherit w-[90%] mx-auto ">
           <div class="inner-wrapper mx-auto">
               <div class="flex items-stretch justify-between relative">
@@ -126,6 +118,20 @@
 
     // Advertisement Marquee Functionality
     (function() {
+        // Get advert_bar_under value from backend (injected as a JS variable)
+        var advertBarUnder = {{ theme.settings.get('advert_bar_under')|default(false)|json_encode|raw }};
+
+console.log(advertBarUnder);
+        // Helper to move the ad below the slider if needed
+        function moveAdvertisementIfNeeded() {
+            if (!advertBarUnder) return;
+            var ad = document.querySelector('salla-advertisement');
+            var placeholder = document.getElementById('advert-bar-placeholder');
+            if (ad && placeholder && !placeholder.contains(ad)) {
+                placeholder.appendChild(ad);
+            }
+        }
+
         // Helper function to wait for an element to appear in the DOM with retries
         const waitForElement = (selector, options = {}) => {
             const {
@@ -228,7 +234,10 @@
                     maxRetries: 3,      // 3 retries
                     retryDelay: 5000    // 5 seconds between retries
                 });
-                
+
+                // Move the advertisement if needed before marquee logic
+                moveAdvertisementIfNeeded();
+                adElement
                 // Validate the element exists and is a proper DOM element
                 if (!adElement || !(adElement instanceof Element)) {
                     console.log('Ad element found but is not valid, skipping marquee initialization');
