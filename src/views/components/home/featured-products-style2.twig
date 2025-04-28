@@ -16,7 +16,10 @@
 #}
 {% set component_id='featured-products-style2-' ~ position %}
 {% set is_vertical = theme.settings.get('vertical_fixed_products', true) %}
-<section class="bg-green-400 s-block s-block-tabs s-block--tabs-produtcs s-block--full-bg {{ is_slider ? 'as-slider':'as-grid' }} bg-gray-100 py-8 sm:py-16" id="{{ component_id }}">
+{# background-gradient: linear-gradient(180deg, #, url('https://cdn.lamsaweb.com/cdnAlwan/toys-seamless-pattern.png')) #}
+<section
+style="background-image: linear-gradient(to left,rgba(248, 246, 227, 0.5), rgba(245, 244, 179, 0.3)), url('https://cdn.lamsaweb.com/cdnAlwan/toys-seamless-pattern-compressed%201.png'); background-repeat: repeat;"
+ class="  s-block s-block-tabs s-block--tabs-produtcs s-block--full-bg {{ is_slider ? 'as-slider':'as-grid' }} bg-gray-100 py-8 sm:py-16" id="{{ component_id }}">
   <div class="container">
 
       <div class="tabs hide-scroll">
