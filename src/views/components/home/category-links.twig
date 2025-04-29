@@ -1,6 +1,13 @@
 {% set colors = ['#cdb6fa', '#b0e8c8', '#9ccef7', '#f2df99', '#ffa3a3'] %}
-<div class=" categorylin-container  mx-auto w-5/6 relative my-20 ">
-	<salla-slider type="carousel" class="my-5"
+<section
+class="bg-white border-y border-black"
+style="background-image:  url('https://cdn.lamsaweb.com/cdnAlwan/bg-image%20(1).png'); background-repeat: repeat;"
+ 
+>
+<div
+
+ class=" categorylin-container py-5  mx-auto w-5/6 relative  ">
+	<salla-slider type="carousel" 
 	 controls-outer auto-play loop show-controls="false" id="main-links-{{ position }}">
 		<div slot="items"  >
 			{% for item in component.category %}
@@ -29,3 +36,4 @@
  		
 
 </div>
+</section>
