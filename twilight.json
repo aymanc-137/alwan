@@ -1223,7 +1223,31 @@
             "title": "age-group",
             "icon": "sicon-store",
             "path": "home.age-group",
-            "fields": []
+            "fields": [
+                {
+                    "id":"title",
+                    "type":"string",
+                    "format":"text",
+                    "label":"عنوان",
+                    "description":"عنوان",
+                    "labelHTML":null,
+                    "icon":"sicon-format-text-alt",
+                    "value":"عنوان",
+                    "required":true
+                },
+                {
+                    "id":"image",
+                    "type":"string",
+                    "format":"image",
+                    "label":"صورة",
+                    "description":null,
+                    "labelHTML":null,
+                    "placeholder":"e.g. https://hostname.com/image.png",
+                    "icon":"sicon-image",
+                    "value":null,
+                    "required":true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
