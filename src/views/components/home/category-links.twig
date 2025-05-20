@@ -1,7 +1,7 @@
 {% set colors = ['#cdb6fa', '#b0e8c8', '#9ccef7', '#f2df99', '#ffa3a3'] %}
 <section
 class="bg-white border-y border-black"
-style="background-image:  url('https://cdn.lamsaweb.com/cdnAlwan/bg-image%20(1).png'); background-repeat: repeat;"
+style="background-image:  url('{{ component.background | default('https://cdn.lamsaweb.com/cdnAlwan/bg-image%20(1).png')}}'); background-repeat: repeat;"
  
 >
 <div

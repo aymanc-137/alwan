@@ -1008,6 +1008,18 @@
                     "required": false
                 },
                 {
+                    "id": "background",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Background",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg-image%20(1).png",
+                    "required": false
+                },
+                {
                     "id": "category",
                     "type": "items",
                     "format": "dropdown-list",
