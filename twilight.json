@@ -1225,27 +1225,69 @@
             "path": "home.age-group",
             "fields": [
                 {
-                    "id":"title",
-                    "type":"string",
-                    "format":"text",
-                    "label":"عنوان",
-                    "description":"عنوان",
-                    "labelHTML":null,
-                    "icon":"sicon-format-text-alt",
-                    "value":"عنوان",
-                    "required":true
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان",
+                    "description": "عنوان",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "عنوان",
+                    "required": true
                 },
                 {
-                    "id":"image",
-                    "type":"string",
-                    "format":"image",
-                    "label":"صورة",
-                    "description":null,
-                    "labelHTML":null,
-                    "placeholder":"e.g. https://hostname.com/image.png",
-                    "icon":"sicon-image",
-                    "value":null,
-                    "required":true
+                    "id": "age",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "العناصر",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "age.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        },
+                        {
+                            "id": "age.color",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون الخلفية",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-format-fill",
+                            "value": "#004956",
+                            "required": false
+                        },
+                        {
+                            "id": "age.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "العنوان",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": "10",
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
                 }
             ]
         }
