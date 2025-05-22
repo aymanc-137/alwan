@@ -4,14 +4,19 @@
   /* keep SVG itself static */
 }
 .age-edge .outer-stroke {
-  transition: filter 1.4s ease;
+  filter: none; /* ensure initial state */
+}
+/* keyframes to continuously morph filter on hover */
+@keyframes edgeMorphAnim {
+  0%,100% { filter: none; }
+  50% { filter: url(#edgeMorph); }
 }
 .age-edge:hover .outer-stroke {
-  filter: url(#edgeMorph);
+  animation: edgeMorphAnim .4s ease-in-out infinite;
 }
 </style>
 {% for index,item in component.age %}
-<div class="w-80 age-edge" >
+<div class="w-80 age-edge hover:scale-105 transition-all duration-500" >
 
 <a href="{{ item.link }}">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1653 1805" fill="none" preserveAspectRatio="xMidYMid meet">
