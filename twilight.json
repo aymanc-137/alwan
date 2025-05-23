@@ -1232,7 +1232,18 @@
                     "description": "عنوان",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "عنوان",
+                    "value": "عنوان الفئات العمرية",
+                    "required": true
+                },
+                {
+                    "id": "sub_title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان الفرعي",
+                    "description": "عنوان الفرعي",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "عنوان الفرعي",
                     "required": true
                 },
                 {
