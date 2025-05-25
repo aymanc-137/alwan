@@ -1301,6 +1301,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "e72a4fa0-f42f-4064-8fcd-5f370b0173e7",
+            "title": "مميزات المتجر - ألوان",
+            "icon": "sicon-store",
+            "path": "home.theme-features",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
