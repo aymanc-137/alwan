@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Blob Shape</title>
+<style>
+ 
+  .blob-shape {
+    width: 200px;   /* You can adjust the width */
+    height: 200px;  /* Adjust height to match the desired aspect ratio (wider than tall) */
+    background-color: #e0f7fa; /* Light cyan color, sampled from the image */
+    /*
+      The border-radius property is key here.
+      Using "H% / V%" sets all four corners to have elliptical radii.
+      - The first value (70%) is the horizontal radius of the corner ellipses.
+      - The second value (50%) is the vertical radius of the corner ellipses.
+      Since the horizontal radius (70%) is greater than the vertical radius (50%),
+      the corner ellipses are wider than they are tall. This creates the effect
+      where the sides of the shape bulge out more, and the top/bottom are
+      comparatively flatter, while still being smoothly curved.
+    */
+    /* border-radius:30%; */
+    border-radius: 70% / 50%;
+  }
+</style>
+</head>
+<body>
+
+</body>
+</html>
