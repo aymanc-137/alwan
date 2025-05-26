@@ -1374,7 +1374,7 @@
                             "required": false,
                             "conditions": [
                                 {
-                                    "id": "theme_features.switch",
+                                    "id": "switch",
                                     "operation": "=",
                                     "value": true
                                 }
@@ -1394,7 +1394,7 @@
                             "value": null,
                             "conditions": [
                                 {
-                                    "id": "theme_features.switch",
+                                    "id": "switch",
                                     "operation": "=",
                                     "value": false
                                 }
