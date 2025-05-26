@@ -6,19 +6,18 @@
                   
                     <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
 
-                  <dotlottie-player src="{{ 'images/scooter.json'|asset }}" autoplay loop style="width:80px;height:80px"></dotlottie-player> 
+                  {% if item.switch %}
+                      <dotlottie-player src="{{ item.url }}" autoplay loop style="width:80px;height:80px"></dotlottie-player>
+                  {% else %}
+                      <img src="{{ item.image }}" alt="{{ item.title }}" style="width:80px;height:80px" />
+                  {% endif %}
         
         </div>
-
-
-
           <div class=" relative overflow-hidden rounded-[70%/50%] w-full h-full">
-
           <div class="place-self-center border  flex flex-col gap-2" >
           <h2>{{ item.title }}</h2>
             <p>{{ item.description }}</p>
           </div>
-
               <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-transparent opacity-50 rounded-bl-full"></div>
               <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full"></div>
           </div>
