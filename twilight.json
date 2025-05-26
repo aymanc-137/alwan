@@ -1390,7 +1390,7 @@
                             "description": null,
                             "labelHTML": null,
                             "icon": "sicon-format-fill",
-                            "value": "#004956",
+                            "value": "#EBFFFF",
                             "required": false
                         },
                         {
@@ -1402,7 +1402,7 @@
                             "description": null,
                             "labelHTML": null,
                             "icon": "sicon-format-fill",
-                            "value": "#004956",
+                            "value": "#C971C2",
                             "required": false
                         },
                         {
