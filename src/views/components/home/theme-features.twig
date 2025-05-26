@@ -1,8 +1,8 @@
 <div class="flex justify-evenly mx-auto w-5/6 my-20">
 {% for item in component.theme_features %}
-<div class="bg-[#EBFFFF] relative  rounded-[70%/50%] border-2 border-black w-80 h-80 ">
+<div class=" bg-[{{ item.background_color }}] relative  rounded-[70%/50%] border-2 border-black w-80 h-80 ">
 
-        <div class="rounded-full border-2 border-black bg-purple-400 mx-auto w-24 h-24 -mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
+        <div class="rounded-full border-2 border-black bg-[{{ item.icon_color }}] mx-auto w-24 h-24 -mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
                   
                     <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
 
@@ -13,17 +13,14 @@
                   {% endif %}
         
         </div>
+
           <div class=" relative overflow-hidden rounded-[70%/50%] w-full h-full">
-
-
-
               <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-black rounded-bl-full -z-1"></div>
-              <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full -z-10"></div>
-       
-                   <div class="place-self-center w-5/6 mx-auto mt-20 flex flex-col gap-2  z-10" >
-                <h2>{{ item.title }}</h2>
-                  <p>{{ item.text }}</p>
-            </div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full -z-10"></div>
+                    <div class="place-self-center w-5/6 mx-auto mt-20 flex flex-col gap-2  z-10" >
+                    <h2>{{ item.title }}</h2>
+                    <p>{{ item.text }}</p>
+              </div>
           </div>
 
 </div>
