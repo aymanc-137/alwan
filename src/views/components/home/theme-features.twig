@@ -1,5 +1,5 @@
 <div class="flex justify-evenly mx-auto w-5/6 my-20">
-
+{% for item in component.theme_features %}
 <div class="bg-[#EBFFFF] relative  rounded-[70%/50%] border-2 border-black w-80 h-80 ">
 
         <div class="rounded-full border-2 border-black bg-purple-400 mx-auto w-24 h-24 -mt-5 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
@@ -15,10 +15,8 @@
           <div class=" relative overflow-hidden rounded-[70%/50%] w-full h-full">
 
           <div class="place-self-center border  flex flex-col gap-2" >
-          <h2>السائق</h2>
-            <p>توصيل سريع خلال 15 دقيقة</p>
-            <p>توصيل سريع خلال 15 دقيقة</p>
-            <p>توصيل سريع خلال 15 دقيقة</p>
+          <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
           </div>
 
               <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-transparent opacity-50 rounded-bl-full"></div>
@@ -26,16 +24,6 @@
           </div>
 
 </div>
-
-<div class=" relative rounded-[70%/50%]  overflow-hidden  border-2 border-black w-80 h-80 ">
-    <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
-</div>
-
-  <div class=" relative rounded-[70%/50%]  overflow-hidden  border-2 border-black w-80 h-80 ">
-    <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
-  </div>
-
-  <div class=" relative rounded-[70%/50%] overflow-hidden border-2 border-black w-80 h-80 ">
-    <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
-  </div>
+{% endfor %}
+ 
 </div>
