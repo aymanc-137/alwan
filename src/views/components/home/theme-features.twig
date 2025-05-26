@@ -1,26 +1,35 @@
 <div class="flex justify-evenly mx-auto w-5/6 my-20">
 
-<div class="bg-[#EBFFFF] relative rounded-[70%/50%]  border-2 border-black w-80 h-80 ">
-<div class="rounded-full border-2 border-black bg-purple-400  w-16 h-16 -mt-16" >
-<div class="flex justify-center items-center w-full h-full">
-  <lottie-player 
-    src="{{ 'images/scooter.json' | asset }}" 
-    background="transparent" 
-    speed="1" 
-    loop 
-    autoplay>
-  </lottie-player>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</div>
+<div class="bg-[#EBFFFF] relative  rounded-[70%/50%] border-2 border-black w-80 h-80 ">
+
+        <div class="rounded-full border-2 border-black bg-purple-400 mx-auto w-24 h-24 -mt-5 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
+                  
+                    <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+
+                  <dotlottie-player src="{{ 'images/scooter.json'|asset }}" autoplay loop style="width:80px;height:80px"></dotlottie-player> 
+        
+        </div>
+
+
+
+          <div class=" relative overflow-hidden rounded-[70%/50%] w-full h-full">
+
+          <div class="place-self-center border  flex flex-col gap-2" >
+          <h2>السائق</h2>
+            <p>توصيل سريع خلال 15 دقيقة</p>
+            <p>توصيل سريع خلال 15 دقيقة</p>
+            <p>توصيل سريع خلال 15 دقيقة</p>
+          </div>
+
+              <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-transparent opacity-50 rounded-bl-full"></div>
+              <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full"></div>
+          </div>
 
 </div>
-    <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-transparent opacity-50 rounded-bl-full"></div>
-    <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full"></div>
-  </div>
 
-  <div class=" relative rounded-[70%/50%]  overflow-hidden  border-2 border-black w-80 h-80 ">
+<div class=" relative rounded-[70%/50%]  overflow-hidden  border-2 border-black w-80 h-80 ">
     <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
-  </div>
+</div>
 
   <div class=" relative rounded-[70%/50%]  overflow-hidden  border-2 border-black w-80 h-80 ">
     <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
