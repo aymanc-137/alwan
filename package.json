@@ -14,7 +14,7 @@
     "prod": "webpack --mode production",
     "development": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "dev": "salla theme p --store=testreqest"
+    "dev": "salla theme p --store=testreqest --with-editor"
   },
   "author": "Salla",
   "dependencies": {
