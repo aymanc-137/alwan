@@ -1372,6 +1372,12 @@
                             "icon": "sicon-link",
                             "value": null,
                             "required": false,
+                            "conditions": [
+                                {
+                                    "id": "theme_features.switch",
+                                    "value": true
+                                }
+                            ],
                             "minLength": 6,
                             "maxLength": 30
                         },
@@ -1385,6 +1391,12 @@
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
+                            "conditions": [
+                                {
+                                    "id": "theme_features.switch",
+                                    "value": false
+                                }
+                            ],
                             "required": false
                         },
                         {
