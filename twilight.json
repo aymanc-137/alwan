@@ -1376,7 +1376,19 @@
                             "maxLength": 30
                         },
                         {
-                            "id": "theme_features.alaanoan",
+                            "id": "theme_features.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "theme_features.title",
                             "type": "string",
                             "format": "text",
                             "label": "العنوان",
@@ -1391,7 +1403,7 @@
                             "maxLength": 30
                         },
                         {
-                            "id": "theme_features.alns",
+                            "id": "theme_features.text",
                             "type": "string",
                             "format": "text",
                             "label": "النص",
