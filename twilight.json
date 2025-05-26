@@ -1349,7 +1349,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "theme_features.switch",
+                            "id": "theme_features.is_animated",
                             "type": "boolean",
                             "format": "switch",
                             "label": "استخدام صورة متحركة",
@@ -1374,7 +1374,7 @@
                             "required": false,
                             "conditions": [
                                 {
-                                    "id": "switch",
+                                    "id": "theme_features.is_animated",
                                     "operation": "=",
                                     "value": true
                                 }
@@ -1394,7 +1394,7 @@
                             "value": null,
                             "conditions": [
                                 {
-                                    "id": "switch",
+                                    "id": "theme_features.is_animated",
                                     "operation": "=",
                                     "value": false
                                 }

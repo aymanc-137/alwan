@@ -6,7 +6,7 @@
                   
                     <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
 
-                  {% if item.switch %}
+                  {% if item.is_animated %}
                       <dotlottie-player src="{{ item.url }}" autoplay loop style="width:80px;height:80px"></dotlottie-player>
                   {% else %}
                       <img src="{{ item.image }}" alt="{{ item.title }}" style="width:80px;height:80px" />
