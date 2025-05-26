@@ -1375,6 +1375,7 @@
                             "conditions": [
                                 {
                                     "id": "theme_features.switch",
+                                    "operation": "=",
                                     "value": true
                                 }
                             ],
@@ -1394,6 +1395,7 @@
                             "conditions": [
                                 {
                                     "id": "theme_features.switch",
+                                    "operation": "=",
                                     "value": false
                                 }
                             ],
