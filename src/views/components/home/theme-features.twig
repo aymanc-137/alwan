@@ -1,5 +1,6 @@
 <div class="flex justify-evenly mx-auto w-5/6 my-20">
 {% for item in component.theme_features %}
+
 <style>
     .bg-item-\[\{{ item.background_color | default('#EBFFFF') }}\] {
         background-color: {{ item.background_color | default('#EBFFFF') }};
@@ -8,6 +9,7 @@
         background-color: {{ item.icon_color | default('#C971C2') }};
     }
 </style>
+
 <div class=" bg-item-[{{ item.background_color | default('#EBFFFF') }}] relative rounded-[70%/50%] border-2 border-black w-80 h-80 ">
 
         <div class="rounded-full border-2 border-black bg-item-[{{ item.icon_color | default('#C971C2') }}] mx-auto w-24 h-24 -mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
