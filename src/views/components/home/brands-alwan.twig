@@ -15,116 +15,118 @@
         </div>
     </div>
 
- <style>
- 
-        .shape-wrapper {
-            width: 100%;
-            max-width: 900px; /* Increased max-width for content */
-            aspect-ratio: 2000 / 800; /* Maintain original aspect ratio */
-            position: relative; /* Crucial for absolute positioning of children */
-            overflow: hidden; /* Optional, good practice */
+        <style>
+                    
+                            .shape-wrapper {
+                                width: 100%;
+                                max-width: 900px; /* Increased max-width for content */
+                                aspect-ratio: 2000 / 800; /* Maintain original aspect ratio */
+                                position: relative; /* Crucial for absolute positioning of children */
+                                overflow: hidden; /* Optional, good practice */
 
-            /* --- Configuration Variables --- */
-            --stroke-half-width: 1.5px; /* Total stroke width = 2 * this value (e.g., 3px) */
-            
-            --zigzag-center-line: 50%; 
-            --zigzag-horizontal-amplitude: 3%; /* Half of the zig-zag's horizontal depth (e.g., 6% total span) */
+                                /* --- Configuration Variables --- */
+                                --stroke-half-width: 1.5px; /* Total stroke width = 2 * this value (e.g., 3px) */
+                                
+                                --zigzag-center-line: 50%; 
+                                --zigzag-horizontal-amplitude: 3%; /* Half of the zig-zag's horizontal depth (e.g., 6% total span) */
 
-            /* Calculated X-coordinates for the centerline of the stroke at peaks and valleys */
-            --stroke-center-at-leftmost-point: calc(var(--zigzag-center-line) - var(--zigzag-horizontal-amplitude));
-            --stroke-center-at-rightmost-point: calc(var(--zigzag-center-line) + var(--zigzag-horizontal-amplitude));
-        }
+                                /* Calculated X-coordinates for the centerline of the stroke at peaks and valleys */
+                                --stroke-center-at-leftmost-point: calc(var(--zigzag-center-line) - var(--zigzag-horizontal-amplitude));
+                                --stroke-center-at-rightmost-point: calc(var(--zigzag-center-line) + var(--zigzag-horizontal-amplitude));
+                            }
 
-        .left-panel,
-        .right-panel,
-        .stroke-divider {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box; /* Important for padding and borders */
-        }
+                            .left-panel,
+                            .right-panel,
+                            .stroke-divider {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                box-sizing: border-box; /* Important for padding and borders */
+                            }
 
-        .left-panel {
-            background-color: #FCFFEC; /* Light yellow */
-            padding: 20px; /* Add padding for content */
-            padding-right: calc(var(--zigzag-horizontal-amplitude) + 20px); /* Extra padding on the zig-zag side */
-            z-index: 1;
-            clip-path: polygon(
-                0% 0%, /* top-left */
-                var(--stroke-center-at-leftmost-point) 0%,
-                var(--stroke-center-at-rightmost-point) 12.5%,
-                var(--stroke-center-at-leftmost-point) 25%,
-                var(--stroke-center-at-rightmost-point) 37.5%,
-                var(--stroke-center-at-leftmost-point) 50%,
-                var(--stroke-center-at-rightmost-point) 62.5%,
-                var(--stroke-center-at-leftmost-point) 75%,
-                var(--stroke-center-at-rightmost-point) 87.5%,
-                var(--stroke-center-at-leftmost-point) 100%,
-                0% 100% /* bottom-left */
-            );
-        }
+                            .left-panel {
+                                background-color: #FCFFEC; /* Light yellow */
+                                padding: 20px; /* Add padding for content */
+                                padding-right: calc(var(--zigzag-horizontal-amplitude) + 20px); /* Extra padding on the zig-zag side */
+                                z-index: 1;
+                                clip-path: polygon(
+                                    0% 0%, /* top-left */
+                                    var(--stroke-center-at-leftmost-point) 0%,
+                                    var(--stroke-center-at-rightmost-point) 12.5%,
+                                    var(--stroke-center-at-leftmost-point) 25%,
+                                    var(--stroke-center-at-rightmost-point) 37.5%,
+                                    var(--stroke-center-at-leftmost-point) 50%,
+                                    var(--stroke-center-at-rightmost-point) 62.5%,
+                                    var(--stroke-center-at-leftmost-point) 75%,
+                                    var(--stroke-center-at-rightmost-point) 87.5%,
+                                    var(--stroke-center-at-leftmost-point) 100%,
+                                    0% 100% /* bottom-left */
+                                );
+                            }
 
-        .right-panel {
-            background-color: #7ACBCB; /* Teal */
-            padding: 20px; /* Add padding for content */
-            padding-left: calc(var(--zigzag-horizontal-amplitude) + 20px); /* Extra padding on the zig-zag side */
-            color: white; /* Example: text color for teal bg */
-            z-index: 1;
-             clip-path: polygon(
-                /* Start from top-right of its zig-zag edge */
-                var(--stroke-center-at-leftmost-point) 0%,
-                var(--stroke-center-at-rightmost-point) 12.5%,
-                var(--stroke-center-at-leftmost-point) 25%,
-                var(--stroke-center-at-rightmost-point) 37.5%,
-                var(--stroke-center-at-leftmost-point) 50%,
-                var(--stroke-center-at-rightmost-point) 62.5%,
-                var(--stroke-center-at-leftmost-point) 75%,
-                var(--stroke-center-at-rightmost-point) 87.5%,
-                var(--stroke-center-at-leftmost-point) 100%,
-                100% 100%, /* bottom-right */
-                100% 0%    /* top-right */
-            );
-        }
-        
-        .stroke-divider {
-            background-color: black; /* Stroke color */
-            z-index: 2; /* Ensure stroke is on top of the panels' seam */
-            clip-path: polygon(
-                /* Outer edge of the stroke (left side of the stroke) */
-                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 0%,
-                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 12.5%,
-                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 25%,
-                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 37.5%,
-                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 50%,
-                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 62.5%,
-                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 75%,
-                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 87.5%,
-                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 100%,
-                
-                /* Inner edge of the stroke (right side of the stroke), traced in reverse Y order */
-                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%,
-                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%,
-                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%,
-                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%,
-                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%,
-                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%,
-                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%,
-                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%,
-                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%
-            );
-        }
+                            .right-panel {
+                                background-color: #7ACBCB; /* Teal */
+                                padding: 20px; /* Add padding for content */
+                                padding-left: calc(var(--zigzag-horizontal-amplitude) + 20px); /* Extra padding on the zig-zag side */
+                                color: white; /* Example: text color for teal bg */
+                                z-index: 1;
+                                clip-path: polygon(
+                                    /* Start from top-right of its zig-zag edge */
+                                    var(--stroke-center-at-leftmost-point) 0%,
+                                    var(--stroke-center-at-rightmost-point) 12.5%,
+                                    var(--stroke-center-at-leftmost-point) 25%,
+                                    var(--stroke-center-at-rightmost-point) 37.5%,
+                                    var(--stroke-center-at-leftmost-point) 50%,
+                                    var(--stroke-center-at-rightmost-point) 62.5%,
+                                    var(--stroke-center-at-leftmost-point) 75%,
+                                    var(--stroke-center-at-rightmost-point) 87.5%,
+                                    var(--stroke-center-at-leftmost-point) 100%,
+                                    100% 100%, /* bottom-right */
+                                    100% 0%    /* top-right */
+                                );
+                            }
+                            
+                            .stroke-divider {
+                                background-color: black; /* Stroke color */
+                                z-index: 2; /* Ensure stroke is on top of the panels' seam */
+                                clip-path: polygon(
+                                    /* Outer edge of the stroke (left side of the stroke) */
+                                    calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 0%,
+                                    calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 12.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 25%,
+                                    calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 37.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 50%,
+                                    calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 62.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 75%,
+                                    calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 87.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 100%,
+                                    
+                                    /* Inner edge of the stroke (right side of the stroke), traced in reverse Y order */
+                                    calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%,
+                                    calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%,
+                                    calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%,
+                                    calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%,
+                                    calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%,
+                                    calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%
+                                );
+                            }
 
-        /* Optional: styles for content inside panels */
-        .left-panel h2, .right-panel h2 {
-            margin-top: 0;
-        }
-        .left-panel p, .right-panel p {
-            font-size: 0.9em;
-            line-height: 1.5;
-        }
-    </style>
+                            /* Optional: styles for content inside panels */
+                            .left-panel h2, .right-panel h2 {
+                                margin-top: 0;
+                            }
+                            .left-panel p, .right-panel p {
+                                font-size: 0.9em;
+                                line-height: 1.5;
+                            }
+
+
+            </style>
 
 
 
