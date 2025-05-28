@@ -1550,6 +1550,13 @@
                     "value": []
                 }
             ]
+        },
+        {
+            "key": "59a5fc22-a380-4ca5-b13d-55c4235b024a",
+            "title": "منتجات قسم - ألوان",
+            "icon": "sicon-store",
+            "path": "home.category-products",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
