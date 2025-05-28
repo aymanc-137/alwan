@@ -1556,7 +1556,53 @@
             "title": "منتجات قسم - ألوان",
             "icon": "sicon-store",
             "path": "home.category-products",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "300"
+                },
+                {
+                    "id": "subtitle",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العنوان الثاني",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "300"
+                },
+                {
+                    "id": "products",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "المنتجات",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "Manual",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": false
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
