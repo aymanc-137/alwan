@@ -1,33 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS Blob Shape</title>
-<style>
- 
-  .blob-shape {
-    width: 200px;   /* You can adjust the width */
-    height: 200px;  /* Adjust height to match the desired aspect ratio (wider than tall) */
-    background-color: #e0f7fa; /* Light cyan color, sampled from the image */
-    /*
-      The border-radius property is key here.
-      Using "H% / V%" sets all four corners to have elliptical radii.
-      - The first value (70%) is the horizontal radius of the corner ellipses.
-      - The second value (50%) is the vertical radius of the corner ellipses.
-      Since the horizontal radius (70%) is greater than the vertical radius (50%),
-      the corner ellipses are wider than they are tall. This creates the effect
-      where the sides of the shape bulge out more, and the top/bottom are
-      comparatively flatter, while still being smoothly curved.
-    */
-    /* border-radius:30%; */
-    border-radius: 70% / 50%;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Zig-Zag Shape with Stroke</title>
+
+    <style>
+        .shape-container {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 2000 / 800;
+            
+            background-color: #FCFFEC; /* The light yellow color (leftmost side) */
+            position: relative;
+            overflow: hidden;
+
+            /* --- Configuration Variables --- */
+            --stroke-half-width: 1px; /* Total stroke width = 2 * this value (e.g., 2px) */
+            
+            /* Zig-zag geometry for balanced sides */
+            --zigzag-center-line: 50%; /* Average X-position of the zig-zag division */
+            --zigzag-horizontal-amplitude: 2.5%; /* Half of the zig-zag's horizontal depth */
+                                                 /* (e.g., if zig-zag spans 5% horizontally, this is 2.5%) */
+
+            /* Calculated X-coordinates for the centerline of the stroke at peaks and valleys */
+            /* These are the points around which the stroke is built */
+            --stroke-center-at-leftmost-point: calc(var(--zigzag-center-line) - var(--zigzag-horizontal-amplitude)); /* e.g., 50% - 2.5% = 47.5% */
+            --stroke-center-at-rightmost-point: calc(var(--zigzag-center-line) + var(--zigzag-horizontal-amplitude)); /* e.g., 50% + 2.5% = 52.5% */
+        }
+
+        .shape-container::before,
+        .shape-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ::before creates the black stroke */
+        .shape-container::before {
+            background-color: black; /* Stroke color */
+            clip-path: polygon(
+                /* Outer edge of the stroke (left side of the stroke) */
+                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 0%,      /* P1_outer */
+                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 12.5%,  /* V1_outer */
+                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 25%,     /* P2_outer */
+                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 37.5%,   /* V2_outer */
+                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 50%,     /* P3_outer */
+                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 62.5%,   /* V3_outer */
+                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 75%,     /* P4_outer */
+                calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 87.5%,   /* V4_outer */
+                calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 100%,    /* P5_outer */
+                
+                /* Inner edge of the stroke (right side of the stroke), traced in reverse Y order */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%,    /* P5_inner */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%,  /* V4_inner */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%,     /* P4_inner */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%,   /* V3_inner */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%,     /* P3_inner */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%,   /* V2_inner */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%,     /* P2_inner */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%,  /* V1_inner */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%       /* P1_inner */
+            );
+        }
+
+        /* ::after creates the teal fill, to the right of the stroke */
+        .shape-container::after {
+            background-color: #7ACBCB; /* The teal color */
+            clip-path: polygon(
+                /* Left zig-zag edge of teal area (starts at the right edge of the stroke) */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%,      /* Teal P1 */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%,   /* Teal V1 */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%,     /* Teal P2 */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%,   /* Teal V2 */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%,     /* Teal P3 */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%,   /* Teal V3 */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%,     /* Teal P4 */
+                calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%,   /* Teal V4 */
+                calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%,    /* Teal P5 */
+                
+                /* Right edge of teal area */
+                100% 100%,                                   /* Bottom-right corner */
+                100% 0%                                      /* Top-right corner */
+            );
+        }
+
+    </style>
 </head>
 <body>
-<div class=" rounded-[70%/50%] blob-shape border-4 border-black w-40 h-40 bg-inherit">
-    <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-200 to-transparent opacity-50 rounded-bl-full"></div>
-  </div>
+    <div class="shape-container">
+        <!-- ::before for stroke, ::after for teal fill -->
+    </div>
 </body>
 </html>
