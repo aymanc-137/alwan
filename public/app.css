@@ -624,6 +624,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .w-\[90\%\]{width:90%}
 .w-fit{width:-moz-fit-content;width:fit-content}
 .w-full{width:100%}
+.w-\[40\%\]{width:40%}
 .min-w-0{min-width:0px}
 .min-w-full{min-width:100%}
 .max-w-16{max-width:4rem}
@@ -650,8 +651,8 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}
 .grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}
 .grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}
-.grid-cols-\[repeat\(2\2c minmax\(0\2c 1fr\)\)\]{grid-template-columns:repeat(2,minmax(0,1fr))}
 .grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}
+.grid-cols-\[repeat\(2\2c minmax\(0\2c 1fr\)\)\]{grid-template-columns:repeat(2,minmax(0,1fr))}
 .flex-row{flex-direction:row}
 .flex-col{flex-direction:column}
 .flex-wrap{flex-wrap:wrap}

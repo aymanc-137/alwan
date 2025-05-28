@@ -1,13 +1,8 @@
 <section>
    <div class="shape-wrapper">
         <div class="left-panel">
-        <div class="w-[80%] mx-auto -translate-x-1/2 justify-center border border-red-700">
-            <h2>{{component.title}}</h2>
-            <p class="text-lg w-1/2">{{component.subtitle}}</p>
-         </div>
-        </div>
-        <div class="right-panel">
-        <div class="w-[80%] mx-auto translate-x-20 border ">
+
+           <div class="w-[40%] mx-auto translate-x-20 border ">
              <p class="grid grid-cols-4 gap-4">
               {% for brand in component.brands %}
 
@@ -19,6 +14,15 @@
              </p>
 
         </div>
+
+   
+         
+        </div>
+        <div class="right-panel">
+          <div class="w-[80%] mx-auto -translate-x-1/2 justify-center border border-red-700">
+            <h2>{{component.title}}</h2>
+            <p class="text-lg w-1/2">{{component.subtitle}}</p>
+         </div>
         </div>
         <div class="stroke-divider">
             <!-- This div is just for the stroke, no content needed here -->
