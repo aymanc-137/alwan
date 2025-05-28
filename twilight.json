@@ -1460,6 +1460,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "ab82a7dd-be10-4851-b0e9-616b581479dc",
+            "title": "ماركات تجارية محسنة - ألوان",
+            "icon": "sicon-store",
+            "path": "home.brands-alwan",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
