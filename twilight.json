@@ -1460,6 +1460,96 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "ab82a7dd-be10-4851-b0e9-616b581479dc",
+            "title": "ماركات تجارية محسنة - ألوان",
+            "icon": "sicon-store",
+            "path": "home.brands-alwan",
+            "fields": [
+                {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العناون",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "subtitle",
+                    "type": "string",
+                    "format": "text",
+                    "label": "نص ثانوي",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "enable-edges",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين شكل الحواف",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
+                },
+                {
+                    "id": "brand_background",
+                    "type": "string",
+                    "format": "color",
+                    "inputType": "color",
+                    "label": "لون خلفية الماركات",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "#004956",
+                    "required": false
+                },
+                {
+                    "id": "text_Background",
+                    "type": "string",
+                    "format": "color",
+                    "inputType": "color",
+                    "label": "لون خلفية النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "#004956",
+                    "required": false
+                },
+                {
+                    "id": "الماركات التجارية",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "الماركات التجارية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "brands",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": false,
+                    "value": []
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
