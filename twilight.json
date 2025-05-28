@@ -1534,7 +1534,7 @@
                     "required": false
                 },
                 {
-                    "id": "الماركات التجارية",
+                    "id": "brands",
                     "type": "items",
                     "format": "dropdown-list",
                     "label": "الماركات التجارية",
