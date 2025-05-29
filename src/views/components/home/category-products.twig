@@ -1,14 +1,16 @@
 <section class="p-16 bg-[#A8F1FF] w-[95%] mx-auto border-2 border-b-2 border-r-2 border-black skew-x-6 " >
 
-    <div>
-        <h2>{{component.title}}</h2>
-        <p>{{component.subtitle}}</p>
-    </div>
+    <div class="-skew-x-6">
+        <div>
+            <h2>{{component.title}}</h2>
+            <p>{{component.subtitle}}</p>
+        </div>
 
-    <div>
-        {% for product in component.products %}
-            <custom-salla-product-card shadow-on-hover product="{{product}}" ></custom-salla-product-card>
-        {% endfor %}
+        <div>
+            {% for product in component.products %}
+                <custom-salla-product-card shadow-on-hover product="{{product}}" ></custom-salla-product-card>
+            {% endfor %}
+        </div>
     </div>
 
 </section>
