@@ -1,0 +1,18 @@
+<section class="bg-[#FFFDEF] flex">
+    <div class="w-1/2" style="background-image: url({{ component.side_image_url }})" >
+    <img src="{{ component.product_image }}" alt="">
+    </div>
+    <div class="w-1/2" >
+    <div class="h-32 m-auto md:w-2/6 w-5/6 rounded-xl bg-[#F3E3FE] border-2 border-black" > 
+              <div class="w-full flex flex-col justify-center">  
+                  <div class="w-full mx-auto main-offer">
+                      <salla-count-down date="{{component.products[0].discount_ends}}"   end-of-day="{{true}}" boxed="{{true}}"
+                      labeled="{{true}}">
+                      </salla-count-down>
+                  </div>
+
+
+              </div>
+            </div>
+    </div>
+</section>
