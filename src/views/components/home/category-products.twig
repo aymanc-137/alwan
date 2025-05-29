@@ -1,16 +1,52 @@
-<section class="p-16 bg-[#A8F1FF] w-[95%] mx-auto border-2 border-b-2 border-r-2 border-black skew-x-6 " >
+<section class=" -skew-x-3 p-5 my-16 bg-[#A8F1FF] w-[90%] mx-auto border-2 border-b-2 border-r-2 border-black" >
 
-    <div class="-skew-x-6">
-        <div>
+    <div class="skew-x-3 flex border border-red-800">
+
+        <div class="md:w-[30%]">
             <h2>{{component.title}}</h2>
             <p>{{component.subtitle}}</p>
+
+
+
+            <a href="{{ component.product_url }}" class="transition-all duration-200 -mt-10 {{ marginClass }} z-1 md:h-[35rem] h-[25rem] min-h-44 md:w-60 w-[85%] rounded-2xl mx-8 bg-center border-4-harir border-[rgb(var(--color-primary-light))] flex justify-center relative overflow-hidden {{ remove_background_small_screen ? 'responsive-image' : '' }}">
+
+			{# Conditional background: Video or Image #}
+			{% if component.is_video and component.video_url %}
+
+				{# Video Background #}
+				<video autoplay muted loop playsinline class="absolute z-1 w-full h-full object-cover lazy">
+					<source
+					src="{{ component.video_url }}" type="video/mp4">
+					{# Fallback image if video doesn't load #}
+					<img src="{{ component.background }}" alt="Fallback image" class="absolute z-0 w-full h-full object-cover">
+				</video>
+			{% else %}
+
+				{# Image Background #}
+				{% if component.remove_gradient_overlay | default(false) %}
+						<div class="absolute z-0 w-full h-full bg-cover bg-center bg-no-repeat" style="background-image: url('{{ component.background }}');"></div>
+
+				{% else %}
+							<div class="absolute z-0 w-full h-full bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(0deg, rgba(var(--color-primary), .8) 30%, rgba(var(--color-primary), 0) 100%), url('{{ component.background }}');"></div>
+
+			{% endif %}
+			{% endif %}
+
+			{% if not component.remove_gradient_overlay | default(false) %}
+				<div class="absolute z-10 w-full h-full bg-gradient-to-t from-[rgba(var(--color-primary),0.9)] via-[rgba(var(--color-primary),0.3)] to-transparent"></div>
+			{% endif %}
+
+			<h1 class="relative z-20 flex place-self-end p-5 text-white text-2xl text-center font-semibold">
+				{{ component.title }}
+			</h1>
+		</a>
+           
         </div>
 
-        <div>
-            {% for product in component.products %}
-                <custom-salla-product-card shadow-on-hover product="{{product}}" ></custom-salla-product-card>
-            {% endfor %}
-        </div>
-    </div>
+        <div class="justify-center md:w-[70%] h-[70%] w-full p-3">
+			<salla-products-slider autoplay source="selected" source-value="[{{ component.products|map((product) => product.id)|join(',') }}]"></salla-products-slider>
+		</div>
+
+     </div>
 
 </section>

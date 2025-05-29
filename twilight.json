@@ -1588,6 +1588,58 @@
                     "maxLength": "300"
                 },
                 {
+                    "id": "is_video",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "استخدم فيديو كخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": false,
+                    "required": false
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "خلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "https://cdn.lamsaweb.com/cdnHarir/ornament.png",
+                    "required": false,
+                    "conditions": [
+                        {
+                            "field": "is_video",
+                            "operator": "=",
+                            "value": false
+                        }
+                    ]
+                },
+                {
+                    "id": "video_url",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": "https://videos.pexels.com/video-files/5137638/5137638-uhd_1440_2560_30fps.mp4",
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "field": "is_video",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
                     "id": "products",
                     "type": "items",
                     "format": "dropdown-list",
