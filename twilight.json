@@ -1627,7 +1627,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://salla.sa",
                     "icon": "sicon-link",
-                    "value": "https://videos.pexels.com/video-files/5137638/5137638-uhd_1440_2560_30fps.mp4",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/7351796-uhd_2160_4096_25fps%20(1)%20(1).mp4",
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
