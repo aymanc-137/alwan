@@ -1655,6 +1655,13 @@
                     "required": false
                 }
             ]
+        },
+        {
+            "key": "bc606f0c-cb80-49db-b356-cb83fd60ca55",
+            "title": "عرض مؤقت - ألوان",
+            "icon": "sicon-store",
+            "path": "home.flash-offer",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
