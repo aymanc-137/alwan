@@ -1,10 +1,17 @@
-<section class="bg-[#FFFDEF] flex">
-    <div class="w-1/2" style="background-image: url({{ component.side_image_url }})" >
-    <img src="{{ component.product_image }}" alt="">
-    </div>
-    <div class="w-1/2" >
-    <div class="h-32 m-auto md:w-2/6 w-5/6 rounded-xl bg-[#F3E3FE] border-2 border-black" > 
+<section class="bg-[#FFFDEF] min-h-[40rem] border-t-2 border-b-2 border-black flex">
+
+
+
+    <div class="w-1/2 flex items-center" >
+     <div class=" place-self-center m-auto w-5/6 rounded-xl bg-[#F3E3FE] border-r-2 border-b-2 border border-black" > 
+
+      <div class="p-4 flex flex-col gap-2 text-center">
+                        <h2 class="text-2xl font-bold text-black">{{ component.title|default('حيوانات محشوة مميزة!') }}</h2>
+                        <p class="text-sm text-gray-700">{{ component.subtitle|default('تسوق الآن من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
+                    </div>
+
               <div class="w-full flex flex-col justify-center">  
+          
                   <div class="w-full mx-auto main-offer">
                       <salla-count-down date="{{component.products[0].discount_ends}}"   end-of-day="{{true}}" boxed="{{true}}"
                       labeled="{{true}}">
@@ -13,4 +20,9 @@
               </div>
             </div>
     </div>
+
+    <div class="w-1/2 bg-cover bg-center flex items-center" style="background-image: url({{ component.side_image_url }})" >
+     <img  class="w-62 place-self-center m-auto" src="{{ component.product_image }}" alt="">
+    </div>
+
 </section>
