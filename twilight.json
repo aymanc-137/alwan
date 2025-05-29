@@ -1600,7 +1600,7 @@
                     "required": false
                 },
                 {
-                    "id": "background_image",
+                    "id": "background",
                     "type": "string",
                     "format": "image",
                     "label": "خلفية",
@@ -1611,7 +1611,7 @@
                     "required": false,
                     "conditions": [
                         {
-                            "field": "is_video",
+                            "id": "is_video",
                             "operator": "=",
                             "value": false
                         }
@@ -1633,7 +1633,7 @@
                     "maxLength": 300,
                     "conditions": [
                         {
-                            "field": "is_video",
+                            "id": "is_video",
                             "operator": "=",
                             "value": true
                         }
