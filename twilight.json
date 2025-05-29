@@ -1661,7 +1661,48 @@
             "title": "عرض مؤقت - ألوان",
             "icon": "sicon-store",
             "path": "home.flash-offer",
-            "fields": []
+            "fields": [
+                {
+                    "id": "products",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "المنتج الرئيسي",
+                    "description": "منتج العرض",
+                    "labelHTML": "بجب إضافة منتج عليه العرض الذي تريد الترويج له",
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "products",
+                    "multichoice": false,
+                    "searchable": true,
+                    "required": true,
+                    "value": []
+                },
+                {
+                    "id": "side_image_url",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة جانبية",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false
+                },
+                {
+                    "id": "product_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة المنتج",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
