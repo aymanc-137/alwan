@@ -6,8 +6,8 @@
      <div class=" place-self-center m-auto w-5/6 rounded-xl bg-[#F3E3FE] border-r-2 border-b-2 border border-black" > 
 
       <div class="p-4 flex flex-col gap-2 text-center">
-                        <h2 class="text-2xl font-bold text-black">{{ component.title|default('حيوانات محشوة مميزة!') }}</h2>
-                        <p class="text-sm text-gray-700">{{ component.subtitle|default('تسوق الآن من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
+                        <h2 class="text-4xl font-bold shadow-1-text text-[#eea929]">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
+                        <p class="text-lg text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
                     </div>
 
               <div class="w-full flex flex-col justify-center">  
@@ -17,7 +17,12 @@
                       labeled="{{true}}">
                       </salla-count-down>
                   </div>
+
+                    <salla-button href="{{component.products[0].url }}" color="primary" size="large" class="mx-auto my-2 !text-xl !text-white">
+                        {{component.url_text |default('تسوق الآن')}}
+                    </salla-button>
               </div>
+              
             </div>
     </div>
 
@@ -26,3 +31,55 @@
     </div>
 
 </section>
+
+<style>
+
+.shadow-1-text{
+    text-shadow: 0px 0px 1px #000;
+}
+ 
+.s-count-down-item{
+    background-color: #fff !important;
+    border: 2px black solid !important;
+}   
+.s-count-down-item .s-count-down-item-label{
+    padding-top: 5px !important;
+    border-top: 2px black solid !important;
+    color: black !important;
+    opacity: 1 !important;
+}
+
+
+
+
+.s-count-down-item:not(:last-child) {
+    /* In RTL, margin-left pushes the item to the left, creating space on its right. */
+    /* This creates space like: Days [space] Hours [space] Minutes [space] Seconds */
+    margin-left: 1.5em; /* Adjust total space needed for colon + its padding */
+}
+
+.s-count-down-item:not(:last-child)::before {
+    content: ":";
+    position: absolute;
+    /* Position it in the margin-left space of the current item */
+    /* Logical left of the current item is its visual right in RTL */
+    left: -0.9em; /* Adjust this: -( (total_margin_left / 2) + (colon_width / 2) ) approx. */
+                  /* For example, if margin-left is 1.5em, and colon with padding is ~0.7em wide */
+                  /* You want it centered in the 1.5em gap. left: -(1.5em - 0.35em) */
+    top: 50%;
+    transform: translateY(-50%);
+    /* If s-count-down-item has padding, you might need to adjust 'left' further
+       to escape that padding, e.g., left: calc(-0.9em - PADDING_VALUE_HERE); */
+
+    /* Simpler absolute positioning if you don't need it perfectly centered in a gap: */
+    /* right: calc(100% + 0.25em); */ /* Position to logical right of item, plus small gap */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+
+
+
+
+
+</style>
