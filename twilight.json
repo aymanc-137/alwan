@@ -1711,6 +1711,36 @@
             "path": "home.large-category",
             "fields": [
                 {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "300"
+                },
+                {
+                    "id": "subtitle",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العنوان الثاني",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "300"
+                },
+                {
                     "id": "urls",
                     "type": "collection",
                     "format": "collection",
@@ -1767,43 +1797,43 @@
                             "labelHTML": null,
                             "icon": "sicon-link",
                             "required": false,
-                            "value": null,
+                            "value": [],
                             "format": "variable-list",
                             "searchable": true,
                             "source": "custom",
                             "sources": [
-                                        {
-                                            "label": "منتج",
-                                            "key": "products",
-                                            "value": "products"
-                                        },
-                                        {
-                                            "label": "تصنيف",
-                                            "key": "categories",
-                                            "value": "categories"
-                                        },
-                                        {
-                                            "label": "ماركة تجارية",
-                                            "key": "brands",
-                                            "value": "brands"
-                                        },
-                                        {
-                                            "label": "التخفيضات",
-                                            "key": "offers_link",
-                                            "value": "offers_link"
-                                        },
-                                        {
-                                            "label": "الماركات التجارية",
-                                            "key": "brands_link",
-                                            "value": "brands_link"
-                                        },
-                                        {
-                                            "label": "رابط خارجي",
-                                            "key": "custom",
-                                            "value": "custom"
-                                        }
-                                    ]
-                            }
+                                {
+                                    "label": "منتج",
+                                    "key": "products",
+                                    "value": "products"
+                                },
+                                {
+                                    "label": "تصنيف",
+                                    "key": "categories",
+                                    "value": "categories"
+                                },
+                                {
+                                    "label": "ماركة تجارية",
+                                    "key": "brands",
+                                    "value": "brands"
+                                },
+                                {
+                                    "label": "التخفيضات",
+                                    "key": "offers_link",
+                                    "value": "offers_link"
+                                },
+                                {
+                                    "label": "الماركات التجارية",
+                                    "key": "brands_link",
+                                    "value": "brands_link"
+                                },
+                                {
+                                    "label": "رابط خارجي",
+                                    "key": "custom",
+                                    "value": "custom"
+                                }
+                            ]
+                        }
                     ],
                     "value": [],
                     "minLength": 1,
