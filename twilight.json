@@ -1703,6 +1703,13 @@
                     "required": false
                 }
             ]
+        },
+        {
+            "key": "faebc639-5a8d-4b67-ba50-664bee5f5aaa",
+            "title": "صور أقسام كبيرة - ألوان",
+            "icon": "sicon-store",
+            "path": "home.large-category",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
