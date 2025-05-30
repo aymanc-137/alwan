@@ -633,15 +633,13 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .w-8{width:2rem}
 .w-80{width:20rem}
 .w-96{width:24rem}
+.w-\[400px\]{width:400px}
 .w-\[60\%\]{width:60%}
 .w-\[80\%\]{width:80%}
 .w-\[85\%\]{width:85%}
 .w-\[90\%\]{width:90%}
 .w-fit{width:-moz-fit-content;width:fit-content}
 .w-full{width:100%}
-.w-64{width:16rem}
-.w-32{width:8rem}
-.w-\[400px\]{width:400px}
 .min-w-0{min-width:0px}
 .min-w-full{min-width:100%}
 .max-w-16{max-width:4rem}
