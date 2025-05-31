@@ -1840,6 +1840,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
+            "title": "بنر صورة مع نص  و رابط",
+            "icon": "sicon-store",
+            "path": "home.image-text-hero",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
