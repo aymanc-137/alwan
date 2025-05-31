@@ -592,15 +592,13 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .h-\[25rem\]{height:25rem}
 .h-\[300px\]{height:300px}
 .h-\[34px\]{height:34px}
-.h-\[500px\]{height:500px}
 .h-\[50vh\]{height:50vh}
+.h-\[800px\]{height:800px}
 .h-auto{height:auto}
 .h-banner{height:200px}
 .h-full{height:100%}
 .h-lg-banner{height:428px}
 .h-px{height:1px}
-.h-\[600px\]{height:600px}
-.h-\[800px\]{height:800px}
 .max-h-0{max-height:0px}
 .max-h-8{max-height:2rem}
 .max-h-\[300px\]{max-height:300px}
@@ -781,7 +779,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .to-black{--tw-gradient-to:#000 var(--tw-gradient-to-position)}
 .to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}
 .bg-cover{background-size:cover}
-.bg-contain{background-size:contain}
 .bg-center{background-position:center}
 .bg-no-repeat{background-repeat:no-repeat}
 .fill-current{fill:currentColor}
