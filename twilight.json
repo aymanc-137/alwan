@@ -1848,7 +1848,7 @@
             "path": "home.image-text-hero",
             "fields": [
                 {
-                    "id": "string",
+                    "id": "title",
                     "type": "string",
                     "format": "text",
                     "label": "العنوان",
@@ -1867,7 +1867,7 @@
                     "type": "string",
                     "format": "url",
                     "inputType": "url",
-                    "label": "URL",
+                    "label": "الرابط",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://salla.sa",
@@ -1878,19 +1878,10 @@
                     "maxLength": 30
                 },
                 {
-                    "id": "title",
-                    "type": "static",
-                    "format": "title",
-                    "label": "Title",
-                    "value": null,
-                    "variant": "h1",
-                    "icon": "sicon-format-text"
-                },
-                {
-                    "id": "image_1",
+                    "id": "left_image",
                     "type": "string",
                     "format": "image",
-                    "label": "Image 1",
+                    "label": "الصورة اليمنى",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
@@ -1899,10 +1890,10 @@
                     "required": false
                 },
                 {
-                    "id": "image",
+                    "id": "right_image",
                     "type": "string",
                     "format": "image",
-                    "label": "Image",
+                    "label": "الصورة اليسرى",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
