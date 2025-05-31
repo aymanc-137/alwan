@@ -1977,6 +1977,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "6d82d61c-d056-499e-a563-e5da41f3ec5a",
+            "title": "الأسئلة الأكثر شيوعا",
+            "icon": "sicon-store",
+            "path": "home.faq-compnent",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
