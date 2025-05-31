@@ -2,7 +2,11 @@
 
   <a href="{{ component.url }}" class="border-l-2 border-black w-1/2 bg-cover h-full bg-center" style="background-image: url({{ component.right_image }});">
     </a>
+    {% if component.use_video %}
+    <video class="w-1/2 bg-cover h-full bg-center" src="{{ component.video_url }}"></video>
+    {% else %}
     <a href="{{ component.url }}" class="w-1/2 bg-cover h-full bg-center" style="background-image: url({{ component.left_image }});">
     </a>
+    {% endif %}
 
 </section>

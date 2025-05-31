@@ -1924,6 +1924,37 @@
                     "required": false
                 },
                 {
+                    "id": "use_video",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "استخدام فيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
+                },
+                {
+                    "id": "video_url",
+                    "type": "string",
+                    "format": "video",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/video.mp4",
+                    "icon": "sicon-video",
+                    "value": null,
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "use_video",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
                     "id": "right_image",
                     "type": "string",
                     "format": "image",
@@ -1933,7 +1964,14 @@
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
                     "value": null,
-                    "required": false
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "use_video",
+                            "operator": "=",
+                            "value": false
+                        }
+                    ]
                 }
             ]
         }
