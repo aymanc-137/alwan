@@ -2012,6 +2012,18 @@
                     "maxLength": "50"
                 },
                 {
+                    "id": "style_title",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "استخدام شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
+                },
+                {
                     "id": "faq",
                     "type": "collection",
                     "format": "collection",
