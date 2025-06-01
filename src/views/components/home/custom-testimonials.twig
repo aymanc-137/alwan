@@ -15,7 +15,12 @@
             <div slot="items">
                 {% for index, item in component.items %}
                     <div class="swiper-slide p-10">
-                        <div class="border border-black border-b-2 border-r-2 relative bg-white rounded-xl shadow-lg p-6 sm:p-8 max-w-md sm:max-w-lg w-full">
+                        <div class="border flex border-black border-b-2 border-r-2 relative bg-white rounded-xl shadow-lg p-6 sm:p-8 max-w-md sm:max-w-lg w-full">
+                            <img  
+                            
+                            
+                                     class="w-20 right-0 absolute -top-10  sm:-top-12   h-24 sm:w-28 sm:h-28   "
+                                style="transform: translateY(10%);" src="{{ 'images/quote-close-svgrepo-com.svg' | asset }}" alt="">
                             <!-- Profile Image: Absolutely Positioned -->
                                 <img
                                 src="{{ 'images/s-empty.png' | asset }}" data-src="{{ item.avatar }}"      
@@ -23,13 +28,11 @@
                                 class="lazy border-2 border-black absolute -top-10 -right-10 sm:-top-12 sm:-right-12 w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shadow-md"
                                 style="transform: translateY(50%);"
                             />
-                            <!-- Using style for transform because Tailwind's translate-x-1/2 might not be exactly what's needed when combined with RTL absolute positioning -->
-                            <div class="flex justify-between items-start mb-4">
-                                <!-- Quotation Marks -->
-                                <div class="text-7xl sm:text-8xl text-gray-300 -mt-2 select-none" style="line-height: 0.6;">
-                                   <img src="{{ 'images/quote-close-svgrepo-com.svg' | asset }}" alt="">
-                                </div>
 
+                            <!-- Using style for transform because Tailwind's translate-x-1/2 might not be exactly what's needed when combined with RTL absolute positioning -->
+                            <div class="flex border border-red-700 justify-between items-end mb-4">
+                                <!-- Quotation Marks -->
+ 
                                 <!-- Reviewer Info -->
                                 <div class="text-right ml-auto mr-4"> 
 
@@ -44,7 +47,7 @@
                                 </div>
                             </div>
                             <!-- Review Text -->
-                            <p class="text-xl sm:text-2xl text-gray-700 font-medium text-center mt-6 sm:mt-8">
+                            <p class="text-xl border border-red-700 sm:text-2xl text-gray-700 font-medium text-center mt-6 sm:mt-8">
                             {{ item.text }}
                             </p>
                         </div>
