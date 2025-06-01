@@ -14,15 +14,15 @@
           id="custom-testimonials-{{ position }}-slider">
             <div slot="items">
                 {% for index, item in component.items %}
-                    <div class="swiper-slide px-4">
-                        <div class="testimonial relative bg-white rounded-lg shadow-lg pt-14 pb-6 px-6 text-center">
+                    <div class="swiper-slide">
+                        <div class="testimonial">
                             <div class="testimonial__inner">
-                                <div class="testimonial__avatar w-20 h-20 rounded-full overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 translate-y-1/2 border-4 border-white shadow-md">
+                                <div class="testimonial__avatar">
                                     <img src="{{ 'images/s-empty.png' | asset }}" data-src="{{ item.avatar }}"
                                          alt="{{ item.name|trim ? item.name : 'testimonial-' ~ index }}"
                                          class="lazy w-full h-full object-cover">
                                 </div>
-                                <div class="flex-1 testimonial__text mt-4">
+                                <div class="flex-1 testimonial__text">
                                     <p class="leading-6 mb-2 mt-4 sm:mt-0">{{ item.text }}</p>
                                     <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
                                         <div class="testimonial__info">
