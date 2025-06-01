@@ -1983,8 +1983,95 @@
             "title": "الأسئلة الأكثر شيوعا",
             "icon": "sicon-store",
             "path": "home.faq-compnent",
-            "fields": []
-        }
+"fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden' ><h6 style='margin-bottom:10px' >معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnHarir/image21.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },
+                {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان القسم",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "الأسئلة الاكثر شيوعاً",
+                    "icon": "sicon-format-text-alt",
+                    "value": "الأسئلة الاكثر شيوعاً",
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
+                },
+                {
+                    "id": "my_space",
+                    "type": "number",
+                    "format": "slider",
+                    "inputType": "range",
+                    "label": "اضافة مسافة من فوق و تحت المكون",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-pin",
+                    "value": "2.5",
+                    "required": false,
+                    "step": 0.5,
+                    "minimum": "0",
+                    "maximum": 50
+                },
+                {
+                    "id": "faq",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "الأسئلة",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "faq.question",
+                            "type": "string",
+                            "format": "text",
+                            "label": "السؤال",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "هل لدي الحق  الإسترجاع",
+                            "icon": "sicon-format-text-alt",
+                            "value": "هل لدي الحق  الإسترجاع",
+                            "multilanguage": true,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": "50"
+                        },
+                        {
+                            "id": "faq.answer",
+                            "type": "string",
+                            "format": "text",
+                            "label": "الإجابة",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "نعم لديك الحق في الإسترجاع",
+                            "icon": "sicon-format-text-alt",
+                            "value": "نعم لديك الحق في الإسترجاع",
+                            "multilanguage": true,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": "200"
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]        }
     ],
     "support_url": "https://example.com",
     "description": {
