@@ -5,6 +5,12 @@
     },
     "appBanner": {
       "download_now": "download now"
+    },
+    "home": {
+      "map": {
+        "phone": "Phone",
+        "hours": "Hours"
+      }
     }
   },
   "pages": {

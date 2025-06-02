@@ -5,6 +5,12 @@
     },
     "appBanner": {
       "download_now": "حمله الان"
+    },
+    "home": {
+      "map": {
+        "phone": "الهاتف",
+        "hours": "ساعات العمل"
+      }
     }
   },
   "pages": {
