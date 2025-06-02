@@ -2128,6 +2128,7 @@
                             "format": "textarea",
                             "label": "ساعات العمل",
                             "required": false,
+                            "value": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
                             "multilanguage": false
                         },
                         {
