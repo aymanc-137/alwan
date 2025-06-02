@@ -272,7 +272,6 @@
                             "format": "text",
                             "description": "يتم عرضه على الصورة بحجم بارز جداً، مع إضافة تأثير دخول للنص يضيف لمسة جمالية على معرض الصور.",
                             "placeholder": "يمكنك إضافة عنوان بارز هنا...",
-                            "hide": false,
                             "minLength": 0,
                             "maxLength": 100
                         },
@@ -2080,269 +2079,61 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div  ><h6  >معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnHarir/image4.png'></div>"
+                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/contact-map.png'></div>"
                 },
                 {
-                    "type": "static",
-                    "format": "description",
-                    "id": "static-note",
-                    "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/harir' target='_blank'> دليل العنصر </a></h4>"
-                },
-                {
-                    "id": "title",
-                    "type": "string",
-                    "format": "text",
-                    "label": "عنوان القسم",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "نتشرف بزيارتك",
-                    "icon": "sicon-format-text-alt",
-                    "value": "نتشرف بزيارتك",
-                    "multilanguage": true,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": 30
-                },
-
-                {
-                    "id": "full_screen",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "ملء الشاشة",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "selected": false,
-                    "required": false
-                },
-                {
-                    "id": "url",
-                    "type": "string",
-                    "format": "url",
-                    "inputType": "url",
-                    "label": "رابط الموقع",
-                    "description": "اتبع دليل المكون",
-                    "labelHTML": null,
-                    "placeholder": "e.g. https://salla.sa",
-                    "icon": "sicon-link",
-                    "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
-                    "required": true,
-                    "minLength": 6,
-                    "maxLength": "500"
-                },
-                {
-                    "id": "address_title",
-                    "type": "string",
-                    "format": "text",
-                    "label": "عنوان قسم عنوان المحل",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "موقعنا",
-                    "icon": "sicon-format-text-alt",
-                    "value": "موقعنا",
-                    "multilanguage": true,
-                    "required": true,
-                    "minLength": 6,
-                    "maxLength": "100"
-                },
-                {
-                    "id": "map_address",
-                    "type": "string",
-                    "format": "richtext",
-                    "label": "معلومات العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "عسير - خميس مشيط - طريق الملك خالد",
-                    "icon": "sicon-touch-type",
-                    "value": "عسير - خميس مشيط - طريق الملك خالد",
-                    "multilanguage": true,
-                    "required": true,
-                    "minLength": 6,
-                    "maxLength": "100"
-                },
-                {
-                    "id": "title_map_hour",
-                    "type": "string",
-                    "format": "text",
-                    "label": "عنوان ساعات العمل",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "ساعات العمل",
-                    "icon": "sicon-format-text-alt",
-                    "value": "ساعات العمل",
-                    "multilanguage": true,
-                    "required": true,
-                    "minLength": 6,
-                    "maxLength": 30
-                },
-                {
-                    "id": "map_hour",
-                    "type": "string",
-                    "format": "richtext",
-                    "label": "ساعات العمل",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                    "icon": "sicon-touch-type",
-                    "value": "يوميًا: 9:00 صباحًا - 12:45 صباحًا\nآخر موعد للدخول: 11:45 مساءً",
-                    "multilanguage": true,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": 100
-                },
-                {
-                    "id": "add_extra_locations",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "إضافة مواقع إضافية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "selected": false,
-                    "required": false
-                },
-                {
-                    "id": "city_title",
-                    "type": "string",
-                    "format": "text",
-                    "label": "عنوان المدينة",
-                    "description": "اسم مدينة العنوان الرئيسي",
-                    "labelHTML": null,
-                    "placeholder": "خميس مشيط",
-                    "icon": "sicon-format-text-alt",
-                    "value": "خميس مشيط",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "300",
-                    "conditions": [
-                        {
-                            "id": "add_extra_locations",
-                            "operation": "=",
-                            "value": true
-                        }
-                    ]
-                },
-                {
-                    "id": "extra",
+                    "id": "locations",
                     "type": "collection",
                     "format": "collection",
-                    "label": "فروع إضافية",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "conditions": [
-                        {
-                            "id": "add_extra_locations",
-                            "operation": "=",
-                            "value": true
-                        }
-                    ],
-                    "icon": "sicon-list-add",
+                    "label": "الفروع",
+                    "item_label": "فرع",
+                    "icon": "sicon-location-pin",
                     "fields": [
                         {
-                            "id": "extra.city_title",
+                            "id": "locations.city",
                             "type": "string",
                             "format": "text",
-                            "label": "عنوان المدينة",
-                            "description": "اسم مدينة العنوان الرئيسي",
-                            "labelHTML": null,
-                            "placeholder": "خميس مشيط",
-                            "icon": "sicon-format-text-alt",
-                            "value": "خميس مشيط",
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": "300",
-                            "conditions": [
-                                {
-                                    "id": "add_extra_locations",
-                                    "operation": "=",
-                                    "value": true
-                                }
-                            ]
+                            "label": "المدينة",
+                            "required": true,
+                            "multilanguage": false
                         },
                         {
-                            "id": "extra.url",
+                            "id": "locations.address",
                             "type": "string",
-                            "format": "url",
-                            "inputType": "url",
-                            "label": "رابط الموقع",
-                            "description": "اتبع دليل المكون",
-                            "labelHTML": null,
-                            "placeholder": "e.g. https://salla.sa",
-                            "icon": "sicon-link",
-                            "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": "500"
+                            "format": "textarea",
+                            "label": "العنوان",
+                            "required": true,
+                            "multilanguage": false
                         },
                         {
-                            "id": "extra.address_title",
+                            "id": "locations.phone",
                             "type": "string",
                             "format": "text",
-                            "label": "عنوان قسم عنوان المحل",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "موقعنا",
-                            "icon": "sicon-format-text-alt",
-                            "value": "موقعنا",
-                            "multilanguage": true,
+                            "label": "رقم التواصل",
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": "100"
+                            "multilanguage": false
                         },
                         {
-                            "id": "extra.map_address",
-                            "type": "string",
-                            "format": "richtext",
-                            "label": "معلومات العنوان",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "عسير - خميس مشيط - طريق الملك خالد",
-                            "icon": "sicon-touch-type",
-                            "value": "عسير - خميس مشيط - طريق الملك خالد",
-                            "multilanguage": true,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": "100"
-                        },
-                        {
-                            "id": "extra.title_map_hour",
+                            "id": "locations.hours",
                             "type": "string",
                             "format": "text",
-                            "label": "عنوان ساعات العمل",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "ساعات العمل",
-                            "icon": "sicon-format-text-alt",
-                            "value": "ساعات العمل",
-                            "multilanguage": true,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        },
-                        {
-                            "id": "extra.map_hour",
-                            "type": "string",
-                            "format": "richtext",
                             "label": "ساعات العمل",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "icon": "sicon-touch-type",
-                            "value": "يوميًا: 9:00 صباحًا - 12:45 صباحًا\nآخر موعد للدخول: 11:45 مساءً",
-                            "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 100
+                            "multilanguage": false
+                        },
+                        {
+                            "id": "locations.map_url",
+                            "type": "string",
+                            "format": "text",
+                            "label": "رابط خريطة Google",
+                            "required": true,
+                            "multilanguage": false,
+                            "placeholder": "https://www.google.com/maps/embed?..."
                         }
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": 10
                 }
             ]
         }

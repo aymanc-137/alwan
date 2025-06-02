@@ -1,171 +1,60 @@
-{% set add_extra_locations = component.add_extra_locations | default(false) %}
-
-<section class="{{ component.full_screen ? ' w-full ' : 'md:w-5/6 w-[90%] mx-auto' }}  mx-auto py-16 my-size-map-harir">
-    <!-- Header Section -->
-    <!-- Main Content Container -->
-    <div class="bg-white p-6 {{ component.full_screen ? 'border-x-0 ':'rounded-2xl '}} border border-[rgb(var(--color-primary-light))]">
-        <div class="text-center s-block__title-harir mb-12">
-            <div class="icon-box">
-                <h2 class="text-[var(--color-primary)] block-title mb-4">{{ component.title }}</h2>
-            </div>
-
-            {% if component.description %}
-                <p class="text-gray-600 max-w-2xl mx-auto">{{ component.description }}</p>
-            {% endif %}
-        </div>
-
-        {% if not add_extra_locations %}
-            <!-- Regular display without tabs -->
-            <div class="lg:flex gap-8">
-                <!-- Contact Information Section -->
-                <div class="lg:w-1/3 mt-6 lg:mt-0">
-                    <div class="bg-gray-50 p-6 rounded-2xl border h-full">
-                        
-                        <!-- Address -->
-                        <div class="mb-6">
-                            <h2>{{ component.address_title }}</h2>
-                            <p class="text-gray-700">
-                                {{ component.map_address | raw }}
-                            </p>
-                        </div>
-
-                        <!-- Hours -->
-                        <div class="mb-6">
-                            <h2>{{ component.title_map_hour }}</h2>
-                            <p class="text-gray-700">
-                                {{ component.map_hour | raw }}
-                            </p>
-                        </div>
-
-                        <!-- Contacts -->
-                        <div class="mb-6">
-                            <salla-contacts></salla-contacts>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Map Section -->
-                <div class="lg:w-2/3">
-                    <div class="rounded-lg overflow-hidden">
-                        <iframe 
-                            class="w-full h-96 rounded-lg"
-                            src="{{ component.url }}"
-                            allowfullscreen=""
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        {% else %}
-            <!-- Display with tabs -->
-            <salla-tabs>
-                <!-- Main Location Tab -->
-                <salla-tab-header slot="header" name="main_location">
-                    <span>{{ component.city_title }}</span>
-                </salla-tab-header>
-                <salla-tab-content slot="content" name="main_location">
-                    <div class="lg:flex gap-8">
-                        <!-- Contact Information Section -->
-                        <div class="lg:w-1/3 mt-6 lg:mt-0">
-                            <div class="bg-gray-50 p-6 rounded-2xl border h-full">
-                                
-                                <!-- Address -->
-                                <div class="mb-6">
-                                    <h2>{{ component.address_title }}</h2>
-                                    <p class="text-gray-700">
-                                        {{ component.map_address | raw }}
-                                    </p>
-                                </div>
-
-                                <!-- Hours -->
-                                <div class="mb-6">
-                                    <h2>{{ component.title_map_hour }}</h2>
-                                    <p class="text-gray-700">
-                                        {{ component.map_hour | raw }}
-                                    </p>
-                                </div>
-
-                                <!-- Contacts -->
-                                <div class="mb-6">
-                                    <salla-contacts></salla-contacts>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Map Section -->
-                        <div class="lg:w-2/3">
-                            <div class="rounded-lg overflow-hidden">
-                                <iframe 
-                                    class="w-full h-96 rounded-lg"
-                                    src="{{ component.url }}"
-                                    allowfullscreen=""
-                                    loading="lazy">
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </salla-tab-content>
-
-                <!-- Extra Locations Tabs -->
-                {% for location in component.extra %}
-                    <salla-tab-header slot="header" name="location_{{ loop.index }}">
-                        <span>{{ location.city_title }}</span>
-                    </salla-tab-header>
-                    <salla-tab-content slot="content" name="location_{{ loop.index }}">
-                        <div class="lg:flex gap-8">
-                            <!-- Contact Information Section -->
-                            <div class="lg:w-1/3 mt-6 lg:mt-0">
-                                <div class="bg-gray-50 p-6 rounded-2xl border h-full">
-                                    
-                                    <!-- Address -->
-                                    <div class="mb-6">
-                                        <h2>{{ location.address_title }}</h2>
-                                        <p class="text-gray-700">
-                                            {{ location.map_address | raw }}
-                                        </p>
-                                    </div>
-
-                                    <!-- Hours -->
-                                    <div class="mb-6">
-                                        <h2>{{ location.title_map_hour }}</h2>
-                                        <p class="text-gray-700">
-                                            {{ location.map_hour | raw }}
-                                        </p>
-                                    </div>
-
-                                    <!-- Contacts -->
-                                    <div class="mb-6">
-                                        <salla-contacts></salla-contacts>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Map Section -->
-                            <div class="lg:w-2/3">
-                                <div class="rounded-lg overflow-hidden">
-                                    <iframe 
-                                        class="w-full h-96 rounded-lg"
-                                        src="{{ location.url }}"
-                                        allowfullscreen=""
-                                        loading="lazy">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </salla-tab-content>
-                {% endfor %}
-            </salla-tabs>
-        {% endif %}
+{% set locations = component.locations|default([]) %}
+{% if locations %}
+<section class="s-block s-block--store-locations container my-8" id="store-locations-{{ position }}">
+    {# Tabs for multiple locations #}
+    {% if locations|length > 1 %}
+    <div class="flex flex-wrap justify-center gap-2 mb-6">
+        {% for loc in locations %}
+            <button class="tab-button px-4 py-2 border-2 border-black rounded transition-all {{ loop.first ? 'bg-black text-white' : 'bg-white' }}" data-target="loc-{{ position }}-{{ loop.index0 }}">
+                {{ loc.city }}
+            </button>
+        {% endfor %}
     </div>
+    {% endif %}
+
+    {# Location panes #}
+    {% for loc in locations %}
+        <div id="loc-{{ position }}-{{ loop.index0 }}" class="location-pane {{ locations|length > 1 and not loop.first ? 'hidden' : '' }}">
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+                <div>
+                    <h3 class="text-2xl font-bold mb-2">{{ loc.city }}</h3>
+                    <p class="mb-2 whitespace-pre-wrap">{{ loc.address }}</p>
+                    {% if loc.phone %}
+                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.phone')|default('Phone') }}:</span> {{ loc.phone }}</p>
+                    {% endif %}
+                    {% if loc.hours %}
+                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.hours')|default('Working Hours') }}:</span> {{ loc.hours }}</p>
+                    {% endif %}
+                </div>
+                <div class="border-2 border-black rounded overflow-hidden h-72 w-full">
+                    <iframe src="{{ loc.map_url }}" class="w-full h-full" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 </section>
+{% endif %}
 
-
-
-<style>
-
-   .my-size-map-harir{
-        margin-bottom: {{component.my_space | default(2.5)}}rem;
-        margin-top: {{component.my_space | default(2.5)}}rem;
-    }
-    
-</style>
+<script>
+// Simple tabs behavior (isolated per component instance)
+(function () {
+    const container = document.getElementById('store-locations-{{ position }}');
+    if (!container) return;
+    const btns = container.querySelectorAll('.tab-button');
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.dataset.target;
+            // Update button styles
+            btns.forEach(b => {
+                b.classList.remove('bg-black', 'text-white');
+                b.classList.add('bg-white');
+            });
+            btn.classList.add('bg-black', 'text-white');
+            // Toggle panes
+            container.querySelectorAll('.location-pane').forEach(pane => pane.classList.add('hidden'));
+            const activePane = container.querySelector('#' + targetId);
+            if (activePane) activePane.classList.remove('hidden');
+        });
+    });
+})();
+</script>
