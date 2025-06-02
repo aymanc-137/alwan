@@ -1,8 +1,38 @@
 <section class="s-block s-block--testimonials s-block--custom-testimonials container ">
     <div>
-        <div class="flex justify-between">
+        <div class="flex hidden justify-between">
             <h1 class="mb-4 mr-2 text-lg font-bold leading-[1.2]">{{ trans('blocks.home.testimonials') }}</h1>
         </div>
+                 <div class="w-96 mb-5 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
+                                <g filter="url(#filter0_d_3119_200)">
+                                    <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="#FFAB5B"/>
+                                    <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
+                                </g>
+                                <text
+                                    x="2300"
+                                    y="525"
+                                    font-size="400"
+                                    fill="white"
+                                    font-weight="bold"
+                                    text-anchor="middle"
+                                    dominant-baseline="middle"
+                                >
+                                   {{ trans('blocks.home.testimonials') }}
+                                </text>
+                                <defs>
+                                    <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="47" dy="46"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
+                                    </filter>
+                                </defs>
+                                </svg>
+            </div>
         <salla-slider 
           centered
           slides-per-view="1"
@@ -15,12 +45,7 @@
             <div slot="items">
                 {% for index, item in component.items %}
                     <div class="swiper-slide p-10">
-                        <div class="border flex border-black border-b-2 border-r-2 relative bg-white rounded-xl shadow-lg p-6 sm:p-8 max-w-md sm:max-w-lg w-full">
-                            <img  
-                            
-                            
-                                     class="w-20 right-0 absolute -top-10  sm:-top-12   h-24 sm:w-28 sm:h-28   "
-                                style="transform: translateY(10%);" src="{{ 'images/quote-close-svgrepo-com.svg' | asset }}" alt="">
+                        <div class="border flex justify-between border-black border-b-2 border-r-2 relative bg-white rounded-xl shadow-lg p-6 sm:p-8 max-w-md sm:max-w-lg w-full">
                             <!-- Profile Image: Absolutely Positioned -->
                                 <img
                                 src="{{ 'images/s-empty.png' | asset }}" data-src="{{ item.avatar }}"      
@@ -30,7 +55,7 @@
                             />
 
                             <!-- Using style for transform because Tailwind's translate-x-1/2 might not be exactly what's needed when combined with RTL absolute positioning -->
-                            <div class="flex border border-red-700 justify-between items-end mb-4">
+                            <div class="flex mr-5 place-self-end   justify-between items-end mb-4">
                                 <!-- Quotation Marks -->
  
                                 <!-- Reviewer Info -->
@@ -47,10 +72,14 @@
                                 </div>
                             </div>
                             <!-- Review Text -->
-                            <p class="text-xl border border-red-700 sm:text-2xl text-gray-700 font-medium text-center mt-6 sm:mt-8">
+                            <p class="text-xl place-self-center    sm:text-2xl text-gray-700 font-medium text-center mt-6 sm:mt-8">
                             {{ item.text }}
                             </p>
+
+                            <img class="w-8 -mt-6 -ml-5 place-self-start   "
+                                style="transform: translateY(10%);" src="{{ 'images/quote-close-svgrepo-com.svg' | asset }}" alt="">
                         </div>
+                        
                     </div>            
                 {% endfor %} 
             </div>
