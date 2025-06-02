@@ -2110,7 +2110,7 @@
                         {
                             "id": "locations.hours",
                             "type": "string",
-                            "format": "text",
+                            "format": "textarea",
                             "label": "ساعات العمل",
                             "required": false,
                             "multilanguage": false
