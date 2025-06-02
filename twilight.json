@@ -1983,7 +1983,7 @@
             "title": "الأسئلة الأكثر شيوعا",
             "icon": "sicon-store",
             "path": "home.faq-compnent",
-"fields": [
+            "fields": [
                 {
                     "type": "static",
                     "format": "description",
@@ -2068,7 +2068,15 @@
                     "minLength": 1,
                     "maxLength": 5
                 }
-            ]        }
+            ]
+        },
+        {
+            "key": "5ba588b2-3f82-4053-82f2-bab416ff40c9",
+            "title": "فروع المحل",
+            "icon": "sicon-store",
+            "path": "home.map",
+            "fields": []
+        }
     ],
     "support_url": "https://example.com",
     "description": {
