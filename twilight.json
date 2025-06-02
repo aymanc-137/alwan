@@ -2159,7 +2159,7 @@
                     "multilanguage": true,
                     "required": true,
                     "minLength": 6,
-                    "maxLength": 1000
+                    "maxLength": 300
                 },
                 {
                     "id": "title_map_hour",
@@ -2189,7 +2189,7 @@
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 1000
+                    "maxLength": 300
                 },
                 {
                     "id": "add_extra_locations",
