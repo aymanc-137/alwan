@@ -2103,21 +2103,7 @@
                     "minLength": 6,
                     "maxLength": 30
                 },
-                {
-                    "id": "my_space",
-                    "type": "number",
-                    "format": "slider",
-                    "inputType": "range",
-                    "label": "اضافة مسافة من فوق و تحت المكون",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-pin",
-                    "value": "2.5",
-                    "required": false,
-                    "step": 0.5,
-                    "minimum": "0",
-                    "maximum": 50
-                },
+
                 {
                     "id": "full_screen",
                     "type": "boolean",
