@@ -1,6 +1,10 @@
 {% set locations = component.locations|default([]) %}
+{% set title = component.title|default('') %}
+
 {% if locations %}
 <section class="s-block bg-white w-5/6 mx-auto rounded-2xl border border-black p-3 my-8" id="store-locations-{{ position }}">
+  <h2 class="text-2xl font-bold mb-2">{{ title }}</h2>
+
     {# Tabs for multiple locations #}
     {% if locations|length > 1 %}
     <div class="flex flex-wrap justify-center gap-2 mb-6">

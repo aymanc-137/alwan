@@ -2076,6 +2076,21 @@
             "path": "home.map",
             "fields": [
                 {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان القسم",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "نتشرف بزيارتكم",
+                    "icon": "sicon-format-text-alt",
+                    "value": "نتشرف بزيارتكم",
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
+                },
+                {
                     "id": "locations",
                     "type": "collection",
                     "format": "collection",
@@ -2121,6 +2136,7 @@
                             "format": "text",
                             "label": "رابط خريطة Google",
                             "required": true,
+                            "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
                             "multilanguage": false,
                             "placeholder": "https://www.google.com/maps/embed?..."
                         }
