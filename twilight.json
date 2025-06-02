@@ -2076,12 +2076,6 @@
             "path": "home.map",
             "fields": [
                 {
-                    "type": "static",
-                    "format": "description",
-                    "id": "static-desc",
-                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/contact-map.png'></div>"
-                },
-                {
                     "id": "locations",
                     "type": "collection",
                     "format": "collection",
