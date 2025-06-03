@@ -799,16 +799,11 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .bg-primary{background-color:#414042;background-color:var(--color-primary)}
 .bg-slate-50{--tw-bg-opacity:1;background-color:rgba(248, 250, 252, 1);background-color:rgba(248, 250, 252, var(--tw-bg-opacity, 1))}
 .bg-white{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
-.\!bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops)) !important}
 .bg-gradient-to-bl{background-image:linear-gradient(to bottom left, var(--tw-gradient-stops))}
 .from-\[\#ffca1c\]{--tw-gradient-from:#ffca1c var(--tw-gradient-from-position);--tw-gradient-to:rgba(255, 202, 28, 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
 .from-sky-300{--tw-gradient-from:#7dd3fc var(--tw-gradient-from-position);--tw-gradient-to:rgba(125, 211, 252, 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
-.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgba(0, 0, 0, 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
-.from-90\%{--tw-gradient-from-position:90%}
 .to-black{--tw-gradient-to:#000 var(--tw-gradient-to-position)}
-.to-gray-300{--tw-gradient-to:#d1d5db var(--tw-gradient-to-position)}
 .to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}
-.to-15\%{--tw-gradient-to-position:15%}
 .bg-cover{background-size:cover}
 .bg-center{background-position:center}
 .bg-no-repeat{background-repeat:no-repeat}
@@ -7045,7 +7040,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * (1 - 0));margin-top:calc(0px * (1 - var(--tw-space-y-reverse)));margin-top:calc(0px * calc(1 - 0));margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * 0);margin-bottom:calc(0px * var(--tw-space-y-reverse))}
 .md\:overflow-hidden{overflow:hidden}
 .md\:border-none{border-style:none}
-.md\:from-85\%{--tw-gradient-from-position:85%}
 .md\:p-0{padding:0px}
 .md\:p-8{padding:2rem}
 .md\:px-6{padding-left:1.5rem;padding-right:1.5rem}
