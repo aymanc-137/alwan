@@ -11,6 +11,11 @@
         "phone": "الهاتف",
         "hours": "ساعات العمل"
       }
+    },
+    "footer": {
+      "pages_links": "الروابط",
+      "search": "بحث",
+      "Subscribe": "اشترك"
     }
   },
   "pages": {
