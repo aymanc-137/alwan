@@ -779,6 +779,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-green-300{--tw-border-opacity:1;border-color:rgba(134, 239, 172, 1);border-color:rgba(134, 239, 172, var(--tw-border-opacity, 1))}
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
 .border-transparent{border-color:transparent}
+.border-red-600{--tw-border-opacity:1;border-color:rgba(220, 38, 38, 1);border-color:rgba(220, 38, 38, var(--tw-border-opacity, 1))}
 .\!bg-blue-400{--tw-bg-opacity:1 !important;background-color:rgba(96, 165, 250, 1) !important;background-color:rgba(96, 165, 250, var(--tw-bg-opacity, 1)) !important}
 .bg-\[\#91edff\]{--tw-bg-opacity:1;background-color:rgba(145, 237, 255, 1);background-color:rgba(145, 237, 255, var(--tw-bg-opacity, 1))}
 .bg-\[\#F3E3FE\]{--tw-bg-opacity:1;background-color:rgba(243, 227, 254, 1);background-color:rgba(243, 227, 254, var(--tw-bg-opacity, 1))}
@@ -7074,6 +7075,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}
 .lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}
 .lg\:grid-cols-8{grid-template-columns:repeat(8, minmax(0, 1fr))}
+.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}
 .lg\:flex-row{flex-direction:row}
 .lg\:justify-between{justify-content:space-between}
 .lg\:gap-6{gap:1.5rem}

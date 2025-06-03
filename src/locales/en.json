@@ -11,6 +11,12 @@
         "phone": "Phone",
         "hours": "Hours"
       }
+    },
+    "footer": {
+      "pages_links": "Pages Links",
+      "search": "Search",
+      "Subscribe": "Subscribe",
+      "apps_title": "Download the app now"
     }
   },
   "pages": {
