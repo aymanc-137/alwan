@@ -1,6 +1,6 @@
 
 .store-footer {
-  @apply relative bg-darker text-white mt-8 sm:mt-16;
+  @apply relative bg-darker text-white mt-28;
 
   a{
     @apply transition-opacity hover:opacity-75;
@@ -23,6 +23,15 @@
 
     ul {
       @apply mb-0;
+    }
+  }
+
+  &__wave {
+    /* ensure the wave takes same color as footer background via currentColor */
+    color: theme('colors.darker');
+    /* Adjust height if needed */
+    svg {
+      display: block;
     }
   }
 
