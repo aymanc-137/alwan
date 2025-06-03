@@ -1,22 +1,13 @@
-<footer class="store-footer mt-20">
-
-    {# Decorative wave at the top of the footer #}
-    <div class="store-footer__wave   absolute left-0 -top-16 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
-        <svg class="relative block w-full h-16 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
-            <path d="M0 80V40C120 20 240 0 360 10C480 20 600 60 720 70C840 80 960 60 1080 40C1200 20 1320 0 1440 10V80H0Z" fill="currentColor" />
-        </svg>
-    </div>
-
-	<div aria-label="footer"
-	 style="background-image: url('https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png')"
-	 class="store-footer__inner text-gray-100 !bg-blue-400 bg-center">
-		<div class="container grid grid-col-1 lg:grid-cols-6 gap-8 lg:gap-6">
-			<div class="lg:col-span-2 rtl:lg:pl-20 ltr:lg:pr-20">
-				<a href="{{ link('/') }}" class="flex items-center m-0">
-					<h3>{{store.name}}</h3>
-				</a>
+<footer class= "md:w-5/6 w-[90%] mx-auto !bg-gradient-to-b from-transparent  md:from-85% from-90%   !rounded-b-none to-gray-300 to-15%">
+	<div aria-label="footer" class="main-bg/70 main-border border-b-0 !rounded-b-none mx-auto rounded-t-3xl text-gray-800 dark:text-white py-12 mt-5">
+		<div class="  m-5 grid grid-col-1 lg:grid-cols-5 gap-8 ">
+			<div class=" ">
+				
+				<a href="{{ link('/') }}" class="flex flex-col items-center ">
+					<img src="{{ store.logo }}" alt="{{ store.name }}" class="w-32" />
+ 				  </a>
 				{% if store.description %}
-					<p class="max-w-sm leading-6 mb-6">
+					<p class="max-w-xs leading-6 mb-6">
 						{{ store.description|raw }}
 					</p>
 				{% endif %}
@@ -25,6 +16,12 @@
 					<salla-social class="mb-6"></salla-social>
 				</div>
 
+				{% if store.settings.is_multilingual or store.settings.currencies_enabled %}
+				<button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
+					<span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
+					<span class="mx-1.5">|</span> <span>{{ currency.symbol }}</span>
+				</button>
+				{% endif %}
           {# vat #}
           {% if store.settings.tax.number %}
             <div class="flex rtl:space-x-reverse space-x-2 items-end">
@@ -64,9 +61,44 @@
 					<salla-social></salla-social>
 				</div>
 			</div>
+		
+			{% set is_email = theme.settings.get('enable_email_subscription', false) %}
+			{% set email_url = theme.settings.get('email_subscription_url', "") %}
+			{% if is_email %}
 
-			<salla-apps-icons class="lg:col-span-2 rtl:lg:pr-20 ltr:lg:pl-20"></salla-apps-icons>
+			<div class=" ">
+				<h3 class="text-2xl font-bold mb-2">
+					
+					{{ theme.settings.get('mail_list_title','تابعنا عبر البريد الإلكتروني') }}
+				</h3>
+				<p class="text-gray-600 mb-4 dark:text-slate-200">
+					{{ theme.settings.get('mail_list_subtitle','احصل على آخر الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.') }}
+				
+				</p>
+				
+				<div class="main-bg p-1 rounded-xl flex items-center">
+					<input
+						type="email"
+						name="{{theme.settings.get('email_input_filed')}}"
+						placeholder="أدخل بريدك الإلكتروني"
+						class="w-full px-2 py-2 rounded-2xl border-transparent focus:outline-none text-gray-900"
+					/>
+					<input type="hidden" name="u" value="{{theme.settings.get('user_id_email')}}">
+					<input type="hidden" name="id"  value="{{theme.settings.get('audience_id_email')}}">
+					<button
+							type="submit"
+							name="subscribe"
+							class="bg-black hover:bg-gray-700 px-3 py-1 rounded-3xl text-white font-semibold"
+						>
+							{{ trans('blocks.footer.Subscribe') }}
+					</button>
+				</div>
+			</div>
+			{% endif %}
+			
+ 						<salla-apps-icons class="mx-auto"  apps-title="{{ trans('blocks.footer.apps_title') }}" vertical="true" ></salla-apps-icons>
 
+ 		
 		</div>
 	</div>
 
@@ -77,3 +109,12 @@
 </div>
 
 <span class="hidden bottom-2 rtl:pl-24 ltr:pr-24 md:grid-cols-3 opacity-40"></span></footer>
+
+	<salla-modal has-skeleton="true" position="top" class="rounded-md" id="search-modal-naqaa">
+		<h4>{{ trans('blocks.footer.search') }}</h4>
+		<hr>
+		<div class="m-3 flex-1 md:h-10 h-96">
+		  <salla-search inline oval height="36"></salla-search>
+	  </div>
+	 </salla-modal>
+	 <salla-localization-modal></salla-localization-modal>
