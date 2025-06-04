@@ -1074,7 +1074,7 @@
                     "description": "عنوان",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "الاقسام",
+                    "value": "استكشف حسب فئتك المفضلة!",
                     "required": true
                 },
                 {
@@ -1085,7 +1085,7 @@
                     "description": "عنوان الفرعي",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "تصفح اقسام المتجر",
+                    "value": "تصفح أقسامنا المتنوعة واكتشف ألعابًا تناسب كل ذوق واهتمام.",
                     "required": true
                 },
                 {
@@ -1430,7 +1430,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "لماذا يختارنا الجميع؟",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -1445,7 +1445,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,

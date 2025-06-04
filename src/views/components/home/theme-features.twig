@@ -1,4 +1,6 @@
-   <section style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;">
+   <section 
+   class="border-y border-black w-full"
+   style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;">
    {% if component.title %}
       <div class="text-center my-5 mx-auto">
               <div class="w-96 mx-auto mb-5">
@@ -16,7 +18,7 @@
                                   text-anchor="middle"
                                   dominant-baseline="middle"
                                 >
-                                  {{component.title | default('الاقسام') }}
+                                  {{component.title | default('لماذا يختارنا الجميع؟') }}
                                 </text>
                                 <defs>
                                   <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -31,12 +33,12 @@
                                 </defs>
                               </svg>
               </div>
-              <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
+              <p class="text-center text-xl">{{ component.sub_title | default('لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!') }}</p>
       </div>
       {% endif %}
 
 
-<div class="flex justify-evenly mx-auto w-5/6 my-20">
+<div class="flex justify-evenly mx-auto  my-20">
 {% for item in component.theme_features %}
 
 <style>
