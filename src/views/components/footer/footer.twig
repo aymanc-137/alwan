@@ -1,4 +1,5 @@
 <footer class="store-footer mt-20 mx-auto">
+			{% set is_email = theme.settings.get('enable_email_subscription', false) %}
 
 
 
@@ -16,6 +17,11 @@
 		
 		<div class="container mx-auto grid grid-col-1 lg:grid-cols-5 gap-8 ">
 
+			{% if not is_email %}
+			<div class="">
+			</div>
+			{% endif %}
+		
 		{# <div class="container grid grid-col-1 lg:grid-cols-6 gap-8 lg:gap-6"> #}
 
 			<div class=" ">
@@ -79,16 +85,15 @@
 				</div>
 			</div>
 		
-			{% set is_email = theme.settings.get('enable_email_subscription', false) %}
 			{% set email_url = theme.settings.get('email_subscription_url', "") %}
 			{% if is_email %}
 
 			<div class=" ">
-				<h3 class="text-2xl font-bold mb-2">
+				<h3 class="text-3xl font-bold mb-2">
 					
 					{{ theme.settings.get('mail_list_title','تابعنا عبر البريد الإلكتروني') }}
 				</h3>
-				<p class="text-gray-600 mb-4 dark:text-slate-200">
+				<p class=" mb-4 dark:text-slate-200">
 					{{ theme.settings.get('mail_list_subtitle','احصل على آخر الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.') }}
 				
 				</p>
@@ -98,14 +103,14 @@
 						type="email"
 						name="{{theme.settings.get('email_input_filed')}}"
 						placeholder="أدخل بريدك الإلكتروني"
-						class="w-full px-2 py-2 rounded-2xl border-transparent focus:outline-none text-gray-900"
+						class="w-full px-2 py-2 rounded-xl focus:outline-none text-gray-900 border border-black border-r-2 border-b-2" 
 					/>
 					<input type="hidden" name="u" value="{{theme.settings.get('user_id_email')}}">
 					<input type="hidden" name="id"  value="{{theme.settings.get('audience_id_email')}}">
 					<button
 							type="submit"
 							name="subscribe"
-							class="bg-black hover:bg-gray-700 px-3 py-1 rounded-3xl text-white font-semibold"
+							class="bg-blue-700 border-black border border-r-2 border-b-2 hover:bg-gray-700 mx-2 px-2 py-2 rounded-xl text-white font-semibold"
 						>
 							{{ trans('blocks.footer.Subscribe') }}
 					</button>
