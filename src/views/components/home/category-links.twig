@@ -22,7 +22,7 @@ style="background-color: {{ component.background_color | default('#ffffff') }}; 
                                   text-anchor="middle"
                                   dominant-baseline="middle"
                                 >
-                                  {{component.title}}
+                                  {{component.title | default('الاقسام') }}
                                 </text>
                                 <defs>
                                   <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -37,7 +37,7 @@ style="background-color: {{ component.background_color | default('#ffffff') }}; 
                                 </defs>
                               </svg>
               </div>
-              <p class="text-center text-xl">{{ component.sub_title | default('') }}</p>
+              <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
       </div>
       {% endif %}
 

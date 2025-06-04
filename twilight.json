@@ -1074,7 +1074,7 @@
                     "description": "عنوان",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "عنوان الفئات العمرية",
+                    "value": "الاقسام",
                     "required": true
                 },
                 {
@@ -1085,20 +1085,8 @@
                     "description": "عنوان الفرعي",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "عنوان الفرعي",
+                    "value": "تصفح اقسام المتجر",
                     "required": true
-                },
-                {
-                    "id": "image",
-                    "type": "string",
-                    "format": "image",
-                    "label": "Image",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "e.g. https://hostname.com/image.png",
-                    "icon": "sicon-image",
-                    "value": null,
-                    "required": false
                 },
                 {
                     "id": "background_color",
