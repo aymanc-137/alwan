@@ -1437,7 +1437,7 @@
                     "maxLength": 100
                 },
                 {
-                    "id": "subtitle",
+                    "id": "sub_title",
                     "type": "string",
                     "format": "text",
                     "label": "العنوان الثانوي",
@@ -1447,6 +1447,33 @@
                     "icon": "sicon-format-text-alt",
                     "value": null,
                     "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": null,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
