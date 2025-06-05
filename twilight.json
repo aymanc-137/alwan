@@ -1638,7 +1638,7 @@
                     "maxLength": 300
                 },
                 {
-                    "id": "enable-edges",
+                    "id": "enable_edges",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين شكل الحواف",
@@ -1658,7 +1658,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-fill",
-                    "value": "#004956",
+                    "value": "#FCFFEC",
                     "required": false
                 },
                 {
@@ -1670,7 +1670,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-fill",
-                    "value": "#004956",
+                    "value": "#7ACBCB",
                     "required": false
                 },
                 {
