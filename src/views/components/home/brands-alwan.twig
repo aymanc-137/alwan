@@ -1,5 +1,5 @@
 <section>
-    <div class="shape-wrapper border-t-2 border-black  border-b-2">
+    <div class="shape-wrapper border-t-2 border-black  border-b-2" style="--zigzag-horizontal-amplitude: {{ component.enable_edges|default(true) ? '3%' : '0%' }};">
         <div class="left-panel">
             <!-- This grid div will be centered by the .left-panel's flex properties -->
             <div class="grid grid-cols-4 gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8">
@@ -149,15 +149,6 @@
         max-width: 100%; 
         /* The number of columns might need to be responsive if space is tight */
         /* Example: grid-cols-2 sm:grid-cols-3 md:grid-cols-4 */
-    }
-    .stroke-divider {
-        background-color: black;
-        z-index: 2;
-        {% if component.enable_edges %}
-        clip-path: polygon(calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 0%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 12.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 25%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 37.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 50%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 62.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 75%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 87.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 100%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%);
-        {% else %}
-        clip-path: polygon(calc(var(--zigzag-center-line) - var(--stroke-half-width)) 0%, calc(var(--zigzag-center-line) - var(--stroke-half-width)) 100%, calc(var(--zigzag-center-line) + var(--stroke-half-width)) 100%, calc(var(--zigzag-center-line) + var(--stroke-half-width)) 0%);
-        {% endif %}
     }
 
     .brand-img {
