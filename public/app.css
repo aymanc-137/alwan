@@ -922,6 +922,18 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .text-red-800{--tw-text-opacity:1;color:rgba(153, 27, 27, 1);color:rgba(153, 27, 27, var(--tw-text-opacity, 1))}
 .text-slate-600{--tw-text-opacity:1;color:rgba(71, 85, 105, 1);color:rgba(71, 85, 105, var(--tw-text-opacity, 1))}
 .text-white{--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity, 1))}
+.text-\[\#feffb0\]{--tw-text-opacity:1;color:rgba(254, 255, 176, 1);color:rgba(254, 255, 176, var(--tw-text-opacity, 1))}
+.text-\[\#fffc44\]{--tw-text-opacity:1;color:rgba(255, 252, 68, 1);color:rgba(255, 252, 68, var(--tw-text-opacity, 1))}
+.text-\[\#FFFF00\]{--tw-text-opacity:1;color:rgba(255, 255, 0, 1);color:rgba(255, 255, 0, var(--tw-text-opacity, 1))}
+.text-\[\#FFA500\]{--tw-text-opacity:1;color:rgba(255, 165, 0, 1);color:rgba(255, 165, 0, var(--tw-text-opacity, 1))}
+.text-\[\#FF4D00\]{--tw-text-opacity:1;color:rgba(255, 77, 0, 1);color:rgba(255, 77, 0, var(--tw-text-opacity, 1))}
+.text-\[\#FF9B45\]{--tw-text-opacity:1;color:rgba(255, 155, 69, 1);color:rgba(255, 155, 69, var(--tw-text-opacity, 1))}
+.text-\[\#FFFBDE\]{--tw-text-opacity:1;color:rgba(255, 251, 222, 1);color:rgba(255, 251, 222, var(--tw-text-opacity, 1))}
+.text-\[\#F2C078\]{--tw-text-opacity:1;color:rgba(242, 192, 120, 1);color:rgba(242, 192, 120, var(--tw-text-opacity, 1))}
+.text-\[\#521C0D\]{--tw-text-opacity:1;color:rgba(82, 28, 13, 1);color:rgba(82, 28, 13, var(--tw-text-opacity, 1))}
+.text-\[\#FE5D26\]{--tw-text-opacity:1;color:rgba(254, 93, 38, 1);color:rgba(254, 93, 38, var(--tw-text-opacity, 1))}
+.text-\[\#feb226\]{--tw-text-opacity:1;color:rgba(254, 178, 38, 1);color:rgba(254, 178, 38, var(--tw-text-opacity, 1))}
+.text-\[\#ffa723\]{--tw-text-opacity:1;color:rgba(255, 167, 35, 1);color:rgba(255, 167, 35, var(--tw-text-opacity, 1))}
 .underline{text-decoration-line:underline}
 .line-through{text-decoration-line:line-through}
 .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
