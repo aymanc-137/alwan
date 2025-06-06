@@ -2,7 +2,7 @@
     <div class="shape-wrapper border-t-2 border-black  border-b-2" style="--zigzag-horizontal-amplitude: {{ component.enable_edges ? '3%' : '0%' }};">
         <div class="left-panel">
             <!-- This grid div will be centered by the .left-panel's flex properties -->
-            <div class="grid grid-cols-4 gap-x-4 gap-y-8 md:gap-x-6 lg:gap-x-8">
+            <div class="grid brand-grid gap-x-6 gap-y-10 md:gap-x-8 md:gap-y-12 lg:gap-x-10">
                 {% for brand in component.brands %}
                 <a href="{{brand.url}}" class="brand-logo-link">
                     <!-- Applied class for styling, removed inline width/height -->
@@ -151,6 +151,10 @@
         /* Example: grid-cols-2 sm:grid-cols-3 md:grid-cols-4 */
     }
 
+    .brand-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+
     .brand-img {
         display: block;
         width: 100px;  /* Adjust if needed */
@@ -172,7 +176,7 @@
 
     @keyframes pulse-scale {
         0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.08); }
+        50% { transform: scale(1.2); }
     }
 
     .left-panel .grid > a:nth-child(even) .brand-img {
@@ -190,101 +194,101 @@
          margin-top: 0;
     }
 
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .shape-wrapper {
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: auto;
+            height: auto;
+            /* Vertical zig-zag amplitude for stacked layout */
+            --zigzag-vertical-amplitude: 20px;
+            --stroke-half-width: 1.5px;
+        }
 
+        .left-panel,
+        .right-panel {
+            position: static;
+            /* clip-path: none; */
+            width: 100%;
+            height: auto;
+        }
 
+        .stroke-divider {
+            position: relative;
+            display: block;
+            height: calc(var(--zigzag-vertical-amplitude) * 2 + var(--stroke-half-width) * 2);
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            z-index: 2;
+            clip-path: polygon(
+                0 calc(50% - var(--stroke-half-width)),
+                12.5% calc(50% + var(--zigzag-vertical-amplitude) - var(--stroke-half-width)),
+                25% calc(50% - var(--stroke-half-width)),
+                37.5% calc(50% + var(--zigzag-vertical-amplitude) - var(--stroke-half-width)),
+                50% calc(50% - var(--stroke-half-width)),
+                62.5% calc(50% + var(--zigzag-vertical-amplitude) - var(--stroke-half-width)),
+                75% calc(50% - var(--stroke-half-width)),
+                87.5% calc(50% + var(--zigzag-vertical-amplitude) - var(--stroke-half-width)),
+                100% calc(50% - var(--stroke-half-width)),
+                100% calc(50% + var(--stroke-half-width)),
+                87.5% calc(50% + var(--zigzag-vertical-amplitude) + var(--stroke-half-width)),
+                75% calc(50% + var(--stroke-half-width)),
+                62.5% calc(50% + var(--zigzag-vertical-amplitude) + var(--stroke-half-width)),
+                50% calc(50% + var(--stroke-half-width)),
+                37.5% calc(50% + var(--zigzag-vertical-amplitude) + var(--stroke-half-width)),
+                25% calc(50% + var(--stroke-half-width)),
+                12.5% calc(50% + var(--zigzag-vertical-amplitude) + var(--stroke-half-width)),
+                0 calc(50% + var(--stroke-half-width))
+            );
+        }
 
+        .left-panel .grid {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1.5rem; /* Increased gap */
+        }
 
+        .brand-img {
+            width: 120px;
+            height: 100px;
+        }
 
+        /* Bottom zig-zag for brands (upper) panel */
+        .left-panel {
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% calc(100% - var(--zigzag-vertical-amplitude)),
+                87.5% 100%,
+                75% calc(100% - var(--zigzag-vertical-amplitude)),
+                62.5% 100%,
+                50% calc(100% - var(--zigzag-vertical-amplitude)),
+                37.5% 100%,
+                25% calc(100% - var(--zigzag-vertical-amplitude)),
+                12.5% 100%,
+                0 calc(100% - var(--zigzag-vertical-amplitude))
+            );
+            padding-right: var(--content-safety-margin);
+            padding-bottom: calc(var(--zigzag-vertical-amplitude) + var(--content-safety-margin));
+        }
 
-.skewed-banner {
-    position: relative; /* For positioning the pseudo-element stroke */
-    width: 300px;      /* Adjust width as needed */
-    height: 70px;     /* Adjust height as needed */
-    background-color: #F9A453; /* Orange color from image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px; /* Add some padding for the text */
-    box-sizing: border-box;
-
-    /* The clip-path defines the skewed shape.
-       Points are: top-left, top-right, bottom-right, bottom-left */
-    clip-path: polygon(
-        10% 0%,     /* Top-left X, Top-left Y */
-        90% 0%,     /* Top-right X, Top-right Y */
-        100% 100%,  /* Bottom-right X, Bottom-right Y */
-        0% 100%     /* Bottom-left X, Bottom-left Y */
-    );
-    z-index: 1; /* Ensure the orange part is above its ::before stroke */
-}
-
-/* Create the black stroke using a pseudo-element */
-.skewed-banner::before {
-    content: '';
-    position: absolute;
-    /* Make the pseudo-element slightly larger than the parent by the stroke width */
-    top: -3px;    /* Adjust for stroke thickness */
-    left: -3px;   /* Adjust for stroke thickness */
-    right: -3px;  /* Adjust for stroke thickness */
-    bottom: -3px; /* Adjust for stroke thickness */
-     /* Apply the same clip-path to the pseudo-element */
-    clip-path: polygon(
-        10% 0%,
-        90% 0%,
-        100% 100%,
-        0% 100%
-    );
-    z-index: 0; /* Place the stroke behind the orange banner */
-}
-
-.banner-text {
-    color: white;
-    font-size: 3.5em;  /* Adjust font size as needed */
-    font-weight: bold;
-    text-align: center;
-    direction: rtl; /* For Arabic text */
-
-    /* Text stroke (vendor-prefixed for broader compatibility) */
-    -webkit-text-stroke-width: 2px; /* Adjust stroke thickness */
-    -webkit-text-stroke-color: black;
-    /* For browsers that don't support -webkit-text-stroke, 
-       you could use text-shadow as a fallback, though it's not as clean:
-       text-shadow: 
-           -2px -2px 0 #000,  
-            2px -2px 0 #000,
-           -2px  2px 0 #000,
-            2px  2px 0 #000,
-            0px 2px 0 #000,
-            0px -2px 0 #000,
-            2px 0px 0 #000,
-            -2px 0px 0 #000;
-    */
-    paint-order: stroke fill; /* Ensures stroke is behind the fill for better readability */
-
-
-
-
-
-
-
-
-    
-}
-
-
-  .sheared-shape {
-    width: 400px;  /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    background-color: #FFAD5C; /* A nice orange similar to the image */
-    /*
-      A negative skewX value will make the top edge shift to the left
-      relative to the bottom edge, or the right edge lean "backwards".
-      The image seems to have the top edge shifted to the right
-      relative to the bottom edge, or the left edge leaning "forward".
-      This means we need a negative skewX value.
-      Let's try around -15 to -20 degrees.
-    */
-    transform: skewX(-15deg); /* Adjust the angle to match the image */
-  }
+        /* Top zig-zag for text (lower) panel */
+        .right-panel {
+            clip-path: polygon(
+                0 var(--zigzag-vertical-amplitude),
+                12.5% 0,
+                25% var(--zigzag-vertical-amplitude),
+                37.5% 0,
+                50% var(--zigzag-vertical-amplitude),
+                62.5% 0,
+                75% var(--zigzag-vertical-amplitude),
+                87.5% 0,
+                100% var(--zigzag-vertical-amplitude),
+                100% 100%,
+                0 100%
+            );
+            padding-top: calc(var(--zigzag-vertical-amplitude) + var(--content-safety-margin));
+        }
+    }
 </style>
 </section>
