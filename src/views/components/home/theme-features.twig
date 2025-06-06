@@ -3,7 +3,7 @@
    style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;">
    {% if component.title %}
       <div class="text-center my-5 mx-auto">
-              <div class="w-96 mx-auto mb-5">
+              <div class="w-72 sm:w-80 md:w-96 mx-auto mb-5">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                 <g filter="url(#filter0_d_3119_200)">
                                   <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="#FFAB5B"/>
@@ -38,7 +38,7 @@
       {% endif %}
 
 
-<div class="flex justify-evenly mx-auto  my-20">
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto px-4 my-10 md:my-20">
 {% for item in component.theme_features %}
 
 <style>
@@ -50,28 +50,29 @@
     }
 </style>
 
-<div class=" bg-item-[{{ item.background_color | default('#EBFFFF') }}] relative rounded-[70%/50%] border-2 border-black w-80 h-80 ">
+<div class="bg-item-[{{ item.background_color | default('#EBFFFF') }}] relative rounded-[70%/50%] border-2 border-black w-full aspect-square max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-xs mx-auto">
 
-        <div class="rounded-full border-2 border-black bg-item-[{{ item.icon_color | default('#C971C2') }}] mx-auto w-24 h-24 -mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
-                  
-                    <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+            <div class="rounded-full border-2 border-black bg-item-[{{ item.icon_color | default('#C971C2') }}] mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 -mt-8 md:-mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex items-center justify-center">
+                      
+                        <script type="module" src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
 
-                        {% if item.is_animated %}
-                            <dotlottie-player src="{{ item.url }}" autoplay loop style="width:80px;height:80px"></dotlottie-player>
-                        {% else %}
-                            <img src="{{ item.image }}" alt="{{ item.title }}" style="width:80px;height:80px" />
-                        {% endif %}
-        
-        </div>
+                            {% if item.is_animated %}
+                                <dotlottie-player src="{{ item.url }}" autoplay loop style="width:85%;height:85%"></dotlottie-player>
+                            {% else %}
+                                <img src="{{ item.image }}" alt="{{ item.title }}" class="w-[85%] h-[85%] object-contain" />
+                            {% endif %}
+            
+            </div>
 
           <div class="relative overflow-hidden rounded-[70%/50%] w-full h-full">
               <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-sky-300 to-black rounded-bl-full -z-1"></div>
                 <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-bl from-[#ffca1c] to-transparent opacity-50 rounded-tr-full -z-10"></div>
-                    <div class="place-self-center w-5/6 mx-auto mt-20 flex flex-col gap-2  z-10" >
-                    <h2>{{ item.title }}</h2>
-                    <p>{{ item.text }}</p>
+                    <div class="place-self-center w-5/6 mx-auto mt-10 sm:mt-16 md:mt-20 flex flex-col gap-1 md:gap-2 z-10 text-center" >
+                    <h2 class="text-base sm:text-lg md:text-xl font-bold">{{ item.title }}</h2>
+                    <p class="text-xs sm:text-sm md:text-base">{{ item.text }}</p>
               </div>
           </div>
+          
 
 </div>
 {% endfor %}

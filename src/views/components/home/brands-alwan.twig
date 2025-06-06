@@ -48,9 +48,12 @@
              <div class="hidden my-5 p-5 text-4xl w-4/6 -skew-x-[15deg] border-2 border-b-4 border-r-4 bg-[#FFAB5B] border-black">
                  {{component.title}}
             </div>
-             
-                 <p class="text-base md:text-4xl text-right leading-relaxed">{{component.subtitle}}</p>
+           
+            <p class="text-lg sm:text-xl md:text-4xl text-right leading-relaxed w-full">
+            {{component.subtitle}}
+            </p>
             </div>
+         
         </div>
         <div class="stroke-divider">
             <!-- This div is just for the stroke, no content needed here -->
@@ -189,6 +192,12 @@
         max-width: 80%; /* Let it fill the flex-defined content box */
          /* text-align: right; /* Tailwind usually handles this */
     }
+    
+    @media (min-width: 769px) {
+        .right-panel .text-content-container {
+            max-width: 80%;
+        }
+    }
 
     .right-panel h2 {
          margin-top: 0;
@@ -274,6 +283,10 @@
 
         /* Top zig-zag for text (lower) panel */
         .right-panel {
+            /* Reset the desktop clip-path completely */
+            clip-path: none;
+            
+            /* Apply the new top zig-zag clip-path */
             clip-path: polygon(
                 0 var(--zigzag-vertical-amplitude),
                 12.5% 0,
@@ -287,7 +300,21 @@
                 100% 100%,
                 0 100%
             );
+            
+            /* Reset all padding from desktop view */
+            padding: 0;
             padding-top: calc(var(--zigzag-vertical-amplitude) + var(--content-safety-margin));
+            padding-left: var(--content-safety-margin);
+            padding-right: var(--content-safety-margin);
+            padding-bottom: var(--content-safety-margin);
+        }
+        
+        /* Make text content container full width on small screens */
+        .right-panel .text-content-container {
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
         }
     }
 </style>
