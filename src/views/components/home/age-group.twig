@@ -56,10 +56,11 @@ style="background-color: {{ component.background_color | default('#ffffff') }}; 
       </div>
       {% endif %}
 
-    <div class="flex justify-evenly flex-col md:flex-row" >
+    {# <div class="flex mx-auto border justify-evenly flex-col md:flex-row" > #}
+    <div class="md:flex grid grid-cols-2 mx-auto justify-evenly flex-col md:flex-row" >
 
         {% for index,item in component.age %}
-            <div class="w-80 age-edge hover:scale-105 transition-all duration-500" >
+            <div class="md:w-80 mx-auto w-40 age-edge hover:scale-105 transition-all duration-500" >
 
             <a href="{{ item.link }}">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1653 1805" fill="none" preserveAspectRatio="xMidYMid meet">

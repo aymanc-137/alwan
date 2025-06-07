@@ -41,19 +41,19 @@ style="background-color: {{ component.background_color | default('#ffffff') }}; 
       </div>
       {% endif %}
 
- <div class=" categorylin-container py-5 mx-auto w-5/6 relative">
+ <div class="categorylin-container py-5 mx-auto md:w-5/6 w-full relative">
 	<salla-slider type="carousel" 
 	 controls-outer auto-play loop show-controls="false" id="main-links-{{ position }}">
-		<div slot="items"  >
+		<div slot="items">
 			{% for item in component.category %}
-				<div class="swiper-slide slide--one-sixth m-5">
+				<a href="{{ item.url }}" class="swiper-slide slide--one-category m-5">
 					{% set random_color = random(colors) %}
-					<div class=" w-52 category-link relative z-10" style="background-color: {{ random_color }}">
-						<div class="rounded-t-full relative border-2 border-b-0 border-r-4 border-black h-64 w-full overflow-hidden flex-col  ">
+					<div class="md:w-52 w-40 category-link relative z-10" style="background-color: {{ random_color }}">
+						<div class="rounded-t-full relative border-2 border-b-0 border-r-4 border-black md:h-64 h-52 w-full overflow-hidden flex-col  ">
 							<img src="{{ item.image }}" class="  w-full h-full object-cover" alt="">
 						</div>
 						<div class="bg-white footer-content-text flex w-full border-2 p-2 border-black  border-r-4 border-b-4 place-self-end text-center  rounded-b-lg">
-							<svg class="w-2/6  border-l-2 border-black " xmlns="http://www.w3.org/2000/svg" fill="#000000" width="30px" height="30px" viewbox="0 0 24 24">
+							<svg class="md:w-2/6 w-1/6 border-l-2 border-black " xmlns="http://www.w3.org/2000/svg" fill="#000000" width="30px" height="30px" viewbox="0 0 24 24">
 								<g data-name="Layer 2">
 									<g data-name="diagonal-arrow-right-up">
 										<rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
@@ -61,10 +61,10 @@ style="background-color: {{ component.background_color | default('#ffffff') }}; 
 									</g>
 								</g>
 							</svg>
-							<h3 class="w-5/6 text-sm text-center  my-auto">{{ item.name }}</h3>
+							<h3 class="w-5/6 md:text-sm text-center  my-auto text-xs">{{ item.name }}</h3>
 						</div>
 					</div>
-				</div>
+				</a>
 			{% endfor %}
 		</div>
 	</salla-slider>
