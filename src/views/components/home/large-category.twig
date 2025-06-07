@@ -1,13 +1,18 @@
-<section>
+<section class="w-full border-t py-14 border-b border-black"
+
+style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;"
+
+>
 <div class="mx-auto text-center my-5 ">
 <h2 class="text-5xl font-bold shadow-1-text text-[#eea929]">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
 <h3 class="text-2xl text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</h3>
 </div>
 
-<div class="mx-auto my-16 flex justify-center items-center" >
+    <div class="md:flex grid grid-cols-2 mx-auto justify-evenly flex-col md:flex-row gap-4" >
+{# <div class="mx-auto gap-4 my-16 md:flex grid md:grid-cols-2 justify-center items-center" > #}
 
 {% for index,item in component.urls %}
-<a class="w-96 hover:scale-105 transition-all duration-300 ease-in-out" href="{{item.url}}" >
+<a class="md:w-80 mx-auto w-40 hover:scale-105 transition-all duration-300 ease-in-out" href="{{item.url}}" >
 
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 993 904" preserveAspectRatio="xMidYMid meet" fill="none">
     <defs>

@@ -1880,6 +1880,29 @@
                     "minLength": 6,
                     "maxLength": "300"
                 },
+
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": "لون الخلفية",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": true
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": "صورة الخلفية",
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+                    "required": true
+                },
                 {
                     "id": "urls",
                     "type": "collection",
