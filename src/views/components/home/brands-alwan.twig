@@ -193,6 +193,87 @@
          /* text-align: right; /* Tailwind usually handles this */
     }
     
+    @media (max-width: 768px) { /* Responsive styles for smaller screens */
+        .shape-wrapper {
+            display: flex; /* Ensure flex context for flex-direction and order */
+            --zigzag-vertical-amplitude: 20px; /* Height of the zig-zag points */
+            --stroke-thickness: 3px;      /* Thickness of the horizontal stroke */
+
+            flex-direction: column;
+            aspect-ratio: auto; /* Allow height to be determined by content */
+            height: auto; 
+        }
+
+        .left-panel,
+        .right-panel,
+        .stroke-divider {
+            position: relative; /* Override absolute positioning for stacking */
+            width: 100%;
+            height: auto; /* Let content determine height */
+            clip-path: none; /* Reset desktop clip-paths */
+            /* Reset desktop paddings that were for side-by-side zig-zag */
+            padding-left: var(--content-safety-margin);
+            padding-right: var(--content-safety-margin);
+            z-index: auto; /* Reset z-index */
+        }
+
+        .left-panel {
+            order: 1; /* For correct stacking order */
+            clip-path: polygon(
+                0 0, /* Top-left */
+                100% 0, /* Top-right */
+                100% calc(100% - var(--zigzag-vertical-amplitude)), /* Bottom-right zig */
+                87.5% 100%, /* Bottom zig peak */
+                75% calc(100% - var(--zigzag-vertical-amplitude)),
+                62.5% 100%,
+                50% calc(100% - var(--zigzag-vertical-amplitude)),
+                37.5% 100%,
+                25% calc(100% - var(--zigzag-vertical-amplitude)),
+                12.5% 100%,
+                0 calc(100% - var(--zigzag-vertical-amplitude)) /* Bottom-left zig */
+            );
+            padding-top: var(--content-safety-margin);
+            padding-bottom: calc(var(--zigzag-vertical-amplitude) + var(--content-safety-margin));
+        }
+        
+        .left-panel .grid {
+             max-width: 100%; /* Ensure grid doesn't overflow its new padding context */
+        }
+
+        .stroke-divider {
+            order: 2; /* For correct stacking order */
+            /* For mobile, this is a simple horizontal bar */
+            height: var(--stroke-thickness);
+            background-color: black;
+            /* It will naturally fall between left and right panels in flex column */
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude));
+        }
+
+        .right-panel {
+            order: 3; /* For correct stacking order */
+            clip-path: polygon(
+                0 var(--zigzag-vertical-amplitude), /* Top-left zig */
+                12.5% 0, /* Top zig peak */
+                25% var(--zigzag-vertical-amplitude),
+                37.5% 0,
+                50% var(--zigzag-vertical-amplitude),
+                62.5% 0,
+                75% var(--zigzag-vertical-amplitude),
+                87.5% 0,
+                100% var(--zigzag-vertical-amplitude), /* Top-right zig */
+                100% 100%, /* Bottom-right */
+                0 100% /* Bottom-left */
+            );
+            padding-top: calc(var(--zigzag-vertical-amplitude) + var(--content-safety-margin));
+            padding-bottom: var(--content-safety-margin);
+        }
+        
+        .right-panel .text-content-container {
+            max-width: 100%; /* Allow text to use available width within padding */
+        }
+    }
+
     @media (min-width: 769px) {
         .right-panel .text-content-container {
             max-width: 80%;
@@ -212,7 +293,7 @@
             height: auto;
             /* Vertical zig-zag amplitude for stacked layout */
             --zigzag-vertical-amplitude: 20px;
-            --stroke-half-width: 1.5px;
+            --stroke-half-width: 2px;
         }
 
         .left-panel,
@@ -227,8 +308,8 @@
             position: relative;
             display: block;
             height: calc(var(--zigzag-vertical-amplitude) * 2 + var(--stroke-half-width) * 2);
-            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
-            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude));
             z-index: 2;
             clip-path: polygon(
                 0 calc(50% - var(--stroke-half-width)),
