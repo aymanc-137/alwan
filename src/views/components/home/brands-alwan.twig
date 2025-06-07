@@ -246,8 +246,8 @@
             height: var(--stroke-thickness);
             background-color: black;
             /* It will naturally fall between left and right panels in flex column */
-            margin-top: calc(-1 * var(--zigzag-vertical-amplitude));
-            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude));
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
         }
 
         .right-panel {
@@ -308,8 +308,8 @@
             position: relative;
             display: block;
             height: calc(var(--zigzag-vertical-amplitude) * 2 + var(--stroke-half-width) * 2);
-            margin-top: calc(-1 * var(--zigzag-vertical-amplitude));
-            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude));
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
             z-index: 2;
             clip-path: polygon(
                 0 calc(50% - var(--stroke-half-width)),
