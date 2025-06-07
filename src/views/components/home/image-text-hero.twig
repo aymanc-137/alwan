@@ -1,12 +1,12 @@
-<section class="flex justify-center items-center border-t-2 border-b-2 border-black h-[800px] w-full">
+<section class="flex flex-col md:flex-row justify-center items-center border-t-2 border-b-2 border-black md:h-[800px] w-full">
 
     {% if component.use_video %}
-        <video autoplay loop muted class="w-1/2 bg-cover h-full bg-center" src="{{ component.video_url }}"></video>
+        <video autoplay loop muted class="w-full h-[400px] md:w-1/2 md:h-full bg-cover bg-center" src="{{ component.video_url }}"></video>
     {% else %}
-        <a href="{{ component.url }}" class="border-l-2 border-black w-1/2 bg-cover h-full bg-center" style="background-image: url({{ component.right_image }});">
+        <a href="{{ component.url }}" class="w-full h-[400px] md:w-1/2 md:h-full md:border-l-2 border-black bg-cover bg-center" style="background-image: url({{ component.right_image }});">
         </a>
     {% endif %}
-        <a href="{{ component.url }}" class="w-1/2 bg-cover h-full bg-center" style="background-image: url({{ component.left_image }});">
+        <a href="{{ component.url }}" class="w-full h-[400px] md:w-1/2 md:h-full bg-cover bg-center" style="background-image: url({{ component.left_image }});">
     </a>
 
 </section>
