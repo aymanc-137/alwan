@@ -483,5 +483,15 @@ salla-modal {
 }
 
 .s-social-share-btn {
-  @apply border border-black border-b-2 border-r-2;
+  button{
+    //@apply border !border-black border-b-2 border-r-2;
+    box-shadow: 3px 3px 0px rgb(0, 0, 0);
+    border-color: #000000 !important;
+    &:hover{
+      box-shadow: 1px 1px 0px rgb(0, 0, 0);
+      border-color: #000000 !important;
+    }
+
+    @apply transition-all duration-300;
+  }
 }

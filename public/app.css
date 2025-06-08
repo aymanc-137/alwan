@@ -4274,7 +4274,21 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
 .slide--one-category{margin-left:0.25rem;margin-right:0.25rem;width:33.333333%}}
 @media (min-width: 1024px){
 .slide--one-category{width:16.666667%}}
-.s-social-share-btn{border-width:1px;border-bottom-width:2px;border-right-width:2px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.s-social-share-btn button {
+  border-color: #000000 !important;
+}
+.s-social-share-btn button {
+  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:300ms;
+}
+.s-social-share-btn button:hover {
+  border-color: #000000 !important;
+}
+.s-social-share-btn button:hover {
+  box-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
 .tooltip-content {
   position: absolute;
   transform: translate(82px, -120px);
