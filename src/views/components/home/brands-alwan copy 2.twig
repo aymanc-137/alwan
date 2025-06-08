@@ -1,0 +1,424 @@
+<section>
+    <div class="shape-wrapper border-t-2 border-black  border-b-2" style="--zigzag-horizontal-amplitude: {{ component.enable_edges ? '3%' : '0%' }};">
+        <div class="left-panel">
+            <!-- This grid div will be centered by the .left-panel's flex properties -->
+            <div class="grid brand-grid gap-x-6 gap-y-10 md:gap-x-8 md:gap-y-12 lg:gap-x-10">
+                {% for brand in component.brands %}
+                <a href="{{brand.url}}" class="brand-logo-link">
+                    <!-- Applied class for styling, removed inline width/height -->
+                    <img src="{{brand.logo}}" alt="{{brand.name}}" class="brand-img">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <!-- This div will contain the text and be centered by .right-panel's flex properties -->
+            <div class="text-content-container">
+                    <div class="w-96 mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
+                        <g filter="url(#filter0_d_3119_200)">
+                            <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="#FFAB5B"/>
+                            <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
+                        </g>
+                        <text
+                            x="2300"
+                            y="525"
+                            font-size="400"
+                            fill="white"
+                            font-weight="bold"
+                            text-anchor="middle"
+                            dominant-baseline="middle"
+                        >
+                            {{component.title}}
+                        </text>
+                        <defs>
+                            <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="47" dy="46"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
+                            </filter>
+                        </defs>
+                        </svg>
+                    </div>
+             <div class="hidden my-5 p-5 text-4xl w-4/6 -skew-x-[15deg] border-2 border-b-4 border-r-4 bg-[#FFAB5B] border-black">
+                 {{component.title}}
+            </div>
+           
+            <p class="text-lg sm:text-xl md:text-4xl text-right leading-relaxed w-full">
+            {{component.subtitle}}
+            </p>
+            </div>
+         
+        </div>
+        <div class="stroke-divider">
+            <!-- This div is just for the stroke, no content needed here -->
+        </div>
+    </div>
+
+<style>
+
+    .shape-wrapper {
+        width: 100%;
+        /* max-width: 100%; /* Let its container define max-width if needed */
+        aspect-ratio: 2000 / 800;
+        position: relative;
+        overflow: hidden; /* Good practice with clip-path */
+        --stroke-half-width: 1.5px;
+        --zigzag-center-line: 50%;
+        --zigzag-horizontal-amplitude: 3%; /* This is the "depth" of each zig or zag from the center line */
+        
+        /* X-coordinate where the yellow panel's zig-zag points furthest to the right (teal panel's points furthest left) */
+        --stroke-center-at-leftmost-point: calc(var(--zigzag-center-line) - var(--zigzag-horizontal-amplitude)); /* e.g., 50% - 3% = 47% */
+        
+        /* X-coordinate where the yellow panel's zig-zag points furthest to the left (teal panel's points furthest right) */
+        --stroke-center-at-rightmost-point: calc(var(--zigzag-center-line) + var(--zigzag-horizontal-amplitude)); /* e.g., 50% + 3% = 53% */
+
+        /* Define a safety margin for content from the zig-zag edge */
+        --content-safety-margin: 30px; /* Adjust as needed */
+    }
+
+    .left-panel,
+    .right-panel,
+    .stroke-divider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .left-panel {
+        background-color: {{component.brand_background | default('#7ACBCB')}};
+        z-index: 1;
+        clip-path: polygon(0% 0%, var(--stroke-center-at-leftmost-point) 0%, var(--stroke-center-at-rightmost-point) 12.5%, var(--stroke-center-at-leftmost-point) 25%, var(--stroke-center-at-rightmost-point) 37.5%, var(--stroke-center-at-leftmost-point) 50%, var(--stroke-center-at-rightmost-point) 62.5%, var(--stroke-center-at-leftmost-point) 75%, var(--stroke-center-at-rightmost-point) 87.5%, var(--stroke-center-at-leftmost-point) 100%, 0% 100%);
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Corrected Padding for Left Panel:
+           - Top/Bottom/Left padding is standard.
+           - Right padding is calculated to make the content box for flex centering
+             end safely before the zig-zag starts.
+           The content box will have its right edge at `var(--stroke-center-at-leftmost-point) - var(--content-safety-margin)`.
+        */
+        padding-top: var(--content-safety-margin);
+        padding-bottom: var(--content-safety-margin);
+        padding-left: var(--content-safety-margin);
+        padding-right: calc(100% - (var(--stroke-center-at-leftmost-point) - var(--content-safety-margin)));
+    }
+
+    .right-panel {
+        background-color: {{component.text_Background | default('#FCFFEC')}};
+        color: white;
+        z-index: 1;
+        clip-path: polygon(var(--stroke-center-at-leftmost-point) 0%, var(--stroke-center-at-rightmost-point) 12.5%, var(--stroke-center-at-leftmost-point) 25%, var(--stroke-center-at-rightmost-point) 37.5%, var(--stroke-center-at-leftmost-point) 50%, var(--stroke-center-at-rightmost-point) 62.5%, var(--stroke-center-at-leftmost-point) 75%, var(--stroke-center-at-rightmost-point) 87.5%, var(--stroke-center-at-leftmost-point) 100%, 100% 100%, 100% 0%);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Corrected Padding for Right Panel:
+           - Top/Bottom/Right padding is standard.
+           - Left padding is calculated to make the content box for flex centering
+             start safely after the zig-zag.
+           The content box will have its left edge at `var(--stroke-center-at-rightmost-point) + var(--content-safety-margin)`.
+        */
+        padding-top: var(--content-safety-margin);
+        padding-bottom: var(--content-safety-margin);
+        padding-right: var(--content-safety-margin);
+        padding-left: calc(var(--stroke-center-at-rightmost-point) + var(--content-safety-margin));
+    }
+    
+    .stroke-divider {
+        background-color: black;
+        z-index: 2;
+        clip-path: polygon(calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 0%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 12.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 25%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 37.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 50%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 62.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 75%, calc(var(--stroke-center-at-rightmost-point) - var(--stroke-half-width)) 87.5%, calc(var(--stroke-center-at-leftmost-point) - var(--stroke-half-width)) 100%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 100%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 87.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 75%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 62.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 50%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 37.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 25%, calc(var(--stroke-center-at-rightmost-point) + var(--stroke-half-width)) 12.5%, calc(var(--stroke-center-at-leftmost-point) + var(--stroke-half-width)) 0%);
+    }
+
+    /* Styling for the content inside left-panel */
+    .left-panel .grid {
+        /* Ensure the grid itself doesn't try to be wider than its flex-defined container */
+        max-width: 100%; 
+        /* The number of columns might need to be responsive if space is tight */
+        /* Example: grid-cols-2 sm:grid-cols-3 md:grid-cols-4 */
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+
+    .brand-img {
+        display: block;
+        width: 100px;  /* Adjust if needed */
+        height: 80px; /* Adjust if needed */
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+        
+        animation-name: pulse-scale;
+        animation-duration: 2.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transition: transform 0.3s ease;
+    }
+
+    .brand-logo-link:hover .brand-img {
+        transform: scale(1.15);
+    }
+
+    @keyframes pulse-scale {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+    }
+
+    .left-panel .grid > a:nth-child(even) .brand-img {
+        animation-delay: 1.4s;
+    }
+
+    /* Styling for the content inside right-panel */
+    .right-panel .text-content-container {
+        direction: rtl;
+        max-width: 80%; /* Let it fill the flex-defined content box */
+         /* text-align: right; /* Tailwind usually handles this */
+    }
+    
+    @media (max-width: 768px) { /* Responsive styles for smaller screens */
+        .shape-wrapper {
+            /* Zig-zag presets for stacked (mobile) layout */
+            --zigzag-vertical-amplitude: 20px; /* Legacy value, no longer used for clip-path but kept for spacing */
+            --stroke-thickness: 3px;           /* Total stroke thickness */
+            --stroke-half-width: calc(var(--stroke-thickness) / 2);
+            /* Percentage-based peak / valley positions – mirrors the fully-responsive demo in test.html */
+            --hz-peak-y: 45%;      /* Points that "jut" upwards */
+            --hz-valley-y: 55%;    /* Indent points */
+
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: auto; /* Allow height to be determined by content */
+            height: auto; 
+        }
+
+        .left-panel,
+        .right-panel,
+        .stroke-divider {
+            position: relative; /* Override absolute positioning for stacking */
+            width: 100%;
+            height: auto; /* Let content determine height */
+            clip-path: none; /* Reset desktop clip-paths */
+            /* Reset desktop paddings that were for side-by-side zig-zag */
+            padding-left: var(--content-safety-margin);
+            padding-right: var(--content-safety-margin);
+            z-index: auto; /* Reset z-index */
+        }
+
+        .left-panel {
+            order: 1; /* For correct stacking order */
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% var(--hz-valley-y),
+                87.5% var(--hz-peak-y),
+                75% var(--hz-valley-y),
+                62.5% var(--hz-peak-y),
+                50% var(--hz-valley-y),
+                37.5% var(--hz-peak-y),
+                25% var(--hz-valley-y),
+                12.5% var(--hz-peak-y),
+                0 var(--hz-valley-y)
+            );
+            padding-top: var(--content-safety-margin);
+            padding-bottom: calc(var(--hz-valley-y) - var(--hz-peak-y) + var(--content-safety-margin));
+        }
+        
+        .left-panel .grid {
+             max-width: 100%; /* Ensure grid doesn't overflow its new padding context */
+        }
+
+        .stroke-divider {
+            order: 2; /* For correct stacking order */
+            /* For mobile, this is a simple horizontal bar */
+            height: calc(var(--zigzag-vertical-amplitude) * 2 + var(--stroke-half-width) * 2); /* Stroke spans amplitude + thickness */
+            background-color: black;
+            /* It will naturally fall between left and right panels in flex column */
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            z-index: 2;
+            clip-path: polygon(
+                0 calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                12.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                25% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                37.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                50% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                62.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                75% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                87.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                100% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                100% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                87.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                75% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                62.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                50% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                37.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                25% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                12.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                0 calc(var(--hz-peak-y) + var(--stroke-half-width))
+            );
+        }
+
+        .right-panel {
+            order: 3; /* For correct stacking order */
+            clip-path: polygon(
+                0 var(--hz-peak-y),
+                12.5% var(--hz-valley-y),
+                25% var(--hz-peak-y),
+                37.5% var(--hz-valley-y),
+                50% var(--hz-peak-y),
+                62.5% var(--hz-valley-y),
+                75% var(--hz-peak-y),
+                87.5% var(--hz-valley-y),
+                100% var(--hz-peak-y),
+                100% 100%,
+                0 100%
+            );
+            padding-top: calc(var(--hz-valley-y) - var(--hz-peak-y) + var(--content-safety-margin));
+            padding-bottom: var(--content-safety-margin);
+        }
+        
+        .right-panel .text-content-container {
+            max-width: 100%; /* Allow text to use available width within padding */
+        }
+    }
+
+    @media (min-width: 769px) {
+        .right-panel .text-content-container {
+            max-width: 80%;
+        }
+    }
+
+    .right-panel h2 {
+         margin-top: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .shape-wrapper {
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: auto;
+            height: auto;
+            /* Vertical zig-zag amplitude for stacked layout */
+            --zigzag-vertical-amplitude: 20px;
+            --stroke-half-width: 2px;
+        }
+
+        .left-panel,
+        .right-panel {
+            position: static;
+            /* clip-path: none; */
+            width: 100%;
+            height: auto;
+        }
+
+        .stroke-divider {
+            position: relative;
+            display: block;
+            height: calc(var(--zigzag-vertical-amplitude) * 2 + var(--stroke-half-width) * 2); /* Stroke spans amplitude + thickness */
+            margin-top: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            margin-bottom: calc(-1 * var(--zigzag-vertical-amplitude) - var(--stroke-half-width));
+            z-index: 2;
+            clip-path: polygon(
+                0 calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                12.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                25% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                37.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                50% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                62.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                75% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                87.5% calc(var(--hz-valley-y) - var(--stroke-half-width)),
+                100% calc(var(--hz-peak-y) - var(--stroke-half-width)),
+                100% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                87.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                75% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                62.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                50% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                37.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                25% calc(var(--hz-peak-y) + var(--stroke-half-width)),
+                12.5% calc(var(--hz-valley-y) + var(--stroke-half-width)),
+                0 calc(var(--hz-peak-y) + var(--stroke-half-width))
+            );
+        }
+
+        .left-panel .grid {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1.5rem; /* Increased gap */
+        }
+
+        .brand-img {
+            width: 120px;
+            height: 100px;
+        }
+
+        /* Bottom zig-zag for brands (upper) panel */
+        .left-panel {
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% var(--hz-valley-y),
+                87.5% var(--hz-peak-y),
+                75% var(--hz-valley-y),
+                62.5% var(--hz-peak-y),
+                50% var(--hz-valley-y),
+                37.5% var(--hz-peak-y),
+                25% var(--hz-valley-y),
+                12.5% var(--hz-peak-y),
+                0 var(--hz-valley-y)
+            );
+            padding-right: var(--content-safety-margin);
+            padding-bottom: calc(var(--hz-valley-y) - var(--hz-peak-y) + var(--content-safety-margin));
+        }
+
+        /* Top zig-zag for text (lower) panel */
+        .right-panel {
+            /* Reset the desktop clip-path completely */
+            clip-path: none;
+            
+            /* Apply the new top zig-zag clip-path */
+            clip-path: polygon(
+                0 var(--hz-peak-y),
+                12.5% var(--hz-valley-y),
+                25% var(--hz-peak-y),
+                37.5% var(--hz-valley-y),
+                50% var(--hz-peak-y),
+                62.5% var(--hz-valley-y),
+                75% var(--hz-peak-y),
+                87.5% var(--hz-valley-y),
+                100% var(--hz-peak-y),
+                100% 100%,
+                0 100%
+            );
+            
+            /* Reset all padding from desktop view */
+            padding: 0;
+            padding-top: calc(var(--hz-valley-y) - var(--hz-peak-y) + var(--content-safety-margin));
+            padding-left: var(--content-safety-margin);
+            padding-right: var(--content-safety-margin);
+            padding-bottom: var(--content-safety-margin);
+        }
+        
+        /* Make text content container full width on small screens */
+        .right-panel .text-content-container {
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+        }
+    }
+</style>
+</section>
