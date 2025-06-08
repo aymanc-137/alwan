@@ -1,7 +1,7 @@
 <section>
-       <div class="shape-container">
+       <div class="shape-container ">
         <div class="primary-side">
-           <div class="w-[60%] mx-auto -translate-x-1/2 translate-y-1/2  ">
+           <div class="w-[60%] my-auto mx-auto -translate-x-1/2 translate-y-1/2  ">
                 <p class="grid grid-cols-4  gap-4 mx-10">
                 {% for brand in component.brands %}
 
@@ -15,14 +15,53 @@
                 </p>
 
             </div>         
-            </div>
+        </div>
+
+
+
         <div class="stroke-divider">
             <!-- This element is just for the stroke, no content needed -->
         </div>
+
+
         <div class="secondary-side">
-              <div class="w-[80%] mx-auto translate-x-20 translate-y-1/2 justify-center  ">
-            <h2>{{component.title}}</h2>
-            <p class="text-lg w-1/2 ">{{component.subtitle}}</p>
+              <div class="w-[80%] mx-auto  md:translate-x-20 translate-y-52 md:translate-y-1/2 justify-center">
+
+                <div class="w-96 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
+                                <g filter="url(#filter0_d_3119_200)">
+                                    <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="#FFAB5B"/>
+                                    <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
+                                </g>
+                                <text
+                                    x="2300"
+                                    y="525"
+                                    font-size="400"
+                                    fill="white"
+                                    font-weight="bold"
+                                    text-anchor="middle"
+                                    dominant-baseline="middle"
+                                >
+                                    {{component.title}}
+                                </text>
+                                <defs>
+                                    <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="47" dy="46"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
+                                    </filter>
+                                </defs>
+                        </svg>
+                </div>
+
+                <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full">
+                        {{component.subtitle}}
+                </p>
+
          </div>
 
         </div>
@@ -32,7 +71,8 @@
 
         .shape-container {
             width: 100%;
-             aspect-ratio: 2000 / 800;
+            /* aspect-ratio: 2000 / 800; */
+            min-height: 40rem;
             position: relative;
             /* No background on container, as child elements will provide it */
         }
@@ -221,8 +261,10 @@
             font-size: 1.5em; /* Adjust based on container size */
         }
         .primary-side p, .secondary-side p {
-            font-size: 1em; /* Adjust based on container size */
-            line-height: 1.4;
+         
+            /* font-size: 1em;  */
+            /* Adjust based on container size */
+            /* line-height: 1.4; */
         }
 
         /* For very small screens, you might want to adjust padding or font sizes further */
