@@ -6510,6 +6510,9 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
 .main-wish-btn-product button {
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
+.main-wish-btn-product button:hover {
+  border-color: #000000 !important;
+}
 .s-button-icon {
   border-radius: 10px !important;
 }
