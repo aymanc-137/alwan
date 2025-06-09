@@ -436,13 +436,15 @@ salla-modal {
 
 
 .s-button-btn{
-  border-width: 1px;
-  border-color: #000000;
-  border-right-width: 3px;
-  border-bottom-width: 3px;
+  // border-width: 1px;
+  // border-color: #000000;
+  // border-right-width: 3px;
+  // border-bottom-width: 3px;
   background-color: #61C0C1;
   color: #ffffff;
   font-size: 12px;
+  @apply text-main-foreground bg-main border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none;
+  
 
 }
 
