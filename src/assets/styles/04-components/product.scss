@@ -476,6 +476,22 @@ salla-quantity-input[max='1']{
       box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
     }
   }
+
+  .main-wish-btn-product{
+ 
+    button{
+      @apply transition-all duration-300 ;
+
+      border-color: #000000 !important;
+      border-width: 1px;
+      border-style: solid;
+      // border-bottom-width: 3px;
+      // border-right-width: 3px;
+      background-color: #F8B5EB !important;
+      @apply border border-black hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
+      box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+    }
+  }
  
  .s-button-icon{
   border-radius: 10px !important;
