@@ -62,7 +62,7 @@
 
                 {% for item in cart.items %}
                     <form onchange="salla.form.onChange('cart.updateItem', event)" id="item-{{ item.id }}">
-                        <section class="cart-item bg-white p-5 xs:p-7 rounded-md mb-5 relative border border-black border-b-2 border-r-2">
+                        <section class="cart-item bg-white p-5 xs:p-7 neo-shadow rounded-md mb-5 relative">
                             <input type="hidden" name="id" value="{{ item.id }}">
                                 <!-- product -->
                                 <div class="md:flex rtl:space-x-reverse md:space-x-12 items-start justify-between mb-8 last:mb-0">
@@ -158,8 +158,8 @@
 
             <!-- sidebar -->
             {% if cart.items|length %}
-                <div class="border rounded-md bg-white border-black border-b-2 border-r-2 sticky top-24 w-full lg:w-96 rtl:lg:mr-8 ltr:lg:ml-8">
-                    <div class="border border-black border-b-2 border-r-2 shadow-default bg-white p-5 xs:p-7 rounded-md mb-5 relative {{ cart.free_shipping_bar ? '' : 'hidden' }}" id="free-shipping">
+                <div class="neo-shadow sticky top-24 w-full lg:w-96 rtl:lg:mr-8 ltr:lg:ml-8">
+                    <div class="shadow-default bg-white p-5 xs:p-7 rounded-md mb-5 relative {{ cart.free_shipping_bar ? '' : 'hidden' }}" id="free-shipping">
                         <div class="flex rtl:space-x-reverse space-x-3 items-center">
                             <i class="bg-primary text-white rounded-icon sicon-shipping-fast {{ theme.is_rtl ? 'flip-x':'' }}"></i>
                             {% set is_free=cart.free_shipping_bar.has_free_shipping %}
@@ -182,7 +182,7 @@
                         </div>
                     </div>
                     {% if loyalty and user.loyalty_points %}
-                        <div class="shadow-default mb-5 rounded-md p-3 xs:p-7 bg-white border border-black border-b-2 border-r-2">
+                        <div class="shadow-default mb-5 rounded-md p-3 xs:p-7 bg-white neo-shadow">
                             <salla-loyalty customer-points='{{ user.loyalty_points }}'
                                 prize-points='{{ loyalty.prize.points }}'
                                 prize-title='{{ loyalty.prize.title }}'

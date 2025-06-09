@@ -4248,15 +4248,18 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
 .s-button-btn {
   background-color: #61C0C1;
   color: #ffffff;
-  font-size: 12px;
-  border-width:2px;
+  font-size: 14px;
+  border-width:1px;
   --tw-border-opacity:1;
   border-color:rgba(0, 0, 0, 1);
   border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1));
 }
 .s-button-btn:hover{--tw-translate-x:var(--spacing-boxShadowX);--tw-translate-y:var(--spacing-boxShadowY);transform:translate(4px, 4px) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-shadow:0 0 rgba(0,0,0,0);--tw-shadow-colored:0 0 rgba(0,0,0,0);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0);box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}
 .s-button-btn {
-  box-shadow: 4px 4px 0px 0px rgb(0, 0, 0);
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+}
+.s-button-btn:hover {
+  background-color: #61C0C1 !important;
 }
 .sicon-shopping-bag::before {
   content: none !important;
@@ -4297,6 +4300,13 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
 }
 .s-social-share-btn button:hover {
   box-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+.neo-shadow {
+  border-color: #000000 !important;
+  border-width: 1px !important;
+}
+.neo-shadow {
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
 .tooltip-content {
   position: absolute;
@@ -4739,7 +4749,7 @@ input[type=radio].sr-only:checked ~ div.btn--close {
 .btn:disabled .s-button-text{opacity:0.7}
 .btn--danger{--tw-bg-opacity:1;background-color:rgba(248, 113, 113, 1);background-color:rgba(248, 113, 113, var(--tw-bg-opacity, 1));--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity, 1))}
 .btn--danger:hover{opacity:0.8}
-.btn--primary{border-width:1px;border-color:#414042;border-color:var(--color-primary);color:#ff6767;color:var(--color-primary-reverse)}
+.btn--primary{border-width:1px;border-color:#414042;border-color:var(--color-primary);background-color:#414042;background-color:var(--color-primary);color:#ff6767;color:var(--color-primary-reverse)}
 .btn--outline-primary{border-width:1px;border-color:#414042;border-color:var(--color-primary);color:#414042;color:var(--color-primary)}
 .btn--outline-primary:hover{background-color:#414042;background-color:var(--color-primary);color:#ff6767;color:var(--color-primary-reverse)}
 .btn--outline{border-width:1px;--tw-border-opacity:1;border-color:rgba(229, 231, 235, 1);border-color:rgba(229, 231, 235, var(--tw-border-opacity, 1));--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1));--tw-text-opacity:1;color:rgba(156, 163, 175, 1);color:rgba(156, 163, 175, var(--tw-text-opacity, 1));--tw-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 1px 2px 0 rgba(0, 0, 0, 0.05);box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}
@@ -5026,7 +5036,10 @@ input[type=radio].sr-only:checked ~ div.radio-images__badge {
   width:90%;
 }
 .main-nav-container.fixed-header .inner .inner-wrapper{--tw-bg-opacity:1 !important;background-color:rgba(236, 247, 255, 1) !important;background-color:rgba(236, 247, 255, var(--tw-bg-opacity, 1)) !important}
-.main-nav-container.fixed-header .inner .inner-wrapper{margin-top:1.25rem;margin-bottom:1.25rem;border-radius:1.5rem;border-width:1px;border-bottom-width:2px;border-right-width:2px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.main-nav-container.fixed-header .inner .inner-wrapper{margin-top:1.25rem;margin-bottom:1.25rem;border-radius:1.5rem;
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0)}
 @media (max-width: 1024px) {
   .main-nav-container.fixed-header .inner {
     transform: none;
@@ -6439,18 +6452,21 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
   height: 3rem !important;
   width: 3rem !important;
 }
-.main-wish-btn button{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
-.main-wish-btn button:hover{--tw-scale-x:1.1 !important;--tw-scale-y:1.1 !important;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1) !important;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important}
-.main-wish-btn button {
+.main-wish-btn button{
+  background-color: #F8B5EB !important}
+.main-wish-btn button{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms;
   border-color: #000000;
-  border-width: 1px;
   border-style: solid;
-  border-bottom-width: 3px;
-  border-right-width: 3px;
+  border-width:1px;
+  --tw-border-opacity:1;
+  border-color:rgb(0 0 0 / 1)}
+@supports (color: rgb(0 0 0 / 0)) and (top: var(--f)){
+.main-wish-btn button{
+  border-color:rgb(0 0 0 / var(--tw-border-opacity, 1))}
 }
-.main-wish-btn button:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+.main-wish-btn button:hover{--tw-translate-x:var(--spacing-boxShadowX);--tw-translate-y:var(--spacing-boxShadowY);transform:translate(4px, 4px) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-shadow:0 0 rgba(0,0,0,0);--tw-shadow-colored:0 0 rgba(0,0,0,0);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0);box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}
 .main-wish-btn button {
-  background-color: #F8B5EB !important;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
 .s-button-icon {
   border-radius: 10px !important;

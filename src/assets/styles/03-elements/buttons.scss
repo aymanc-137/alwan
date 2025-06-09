@@ -146,7 +146,7 @@ salla-button {
   }
 
   &--primary {
-    @apply text-primary-reverse border border-primary;
+    @apply text-primary-reverse border border-primary bg-primary;
   }
 
   &--outline-primary {

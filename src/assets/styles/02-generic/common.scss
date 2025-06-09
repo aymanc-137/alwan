@@ -442,9 +442,12 @@ salla-modal {
   // border-bottom-width: 3px;
   background-color: #61C0C1;
   color: #ffffff;
-  font-size: 12px;
-  @apply border-2 border-black hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
-  box-shadow: 4px 4px 0px 0px rgb(0, 0, 0);
+  font-size: 14px;
+  @apply border border-black hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+  &:hover{
+    background-color: #61C0C1 !important;
+  }
 
 }
 
@@ -496,4 +499,10 @@ salla-modal {
 
     @apply transition-all duration-300;
   }
+}
+
+.neo-shadow{
+  border-color: #000000 !important;
+  border-width: 1px !important;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }

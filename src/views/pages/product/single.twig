@@ -93,7 +93,7 @@
                 {% set has_many_images = product.images|length > 1 %}
                 <salla-slider
                         id="details-slider-{{ product.id }}"
-                        class="details-slider image-slider bg-white border border-black border-r-2 border-b-2 rounded-lg "
+                        class="details-slider image-slider bg-white neo-shadow rounded-lg "
                         type="thumbs"
                         loop="false"
                         auto-height
@@ -178,7 +178,7 @@
                 </salla-slider>
             </div>
 
-            <div class="bg-white border border-black border-r-2 border-b-2 p-3 rounded-lg main-content md:sticky md:overflow-hidden top-24 w-full md:w-2/4 md:pb-16">
+            <div class="bg-white neo-shadow p-3 rounded-lg main-content md:sticky md:overflow-hidden top-24 w-full md:w-2/4 md:pb-16">
 
                 {% hook 'product:single.description.start' %}
 

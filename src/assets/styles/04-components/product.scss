@@ -464,15 +464,16 @@ salla-quantity-input[max='1']{
     height: 3rem !important;
     width: 3rem !important;
     button{
-      @apply transition-all duration-300 hover:!scale-110;
+      @apply transition-all duration-300 ;
 
       border-color: #000000;
       border-width: 1px;
       border-style: solid;
-      border-bottom-width: 3px;
-      border-right-width: 3px;
-      @apply hover:scale-110  ;
+      // border-bottom-width: 3px;
+      // border-right-width: 3px;
       background-color: #F8B5EB !important;
+      @apply border border-black hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
+      box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
     }
   }
  
