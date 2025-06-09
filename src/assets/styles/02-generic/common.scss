@@ -443,7 +443,7 @@ salla-modal {
   background-color: #61C0C1;
   color: #ffffff;
   font-size: 12px;
-  @apply text-main-foreground bg-main border-2 border-border shadow-shadow hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none;
+  @apply border-2 border-border shadow-shadow hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
   
 
 }
