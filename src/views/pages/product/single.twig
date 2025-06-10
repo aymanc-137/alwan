@@ -89,11 +89,11 @@
             <salla-breadcrumb></salla-breadcrumb>
         </nav>
         <div class="flex flex-col items-start md:flex-row" id="product-{{ product.id }}">
-            <div class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 pb-8 md:pb-16 overflow-hidden shrink-0">
+            <div class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 pb-8   md:pb-16 overflow-hidden shrink-0">
                 {% set has_many_images = product.images|length > 1 %}
                 <salla-slider
                         id="details-slider-{{ product.id }}"
-                        class="details-slider image-slider bg-white neo-shadow rounded-lg "
+                        class="details-slider image-slider bg-white neo-shadow mr-1 rounded-lg "
                         type="thumbs"
                         loop="false"
                         auto-height
@@ -369,7 +369,7 @@
                             <div class="out-of-stock min-h-7 leading-7 hidden text-base text-red-600 !opacity-50 font-bold">{{ trans('pages.products.out_of_stock')}}</div>
                         </div>
                     </section>
-                    <section class="sticky-product-bar bg-white p-5 rounded-md rounded-b-none">
+                    <section class="sticky-product-bar bg-white p-3 rounded-md rounded-b-none">
                         {# Quantity #}
                         {% if product.is_hidden_quantity or product.type == 'booking' %}
                             <input type="hidden" value="1" name="quantity" aria-label="Quantity"/>

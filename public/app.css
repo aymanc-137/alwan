@@ -6520,6 +6520,7 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
   fill: #F76D57 !important;
 }
 .s-button-text{display:flex;gap:0.25rem}
+.s-social-share-list{border-width:1px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 .brands-nav{display:flex;flex-wrap:wrap;justify-content:center}
 .brands-nav > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * 0);margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * (1 - 0));margin-left:calc(0.5rem * (1 - var(--tw-space-x-reverse)));margin-left:calc(0.5rem * calc(1 - 0));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));--tw-space-y-reverse:0;margin-top:calc(0.5rem * (1 - 0));margin-top:calc(0.5rem * (1 - var(--tw-space-y-reverse)));margin-top:calc(0.5rem * calc(1 - 0));margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * 0);margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}
 .brands-nav:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:1}
