@@ -1089,6 +1089,17 @@
                     "required": true
                 },
                 {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
@@ -1374,6 +1385,17 @@
                     "required": true
                 },
                 {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
@@ -1522,6 +1544,17 @@
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
+                },
+                {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "enable_backgroud",
@@ -1732,17 +1765,14 @@
                 },
                 {
                     "id": "title_style",
-                    "type": "string",
-                    "format": "select",
+                    "type": "boolean",
+                    "format": "switch",
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "50"
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "subtitle",
@@ -1847,17 +1877,14 @@
                 },
                 {
                     "id": "title_style",
-                    "type": "string",
-                    "format": "select",
+                    "type": "boolean",
+                    "format": "switch",
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "50"
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "subtitle",
@@ -2136,17 +2163,14 @@
                 },
                 {
                     "id": "title_style",
-                    "type": "string",
-                    "format": "select",
+                    "type": "boolean",
+                    "format": "switch",
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "50"
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "subtitle",
@@ -2458,18 +2482,15 @@
                     "maxLength": "50"
                 },
                 {
-                    "id":"title_style",
-                    "type": "string",
-                    "format": "select",
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "50"
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "background_color",
