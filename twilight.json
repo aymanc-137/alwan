@@ -1089,6 +1089,35 @@
                     "required": true
                 },
                 {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
@@ -1097,7 +1126,14 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#ffffff",
-                    "required": true
+                    "required": true,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "background_image",
@@ -1338,6 +1374,28 @@
                     "required": true
                 },
                 {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
@@ -1346,7 +1404,14 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#ffffff",
-                    "required": true
+                    "required": true,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "background_image",
@@ -1357,7 +1422,14 @@
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-                    "required": true
+                    "required": true,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "age",
@@ -1452,6 +1524,28 @@
                     "maxLength": 300
                 },
                 {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
@@ -1463,7 +1557,14 @@
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 300
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "background_image",
@@ -1476,7 +1577,14 @@
                     "value": null,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 300
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "theme_features",
@@ -1650,6 +1758,17 @@
                     "required": false
                 },
                 {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "brand_background",
                     "type": "string",
                     "format": "color",
@@ -1726,6 +1845,67 @@
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
+                },
+                {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "is_video",
@@ -2175,6 +2355,28 @@
                     "maxLength": "50"
                 },
                 {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": "لون الخلفية",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": true
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": "صورة الخلفية",
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+                    "required": true
+                },
+                {
                     "id": "style_title",
                     "type": "boolean",
                     "format": "switch",
@@ -2185,6 +2387,56 @@
                     "value": true,
                     "selected": true,
                     "required": false
+                },
+                {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "faq",
