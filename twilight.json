@@ -1415,7 +1415,8 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": false
+                    "required": false,
+                    "selected": true
                 },
                 {
                     "id": "background_color",
