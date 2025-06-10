@@ -1731,6 +1731,20 @@
                     "maxLength": 300
                 },
                 {
+                    "id": "title_style",
+                    "type": "string",
+                    "format": "select",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
+                },
+                {
                     "id": "subtitle",
                     "type": "string",
                     "format": "text",
@@ -1830,6 +1844,20 @@
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
+                },
+                {
+                    "id": "title_style",
+                    "type": "string",
+                    "format": "select",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
                 },
                 {
                     "id": "subtitle",
@@ -1999,6 +2027,67 @@
                     "value": []
                 },
                 {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id":"enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
                     "id": "side_image_url",
                     "type": "string",
                     "format": "image",
@@ -2044,6 +2133,20 @@
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
+                },
+                {
+                    "id": "title_style",
+                    "type": "string",
+                    "format": "select",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
                 },
                 {
                     "id": "subtitle",
@@ -2186,7 +2289,7 @@
         },
         {
             "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
-            "title": "بنر صورة مع نص  و رابط",
+            "title": "بنر صورة مع نص و رابط",
             "icon": "sicon-store",
             "path": "home.image-text-hero",
             "fields": [
@@ -2355,6 +2458,20 @@
                     "maxLength": "50"
                 },
                 {
+                    "id":"title_style",
+                    "type": "string",
+                    "format": "select",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "50"
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
@@ -2505,6 +2622,18 @@
                     "required": false,
                     "minLength": 6,
                     "maxLength": "50"
+                },
+                {
+                    "id": "style_title",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "استخدام شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
                 },
                 {
                     "id": "locations",
