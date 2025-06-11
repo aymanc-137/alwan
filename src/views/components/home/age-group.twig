@@ -1,8 +1,17 @@
  
- {{component | json_encode}}
  <section class="w-full py-5 {{ component.enable_border ? 'border-y border-black' : '' }}"
 
-style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;"
+{% if component.enable_background %}
+
+      {% if component.background_image %}
+        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+      {% else %}
+        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));"
+      {% endif %}
+
+{% endif %}
+ 
+ 
  >
 
     <style>
