@@ -5,7 +5,7 @@
       {% if component.background_image %}
         style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
       {% else %}
-        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));"
+        style="background-color: {{ component.background_color | default('#ffffff') }};"
       {% endif %}
 
 {% endif %}

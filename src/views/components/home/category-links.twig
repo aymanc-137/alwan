@@ -1,9 +1,17 @@
 {% set colors = ['#cdb6fa', '#b0e8c8', '#9ccef7', '#f2df99', '#ffa3a3'] %}
 <section
-class="bg-slate-50 border-y border-black"
+class="bg-slate-50 {{ component.enable_border ? 'border-y border-black' : '' }}"
 
-style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image | default('https://cdn.lamsaweb.com/cdnAlwan/bg_g.png') }}'); background-repeat: repeat;"
- 
+{% if component.enable_backgroud %}
+
+      {% if component.background_image %}
+        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+      {% else %}
+        style="background-color: {{ component.background_color | default('#ffffff') }};"
+      {% endif %}
+
+{% endif %} 
+
 >
       {% if component.title %}
       <div class="text-center my-5 mx-auto">

@@ -1086,7 +1086,7 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "تصفح أقسامنا المتنوعة واكتشف ألعابًا تناسب كل ذوق واهتمام.",
-                    "required": true
+                    "required": false
                 },
                 {
                     "id": "title_style",
@@ -1119,14 +1119,8 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": false,
-                    "conditions": [
-                        {
-                            "id": "enable_backgroud",
-                            "operator": "=",
-                            "value": true
-                        }
-                    ]
+                    "required": false
+
                 },
                 {
                     "id": "background_color",
@@ -1137,7 +1131,7 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#ffffff",
-                    "required": true,
+                    "required": false,
                     "conditions": [
                         {
                             "id": "enable_backgroud",
@@ -1155,7 +1149,14 @@
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-                    "required": true
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "category",
