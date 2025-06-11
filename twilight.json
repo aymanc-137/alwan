@@ -1430,7 +1430,7 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#ffffff",
-                    "required": true,
+                    "required": false,
                     "conditions": [
                         {
                             "id": "enable_backgroud",
@@ -1448,7 +1448,7 @@
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-                    "required": true,
+                    "required": false,
                     "conditions": [
                         {
                             "id": "enable_backgroud",
