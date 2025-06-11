@@ -1437,8 +1437,7 @@
                             "operator": "=",
                             "value": true
                         }
-                    ],
-                    "public": true
+                    ]
                 },
                 {
                     "id": "background_image",
@@ -1456,8 +1455,7 @@
                             "operator": "=",
                             "value": true
                         }
-                    ],
-                    "public": true
+                    ]
                 },
                 {
                     "id": "age",
