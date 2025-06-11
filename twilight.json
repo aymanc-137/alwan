@@ -1404,7 +1404,9 @@
                     "description": null,
                     "labelHTML": null,
                     "value": false,
-                    "public": true
+                    "icon": "sicon-toggle-off",
+                    "public": true,
+                    "required": false
                 },
                 {
                     "id": "enable_border",
@@ -1414,7 +1416,10 @@
                     "description": null,
                     "labelHTML": null,
                     "value": false,
-                    "public": true
+                    "icon": "sicon-toggle-off",
+                    "public": true,
+                    "required": false
+
                 },
                 {
                     "id": "background_color",
