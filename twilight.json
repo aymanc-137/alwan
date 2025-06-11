@@ -1393,9 +1393,7 @@
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
                     "value": false,
-                    "required": true,
                     "public": true
                 },
                 {
@@ -1405,10 +1403,7 @@
                     "label": "تمكين الخلفية",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": true,
-                    "selected": true,
                     "public": true
                 },
                 {
@@ -1418,10 +1413,7 @@
                     "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": true,
-                    "selected": true,
                     "public": true
                 },
                 {
