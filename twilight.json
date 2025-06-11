@@ -1111,7 +1111,7 @@
                     "required": false
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -1371,7 +1371,8 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "عنوان الفئات العمرية",
-                    "required": true
+                    "required": true,
+                    "multilanguage": true
                 },
                 {
                     "id": "sub_title",
@@ -1382,7 +1383,8 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "عنوان الفرعي",
-                    "required": true
+                    "required": true,
+                    "multilanguage": true
                 },
                 {
                     "id": "title_style",
@@ -1393,7 +1395,8 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": false,
-                    "required": false
+                    "required": true,
+                    "public": true
                 },
                 {
                     "id": "enable_backgroud",
@@ -1404,12 +1407,12 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": false,
+                    "required": true,
                     "selected": true,
                     "public": true
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -1417,8 +1420,9 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": false,
-                    "selected": true
+                    "required": true,
+                    "selected": true,
+                    "public": true
                 },
                 {
                     "id": "background_color",
@@ -1436,7 +1440,8 @@
                             "operator": "=",
                             "value": true
                         }
-                    ]
+                    ],
+                    "public": true
                 },
                 {
                     "id": "background_image",
@@ -1454,7 +1459,8 @@
                             "operator": "=",
                             "value": true
                         }
-                    ]
+                    ],
+                    "public": true
                 },
                 {
                     "id": "age",
@@ -1571,7 +1577,7 @@
                     "required": false
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -1805,7 +1811,7 @@
                     "required": false
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -1916,7 +1922,7 @@
                     "required": false
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -2068,7 +2074,7 @@
                     "required": false
                 },
                 {
-                    "id":"enable_border",
+                    "id": "enable_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -2190,7 +2196,6 @@
                     "minLength": 6,
                     "maxLength": "300"
                 },
-
                 {
                     "id": "background_color",
                     "type": "string",
