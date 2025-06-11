@@ -1404,7 +1404,9 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": false,
-                    "required": false
+                    "required": false,
+                    "selected": true,
+                    "public": true
                 },
                 {
                     "id":"enable_border",
