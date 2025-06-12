@@ -1,5 +1,19 @@
+<section class="{{ component.enable_border ? 'border-y border-black' : '' }}"
 
-<section class="p-5 my-16 bg-[#91edff] md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" >
+   {% if component.enable_backgroud %}
+
+        {% if component.background_image %}
+            style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+            {% else %}
+            style="background-color: {{ component.background_color | default('#ffffff') }};"
+        {% endif %}
+
+   {% endif %} 
+
+>
+<div class="p-5 my-16  md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" 
+style="background-color: {{ component.product_backgroud_color | default('#91edff') }}"
+>
     
         <svg class="w-60 -mt-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                 <g filter="url(#filter0_d_3119_200)">
@@ -66,4 +80,5 @@
         
     </div>
 
+</div>
 </section>
