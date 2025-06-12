@@ -1123,18 +1123,6 @@
 
                 },
                 {
-                    "id": "product_backgroud_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون خلفية المنتجات",
-                    "description": "لون خلفية المنتجات",
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#91edff",
-                    "multilanguage": false,
-                    "required": false
-                },
-                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
@@ -1960,6 +1948,18 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "product_backgroud_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون خلفية المنتجات",
+                    "description": "لون خلفية المنتجات",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#91edff",
+                    "multilanguage": false,
+                    "required": false
                 },
                 {
                     "id": "background_image",
