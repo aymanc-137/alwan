@@ -2114,6 +2114,20 @@
                     ]
                 },
                 {
+                    "id": "text_background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون مربع النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#F3E3FE",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 300
+                },
+                {
                     "id": "background_image",
                     "type": "string",
                     "format": "image",
