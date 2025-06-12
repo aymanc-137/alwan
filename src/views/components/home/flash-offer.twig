@@ -17,7 +17,9 @@ class="min-h-[40rem] {{ component.enable_border ? 'border-y border-black' : '' }
      style="background-color: {{ component.text_background_color | default('#F3E3FE') }};"
      class=" place-self-center mx-auto md:w-5/6 w-[95%] m-3 rounded-xl neo-shadow">
       <div class="p-4 flex flex-col gap-2 text-center">
-                        <h2 class="text-4xl font-extrabold  text-[#ffa723]">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
+                        <h2
+                        style="color: {{ component.title_color | default('#ffa723') }}"
+                         class="text-4xl font-extrabold  ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
                         <p class="text-lg text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
                     </div>
 
