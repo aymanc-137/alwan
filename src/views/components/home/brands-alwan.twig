@@ -1,7 +1,7 @@
 <section class="w-full {{ component.enable_border ? 'border-y border-black' : '' }}"
 
 >
-       <div class="shape-container ">
+       <div class="shape-container {{ component.enable_edges ? '' : 'no-edges' }}">
         <div class="primary-side">
            <div class=" md:w-[45%] mx-auto w-full my-auto md:-translate-x-[60%] md:translate-y-[100%]  translate-y-1/2 ">
                 <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
@@ -298,5 +298,13 @@
             }
         }
 
+        /* Disable zig-zag edges when no-edges class is present */
+        .no-edges .primary-side,
+        .no-edges .secondary-side {
+            clip-path: none !important;
+        }
+        .no-edges .stroke-divider {
+            display: none !important;
+        }
     </style>
 </section>
