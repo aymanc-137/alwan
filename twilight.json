@@ -2566,14 +2566,11 @@
                     "type": "string",
                     "format": "color",
                     "label": "لون الخلفية",
-                    "description": null,
+                    "description": "لون الخلفية",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": null,
-                    "multilanguage": false,
+                    "value": "#ffffff",
                     "required": false,
-                    "minLength": 6,
-                    "maxLength": 300,
                     "conditions": [
                         {
                             "id": "enable_backgroud",
