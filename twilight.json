@@ -2135,7 +2135,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "#F3E3FE",
+                    "value": "#ffa723",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2216,6 +2216,20 @@
                     "icon": "sicon-format-text-alt",
                     "value": false,
                     "required": false
+                },
+                {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffa723",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "300"
                 },
                 {
                     "id": "subtitle",
