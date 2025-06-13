@@ -2551,40 +2551,6 @@
                     "required": false
                 },
                 {
-                    "id": "background_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون الخلفية",
-                    "description": "لون الخلفية",
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#ffffff",
-                    "required": true
-                },
-                {
-                    "id": "background_image",
-                    "type": "string",
-                    "format": "image",
-                    "label": "صورة الخلفية",
-                    "description": "صورة الخلفية",
-                    "labelHTML": null,
-                    "icon": "sicon-image",
-                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-                    "required": true
-                },
-                {
-                    "id": "style_title",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "استخدام شكل العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": true,
-                    "selected": true,
-                    "required": false
-                },
-                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
