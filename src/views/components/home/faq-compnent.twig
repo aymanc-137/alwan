@@ -1,0 +1,71 @@
+{% if component.faq is not empty %}
+<section class="py-10 lg:py-16 {{ component.enable_border ? 'border-y border-black' : '' }}">
+    <div class="container mx-auto px-4">
+        {# Section title #}
+        {# {{ trans('blocks.home.testimonials') }} #}
+        {% if component.title %}
+            {% if component.style_title %}
+            <div class="w-96 mb-5 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
+                                <g filter="url(#filter0_d_3119_200)">
+                                    <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="#FFAB5B"/>
+                                    <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
+                                </g>
+                                <text
+                                    x="2300"
+                                    y="525"
+                                    font-size="400"
+                                    fill="white"
+                                    font-weight="bold"
+                                    text-anchor="middle"
+                                    dominant-baseline="middle"
+                                >
+                                    {{component.title}}
+                                </text>
+                                <defs>
+                                    <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="47" dy="46"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
+                                    </filter>
+                                </defs>
+                                </svg>
+            </div>
+            {% else %}
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">{{ component.title }}</h2>
+            {% endif %}
+        {% endif %}
+
+        {# Prepare two columns by splitting the collection in the middle #}
+        {% set total = component.faq|length %}
+        {% set half  = (total / 2)|round(0, 'ceil') %}
+        {% set col1  = component.faq|slice(0, half) %}
+        {% set col2  = component.faq|slice(half) %}
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {# Render each column #}
+            {% for column in [col1, col2] %}
+                <div class="space-y-4 ">
+                    {% for item in column %}
+                        <details class="group neo-shadow rounded-md overflow-hidden bg-white">
+                            <summary class="flex justify-between items-center cursor-pointer py-3 px-4 list-none">
+                                <span class="font-medium">{{ item.question }}</span>
+                                <svg class="w-4 h-4 text-gray-600 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </summary>
+                            <div class="px-4 py-3 text-sm text-gray-600 bg-gray-50">
+                                {{ item.answer }}
+                            </div>
+                        </details>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

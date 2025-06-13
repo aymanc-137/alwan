@@ -2562,6 +2562,17 @@
                     "required": false
                 },
                 {
+                    "id": "enable_borders",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحواف",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
