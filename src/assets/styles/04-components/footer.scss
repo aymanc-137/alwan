@@ -1,13 +1,12 @@
-
 .store-footer {
   @apply relative bg-darker text-white mt-28;
 
-  a{
-    @apply transition-opacity hover:opacity-75;
-  }
+  // a{
+  //   @apply transition-opacity hover:opacity-75;
+  // }
 
   &__inner{
-    @apply bg-dark py-8 lg:py-16 border-b border-dashed border-b-white/10;
+    @apply bg-dark py-8 lg:pt-16 border-b border-dashed border-b-white/10;
   }  
 
   h3{
@@ -15,7 +14,7 @@
   }
 
   .social-link {
-    @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm
+    // @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm
   }
 
   .contact-social{
@@ -62,17 +61,25 @@
 /* 1. Scope to the custom element so we don’t affect other SVGs */
 salla-social {
 
+  .s-social-link a{
+    @apply rounded-none border-none ;
+  
+    &:hover{
+      @apply scale-110 opacity-100;
+    }
+  }
+
   /* 2. Generic icon wrapper styling */
   .s-social-icon {
     /* size / alignment – adjust as you wish */
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    /* This will colour the icon with the current text colour */
-    background: currentColor;
+    /* Position context for pseudo element */
+    position: relative;
 
     /* Hide the original SVG completely */
     svg { display: none; }
@@ -82,49 +89,87 @@ salla-social {
       content: '';
       width: 100%;
       height: 100%;
-      background: currentColor;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain; /* Safari */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      /* Ensure the SVG used as a mask is displayed correctly */
     }
   }
 
   /* 3. Per-network replacements — update paths as needed */
   a[aria-label="instagram"] .s-social-icon::before,
   a[title="instagram"]    .s-social-icon::before {
-    mask-image: url('/images/icons/instagram.svg');
-    -webkit-mask-image: url('/images/icons/instagram.svg');
+    background-image: url('https://cdn.lamsaweb.com/social-media/instagram.svg');
   }
 
   a[aria-label="twitter"] .s-social-icon::before,
   a[title="twitter"]      .s-social-icon::before {
-    mask-image: url('/images/icons/x.svg'); /* new Twitter/X icon */
-    -webkit-mask-image: url('/images/icons/x.svg');
+    background-image: url('https://cdn.lamsaweb.com/social-media/x.svg'); /* new Twitter/X icon */
   }
 
   a[aria-label="snapchat"] .s-social-icon::before,
   a[title="snapchat"]      .s-social-icon::before {
-    mask-image: url('/images/icons/snapchat.svg');
-    -webkit-mask-image: url('/images/icons/snapchat.svg');
+    background-image: url('https://cdn.lamsaweb.com/social-media/snapchat.svg');
   }
 
   a[aria-label="tiktok"] .s-social-icon::before,
   a[title="tiktok"]      .s-social-icon::before {
-    --tiktok : url('https://cdn.lamsaweb.com/social-media/tiktok.svg');
-    mask-image: var(--tiktok);
-    -webkit-mask-image: var(--tiktok);
+    background-image : url('https://cdn.lamsaweb.com/social-media/tiktok.svg');
   }
 
   a[aria-label="youtube"] .s-social-icon::before,
   a[title="youtube"]      .s-social-icon::before {
-    mask-image: url('/images/icons/youtube.svg');
-    -webkit-mask-image: url('/images/icons/youtube.svg');
+    background-image: url('https://cdn.lamsaweb.com/social-media/youtube.svg');
   }
 
   a[aria-label="facebook"] .s-social-icon::before,
   a[title="facebook"]      .s-social-icon::before {
-    --facebook : url('https://cdn.lamsaweb.com/social-media/facebook.svg');
-    mask-image: var(--facebook);
-    -webkit-mask-image: var(--facebook);
+    background-image : url('https://cdn.lamsaweb.com/social-media/facebook.svg');
   }
 }
 /*  ===== End override ===== */
+
+
+/*  ===== Contacts-icons override ===== */
+salla-contacts {
+
+  /* link hover behaviour */
+  .s-contacts-item {
+   
+    
+    // @apply transition hover:opacity-100 hover:scale-105;
+  }
+
+  /* icon wrapper */
+  .s-contacts-icon {
+    &:hover{
+      @apply scale-110 opacity-100;
+    }
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @apply rounded-none border-none  transition-all duration-300;
+
+    /* hide inline SVG */
+    svg { display: none; }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  /* per-contact type replacements (update paths as needed) */
+  a[href^="tel:"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/phone.svg'); }
+  a[href^="mailto:"]     .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/email.svg'); }
+  a[href*="t.me"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/telegram.svg'); }
+}
+/*  ===== End contacts override ===== */
+ 

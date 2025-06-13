@@ -514,7 +514,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .z-50{z-index:50}
 .z-\[2\]{z-index:2}
 .col-span-2{grid-column:span 2 / span 2}
-.m-0{margin:0px}
 .m-3{margin:0.75rem}
 .m-5{margin:1.25rem}
 .m-8{margin:2rem}
@@ -664,7 +663,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .max-w-full{max-width:100%}
 .max-w-lg{max-width:32rem}
 .max-w-md{max-width:28rem}
-.max-w-sm{max-width:24rem}
 .max-w-xs{max-width:20rem}
 .flex-1{flex:1 1 0%}
 .flex-none{flex:none}
@@ -5366,16 +5364,12 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
 #nav-cart span:where([dir="rtl"], [dir="rtl"] *){right:-0.5rem}
 .header-search .s-search-results{z-index:10}
 .store-footer{position:relative;margin-top:7rem;--tw-bg-opacity:1;background-color:rgba(14, 15, 15, 1);background-color:rgba(14, 15, 15, var(--tw-bg-opacity, 1));--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity, 1))}
-.store-footer a{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
-.store-footer a:hover{opacity:0.75}
 .store-footer__inner{border-bottom-width:1px;border-style:dashed;border-bottom-color:rgba(255, 255, 255, 0.1);--tw-bg-opacity:1;background-color:rgba(29, 31, 31, 1);background-color:rgba(29, 31, 31, var(--tw-bg-opacity, 1));padding-top:2rem;padding-bottom:2rem}
 @media (min-width: 1024px){
-.store-footer__inner{padding-top:4rem;padding-bottom:4rem}}
+.store-footer__inner{padding-top:4rem}}
 .store-footer h3{margin-bottom:0.75rem;font-size:1.125rem;line-height:1.75rem;font-weight:700}
 @media (min-width: 1024px){
 .store-footer h3{margin-bottom:1.25rem}}
-.store-footer .social-link{display:flex;height:2rem;width:2rem;align-items:center;justify-content:center;border-radius:9999px;border-width:1px;font-size:0.875rem;line-height:1.25rem;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
-.store-footer .social-link:hover{opacity:0.75}
 .store-footer .contact-social{margin-top:1.25rem;border-top-width:1px;border-color:rgba(255, 255, 255, 0.1);padding-top:1.25rem}
 .store-footer .contact-social ul{margin-bottom:0px}
 .store-footer__wave {
@@ -5397,15 +5391,17 @@ salla-social {
   /* 2. Generic icon wrapper styling */
   /* 3. Per-network replacements — update paths as needed */
 }
+salla-social .s-social-link a{border-radius:0px;border-style:none}
+salla-social .s-social-link a:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));opacity:1}
 salla-social .s-social-icon {
   /* size / alignment – adjust as you wish */
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* This will colour the icon with the current text colour */
-  background: currentColor;
+  /* Position context for pseudo element */
+  position: relative;
   /* Hide the original SVG completely */
   /* Pseudo element will hold the new icon */
 }
@@ -5416,47 +5412,77 @@ salla-social .s-social-icon::before {
   content: "";
   width: 100%;
   height: 100%;
-  background: currentColor;
-  mask: no-repeat center/contain;
-  -webkit-mask: no-repeat center/contain; /* Safari */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Ensure the SVG used as a mask is displayed correctly */
 }
 salla-social a[aria-label=instagram] .s-social-icon::before,
 salla-social a[title=instagram] .s-social-icon::before {
-  mask-image: url("/images/icons/instagram.svg");
-  -webkit-mask-image: url("/images/icons/instagram.svg");
+  background-image: url("https://cdn.lamsaweb.com/social-media/instagram.svg");
 }
 salla-social a[aria-label=twitter] .s-social-icon::before,
 salla-social a[title=twitter] .s-social-icon::before {
-  mask-image: url("/images/icons/x.svg"); /* new Twitter/X icon */
-  -webkit-mask-image: url("/images/icons/x.svg");
+  background-image: url("https://cdn.lamsaweb.com/social-media/x.svg"); /* new Twitter/X icon */
 }
 salla-social a[aria-label=snapchat] .s-social-icon::before,
 salla-social a[title=snapchat] .s-social-icon::before {
-  mask-image: url("/images/icons/snapchat.svg");
-  -webkit-mask-image: url("/images/icons/snapchat.svg");
+  background-image: url("https://cdn.lamsaweb.com/social-media/snapchat.svg");
 }
 salla-social a[aria-label=tiktok] .s-social-icon::before,
 salla-social a[title=tiktok] .s-social-icon::before {
-  --tiktok: url("https://cdn.lamsaweb.com/social-media/tiktok.svg");
-  mask-image: url("https://cdn.lamsaweb.com/social-media/tiktok.svg");
-  mask-image: var(--tiktok);
-  -webkit-mask-image: url("https://cdn.lamsaweb.com/social-media/tiktok.svg");
-  -webkit-mask-image: var(--tiktok);
+  background-image: url("https://cdn.lamsaweb.com/social-media/tiktok.svg");
 }
 salla-social a[aria-label=youtube] .s-social-icon::before,
 salla-social a[title=youtube] .s-social-icon::before {
-  mask-image: url("/images/icons/youtube.svg");
-  -webkit-mask-image: url("/images/icons/youtube.svg");
+  background-image: url("https://cdn.lamsaweb.com/social-media/youtube.svg");
 }
 salla-social a[aria-label=facebook] .s-social-icon::before,
 salla-social a[title=facebook] .s-social-icon::before {
-  --facebook: url("https://cdn.lamsaweb.com/social-media/facebook.svg");
-  mask-image: url("https://cdn.lamsaweb.com/social-media/facebook.svg");
-  mask-image: var(--facebook);
-  -webkit-mask-image: url("https://cdn.lamsaweb.com/social-media/facebook.svg");
-  -webkit-mask-image: var(--facebook);
+  background-image: url("https://cdn.lamsaweb.com/social-media/facebook.svg");
 }
 /*  ===== End override ===== */
+/*  ===== Contacts-icons override ===== */
+salla-contacts {
+  /* link hover behaviour */
+  /* icon wrapper */
+  /* per-contact type replacements (update paths as needed) */
+}
+salla-contacts .s-contacts-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0px;
+  border-style:none;
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:300ms;
+  /* hide inline SVG */
+}
+salla-contacts .s-contacts-icon:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));opacity:1}
+salla-contacts .s-contacts-icon svg {
+  display: none;
+}
+salla-contacts .s-contacts-icon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+salla-contacts a[href^="tel:"] .s-contacts-icon::before {
+  background-image: url("https://cdn.lamsaweb.com/social-media/phone.svg");
+}
+salla-contacts a[href^="mailto:"] .s-contacts-icon::before {
+  background-image: url("https://cdn.lamsaweb.com/social-media/email.svg");
+}
+salla-contacts a[href*="t.me"] .s-contacts-icon::before {
+  background-image: url("https://cdn.lamsaweb.com/social-media/telegram.svg");
+}
+/*  ===== End contacts override ===== */
 .main-menu > li > a[href*=offer]{--tw-text-opacity:1;color:rgba(153, 27, 27, 1);color:rgba(153, 27, 27, var(--tw-text-opacity, 1))}
 @media only screen and (min-width: 1024px) {
   .main-menu{margin-left:1.5rem;margin-right:1.5rem;display:none;flex-wrap:wrap;align-items:center;padding-top:2rem;padding-bottom:0px}
@@ -7229,7 +7255,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .lg\:not-sr-only{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}
 .lg\:sticky{position:sticky}
 .lg\:top-20{top:5rem}
-.lg\:col-span-2{grid-column:span 2 / span 2}
 .lg\:col-span-6{grid-column:span 6 / span 6}
 .lg\:-mt-28{margin-top:-7rem}
 .lg\:mb-24{margin-bottom:6rem}
@@ -7319,9 +7344,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 @media (min-width: 1024px){
 .ltr\:lg\:ml-8:where([dir="ltr"], [dir="ltr"] *){margin-left:2rem}
 .ltr\:lg\:mr-8:where([dir="ltr"], [dir="ltr"] *){margin-right:2rem}
-.ltr\:lg\:pl-10:where([dir="ltr"], [dir="ltr"] *){padding-left:2.5rem}
-.ltr\:lg\:pl-20:where([dir="ltr"], [dir="ltr"] *){padding-left:5rem}
-.ltr\:lg\:pr-20:where([dir="ltr"], [dir="ltr"] *){padding-right:5rem}}
+.ltr\:lg\:pl-10:where([dir="ltr"], [dir="ltr"] *){padding-left:2.5rem}}
 @media (min-width: 480px){
 .ltr\:xs\:right-5:where([dir="ltr"], [dir="ltr"] *){right:1.25rem}}
 .rtl\:left-0:where([dir="rtl"], [dir="rtl"] *){left:0px}
@@ -7370,8 +7393,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 @media (min-width: 1024px){
 .rtl\:lg\:ml-8:where([dir="rtl"], [dir="rtl"] *){margin-left:2rem}
 .rtl\:lg\:mr-8:where([dir="rtl"], [dir="rtl"] *){margin-right:2rem}
-.rtl\:lg\:pl-20:where([dir="rtl"], [dir="rtl"] *){padding-left:5rem}
-.rtl\:lg\:pr-10:where([dir="rtl"], [dir="rtl"] *){padding-right:2.5rem}
-.rtl\:lg\:pr-20:where([dir="rtl"], [dir="rtl"] *){padding-right:5rem}}
+.rtl\:lg\:pr-10:where([dir="rtl"], [dir="rtl"] *){padding-right:2.5rem}}
 @media (min-width: 480px){
 .rtl\:xs\:left-5:where([dir="rtl"], [dir="rtl"] *){left:1.25rem}}
