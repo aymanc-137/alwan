@@ -1,10 +1,23 @@
 {% if component.faq is not empty %}
-<section class="py-10 lg:py-16 {{ component.enable_border ? 'border-y border-black' : '' }}">
+<section
+
+{% if component.enable_backgroud %}
+
+      {% if component.background_image %}
+        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+      {% else %}
+        style="background-color: {{ component.background_color | default('#ffffff') }};"
+      {% endif %}
+
+{% endif %} 
+
+
+ class="py-10 lg:py-16 {{ component.enable_borders ? 'border-y border-black' : '' }}">
     <div class="container mx-auto px-4">
         {# Section title #}
         {# {{ trans('blocks.home.testimonials') }} #}
         {% if component.title %}
-            {% if component.style_title %}
+            {% if component.title_style %}
             <div class="w-96 mb-5 mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                 <g filter="url(#filter0_d_3119_200)">
