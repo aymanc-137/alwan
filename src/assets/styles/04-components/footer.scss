@@ -56,3 +56,75 @@
 .copyright-text p{
   @apply text-gray-700;
 }
+
+
+/*  ===== Social-icons override ===== */
+/* 1. Scope to the custom element so we don’t affect other SVGs */
+salla-social {
+
+  /* 2. Generic icon wrapper styling */
+  .s-social-icon {
+    /* size / alignment – adjust as you wish */
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* This will colour the icon with the current text colour */
+    background: currentColor;
+
+    /* Hide the original SVG completely */
+    svg { display: none; }
+
+    /* Pseudo element will hold the new icon */
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: currentColor;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain; /* Safari */
+    }
+  }
+
+  /* 3. Per-network replacements — update paths as needed */
+  a[aria-label="instagram"] .s-social-icon::before,
+  a[title="instagram"]    .s-social-icon::before {
+    mask-image: url('/images/icons/instagram.svg');
+    -webkit-mask-image: url('/images/icons/instagram.svg');
+  }
+
+  a[aria-label="twitter"] .s-social-icon::before,
+  a[title="twitter"]      .s-social-icon::before {
+    mask-image: url('/images/icons/x.svg'); /* new Twitter/X icon */
+    -webkit-mask-image: url('/images/icons/x.svg');
+  }
+
+  a[aria-label="snapchat"] .s-social-icon::before,
+  a[title="snapchat"]      .s-social-icon::before {
+    mask-image: url('/images/icons/snapchat.svg');
+    -webkit-mask-image: url('/images/icons/snapchat.svg');
+  }
+
+  a[aria-label="tiktok"] .s-social-icon::before,
+  a[title="tiktok"]      .s-social-icon::before {
+    --tiktok : url('https://cdn.lamsaweb.com/social-media/tiktok.svg');
+    mask-image: var(--tiktok);
+    -webkit-mask-image: var(--tiktok);
+  }
+
+  a[aria-label="youtube"] .s-social-icon::before,
+  a[title="youtube"]      .s-social-icon::before {
+    mask-image: url('/images/icons/youtube.svg');
+    -webkit-mask-image: url('/images/icons/youtube.svg');
+  }
+
+  a[aria-label="facebook"] .s-social-icon::before,
+  a[title="facebook"]      .s-social-icon::before {
+    --facebook : url('https://cdn.lamsaweb.com/social-media/facebook.svg');
+    mask-image: var(--facebook);
+    -webkit-mask-image: var(--facebook);
+  }
+}
+/*  ===== End override ===== */
