@@ -2565,7 +2565,7 @@
                     "id": "enable_borders",
                     "type": "boolean",
                     "format": "switch",
-                    "label": "تمكين الحواف",
+                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
