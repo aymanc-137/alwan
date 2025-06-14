@@ -522,23 +522,24 @@ salla-quantity-input[max='1']{
   @apply border border-black;
 }
 
+.s-product-card-style1{
 
+  .s-product-card-image , .s-product-card-image-full{
+    @apply p-3;
+  }
 
+  img{
+    @apply rounded-2xl;
+    
+  }
+  .s-product-card-content{
+    @apply bg-[#ffffff] m-3 rounded-3xl border-black border;
+  }
+  .s-product-card-content-footer  {
+    @apply justify-between md:justify-between;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+ .s-product-card-content-footer  {
+   @apply justify-between md:justify-around;
+ }

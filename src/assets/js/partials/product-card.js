@@ -161,10 +161,12 @@ class ProductCard extends HTMLElement {
      *  Background colors.
      */
     this.bgColors=['#EAF8F8','#FAF3E1','#9BD3D0','#FECCB5','#FBE7B2','#FDFDF2','#FEC447','#FFA2C4','#FECCB4','#EAFD92','#F5DEA9','#F4F2D9','#E0D8F3','#05DDDC','#8ACCD5','#F8F8E1','#FFC1DA','#FF90BB'];
+    //this.bgColors=['#00809D','#FCECDD','#80D8C3','#4DA8DA','#9FC87E','#075B5E','#00CAFF','#FFDCDC','#129990','#4ED7F1','#FF90BB','#8E7DBE'];
  
   }
 
   render(){
+    this.classList.add('s-product-card-style1');
     this.classList.add('s-product-card-entry');
     this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
     this.style.backgroundColor = this.bgColor;
@@ -181,11 +183,11 @@ class ProductCard extends HTMLElement {
     this.product?.donation?  this.classList.add('s-product-card-donation') : '';
     this.shadowOnHover?  this.classList.add('s-product-card-shadow') : '';
     this.product?.is_out_of_stock?  this.classList.add('s-product-card-out-of-stock') : '';
-    this.isInWishlist = !salla.config.isGuest() && salla.storage.get('salla::wishlist', []).includes(Number(this.product.id));
+    this.isInWishlist = !salla.config.isGuest() && salla.storage.get('salla::wishlist', []).includes(this.product.id);
     this.innerHTML = `
-        <div class="p-3 ${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}" >
+        <div class=" ${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}" >
           <a href="${this.product?.url}">
-            <img class=" rounded-2xl s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
+            <img class=" s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
               ? 'contain'
               : this.fitImageHeight
                 ? this.fitImageHeight
@@ -221,7 +223,7 @@ class ProductCard extends HTMLElement {
               ` : ``
           }
         </div>
-        <div class="s-product-card-content bg-[#ffffff] m-3 rounded-3xl border-black border">
+        <div class="s-product-card-content ">
           ${this.isSpecial && this.product?.quantity ?
             `<div class="s-product-card-content-pie">
               <span>

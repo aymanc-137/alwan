@@ -771,7 +771,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
 .\!bg-blue-400{--tw-bg-opacity:1 !important;background-color:rgba(96, 165, 250, 1) !important;background-color:rgba(96, 165, 250, var(--tw-bg-opacity, 1)) !important}
 .bg-\[\#fff5f0\]{--tw-bg-opacity:1;background-color:rgba(255, 245, 240, 1);background-color:rgba(255, 245, 240, var(--tw-bg-opacity, 1))}
-.bg-\[\#ffffff\]{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
 .bg-\[\(--color-text\)\]{background-color:(--color-text)}
 .bg-black{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);background-color:rgba(0, 0, 0, var(--tw-bg-opacity, 1))}
 .bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239, 246, 255, 1);background-color:rgba(239, 246, 255, var(--tw-bg-opacity, 1))}
@@ -6599,6 +6598,15 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
 }
 .s-button-text{display:flex;gap:0.25rem}
 .s-social-share-list{border-width:1px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.s-product-card-style1 .s-product-card-image, .s-product-card-style1 .s-product-card-image-full{padding:0.75rem}
+.s-product-card-style1 img{border-radius:1rem}
+.s-product-card-style1 .s-product-card-content{margin:0.75rem;border-radius:1.5rem;border-width:1px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1));--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
+.s-product-card-style1 .s-product-card-content-footer{justify-content:space-between}
+@media (min-width: 768px){
+.s-product-card-style1 .s-product-card-content-footer{justify-content:space-between}}
+.s-product-card-content-footer{justify-content:space-between}
+@media (min-width: 768px){
+.s-product-card-content-footer{justify-content:space-around}}
 .brands-nav{display:flex;flex-wrap:wrap;justify-content:center}
 .brands-nav > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * 0);margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * (1 - 0));margin-left:calc(0.5rem * (1 - var(--tw-space-x-reverse)));margin-left:calc(0.5rem * calc(1 - 0));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));--tw-space-y-reverse:0;margin-top:calc(0.5rem * (1 - 0));margin-top:calc(0.5rem * (1 - var(--tw-space-y-reverse)));margin-top:calc(0.5rem * calc(1 - 0));margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * 0);margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}
 .brands-nav:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:1}
@@ -6653,6 +6661,7 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
   background-repeat: no-repeat;
   background-position: center;
 }
+.s-products-list-placeholder p{margin-bottom:1rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity, 1))}
 /*  ===== End products placeholder override ===== */
 .s-gifting-modal .s-checkbox {
   background-color: #fff !important;
