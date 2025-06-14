@@ -9,3 +9,30 @@
       @apply text-base text-gray-500 mb-4;
     }
 }
+
+/*  ===== Products List Placeholder override ===== */
+.s-products-list-placeholder{
+    // @apply h-full text-gray-400 pt-10 pb-20 flex items-center flex-col justify-center;
+
+    span{
+      // @apply text-5xl mb-4 w-32 h-32 flex justify-center items-center rounded-full bg-gray-100 text-gray-300;
+
+      /* hide the default inline SVG */
+      svg{ display:none; }
+
+      &::before{
+        content:'';
+        width:3rem;
+        height:3rem;
+        background-image:url('https://cdn.lamsaweb.com/cdnAlwan/social-media/shopping-cart.svg'); /* your replacement */
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+      }
+    }
+
+    // p{
+    //   @apply text-base text-gray-500 mb-4;
+    // }
+}
+/*  ===== End products placeholder override ===== */
