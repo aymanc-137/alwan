@@ -167,8 +167,9 @@ class ProductCard extends HTMLElement {
   render(){
      this.classList.add('s-product-card-entry');
     this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
-    //this.style.backgroundColor = this.bgColor  EDF7F8;
-    this.style.backgroundColor = '#F8F8E1';
+    this.style.backgroundColor = this.bgColor;
+    //EDF7F8
+    //this.style.backgroundColor = '#F8F8E1';
 
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
