@@ -8,8 +8,6 @@ class NavigationMenu extends HTMLElement {
                 const currentLang = document.documentElement.lang || 'ar';
                 const brandsTranslation = currentLang === 'en' ? 'Brands' : 'الماركات التجارية';
 
-                const settings = salla.settings.get();
-                console.log(settings);
                 return salla.api.component.getMenus()
                 .then(({ data }) => {
                     this.menus = data;

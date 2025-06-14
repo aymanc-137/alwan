@@ -106,7 +106,7 @@
             "description": null,
             "labelHTML": null,
             "icon": "sicon-format-fill",
-            "value": "#004956",
+            "value": "#FFAB5B",
             "required": false
         },
         {
@@ -142,7 +142,7 @@
             "description": null,
             "labelHTML": null,
             "icon": "sicon-format-fill",
-            "value": "#004956",
+            "value": "#EDF7F8",
             "required": false
         },
         {

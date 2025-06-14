@@ -18,18 +18,22 @@ class ProductCard extends HTMLElement {
   onReady(){
       this.fitImageHeight = salla.config.get('store.settings.product.fit_type');
       this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
+
       // Try to get wishlistBtn from salla.config, fallback to localStorage
       this.wishlistBtn = salla.config.get('theme.settings.get("wishlist_btn")') || localStorage.getItem('wishlist_btn');
+      
+      this.mutileColorProductCard = salla.config.get('theme.settings.get("mutile_color_product_card")') || localStorage.getItem('mutile_color_product_card');
+      this.addSpacingProductCard = salla.config.get('theme.settings.get("add_spacing_product_card")') || localStorage.getItem('add_spacing_product_card');
+      this.productCardColor = salla.config.get('theme.settings.get("product_card_color")') || localStorage.getItem('product_card_color');
 
-      console.log(this.wishlistBtn)
       this.getProps()
 
-	  this.source = salla.config.get("page.slug");
+	    this.source = salla.config.get("page.slug");
       // If the card is in the landing page, hide the add button and show the quantity
-	  if (this.source == "landing-page") {
-	  	this.hideAddBtn = true;
-	  	this.showQuantity = window.showQuantity;
-	  }
+      if (this.source == "landing-page") {
+        this.hideAddBtn = true;
+        this.showQuantity = window.showQuantity;
+      }
 
       salla.lang.onLoaded(() => {
         // Language
@@ -166,9 +170,18 @@ class ProductCard extends HTMLElement {
   }
 
   render(){
-    this.classList.add('s-product-card-style1');
+    if(this.mutileColorProductCard){
+      this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
+    }else{
+      this.bgColor = this.productCardColor;
+    }
+
+    if(this.addSpacingProductCard){
+      this.classList.add('s-product-card-style1');
+    }
+
+
     this.classList.add('s-product-card-entry');
-    this.bgColor = this.bgColors[Math.floor(Math.random() * this.bgColors.length)];
     this.style.backgroundColor = this.bgColor;
     //EDF7F8
     //this.style.backgroundColor = '#F8F8E1';
