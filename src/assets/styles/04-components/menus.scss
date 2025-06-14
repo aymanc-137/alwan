@@ -235,5 +235,10 @@
   @apply bg-transparent border-none outline-none;
 }
 .s-product-card-entry{
-  @apply  border border-black border-b-[3px] border-r-[3px];
+  @apply  neo-shadow;
+
+  // img{
+  //   border: none !important;
+  // }
+  
 }

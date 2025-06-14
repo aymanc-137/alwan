@@ -408,8 +408,8 @@ salla-quantity-input[max='1']{
 
 .s-product-card-image {
   img{
-  @apply border border-black max-h-72;
-  }
+  @apply border-b border-black max-h-72;
+   }
   background-color: transparent;
 }
 
@@ -529,7 +529,7 @@ salla-quantity-input[max='1']{
   }
 
   img{
-    @apply rounded-2xl;
+    @apply rounded-2xl border border-black;
     
   }
   .s-product-card-content{
