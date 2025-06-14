@@ -6637,18 +6637,17 @@ salla-quantity-input[max="1"] .s-quantity-input-button{cursor:not-allowed}
 .index .brand-item img{max-width:150px}}
 .no-content-placeholder{display:flex;height:100%;flex-direction:column;align-items:center;justify-content:center;padding-top:2.5rem;padding-bottom:5rem;--tw-text-opacity:1;color:rgba(156, 163, 175, 1);color:rgba(156, 163, 175, var(--tw-text-opacity, 1))}
 .no-content-placeholder .icon{margin-bottom:1rem;display:flex;height:8rem;width:8rem;align-items:center;justify-content:center;border-radius:9999px;--tw-bg-opacity:1;background-color:rgba(243, 244, 246, 1);background-color:rgba(243, 244, 246, var(--tw-bg-opacity, 1));font-size:3rem;line-height:1;--tw-text-opacity:1;color:rgba(209, 213, 219, 1);color:rgba(209, 213, 219, var(--tw-text-opacity, 1))}
-.no-content-placeholder p{margin-bottom:1rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgba(107, 114, 128, 1);color:rgba(107, 114, 128, var(--tw-text-opacity, 1))}
+.no-content-placeholder p{margin-bottom:1rem;font-size:1rem;line-height:1.5rem;--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity, 1))}
 /*  ===== Products List Placeholder override ===== */
-.s-products-list-placeholder span {
-  /* hide the default inline SVG */
-}
+.s-products-list-placeholder span{border-width:2px;--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1));--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity, 1))
+  /* hide the default inline SVG */}
 .s-products-list-placeholder span svg {
   display: none;
 }
 .s-products-list-placeholder span::before {
   content: "";
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/social-media/shopping-cart.svg"); /* your replacement */
   background-size: contain;
   background-repeat: no-repeat;

@@ -6,7 +6,7 @@
     }
 
     p{
-      @apply text-base text-gray-500 mb-4;
+      @apply text-base text-black mb-4;
     }
 }
 
@@ -15,6 +15,7 @@
     // @apply h-full text-gray-400 pt-10 pb-20 flex items-center flex-col justify-center;
 
     span{
+      @apply border-2 border-black text-black;
       // @apply text-5xl mb-4 w-32 h-32 flex justify-center items-center rounded-full bg-gray-100 text-gray-300;
 
       /* hide the default inline SVG */
@@ -22,8 +23,8 @@
 
       &::before{
         content:'';
-        width:3rem;
-        height:3rem;
+        width:5rem;
+        height:5rem;
         background-image:url('https://cdn.lamsaweb.com/cdnAlwan/social-media/shopping-cart.svg'); /* your replacement */
         background-size:contain;
         background-repeat:no-repeat;
