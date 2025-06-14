@@ -98,6 +98,54 @@
             "maxLength": "100"
         },
         {
+            "id": "style_title_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية العناوين",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#004956",
+            "required": false
+        },
+        {
+            "id": "mutile_color_product_card",
+            "type": "boolean",
+            "format": "switch",
+            "label": "ألوان متعددة لبطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "add_spacing_product_card",
+            "type": "boolean",
+            "format": "switch",
+            "label": "إضافة ابعاد لبطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "product_card_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون بطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#004956",
+            "required": false
+        },
+        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
@@ -1120,7 +1168,6 @@
                     "icon": "sicon-toggle-off",
                     "value": false,
                     "required": false
-
                 },
                 {
                     "id": "background_color",
@@ -1420,7 +1467,6 @@
                     "icon": "sicon-toggle-off",
                     "public": true,
                     "required": false
-
                 },
                 {
                     "id": "background_color",
