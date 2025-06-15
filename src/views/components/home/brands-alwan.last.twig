@@ -20,13 +20,13 @@
 
             {% else %}
 
-            <div class="w-[80%] mx-auto my-auto md:-translate-x-20 translate-y-5 md:translate-y-1/2 justify-center">
+            <div class="w-[80%] mx-auto my-auto md:-translate-x-20 translate-y-80 md:translate-y-1/2 justify-center">
 
                         {% if component.title_style %}
 
                             <div class="md:w-96 mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
-                                            <g filter="url(#filter0_d_3119_200)" {% if not theme.is_rtl %}transform="translate(4200 0) scale(-1 1)"{% endif %}>
+                                            <g filter="url(#filter0_d_3119_200)">
                                                 <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
                                                 <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
                                             </g>
@@ -87,7 +87,7 @@
 
                             <div class="md:w-96 mb-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
-                                            <g filter="url(#filter0_d_3119_200)" {% if not theme.is_rtl %}transform="translate(4200 0) scale(-1 1)"{% endif %}>
+                                            <g filter="url(#filter0_d_3119_200)">
                                                 <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
                                                 <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
                                             </g>
@@ -126,18 +126,18 @@
             </div>
             {% else %}
 
-                <div class=" md:w-[45%] mx-auto w-full my-auto md:translate-x-[60%] md:translate-y-[100%] translate-y-[60%] ">
-                        <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
-                        {% for brand in component.brands %}
-                        <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
-                                <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
-                        
-                        </a>
-                        {% endfor %}
-                        
-                        </p>
+  <div class=" md:w-[45%] mx-auto w-full my-auto md:-translate-x-[60%] md:translate-y-[100%]  translate-y-1/2 ">
+                    <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
+                    {% for brand in component.brands %}
+                    <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
+                            <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
+                    
+                    </a>
+                    {% endfor %}
+                    
+                    </p>
 
-                </div> 
+            </div> 
             {% endif %}
 
         </div>
