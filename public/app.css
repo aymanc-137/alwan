@@ -731,6 +731,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .self-start{align-self:flex-start}
 .overflow-auto{overflow:auto}
 .overflow-hidden{overflow:hidden}
+.overflow-visible{overflow:visible}
 .overflow-x-hidden{overflow-x:hidden}
 .text-ellipsis{text-overflow:ellipsis}
 .whitespace-nowrap{white-space:nowrap}
@@ -7372,6 +7373,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 @media (min-width: 640px){
 .sm\:ltr\:text-left:where([dir="ltr"], [dir="ltr"] *){text-align:left}}
 @media (min-width: 768px){
+.md\:ltr\:border-r-2:where([dir="ltr"], [dir="ltr"] *){border-right-width:2px}
 .ltr\:md\:pr-10:where([dir="ltr"], [dir="ltr"] *){padding-right:2.5rem}
 .ltr\:md\:pr-12:where([dir="ltr"], [dir="ltr"] *){padding-right:3rem}
 .ltr\:md\:pr-8:where([dir="ltr"], [dir="ltr"] *){padding-right:2rem}

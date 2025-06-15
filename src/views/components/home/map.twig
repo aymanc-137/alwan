@@ -7,6 +7,9 @@
         {% if component.title %}
             {% if component.style_title %}
             <div class="w-96 mb-5 mx-auto">
+               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
+
+                {% if false %}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                 <g filter="url(#filter0_d_3119_200)">
                                     <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
@@ -35,6 +38,7 @@
                                     </filter>
                                 </defs>
                                 </svg>
+                                {% endif %}
             </div>
             {% else %}
             <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">{{ component.title }}</h2>

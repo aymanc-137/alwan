@@ -19,6 +19,9 @@
                 {% if component.title_style %}
 
                 <div class="w-72 sm:w-80 md:w-96 mx-auto mb-5">
+                    {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
+
+                 {% if false %}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                   <g filter="url(#filter0_d_3119_200)">
                                     <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
@@ -47,6 +50,7 @@
                                     </filter>
                                   </defs>
                                 </svg>
+                                {% endif %}
                 </div>
                 {% else %}
                 <h1 class="text-5xl mx-auto mb-5 text-center">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>

@@ -3,7 +3,7 @@
     {% if component.use_video %}
         <video autoplay loop muted class="w-full h-[400px] md:w-1/2 md:h-full bg-cover bg-center border-b-2 md:border-b-0 border-black" src="{{ component.video_url }}"></video>
     {% else %}
-        <a href="{{ component.url }}" class="w-full h-[400px] md:w-1/2 md:h-full border-b-2 md:border-b-0 md:border-l-2 border-black bg-cover bg-center" style="background-image: url({{ component.right_image }});">
+        <a href="{{ component.url }}" class="w-full h-[400px] md:w-1/2 md:h-full border-b-2 md:border-b-0 md:border-l-2 md:ltr:border-r-2 border-black bg-cover bg-center" style="background-image: url({{ component.right_image }});">
         </a>
     {% endif %}
         <a href="{{ component.url }}" class="w-full h-[400px] md:w-1/2 md:h-full bg-cover bg-center" style="background-image: url({{ component.left_image }});">
