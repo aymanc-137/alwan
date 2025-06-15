@@ -20,7 +20,7 @@
 
             {% else %}
 
-            <div class="w-[80%] mx-auto my-auto md:translate-x-20 translate-y-80 md:translate-y-1/2 justify-center">
+            <div class="w-[80%] mx-auto my-auto md:-translate-x-20 translate-y-80 md:translate-y-1/2 justify-center">
 
                         {% if component.title_style %}
 
@@ -299,8 +299,8 @@
                                             --vz-peak-x: 55%;
                                             --vz-valley-x: 58%;
                                             {% else %}
-                                            --vz-peak-x: 58%;
-                                            --vz-valley-x: 55%;
+                                            --vz-peak-x: 48%;
+                                            --vz-valley-x: 45%;
                                             {% endif %}
                                     {% else %}
                                     --vz-peak-x: 58%;

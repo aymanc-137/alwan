@@ -1809,7 +1809,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": null,
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
@@ -1835,7 +1835,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": null,
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
