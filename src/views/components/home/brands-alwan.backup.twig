@@ -3,22 +3,18 @@
 >
        <div class="shape-container ">
         <div class="primary-side">
+           <div class=" md:w-[45%] mx-auto w-full my-auto md:-translate-x-[60%] md:translate-y-[100%]  translate-y-1/2 ">
+                <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
+                {% for brand in component.brands %}
+                <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
+                        <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
+                
+                </a>
+                {% endfor %}
+                
+                </p>
 
-            <div class=" md:w-[45%] mx-auto w-full my-auto md:-translate-x-[60%] md:translate-y-[100%]  translate-y-1/2 ">
-                    <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
-                    {% for brand in component.brands %}
-                    <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
-                            <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
-                    
-                    </a>
-                    {% endfor %}
-                    
-                    </p>
-
-            </div> 
-
-
-       
+            </div>         
         </div>
 
 
@@ -29,50 +25,49 @@
 
 
         <div class="secondary-side">
+              <div class="w-[80%] mx-auto my-auto md:translate-x-20 translate-y-80 md:translate-y-1/2 justify-center">
 
-            <div class="w-[80%] mx-auto my-auto md:translate-x-20 translate-y-80 md:translate-y-1/2 justify-center">
+            {% if component.title_style %}
 
-                        {% if component.title_style %}
+                <div class="md:w-96 mb-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
+                                <g filter="url(#filter0_d_3119_200)">
+                                    <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
+                                    <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
+                                </g>
+                                <text
+                                    x="2300"
+                                    y="525"
+                                    font-size="400"
+                                    fill="white"
+                                    font-weight="bold"
+                                    text-anchor="middle"
+                                    dominant-baseline="middle"
+                                >
+                                    {{component.title}}
+                                </text>
+                                <defs>
+                                    <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="47" dy="46"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
+                                    </filter>
+                                </defs>
+                        </svg>
+                </div>
+            {% else %}
+            <h1 class="text-5xl mb-5 mt-5">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+            {% endif %}
 
-                            <div class="md:w-96 mb-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
-                                            <g filter="url(#filter0_d_3119_200)">
-                                                <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
-                                                <path d="M3952.33 718.213L3952 719.472V981.274H17.8467L218.528 653.487L218.681 653.238L218.818 652.981L439.687 239.909L4139.78 10.8369L3952.33 718.213Z" stroke="black" stroke-width="20"/>
-                                            </g>
-                                            <text
-                                                x="2300"
-                                                y="525"
-                                                font-size="400"
-                                                fill="white"
-                                                font-weight="bold"
-                                                text-anchor="middle"
-                                                dominant-baseline="middle"
-                                            >
-                                                {{component.title}}
-                                            </text>
-                                            <defs>
-                                                <filter id="filter0_d_3119_200" x="0" y="0" width="4250" height="1100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                                <feOffset dx="47" dy="46"/>
-                                                <feComposite in2="hardAlpha" operator="out"/>
-                                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
-                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3119_200"/>
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3119_200" result="shape"/>
-                                                </filter>
-                                            </defs>
-                                    </svg>
-                            </div>
-                        {% else %}
-                        <h1 class="text-5xl mb-5 mt-5">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
-                        {% endif %}
+                <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full">
+                        {{component.subtitle}}
+                </p>
 
-                            <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full">
-                                    {{component.subtitle}}
-                            </p>
-
-            </div>
+         </div>
 
         </div>
     </div>
