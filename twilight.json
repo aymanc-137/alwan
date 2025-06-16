@@ -98,6 +98,18 @@
             "maxLength": "100"
         },
         {
+            "id": "product_description_position_under",
+            "type": "boolean",
+            "format": "switch",
+            "label": "مكان وصف المنتج",
+            "description": "إضافة وصف المنتج بجانب الصورة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "selected": false,
+            "required": false
+        },
+        {
             "id": "style_title_color",
             "type": "string",
             "format": "color",
