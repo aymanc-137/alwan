@@ -2918,7 +2918,59 @@
             "title": "أحدث التدوينات",
             "icon": "sicon-store",
             "path": "home.blogs-list",
-            "fields": []
+            "image": "https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-04%2019-02-09.png",
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-04%2019-02-09.png'></div>"
+                },
+                {
+                    "id": "title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان القسم",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اخر التدوينات",
+                    "icon": "sicon-format-text-alt",
+                    "value": "اخر التدوينات",
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "100"
+                },
+                {
+                    "id": "style_title",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "استخدام شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": true,
+                    "required": false
+                },
+                {
+                    "id": "blogs",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "التدوينات",
+                    "description": "اختر بحد اقصى اربع تدوينات",
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "blog_articles",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": true,
+                    "value": [],
+                    "public": true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
