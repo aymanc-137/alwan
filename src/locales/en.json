@@ -32,9 +32,9 @@
       "option_content": "Content"
     },
     "products":{
-      "ratting":"التقييمات",
-      "description":"تفاصيل المنتج",
-      "soldout":"نفذة الكمية"
+      "soldout":"Sold out",
+      "ratting":"Reviews",
+      "description":"Product Details"
     }
   },
   "common": {
