@@ -18,6 +18,8 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
+    <div id="category-ads" class="w-5/6 mx-auto bg-cover main-border h-80 hidden justify-center shadow-lg rounded-3xl md:my-2 my-5 px-2"  data-catid="{{ category.id }}"></div>
+
     <div class="container px-2.5 ms:px-5 mb-10">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
         <nav class="breadcrumbs w-full py-5">
@@ -75,4 +77,5 @@
 
 {% block scripts %}
     <script defer src="{{ 'product.js' | asset }}"></script>
+    <script defer src="{{ 'category-ads.js' | asset }}"></script>
 {% endblock %}

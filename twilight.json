@@ -2809,10 +2809,109 @@
         },
         {
             "key": "99e9351a-00ca-426d-8429-5c8fb076d98c",
-            "title": "خلفية على صفحات الاقسام",
+            "title": "خلفية على صفحات الاقسام - أيقونة",
             "icon": "sicon-store",
             "path": "home.category-ads",
-            "fields": []
+            "image": "https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-27%2019-29-42.png",
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-27%2019-29-42.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/harir' target='_blank'> دليل العنصر </a></h4>"
+                },
+                {
+                    "id": "category_ads",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "خلفيات الصفحة",
+                    "description": "إضافة صورة علوية على أقسام المنتجات",
+                    "labelHTML": null,
+                    "item_label": "صورة الخلفية و الفئة",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "category_ads.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "نص على الصورة",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "نص عن القسم",
+                            "icon": "sicon-format-text-alt",
+                            "value": "أناقة   -  حداثة  -  عصرية",
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "500"
+                        },
+                        {
+                            "id": "category_ads.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "الصورة",
+                            "description": "* المقاس الموصى به للصورة هو 1342×320 بكسل يمكنك استخدام اي مقاس مناسب.",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": "https://cdn.lamsaweb.com/cdnTufahaat/Frame%2073%20(1).png",
+                            "required": true
+                        },
+                        {
+                            "id": "category_ads.use_video",
+                            "type": "boolean",
+                            "format": "switch",
+                            "label": "استخدام فيديو",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-toggle-off",
+                            "value": true,
+                            "selected": false,
+                            "required": false
+                        },
+                        {
+                            "id": "category_ads.video_url",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "رابط الفيديو",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "400"
+                        },
+                        {
+                            "id": "category_ads.category",
+                            "type": "items",
+                            "format": "dropdown-list",
+                            "label": "القسم",
+                            "description": "اختر القسم الخاص بالصورة",
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [],
+                            "options": [],
+                            "source": "categories",
+                            "multichoice": false,
+                            "searchable": true,
+                            "required": true,
+                            "value": []
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": "300"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
