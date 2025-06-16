@@ -2806,8 +2806,14 @@
                     "maxLength": 10
                 }
             ]
+        },
+        {
+            "key": "99e9351a-00ca-426d-8429-5c8fb076d98c",
+            "title": "خلفية على صفحات الاقسام",
+            "icon": "sicon-store",
+            "path": "home.category-ads",
+            "fields": []
         }
-   
     ],
     "support_url": "https://example.com",
     "description": {
