@@ -2912,6 +2912,13 @@
                     "maxLength": "300"
                 }
             ]
+        },
+        {
+            "key": "ab7b038b-7cf6-477a-8317-e4fc4ff87e1e",
+            "title": "أحدث التدوينات",
+            "icon": "sicon-store",
+            "path": "home.blogs-list",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
