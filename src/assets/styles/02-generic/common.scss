@@ -528,3 +528,15 @@ salla-modal {
   border-width: 1px !important;
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
+.s-comments-container{
+  @apply bg-white neo-shadow p-3 rounded-2xl;
+  
+  textarea{
+    @apply border-black;
+  }
+}
+.s-slider-block__title-nav{
+  button{
+    @apply bg-white neo-shadow;
+  }
+}

@@ -30,6 +30,11 @@
       "days_since_added": "days since it was added",
       "option_name": "Option name",
       "option_content": "Content"
+    },
+    "products":{
+      "ratting":"التقييمات",
+      "description":"تفاصيل المنتج",
+      "soldout":"نفذة الكمية"
     }
   },
   "common": {

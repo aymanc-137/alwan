@@ -4320,6 +4320,15 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
 .neo-shadow {
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
+.s-comments-container{border-radius:1rem;--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1));padding:0.75rem;
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0)}
+.s-comments-container textarea{--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
+.s-slider-block__title-nav button{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1));
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0)}
 .tooltip-content {
   position: absolute;
   transform: translate(82px, -120px);
