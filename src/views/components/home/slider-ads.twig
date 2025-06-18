@@ -23,9 +23,9 @@
 
           {% for index, item in component.slides_ads %}
            {% if item.url and not item.button_title %}
-           <a href="{{ item.url }}" class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[85vh] bg-center bg-cover bg-no-repeat cursor-pointer" style="background-image: url({{ item.image }});">
+           <a href="{{ item.url }}" class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[90vh] bg-center bg-cover bg-no-repeat cursor-pointer" style="background-image: url({{ item.image }});">
            {% else %}
-           <div class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[85vh] bg-center bg-cover bg-no-repeat" style="background-image: url({{ item.image }});">
+           <div class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[90vh] bg-center bg-cover bg-no-repeat" style="background-image: url({{ item.image }});">
            {% endif %}
                
                 {% set postion = 'text-center' %}
