@@ -854,6 +854,10 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .text-right{text-align:right}
 .text-start{text-align:left}
 .text-end{text-align:right}
+.font-\[Changa\]{font-family:Changa}
+.font-\[BackToSchool\]{font-family:BackToSchool}
+.font-\[Marhey\]{font-family:Marhey}
+.font-\[Oi\]{font-family:Oi}
 .\!text-xl{font-size:1.25rem !important;line-height:1.75rem !important}
 .text-2xl{font-size:1.5rem;line-height:2rem}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}

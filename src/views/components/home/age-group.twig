@@ -35,7 +35,9 @@
       {% if component.title_style %}
             {% set color = theme.settings.get('style_title_color', '#FFAB5B') %}
 
-              <div class="w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5">
+              <div 
+              style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+              class="w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5">
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                 {% if false %}
