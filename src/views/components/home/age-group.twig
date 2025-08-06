@@ -31,11 +31,11 @@
     </style>
 
       {% if component.title %}
-      <div class="text-center my-5 mx-auto">
+      <div class="text-center my-5 mx-auto ">
       {% if component.title_style %}
             {% set color = theme.settings.get('style_title_color', '#FFAB5B') %}
 
-              <div class="w-96 mx-auto mb-5">
+              <div class="w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5">
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                 {% if false %}

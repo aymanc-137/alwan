@@ -854,6 +854,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .text-right{text-align:right}
 .text-start{text-align:left}
 .text-end{text-align:right}
+.font-\[BackToSchool\]{font-family:BackToSchool}
 .\!text-xl{font-size:1.25rem !important;line-height:1.75rem !important}
 .text-2xl{font-size:1.5rem;line-height:2rem}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}
@@ -4281,13 +4282,6 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   background-repeat: no-repeat;
   background-position: center;
 }
-.slide--one-category{margin-left:1.25rem;margin-right:1.25rem;width:33.333333%}
-@media (min-width: 640px){
-.slide--one-category{width:33.333333%}}
-@media (min-width: 768px){
-.slide--one-category{margin-left:0.25rem;margin-right:0.25rem;width:33.333333%}}
-@media (min-width: 1024px){
-.slide--one-category{width:16.666667%}}
 .s-social-share-btn button {
   --tw-border-opacity:1 !important;
   border-color:rgba(0, 0, 0, 1) !important;
@@ -6183,6 +6177,13 @@ salla-slider .slide--one-sixth{width:33.333333%}}
 salla-slider .slide--one-sixth{width:25%}}
 @media (min-width: 1024px){
 salla-slider .slide--one-sixth{width:16.666667%}}
+salla-slider .slide--one-category{margin-left:1.25rem;margin-right:1.25rem;width:33.333333%}
+@media (min-width: 640px){
+salla-slider .slide--one-category{width:33.333333%}}
+@media (min-width: 768px){
+salla-slider .slide--one-category{margin-left:0.25rem;margin-right:0.25rem;width:33.333333%}}
+@media (min-width: 1024px){
+salla-slider .slide--one-category{width:16.666667%}}
 salla-slider .swiper-slide {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -7228,7 +7229,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .md\:mt-20{margin-top:5rem}
 .md\:flex{display:flex}
 .md\:table-row{display:table-row}
-.md\:\!h-\[85vh\]{height:85vh !important}
+.md\:\!h-\[90vh\]{height:90vh !important}
 .md\:h-10{height:2.5rem}
 .md\:h-20{height:5rem}
 .md\:h-24{height:6rem}
@@ -7237,8 +7238,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .md\:h-\[400px\]{height:400px}
 .md\:h-\[800px\]{height:800px}
 .md\:h-full{height:100%}
-.md\:\!h-\[95vh\]{height:95vh !important}
-.md\:\!h-\[90vh\]{height:90vh !important}
 .md\:\!w-2\/4{width:50% !important}
 .md\:w-1\/2{width:50%}
 .md\:w-2\/4{width:50%}

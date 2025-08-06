@@ -20,8 +20,7 @@ module.exports = {
             sans: [
                 'var(--font-main)',
                 '-apple-system',
-                'BlinkMacSystemFont',
-            ],
+                'BlinkMacSystemFont'            ],
             primary: "var(--font-main)"
         },
         extend    : {
