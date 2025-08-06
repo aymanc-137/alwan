@@ -1479,7 +1479,7 @@
                         }
                     ],
                     "source": "Manual",
-                    "multichoice": true,
+                    "multichoice": false,
                     "searchable": true,
                     "required": false
                 },
