@@ -1448,7 +1448,7 @@
                     "multilanguage": true
                 },
                 {
-                    "id": "kht_alaanoan",
+                    "id": "title_font",
                     "type": "items",
                     "format": "dropdown-list",
                     "label": "خط العنوان",
