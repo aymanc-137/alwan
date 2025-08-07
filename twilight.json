@@ -1168,8 +1168,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -1491,8 +1502,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -1689,8 +1711,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -2113,7 +2146,13 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
                         {
                             "label": "BackToSchool",
@@ -2134,6 +2173,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
                         }
                     ],
                     "source": "Manual",
@@ -2399,7 +2443,13 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
                         {
                             "label": "BackToSchool",
@@ -2420,6 +2470,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
                         }
                     ],
                     "source": "Manual",
@@ -2511,8 +2566,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -2880,8 +2946,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -3057,8 +3134,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
@@ -3297,8 +3385,19 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
+                    "selected": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        }
+                    ],
                     "options": [
+                        {
+                            "label": "الخط الإفتراضي",
+                            "value": "default",
+                            "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
                         {
                             "label": "BackToSchool",
                             "value": "BackToSchool",
