@@ -27,6 +27,30 @@
     ],
     "settings": [
         {
+            "type": "static",
+            "id": "email_Line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "id": "iaadad_alqaemt_albredet",
+            "type": "static",
+            "format": "title",
+            "label": "إعداد القائمة البريدية",
+            "value": "إعداد القائمة البريدية",
+            "variant": "h3",
+            "icon": "sicon-format-text"
+        },
+        {
+            "id": "description",
+            "type": "static",
+            "format": "description",
+            "label": "Description",
+            "value": "تصفح دليل الثيم للمساعدة : https://lamsaweb.com/harir",
+            "variant": "h1",
+            "icon": "sicon-format-size"
+        },
+        {
             "id": "enable_email_subscription",
             "type": "boolean",
             "format": "switch",
@@ -97,6 +121,29 @@
             "required": false,
             "minLength": 6,
             "maxLength": "100"
+        },
+        {
+            "id": "footer_background_image",
+            "type": "string",
+            "format": "image",
+            "label": "خلفية القائمة السفلية",
+            "description": "* المقاس المناسب للصورة هو 1600×1500 بكسل .",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png",
+            "required": false
+        },
+        {
+            "id": "show_mega_menu",
+            "type": "boolean",
+            "format": "switch",
+            "label": "إظهار القائمة العلوية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
         },
         {
             "id": "product_description_position_under",
@@ -259,6 +306,30 @@
             "required": false,
             "minLength": 6,
             "maxLength": 30
+        },
+        {
+            "id":"enable_footer_wavey",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تمكين شكل مموج في  رأس ذيل الصفحة",
+            "description": "",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "footer_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية ذيل الصفحة",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#60a5fa",
+            "required": false
         },
         {
             "type": "boolean",
