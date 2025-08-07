@@ -146,6 +146,18 @@
             "required": false
         },
         {
+            "id": "main_background_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون الخلفية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#fff5f0",
+            "required": false
+        },
+        {
             "id": "product_description_position_under",
             "type": "boolean",
             "format": "switch",
