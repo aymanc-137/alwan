@@ -18,7 +18,7 @@
         {# {{ trans('blocks.home.testimonials') }} #}
         {% if component.title %}
             {% if component.title_style %}
-            <div class="w-80 mb-5 mx-auto">
+            <div class="w-80 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
             {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                 {% if false %}
