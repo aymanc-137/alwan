@@ -47,8 +47,10 @@
                   color: {{item.title_color}};
               text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
                  " 
-                 {# text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 004956 #}
-                   class="  font-[{{item.title_font | default('BackToSchool')}}] md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
+                 {# text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 004956
+                 font-[{{item.title_font | default('BackToSchool')}}]
+                  #}
+                   class="   md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
 
                   <h2 class="my-5">{{item.description}}</h2>
                   {% if item.button_title %}
@@ -103,7 +105,7 @@
   overflow: hidden;
 }
 </style>
-
+<h1>{{component | json_encode}}</h1>
 {% endif %}
 
     <div id="advert-bar-placeholder"></div>
