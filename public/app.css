@@ -683,7 +683,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .cursor-pointer{cursor:pointer}
 .resize{resize:both}
-.list-none{list-style-type:none}
 .grid-flow-row{grid-auto-flow:row}
 .grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}
 .grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}
@@ -774,7 +773,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-gray-200{--tw-border-opacity:1;border-color:rgba(229, 231, 235, 1);border-color:rgba(229, 231, 235, var(--tw-border-opacity, 1))}
 .border-green-300{--tw-border-opacity:1;border-color:rgba(134, 239, 172, 1);border-color:rgba(134, 239, 172, var(--tw-border-opacity, 1))}
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
-.bg-\[\#fff5f0\]{--tw-bg-opacity:1;background-color:rgba(255, 245, 240, 1);background-color:rgba(255, 245, 240, var(--tw-bg-opacity, 1))}
 .bg-black{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);background-color:rgba(0, 0, 0, var(--tw-bg-opacity, 1))}
 .bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239, 246, 255, 1);background-color:rgba(239, 246, 255, var(--tw-bg-opacity, 1))}
 .bg-dark{--tw-bg-opacity:1;background-color:rgba(29, 31, 31, 1);background-color:rgba(29, 31, 31, var(--tw-bg-opacity, 1))}
@@ -936,7 +934,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .transition-height{transition-property:height;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
 .transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
 .transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
-.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
 .duration-1000{transition-duration:1000ms}
 .duration-200{transition-duration:200ms}
 .duration-300{transition-duration:300ms}
@@ -4404,6 +4401,29 @@ input[type=radio].sr-only div.scroll-button .arrow-up {
 input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   border-color: var(--color-main);
 }
+.faq-component .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 1rem;
+}
+.faq-component .faq-answer.open {
+  max-height: 500px;
+  padding: 0.75rem 1rem;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-component .faq-arrow {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-component .faq-arrow.rotated {
+  transform: rotate(180deg);
+}
+.faq-component .faq-question {
+  transition: background-color 0.3s ease;
+}
+.faq-component .faq-question:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
 .tooltip-content {
   position: absolute;
   transform: translate(82px, -120px);
@@ -7240,7 +7260,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .hover\:opacity-90:hover{opacity:0.9}
 .hover\:shadow-default:hover{--tw-shadow:5px 10px 30px #2B2D340D;;--tw-shadow-colored:5px 10px 30px var(--tw-shadow-color);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 5px 10px 30px #2B2D340D;;box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}
 .focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
-.group[open] .group-open\:rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(180deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .group:hover .group-hover\:-translate-x-1{--tw-translate-x:-0.25rem;transform:translate(-0.25rem, var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .dark *.dark\:text-slate-200{--tw-text-opacity:1;color:rgba(226, 232, 240, 1);color:rgba(226, 232, 240, var(--tw-text-opacity, 1))}
 @media (min-width: 640px){
