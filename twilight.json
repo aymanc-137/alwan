@@ -1400,22 +1400,21 @@
         },
         {
             "key": "f13c0337-8968-491b-bb99-74b1f036e1d5",
-            "title": "صور متحركة  - نقاء",
+            "title": "صور متحركة  - ألوان",
             "icon": "sicon-image1",
             "path": "home.slider-ads",
-            "image": "https://cdn.lamsaweb.com/cdnNaqaa/Screenshot from 2025-04-16 20-56-50.png",
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div  style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.sa/form-builder/qG4Qj7KF5VquOkIIdRe9MYjzk37u9qHh83ItC0qb.png'></div>"
+                    "value": "<div  ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.sa/form-builder/qG4Qj7KF5VquOkIIdRe9MYjzk37u9qHh83ItC0qb.png'></div>"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/naqaa' target='_blank'> دليل العنصر </a></h4>"
+                    "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/naqaa' target='_blank'> دليل العنصر </a></h4>"
                 },
                 {
                     "id": "bg_color",
@@ -1442,7 +1441,7 @@
                         {
                             "id": "slides_ads.url",
                             "label": "رابط الإعلان",
-                            "description": "",
+                            "description": null,
                             "icon": "sicon-link",
                             "value": null,
                             "required": false,
@@ -1543,58 +1542,6 @@
                             "source": "Manual",
                             "multichoice": false,
                             "searchable": false,
-                            "required": false
-                        },
-                        {
-                            "id": "title_font",
-                            "type": "items",
-                            "format": "dropdown-list",
-                            "label": "خط العنوان",
-                            "description": null,
-                            "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
-                            "selected": [
-                                {
-                                    "label": "الخط الإفتراضي",
-                                    "value": "default",
-                                    "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
-                                }
-                            ],
-                            "options": [
-                                {
-                                    "label": "الخط الإفتراضي",
-                                    "value": "default",
-                                    "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
-                                },
-                                {
-                                    "label": "BackToSchool",
-                                    "value": "BackToSchool",
-                                    "key": "b897516d-eddb-4b34-85ab-04e6f35e4fa6"
-                                },
-                                {
-                                    "label": "Changa",
-                                    "value": "Changa",
-                                    "key": "82f03655-7d0f-46db-a27e-d5e0fea62d5f"
-                                },
-                                {
-                                    "label": "Marhey",
-                                    "value": "Marhey",
-                                    "key": "046b378c-48f8-4f23-aacc-399853908668"
-                                },
-                                {
-                                    "label": "Oi",
-                                    "value": "Oi",
-                                    "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
-                                },
-                                {
-                                    "label": "CooperArabic",
-                                    "value": "CooperArabic",
-                                    "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
-                                }
-                            ],
-                            "source": "Manual",
-                            "multichoice": false,
-                            "searchable": true,
                             "required": false
                         },
                         {
