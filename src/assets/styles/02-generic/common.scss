@@ -534,3 +534,99 @@ salla-modal {
     @apply bg-white neo-shadow;
   }
 }
+
+
+
+
+
+
+.fixed-buttons {
+  @apply relative z-[9999] pointer-events-none;
+
+  > * {
+    @apply pointer-events-auto;
+  }
+}
+
+.whatsapp-button {
+  @apply fixed z-[9999] w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center cursor-pointer hover:bg-green-600 transition-all duration-300 shadow-lg;
+  
+  // Position bottom with more space on small screens
+  bottom: 6rem; // Default position
+  
+  // Add more space on smaller screens where the bottom nav appears
+  @media (max-width: 767px) {
+    bottom: 8rem; // Increased space to avoid overlap with bottom nav
+  }
+  
+  // RTL Support
+  [dir="ltr"] & {
+    @apply right-8;
+  }
+  
+  [dir="rtl"] & {
+    @apply left-8;
+  }
+  
+  &:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  .whatsapp-icon {
+    @apply w-6 h-6;
+  }
+}
+
+.scroll-button {
+  @apply fixed w-12 h-12 rounded-full bg-primary hover:bg-primary text-white opacity-0 invisible 
+         flex items-center justify-center cursor-pointer  
+         transition-all duration-300 ease-in-out z-[9998]; // Reduced z-index to be behind whatsapp button
+  
+  // Position bottom with more space on small screens
+  bottom: 2rem; // Default position
+  
+  // Add more space on smaller screens where the bottom nav appears
+  @media (max-width: 767px) {
+    bottom: 12rem; // Positioned above the whatsapp button to avoid overlap
+  }
+  
+  // RTL Support
+  [dir="ltr"] & {
+    @apply right-8;
+  }
+  
+  [dir="rtl"] & {
+    @apply left-8;
+  }
+  
+  &.show {
+    @apply opacity-100 visible;
+  }
+  
+  .progress-ring {
+    @apply absolute;
+    
+    [dir="ltr"] & {
+      @apply -rotate-90;
+    }
+    
+    [dir="rtl"] & {
+      @apply rotate-90;
+    }
+    
+    &__circle {
+      transform-origin: 50% 50%;
+      transition: stroke-dashoffset 0.1s;
+      
+      .scroll-button:hover & {
+        @apply stroke-blue-400;
+      }
+    }
+  }
+  
+  .arrow-up {
+    @apply absolute text-2xl;
+  }
+}
+
+ 

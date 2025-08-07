@@ -14,11 +14,12 @@ class App extends AppHelpers {
     this.commonThings();
     this.initiateNotifier();
     this.initiateMobileMenu();
+    this.iniScroll();
     if (header_is_sticky) {
       this.initiateStickyMenu();
     }
     this.initAddToCart();
-    this.initiateAdAlert();
+   // this.initiateAdAlert();
     this.initiateDropdowns();
     this.initiateModals();
     this.initiateCollapse();
@@ -256,6 +257,33 @@ isElementLoaded(selector){
     });
   }
 
+  waitForElement(selector, timeout = 8000) {
+
+
+    return new Promise((resolve, reject) => {
+      if (document.querySelector(selector)) {
+        return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver(() => {
+        if (document.querySelector(selector)) {
+          observer.disconnect();
+          resolve(document.querySelector(selector));
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+
+     // setTimeout(() => {
+     // //  observer.disconnect();
+     //   reject(`Element ${selector} not found within ${timeout}ms`);
+    //  }, timeout);
+
+    });
+  }
   initiateDropdowns() {
     this.onClick('.dropdown__trigger', ({ target: btn }) => {
       btn.parentElement.classList.toggle('is-opened');
@@ -374,6 +402,51 @@ isElementLoaded(selector){
         childList: true, 
         subtree: true 
       });
+    });
+  }
+
+
+
+  iniScroll() {
+    const scrollButton = document.getElementById('scroll-to-top');
+    const circle = document.querySelector('.progress-ring__circle');
+    if(!circle){
+      return
+    }
+    // Calculate circle properties
+    const radius = circle?.r?.baseVal.value;
+    const circumference = radius * 2 * Math.PI;
+    
+    // Set initial circle properties
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = circumference;
+    
+    function setProgress(percent) {
+        const offset = circumference - (percent / 100 * circumference);
+        circle.style.strokeDashoffset = offset;
+    }
+    
+    // Show/hide button and update progress based on scroll position
+    window.addEventListener('scroll', () => {
+        // Calculate scroll progress
+        const windowHeight = document.documentElement?.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+        const progress = Math.min((scrolled / windowHeight) * 100, 100);
+        
+        if (scrolled > 300) {
+            scrollButton.classList.add('show');
+            setProgress(progress);
+        } else {
+            scrollButton.classList.remove('show');
+        }
+    });
+  
+    // Smooth scroll to top when clicked
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
   }
 }
