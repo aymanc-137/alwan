@@ -16,8 +16,8 @@ class=" py-5 {{ component.enable_border ? 'border-y border-black' : '' }}"
       {% if component.title %}
             {% if component.title_style %}
 
-                <div class="text-center my-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}] ">
-                        {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto mb-5'} %}
+                <div class="text-center my-5 mx-auto  ">
+                        {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5'} %}
                         
 
                         <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
