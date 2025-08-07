@@ -16,14 +16,20 @@ class=" py-5 {{ component.enable_border ? 'border-y border-black' : '' }}"
       {% if component.title %}
             {% if component.title_style %}
 
-                <div class="text-center my-5 mx-auto  ">
+                <div 
+                              style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+                 class="text-center my-5 mx-auto  ">
                         {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5'} %}
                         
 
                         <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
                 </div>
             {% else %}
-                <h1 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center">{{component.title | default(' استكشف حسب فئتك المفضلة!') }}</h1>
+                <h1 
+                              style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+                 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center">{{component.title | default(' استكشف حسب فئتك المفضلة!') }}</h1>
                 {% if component.sub_title %}
                         <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
                 {% endif %}

@@ -11,8 +11,11 @@
    {% endif %} 
 
 >
-<div class="p-5 my-16 font-[{{component.title_font | default('BackToSchool')}}] md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" 
-style="background-color: {{ component.product_backgroud_color | default('#91edff') }}"
+<div
+
+ class="p-5 my-16 font-[{{component.title_font | default('BackToSchool')}}] md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" 
+style="background-color: {{ component.product_backgroud_color | default('#91edff') }}; text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
 >
     {% if component.title_style %}
 

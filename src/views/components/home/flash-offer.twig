@@ -16,7 +16,10 @@ class="min-h-[40rem] {{ component.enable_border ? 'border-y border-black' : '' }
      <div 
      style="background-color: {{ component.text_background_color | default('#F3E3FE') }};"
      class=" place-self-center mx-auto md:w-5/6 w-[95%] m-3 rounded-xl neo-shadow">
-      <div class="p-4 flex flex-col gap-2 text-center">
+      <div 
+                    style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+       class="p-4 flex flex-col gap-2 text-center">
                         <h2
                         style="color: {{ component.title_color | default('#ffa723') }}"
                          class="text-4xl font-extrabold  font-[{{component.title_font | default('BackToSchool')}}] ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>

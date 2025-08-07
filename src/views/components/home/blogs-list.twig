@@ -1,7 +1,10 @@
 <section class="w-full py-5  ">
      {% if component.title %}
  
-              <div class="w-96 mx-auto mb-5 font-[{{component.title_font | default('BackToSchool')}}] ">
+              <div 
+                            style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+              class="w-96 mx-auto mb-5 font-[{{component.title_font | default('BackToSchool')}}] ">
               {% if component.title_style %}
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
               {% else %}

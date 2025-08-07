@@ -6,7 +6,11 @@
  
         {% if component.title %}
             {% if component.style_title %}
-            <div class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
+            <div 
+            
+                          style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+             class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
                {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                 {% if false %}
