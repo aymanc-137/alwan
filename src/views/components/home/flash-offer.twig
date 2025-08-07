@@ -19,7 +19,7 @@ class="min-h-[40rem] {{ component.enable_border ? 'border-y border-black' : '' }
       <div class="p-4 flex flex-col gap-2 text-center">
                         <h2
                         style="color: {{ component.title_color | default('#ffa723') }}"
-                         class="text-4xl font-extrabold  ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
+                         class="text-4xl font-extrabold  font-[{{component.title_font | default('BackToSchool')}}] ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
                         <p class="text-lg text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
                     </div>
 
