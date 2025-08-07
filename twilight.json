@@ -1443,7 +1443,7 @@
                             "label": "رابط الإعلان",
                             "description": null,
                             "icon": "sicon-link",
-                            "value": null,
+                            "value": [],
                             "required": false,
                             "format": "variable-list",
                             "type": "items",
@@ -1511,6 +1511,18 @@
                             "required": false,
                             "minLength": 6,
                             "maxLength": "100"
+                        },
+                        {
+                            "id": "slides_ads.title_color",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون العنوان",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-format-fill",
+                            "value": "#004956",
+                            "required": false
                         },
                         {
                             "id": "slides_ads.postion",
