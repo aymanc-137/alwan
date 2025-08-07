@@ -1310,6 +1310,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -1541,6 +1546,58 @@
                             "required": false
                         },
                         {
+                            "id": "title_font",
+                            "type": "items",
+                            "format": "dropdown-list",
+                            "label": "خط العنوان",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [
+                                {
+                                    "label": "الخط الإفتراضي",
+                                    "value": "default",
+                                    "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                                }
+                            ],
+                            "options": [
+                                {
+                                    "label": "الخط الإفتراضي",
+                                    "value": "default",
+                                    "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                                },
+                                {
+                                    "label": "BackToSchool",
+                                    "value": "BackToSchool",
+                                    "key": "b897516d-eddb-4b34-85ab-04e6f35e4fa6"
+                                },
+                                {
+                                    "label": "Changa",
+                                    "value": "Changa",
+                                    "key": "82f03655-7d0f-46db-a27e-d5e0fea62d5f"
+                                },
+                                {
+                                    "label": "Marhey",
+                                    "value": "Marhey",
+                                    "key": "046b378c-48f8-4f23-aacc-399853908668"
+                                },
+                                {
+                                    "label": "Oi",
+                                    "value": "Oi",
+                                    "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                                },
+                                {
+                                    "label": "CooperArabic",
+                                    "value": "CooperArabic",
+                                    "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
+                                }
+                            ],
+                            "source": "Manual",
+                            "multichoice": false,
+                            "searchable": true,
+                            "required": false
+                        },
+                        {
                             "id": "slides_ads.description",
                             "type": "string",
                             "format": "textarea",
@@ -1644,6 +1701,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -1853,6 +1915,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -2144,6 +2211,11 @@
                             "label": "الخط الإفتراضي",
                             "value": "default",
                             "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -2288,6 +2360,11 @@
                             "label": "الخط الإفتراضي",
                             "value": "default",
                             "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -2585,6 +2662,11 @@
                             "label": "الخط الإفتراضي",
                             "value": "default",
                             "key": "c7bcef32-b20b-4bb3-a47d-f7f75b97efa8"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -3093,6 +3175,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -3281,6 +3368,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
@@ -3532,6 +3624,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
