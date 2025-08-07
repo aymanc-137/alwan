@@ -768,14 +768,12 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-r-4{border-right-width:4px}
 .border-t{border-top-width:1px}
 .border-t-2{border-top-width:2px}
-.border-solid{border-style:solid}
 .border-black{--tw-border-opacity:1;border-color:rgba(0, 0, 0, 1);border-color:rgba(0, 0, 0, var(--tw-border-opacity, 1))}
 .border-blue-200{--tw-border-opacity:1;border-color:rgba(191, 219, 254, 1);border-color:rgba(191, 219, 254, var(--tw-border-opacity, 1))}
 .border-gray-100{--tw-border-opacity:1;border-color:rgba(243, 244, 246, 1);border-color:rgba(243, 244, 246, var(--tw-border-opacity, 1))}
 .border-gray-200{--tw-border-opacity:1;border-color:rgba(229, 231, 235, 1);border-color:rgba(229, 231, 235, var(--tw-border-opacity, 1))}
 .border-green-300{--tw-border-opacity:1;border-color:rgba(134, 239, 172, 1);border-color:rgba(134, 239, 172, var(--tw-border-opacity, 1))}
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
-.\!bg-blue-400{--tw-bg-opacity:1 !important;background-color:rgba(96, 165, 250, 1) !important;background-color:rgba(96, 165, 250, var(--tw-bg-opacity, 1)) !important}
 .bg-\[\#fff5f0\]{--tw-bg-opacity:1;background-color:rgba(255, 245, 240, 1);background-color:rgba(255, 245, 240, var(--tw-bg-opacity, 1))}
 .bg-black{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);background-color:rgba(0, 0, 0, var(--tw-bg-opacity, 1))}
 .bg-blue-50{--tw-bg-opacity:1;background-color:rgba(239, 246, 255, 1);background-color:rgba(239, 246, 255, var(--tw-bg-opacity, 1))}
@@ -859,6 +857,9 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .font-\[Changa\]{font-family:Changa}
 .font-\[Marhey\]{font-family:Marhey}
 .font-\[Oi\]{font-family:Oi}
+.font-\[\'CooperArabic\'\]{font-family:'CooperArabic'}
+.font-\[CooperArabic\]{font-family:CooperArabic}
+.font-\[\]{font-family:}
 .\!text-xl{font-size:1.25rem !important;line-height:1.75rem !important}
 .text-2xl{font-size:1.5rem;line-height:2rem}
 .text-3xl{font-size:1.875rem;line-height:2.25rem}
