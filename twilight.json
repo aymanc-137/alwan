@@ -267,7 +267,6 @@
             "value": false,
             "selected": false
         },
-
         {
             "id": "is_scroll_enable",
             "type": "boolean",
@@ -308,7 +307,7 @@
             "maxLength": 30
         },
         {
-            "id":"enable_footer_wavey",
+            "id": "enable_footer_wavey",
             "type": "boolean",
             "format": "switch",
             "label": "تمكين شكل مموج في  رأس ذيل الصفحة",
@@ -2709,6 +2708,11 @@
                             "label": "Oi",
                             "value": "Oi",
                             "key": "9444fc55-0d4a-4ef3-aff5-6380a56e4fb2"
+                        },
+                        {
+                            "label": "CooperArabic",
+                            "value": "CooperArabic",
+                            "key": "96dcbfd2-4ff6-4df1-93cd-edc85feac769"
                         }
                     ],
                     "source": "Manual",
