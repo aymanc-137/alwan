@@ -146,6 +146,18 @@
             "required": false
         },
         {
+            "id": "nav_header_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية القائمة العلوية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#ECF7FF",
+            "required": false
+        },
+        {
             "id": "main_background_color",
             "type": "string",
             "format": "color",

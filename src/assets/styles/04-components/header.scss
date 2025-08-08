@@ -135,7 +135,8 @@
       transform: translate3d(0, 0, 0);
       @apply  mx-auto w-[90%];
       .inner-wrapper{
-        @apply neo-shadow my-5 !bg-[#ECF7FF] rounded-3xl;
+        
+        @apply neo-shadow my-5 !bg-[var(--color-nav-header-color)] rounded-3xl;
 
       }
       @media (max-width: 1024px){

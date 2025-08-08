@@ -685,12 +685,18 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
 .s-reviews-header-wrapper{
   display: none;
 }
+.s-reviews-container {
+  @apply transition-all duration-300 ease-in-out;
 
-
+.swiper-slide {
+  height: 60% !important;
+}
+}
 // Override default Salla testimonials classes with Harir theme styles
 .s-reviews-testimonial {
+
   //@apply w-4/6 mx-auto  border-4 border-primary-l rounded-[5rem] rounded-ee-none border-dotted p-6;
-  @apply w-4/6 mx-auto  neo-shadow rounded-[5rem] m-10;
+  @apply w-4/6 mx-auto  neo-shadow rounded-[1.5rem] m-10;
 
 
   .s-reviews-testimonial__avatar {
@@ -701,8 +707,11 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
     }
   }
 
+
+
+
   .s-reviews-testimonial__inner {
-    @apply flex justify-evenly;
+    @apply flex justify-evenly w-full;
     
     .s-reviews-testimonial__text {
       @apply mx-auto w-5/6;
