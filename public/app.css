@@ -527,6 +527,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .my-10{margin-top:2.5rem;margin-bottom:2.5rem}
 .my-16{margin-top:4rem;margin-bottom:4rem}
 .my-2{margin-top:0.5rem;margin-bottom:0.5rem}
+.my-3{margin-top:0.75rem;margin-bottom:0.75rem}
 .my-5{margin-top:1.25rem;margin-bottom:1.25rem}
 .my-8{margin-top:2rem;margin-bottom:2rem}
 .my-auto{margin-top:auto;margin-bottom:auto}
@@ -4424,6 +4425,36 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
 .faq-component .faq-question:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
+.s-reviews-header-wrapper {
+  display: none;
+}
+.s-reviews-testimonial{margin-left:auto;margin-right:auto;width:66.666667%;border-radius:5rem;
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0)}
+.s-reviews-testimonial .s-reviews-testimonial__avatar{margin-right:-3.5rem;border-radius:9999px;
+  border-color: #000000;
+  border-width: 1px;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0)}
+.s-reviews-testimonial .s-reviews-testimonial__avatar img{border-radius:9999px}
+.s-reviews-testimonial .s-reviews-testimonial__inner{display:flex;justify-content:space-evenly}
+.s-reviews-testimonial .s-reviews-testimonial__inner .s-reviews-testimonial__text{margin-left:auto;margin-right:auto;width:83.333333%}
+.s-reviews-testimonial .s-reviews-testimonial__icon svg{display:none;
+  margin-top: -20px;
+  color: #ff6767}
+.s-reviews-testimonial .s-reviews-testimonial__icon::before {
+  content: '"';
+  font-size:3.75rem;
+  font-weight:700;
+  line-height:1;
+  color: #414042;
+  color: var(--color-primary);
+  font-family: Georgia, serif;
+  transform: rotate(180deg);
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.s-reviews-testimonial .s-reviews-testimonial__info{font-size:1.875rem;line-height:2.25rem;color:#414042;color:var(--color-primary)}
 .tooltip-content {
   position: absolute;
   transform: translate(82px, -120px);
@@ -7438,6 +7469,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .lg\:pb-20{padding-bottom:5rem}
 .lg\:pt-10{padding-top:2.5rem}
 .lg\:pt-8{padding-top:2rem}
+.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}
 .lg\:text-title-size{font-size:42px}
 .lg\:shadow-default{--tw-shadow:5px 10px 30px #2B2D340D;;--tw-shadow-colored:5px 10px 30px var(--tw-shadow-color);box-shadow:0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 5px 10px 30px #2B2D340D;;box-shadow:var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)}}
 @media (min-width: 1280px){
