@@ -6,7 +6,7 @@
 | cart.total       | string  | Formatted total ex: "١٠٠ ر.س"   |
 #}
 {% set important_links = theme.settings.get('important_links') %}
-<header class="store-header {{is_page('index') ? '' : '  border-b-2 border-black'}}">
+<header class="store-header {{is_page('index') ? '' : 'bg-[var(--color-nav-header-color)] border-b-2 border-black'}}">
         {% if theme.settings.get('show_mega_menu',false)%}
 
         {# Top Nav #}
