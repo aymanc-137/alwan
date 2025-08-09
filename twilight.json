@@ -1432,13 +1432,13 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div  ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.sa/form-builder/qG4Qj7KF5VquOkIIdRe9MYjzk37u9qHh83ItC0qb.png'></div>"
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/slider-ads.png'></div>"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/naqaa' target='_blank'> دليل العنصر </a></h4>"
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً من عنصر <strong>صور متحركة محسنة</strong> لتظهر صورة البنر بشكل كامل</h4>"
                 },
                 {
                     "id": "slides_ads",
@@ -2826,20 +2826,6 @@
                     "required": false
                 },
                 {
-                    "id": "title_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#ffa723",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "300"
-                },
-                {
                     "id": "subtitle",
                     "type": "string",
                     "format": "text",
@@ -2979,8 +2965,8 @@
         },
         {
             "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
-            "title": "بنر صورة مع نص و رابط",
             "icon": "sicon-store",
+            "title": "بنر صورة كبيرة",
             "path": "home.image-text-hero",
             "fields": [
                 {

@@ -17,7 +17,7 @@ class=" py-5 {{ component.enable_border ? 'border-y border-black' : '' }}"
             {% if component.title_style %}
 
                 <div 
-                              style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+                style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
                  class="text-center my-5 mx-auto  ">
                         {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto font-[{{component.title_font | default("BackToSchool")}}] mb-5'} %}
