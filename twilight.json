@@ -1674,7 +1674,8 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                {
+                },               
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -1881,7 +1882,20 @@
             "title": "مميزات المتجر - ألوان",
             "icon": "sicon-store",
             "path": "home.theme-features",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/store-fetsuer.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/store-fetsuer.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -2166,7 +2180,20 @@
             "title": "ماركات تجارية محسنة - ألوان",
             "icon": "sicon-store",
             "path": "home.brands-alwan",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/brands-list.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/brands-list.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },                
                 {
                     "id": "title",
                     "type": "string",
@@ -2330,7 +2357,20 @@
             "title": "منتجات قسم - ألوان",
             "icon": "sicon-store",
             "path": "home.category-products",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/category-product.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-product.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },  
                 {
                     "id": "title",
                     "type": "string",
@@ -2571,7 +2611,20 @@
             "title": "عرض مؤقت - ألوان",
             "icon": "sicon-store",
             "path": "home.flash-offer",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/limited-offer.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/limited-offer.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },                 
                 {
                     "id": "products",
                     "type": "items",
@@ -2760,7 +2813,20 @@
             "title": "صور أقسام كبيرة - ألوان",
             "icon": "sicon-store",
             "path": "home.large-category",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/large-category.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/large-category.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },                 
                 {
                     "id": "title",
                     "type": "string",
@@ -2982,7 +3048,20 @@
             "icon": "sicon-store",
             "title": "بنر صورة كبيرة",
             "path": "home.image-text-hero",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/large-banner.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/large-banner.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },                 
                 {
                     "id": "url",
                     "type": "items",
@@ -3119,19 +3198,20 @@
             "title": "الأسئلة الأكثر شيوعا",
             "icon": "sicon-store",
             "path": "home.faq-compnent",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/faq.png",
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden' ><h6 style='margin-bottom:10px' >معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnHarir/image21.png'></div>"
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/faq.png'></div>"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },
+                },                 
                 {
                     "id": "title",
                     "type": "string",
@@ -3323,7 +3403,20 @@
             "title": "فروع المحل",
             "icon": "sicon-store",
             "path": "home.map",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/map.png",
             "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/map.png'></div>"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-note",
+                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
+                },                 
                 {
                     "id": "title",
                     "type": "string",
@@ -3466,14 +3559,7 @@
             "title": "خلفية على صفحات الاقسام - أيقونة",
             "icon": "sicon-store",
             "path": "home.category-ads",
-            "image": "https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-27%2019-29-42.png",
-            "fields": [
-                {
-                    "type": "static",
-                    "format": "description",
-                    "id": "static-desc",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-27%2019-29-42.png'></div>"
-                },
+            "fields": [    
                 {
                     "type": "static",
                     "format": "description",
