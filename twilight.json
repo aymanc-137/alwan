@@ -1428,6 +1428,7 @@
             "icon": "sicon-image1",
             "path": "home.slider-ads",
             "description": "https://cdn.lamsaweb.com/cdnAlwan/slider-ads.png",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/slider-ads.png",
             "fields": [
                 {
                     "type": "static",
