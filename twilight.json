@@ -1260,13 +1260,13 @@
             "title": "روابط أقسام - ألوان",
             "icon": "sicon-store",
             "path": "home.category-links",
-            "image": "https://cdn.lamsaweb.com/cdnAlwan/age-group.png",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/age-group.png'></div>"
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-list.png'></div>"
                 },
                 {
                     "type": "static",
@@ -3671,13 +3671,13 @@
             "title": "أحدث التدوينات",
             "icon": "sicon-store",
             "path": "home.blogs-list",
-            "image": "https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-04%2019-02-09.png",
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/blogs.png",
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnTufahaat/Screenshot%20from%202025-04-04%2019-02-09.png'></div>"
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/blogs.png'></div>"
                 },
                 {
                     "id": "title",
