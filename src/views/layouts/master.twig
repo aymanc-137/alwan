@@ -70,11 +70,17 @@
         window.header_is_sticky = "{{theme.settings.get('header_is_sticky', 'Default Value')}}"
         window.imageZoom = "{{theme.settings.get('imageZoom')}}"
         window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
+
+        window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
+        window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
+        window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
+        window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
+
         // Store wishlist button setting in localStorage for product-card.js
-        localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
-        localStorage.setItem('mutile_color_product_card', "{{ theme.settings.get('mutile_color_product_card', false) }}");
-        localStorage.setItem('add_spacing_product_card', "{{ theme.settings.get('add_spacing_product_card', false) }}");
-        localStorage.setItem('product_card_color', "{{ theme.settings.get('product_card_color', '#EDF7F8') }}");
+        //localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
+        //localStorage.setItem('mutile_color_product_card', "{{ theme.settings.get('mutile_color_product_card', false) }}");
+        //localStorage.setItem('add_spacing_product_card', "{{ theme.settings.get('add_spacing_product_card', false) }}");
+        //localStorage.setItem('product_card_color', "{{ theme.settings.get('product_card_color', '#EDF7F8') }}");
          //product_card_color 
     </script>
     

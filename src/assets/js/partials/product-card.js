@@ -20,11 +20,17 @@ class ProductCard extends HTMLElement {
       this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
 
       // Try to get wishlistBtn from salla.config, fallback to localStorage
-      this.wishlistBtn = salla.config.get('theme.settings.get("wishlist_btn")') || localStorage.getItem('wishlist_btn');
-      
-      this.mutileColorProductCard = salla.config.get('theme.settings.get("mutile_color_product_card")') || localStorage.getItem('mutile_color_product_card');
-      this.addSpacingProductCard = salla.config.get('theme.settings.get("add_spacing_product_card")') || localStorage.getItem('add_spacing_product_card');
-      this.productCardColor = salla.config.get('theme.settings.get("product_card_color")') || localStorage.getItem('product_card_color');
+      //this.wishlistBtn = salla.config.get('theme.settings.get("wishlist_btn")') || localStorage.getItem('wishlist_btn');
+      this.wishlistBtn = window.wishlist_btn;
+      this.mutileColorProductCard = window.mutile_color_product_card;
+      this.addSpacingProductCard = window.add_spacing_product_card;
+      this.productCardColor = window.product_card_color;
+
+
+
+      //this.mutileColorProductCard = salla.config.get('theme.settings.get("mutile_color_product_card")') || localStorage.getItem('mutile_color_product_card');
+      //this.addSpacingProductCard = salla.config.get('theme.settings.get("add_spacing_product_card")') || localStorage.getItem('add_spacing_product_card');
+      //this.productCardColor = salla.config.get('theme.settings.get("product_card_color")') || localStorage.getItem('product_card_color');
 
       this.getProps()
 
