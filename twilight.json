@@ -1441,18 +1441,6 @@
                     "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/naqaa' target='_blank'> دليل العنصر </a></h4>"
                 },
                 {
-                    "id": "bg_color",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تدرج لون الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "selected": false,
-                    "required": false
-                },
-                {
                     "id": "slides_ads",
                     "type": "collection",
                     "format": "collection",

@@ -75,38 +75,6 @@
       </salla-slider>
   </section> 
 
-{% if component.bg_color %}
-  <style>
-    .slanted-layers {
-  width: 100%;
-   position: relative;
-  
-  background: #effffc;
-  overflow: hidden;
-}
-    .slanted-layers::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80%;
-  background: #BBDBD5; /* 335355 Lighter variation */
-  transform: skewY(-10deg);
-  transform-origin: top left;
-}
-</style>
-{% else %}
-
-<style>
-  .slanted-layers {
-  width: 100%;
-   position: relative;
-  
-  /* background: #BBDBD5; */
-  overflow: hidden;
-}
-</style>
- {% endif %}
+ 
 
     <div id="advert-bar-placeholder"></div>
