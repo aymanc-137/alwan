@@ -5634,7 +5634,7 @@ salla-contacts a[href*="t.me"] .s-contacts-icon::before {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;font-size:0.75rem;line-height:1rem;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
+  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
   .main-menu li > a:hover{color:#414042;color:var(--color-primary);text-decoration-line:none}
   .main-menu li.root-level{display:inline-block}
   .main-menu li.root-level > a{padding-top:0px;padding-bottom:2rem;font-weight:700}

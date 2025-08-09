@@ -15,7 +15,7 @@
 
     li{
       > a{
-        @apply flex justify-between items-center transition duration-300 p-3 text-xs hover:text-primary hover:no-underline; 
+        @apply flex justify-between items-center transition duration-300 p-3  hover:text-primary hover:no-underline; 
       }
 
       &.root-level{
