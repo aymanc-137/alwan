@@ -1440,7 +1440,7 @@
             "title": "صور متحركة  - ألوان",
             "icon": "sicon-image1",
             "path": "home.slider-ads",
-            "description": "https://cdn.lamsaweb.com/cdnAlwan/slider-ads.png",
+            "description": "صور مترحكة على الصفحة الرئيسية",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/slider-ads.png",
             "fields": [
                 {
@@ -1533,7 +1533,7 @@
                             "labelHTML": null,
                             "placeholder": "عنوان الإعلان",
                             "icon": "sicon-format-text-alt",
-                            "value": "عنوان الإعلان",
+                            "value": "هدايا عيد الميلاد المثالية",
                             "multilanguage": true,
                             "required": false,
                             "minLength": 6,
@@ -1644,7 +1644,7 @@
                             "labelHTML": null,
                             "placeholder": "وصف الإعلان",
                             "icon": "sicon-typography",
-                            "value": "تسوقي عروض المنتجات الطبيعية",
+                            "value": "اختيارات مبهرة لكل الأعمار",
                             "multilanguage": true,
                             "required": false,
                             "minLength": 20,
@@ -1659,7 +1659,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": "https://cdn.salla.sa/form-builder/H4ipMdG5IDKwSTc7Ro5YLnEYDqCGWQmupzSfKcm8.png",
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/3th.png",
                             "required": true
                         }
                     ],
@@ -1696,7 +1696,7 @@
                     "description": "عنوان",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "عنوان الفئات العمرية",
+                    "value": "اختر اللعبة المناسبة لكل عمر",
                     "required": true,
                     "multilanguage": true
                 },
@@ -1708,8 +1708,8 @@
                     "description": "عنوان الفرعي",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "عنوان الفرعي",
-                    "required": true,
+                    "value": "من أولى خطواته إلى سنوات الإبداع – ألعاب مُختارة بعناية لكل مرحلة عمرية.",
+                    "required": false,
                     "multilanguage": true
                 },
                 {
@@ -1853,7 +1853,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": null,
+                            "value": "https://cdn.salla.sa/form-builder/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.png",
                             "required": true
                         },
                         {
@@ -1877,11 +1877,11 @@
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
-                            "value": null,
+                            "value": "من 3 الى 4 سنوات",
                             "multilanguage": true,
-                            "required": false,
+                            "required": true,
                             "minLength": "10",
-                            "maxLength": 30
+                            "maxLength": 100
                         }
                     ],
                     "value": [],
@@ -1919,7 +1919,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": "لماذا يختارنا الجميع؟",
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 100
@@ -1934,8 +1934,8 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!",
-                    "multilanguage": false,
-                    "required": false,
+                    "multilanguage": true,
+                    "required": true,
                     "minLength": 6,
                     "maxLength": 300
                 },
@@ -2053,7 +2053,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
@@ -2096,7 +2096,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://salla.sa",
                             "icon": "sicon-link",
-                            "value": null,
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
                             "required": false,
                             "conditions": [
                                 {
@@ -2141,7 +2141,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": null,
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
                             "conditions": [
                                 {
                                     "id": "theme_features.is_animated",
