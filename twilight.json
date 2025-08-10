@@ -3572,7 +3572,14 @@
             "title": "خلفية على صفحات الاقسام - أيقونة",
             "icon": "sicon-store",
             "path": "home.category-ads",
-            "fields": [    
+            "image": "https://cdn.lamsaweb.com/cdnAlwan/category-ads.png",
+            "fields": [   
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "static-desc",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-ads.png'></div>"
+                }, 
                 {
                     "type": "static",
                     "format": "description",
