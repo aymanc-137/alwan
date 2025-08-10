@@ -19,17 +19,23 @@
 {% extends "layouts.master" %}
 {% block content %}
     <div id="category-ads" 
-    style="background-image: url({{ category.image }})"
-    class="w-full bg-cover bg-center bg-no-repeat hidden justify-center shadow-lg
+    style="background-image: url(https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png)"
+    class="w-full flex bg-cover bg-center bg-no-repeat   justify-center border-b border-black
                                  h-24 sm:h-32 md:h-56 lg:h-64 xl:h-72 2xl:h-80
                                  aspect-[5/1]" 
-         data-catid="{{ category.id }}"></div>
+         data-catid="{{ category.id }}">
+         <h3 
+                 style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+
+         class=" place-self-center text-white text-4xl" >متعة بلا حدود… ألعاب تفاعلية لكل الأعمار!</h3>
+         </div>
     <div class="container px-2.5 ms:px-5 mb-10">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
         <nav class="breadcrumbs w-full py-5">
             <salla-breadcrumb></salla-breadcrumb>
         </nav>
-        <div class="flex items-start flex-col md:flex-row">
+        <div
+         class="flex items-start flex-col md:flex-row">
             {% if filters %}
                 <button class="btn--close-sm close-filters sicon-cancel hidden"></button>
                 <salla-filters class="md:w-72 lg:sticky lg:top-20 flex-none" id="filters-menu"></salla-filters>
