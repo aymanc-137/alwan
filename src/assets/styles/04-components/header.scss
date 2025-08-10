@@ -511,6 +511,7 @@ salla-user-menu{
       background-position: center;
       background-size: contain;
     }
+   
     
     // Logout icon
     &.s-user-menu-dropdown-item-logout i::before {
@@ -592,3 +593,7 @@ salla-user-menu{
     @apply z-10;
   }
 }  
+
+.s-user-menu-dropdown-list{
+  @apply rounded-lg shadow-lg border border-black;
+}
