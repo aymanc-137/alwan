@@ -1806,7 +1806,7 @@
                     "description": "لون الخلفية",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "#ffffff",
+                    "value": "#febdff",
                     "required": false,
                     "conditions": [
                         {
@@ -2160,7 +2160,7 @@
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
-                            "value": null,
+                            "value": "خصومات حصرية للعضوية المميزة",
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
@@ -2175,11 +2175,11 @@
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
-                            "value": null,
+                            "value": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 300
+                            "maxLength": 400
                         }
                     ],
                     "value": [],
@@ -2216,7 +2216,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "الماركات التجارية",
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
@@ -2242,7 +2242,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "استمتع بتجربة تسوق مع الماركات المفضلة لدى الأطفال والآباء.",
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
@@ -2393,7 +2393,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "عروض الدمى المحشوة",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2463,21 +2463,6 @@
                     "required": false
                 },
                 {
-                    "id": "subtitle",
-                    "type": "string",
-                    "format": "text",
-                    "label": "العنوان الثاني",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Placeholder text ..",
-                    "icon": "sicon-format-text-alt",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": "300"
-                },
-                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
@@ -2507,7 +2492,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "#E8F9FD",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2540,7 +2525,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
                     "conditions": [
                         {
@@ -2570,7 +2555,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-fill",
-                    "value": "https://cdn.lamsaweb.com/cdnHarir/ornament.png",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/category-product-image.jpg",
                     "required": false,
                     "conditions": [
                         {
@@ -2684,7 +2669,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "#fffdef",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2705,7 +2690,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "#F3E3FE",
+                    "value": "#fff0fe",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2804,7 +2789,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.salla.sa/form-builder/gN1LhpGMUYgdc3YS5DWTSoIAwhbUL9zdqqdOCNpu.png",
                     "required": false
                 },
                 {
@@ -2816,7 +2801,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.salla.sa/form-builder/lspqrUg9UGI3O3EJwcRxBH3aTH5wLlBqpEbNot8s.png",
                     "required": false
                 }
             ]
@@ -2849,7 +2834,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "إختر ما يحتاجه طفلك",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2927,7 +2912,7 @@
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": null,
+                    "value": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل",
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
@@ -2974,7 +2959,7 @@
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
-                            "value": null,
+                            "value": "حفز مخيلة طفلك",
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
@@ -3001,7 +2986,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": null,
+                            "value": "https://cdn.salla.sa/form-builder/0OI8STPjWdsLSzWYQ4GrsgYBkqkyOoxaievKP3GB.png",
                             "required": false
                         },
                         {
@@ -3059,7 +3044,7 @@
         {
             "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
             "icon": "sicon-store",
-            "title": "بنر صورة كبيرة",
+            "title": "بنر صور كبيرة",
             "path": "home.image-text-hero",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/large-banner.png",
             "fields": [
@@ -3148,7 +3133,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.salla.sa/form-builder/wovsrB2oHj4Ap4dHB6XmmNKVRghB023GCjEoCjbv.png",
                     "required": false
                 },
                 {
@@ -3194,7 +3179,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": null,
+                    "value": "https://cdn.salla.sa/form-builder/rtawq93sA2iA0sJAY5ErBDjbZZjabiX1lnhuFl9m.png",
                     "required": false,
                     "conditions": [
                         {
@@ -3620,7 +3605,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": "https://cdn.lamsaweb.com/cdnTufahaat/Frame%2073%20(1).png",
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
                             "required": true
                         },
                         {
@@ -3645,7 +3630,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://salla.sa",
                             "icon": "sicon-link",
-                            "value": null,
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
                             "required": false,
                             "minLength": 6,
                             "maxLength": "400"
