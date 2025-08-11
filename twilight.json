@@ -1260,20 +1260,19 @@
             "title": "روابط أقسام - ألوان",
             "icon": "sicon-store",
             "path": "home.category-links",
-            "image": "https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-list.png'></div>"
+                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-list.png'></div>"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                    "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/harir' target='_blank'> دليل العنصر </a></h4>"
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -1404,7 +1403,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -1418,20 +1417,47 @@
                     ]
                 },
                 {
-                    "id": "category",
-                    "type": "items",
-                    "format": "dropdown-list",
+                    "id": "links",
+                    "type": "collection",
+                    "format": "collection",
                     "label": "التصنيفات",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
-                    "options": [],
-                    "source": "categories",
-                    "multichoice": true,
-                    "searchable": true,
-                    "required": true,
-                    "value": []
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "links.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "الصورة",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "links.category",
+                            "type": "items",
+                            "format": "dropdown-list",
+                            "label": "التصنيفات",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [],
+                            "options": [],
+                            "source": "categories",
+                            "multichoice": true,
+                            "searchable": true,
+                            "required": true,
+                            "value": []
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": "20"
                 }
             ]
         },
@@ -1655,7 +1681,8 @@
                             "type": "string",
                             "format": "image",
                             "label": "صورة الخلفية",
-                            "description": "* المقاس الموصى به للصورة هو  1600 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",                            "labelHTML": null,
+                            "description": "* المقاس الموصى به للصورة هو  1600 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",
+                            "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": "https://cdn.lamsaweb.com/cdnAlwan/3th.png",
@@ -1686,7 +1713,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },               
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -1820,7 +1847,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -1848,7 +1875,7 @@
                             "type": "string",
                             "format": "image",
                             "label": "صورة",
-                            "description": "* المقاس الموصى به للصورة هو  365 × 279 بكسل يمكنك استخدام اي مقاس مناسب.",   
+                            "description": "* المقاس الموصى به للصورة هو  365 × 279 بكسل يمكنك استخدام اي مقاس مناسب.",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
@@ -2049,7 +2076,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -2136,7 +2163,7 @@
                             "type": "string",
                             "format": "image",
                             "label": "صورة",
-                            "description": "* المقاس الموصى به للصورة هو  96 × 96 بكسل يمكنك استخدام اي مقاس مناسب.",                            
+                            "description": "* المقاس الموصى به للصورة هو  96 × 96 بكسل يمكنك استخدام اي مقاس مناسب.",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
@@ -2205,7 +2232,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -2382,7 +2409,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },  
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -2521,7 +2548,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -2551,7 +2578,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "الصورة الجانبية",
-                    "description": "* المقاس الموصى به للصورة هو  300 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                    
+                    "description": "* المقاس الموصى به للصورة هو  300 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-format-fill",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/category-product-image.jpg",
@@ -2621,7 +2648,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                },
                 {
                     "id": "products",
                     "type": "items",
@@ -2766,7 +2793,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -2784,7 +2811,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة جانبية",
-                    "description": "* المقاس الموصى به للصورة هو  630 × 530 بكسل يمكنك استخدام اي مقاس مناسب.",                    
+                    "description": "* المقاس الموصى به للصورة هو  630 × 530 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
@@ -2796,7 +2823,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة المنتج",
-                    "description": "* المقاس الموصى به للصورة هو  370 × 250 بكسل يمكنك استخدام اي مقاس مناسب.",                    
+                    "description": "* المقاس الموصى به للصورة هو  370 × 250 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
@@ -2823,7 +2850,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -2933,7 +2960,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -2981,7 +3008,7 @@
                             "type": "string",
                             "format": "image",
                             "label": "الصورة",
-                            "description": "* المقاس الموصى به للصورة هو  512 × 512 بكسل يمكنك استخدام اي مقاس مناسب.",                            
+                            "description": "* المقاس الموصى به للصورة هو  512 × 512 بكسل يمكنك استخدام اي مقاس مناسب.",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
@@ -3058,7 +3085,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                },
                 {
                     "id": "url",
                     "type": "items",
@@ -3128,7 +3155,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "الصورة اليمنى",
-                    "description": "* المقاس الموصى به للصورة هو  830 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",                    
+                    "description": "* المقاس الموصى به للصورة هو  830 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
@@ -3174,7 +3201,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "الصورة اليسرى",
-                    "description": "* المقاس الموصى به للصورة هو  830 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",                    
+                    "description": "* المقاس الموصى به للصورة هو  830 × 800 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
@@ -3208,7 +3235,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -3335,7 +3362,7 @@
                     "type": "string",
                     "format": "image",
                     "label": "صورة الخلفية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",                                             
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
@@ -3413,7 +3440,7 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/harir' target='_blank' > دليل العنصر </a></h4>"
-                },                 
+                },
                 {
                     "id": "title",
                     "type": "string",
@@ -3557,13 +3584,13 @@
             "icon": "sicon-store",
             "path": "home.category-ads",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/category-ads.png",
-            "fields": [   
+            "fields": [
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/category-ads.png'></div>"
-                }, 
+                },
                 {
                     "type": "static",
                     "format": "description",
