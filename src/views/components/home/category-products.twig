@@ -1,22 +1,16 @@
 <section class="{{ component.enable_border ? 'border-y border-black' : '' }}"
 
-   {% if component.enable_backgroud %}
+                            {% if component.enable_backgroud %}
 
-        {% if component.background_image %}
-            style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
-            {% else %}
-            style="background-color: {{ component.background_color | default('#ffffff') }};"
-        {% endif %}
+                                    {% if component.background_image %}
+                                        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+                                        {% else %}
+                                        style="background-color: {{ component.background_color | default('#ffffff') }};"
+                                    {% endif %}
 
-   {% endif %} 
-
->
-<div
-
- class="p-5 my-16  md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" 
-style="background-color: {{ component.product_backgroud_color | default('#91edff') }}; text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
-
->
+                            {% endif %} 
+                    >
+<div class="p-5 my-16  md:w-[90%] w-[98%] mx-auto neo-shadow md:-skew-x-3" style="background-color: {{ component.product_backgroud_color | default('#91edff') }}; text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);">
     {% if component.title_style %}
 <div class=" font-[{{component.title_font | default('BackToSchool')}}] ">
     {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-72 mx-auto -mt-16 '} %}
