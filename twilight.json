@@ -1415,50 +1415,24 @@
                             "value": true
                         }
                     ]
-                },
-                {
-                    "id": "links",
-                    "type": "collection",
-                    "format": "collection",
+                },{
+                    "id": "category",
+                    "type": "items",
+                    "format": "dropdown-list",
                     "label": "التصنيفات",
                     "description": null,
                     "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "links.image",
-                            "type": "string",
-                            "format": "image",
-                            "label": "الصورة",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "e.g. https://hostname.com/image.png",
-                            "icon": "sicon-image",
-                            "value": null,
-                            "required": false
-                        },
-                        {
-                            "id": "links.category",
-                            "type": "items",
-                            "format": "dropdown-list",
-                            "label": "التصنيفات",
-                            "description": null,
-                            "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
-                            "selected": [],
-                            "options": [],
-                            "source": "Categories",
-                            "multichoice": false,
-                            "searchable": false,
-                            "required": true,
-                            "value": []
-                        }
-                    ],
-                    "value": [],
-                    "minLength": 1,
-                    "maxLength": "20"
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "Categories",
+                    "multichoice": false,
+                    "searchable": false,
+                    "required": true,
+                    "value": []
                 }
+                
+                
             ]
         },
         {
