@@ -1426,8 +1426,8 @@
                     "selected": [],
                     "options": [],
                     "source": "Categories",
-                    "multichoice": false,
-                    "searchable": false,
+                    "multichoice": true,
+                    "searchable": true,
                     "required": true,
                     "value": []
                 }
