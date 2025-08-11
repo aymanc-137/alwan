@@ -1450,7 +1450,11 @@
                             "searchable": true,
                             "source": "custom",
                             "sources": [
-                        
+                                {
+                                    "label": "منتج",
+                                    "key": "products",
+                                    "value": "products"
+                                },
                                 {
                                     "label": "تصنيف",
                                     "key": "categories",
