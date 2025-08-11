@@ -1441,18 +1441,23 @@
                         {
                             "id": "links.category",
                             "type": "items",
-                            "format": "dropdown-list",
+                            "icon": "sicon-link",
                             "label": "التصنيفات",
+                            "value": null,
                             "description": null,
-                            "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
-                            "selected": [],
-                            "options": [],
-                            "source": "Categories",
-                            "multichoice": false,
+                            "required": false,
+                            "format": "variable-list",
                             "searchable": true,
-                            "required": true,
-                            "value": []
+                            "source": "custom",
+                            "sources": [
+                        
+                                {
+                                    "label": "تصنيف",
+                                    "key": "categories",
+                                    "value": "categories"
+                                }
+                         
+                            ]
                         }
                     ],
                     "value": [],
