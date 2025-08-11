@@ -1448,8 +1448,8 @@
                             "icon": "sicon-keyboard_arrow_down",
                             "selected": [],
                             "options": [],
-                            "source": "categories",
-                            "multichoice": true,
+                            "source": "Categories",
+                            "multichoice": false,
                             "searchable": true,
                             "required": true,
                             "value": []
