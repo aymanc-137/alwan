@@ -1441,27 +1441,18 @@
                         {
                             "id": "links.category",
                             "type": "items",
-                            "icon": "sicon-link",
+                            "format": "dropdown-list",
                             "label": "التصنيفات",
-                            "value": null,
                             "description": null,
-                            "required": false,
-                            "format": "variable-list",
-                            "searchable": true,
-                            "source": "custom",
-                            "sources": [
-                                {
-                                    "label": "منتج",
-                                    "key": "products",
-                                    "value": "products"
-                                },
-                                {
-                                    "label": "تصنيف",
-                                    "key": "categories",
-                                    "value": "categories"
-                                }
-                         
-                            ]
+                            "labelHTML": null,
+                            "icon": "sicon-keyboard_arrow_down",
+                            "selected": [],
+                            "options": [],
+                            "source": "Categories",
+                            "multichoice": false,
+                            "searchable": false,
+                            "required": true,
+                            "value": []
                         }
                     ],
                     "value": [],
