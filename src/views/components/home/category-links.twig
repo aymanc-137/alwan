@@ -39,7 +39,7 @@ class=" py-5 {{ component.enable_border ? 'border-y border-black' : '' }}"
 	<salla-slider type="carousel" 
 	 controls-outer auto-play loop show-controls="false" id="main-links-{{ position }}">
 		<div slot="items">
-			{% for item in component.links %}
+			{% for item in component.links  | raw %}
 			<h1>{{ item.category | json_encode }}</h1>
 				<a href="{{ item.category[0].url }}" class="swiper-slide slide--one-category m-5">
 					{% set random_color = random(colors) %}
