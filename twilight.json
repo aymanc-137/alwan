@@ -1271,7 +1271,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/alwan' target='_blank'> دليل العنصر </a></h4>"
+                    "value": "<h4 hidden >لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/alwan' target='_blank'> دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -1453,7 +1453,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "slides_ads",
@@ -1686,7 +1686,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -1907,7 +1907,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -2205,7 +2205,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -2382,7 +2382,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -2621,7 +2621,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "products",
@@ -2823,7 +2823,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -3208,7 +3208,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://lamsaweb.com/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
                     "id": "title",
@@ -3569,7 +3569,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-note",
-                    "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/alwan' target='_blank'> دليل العنصر </a></h4>"
+                    "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a  href='https://lamsaweb.com/alwan' target='_blank'> دليل العنصر </a></h4>"
                 },
                 {
                     "id": "category_ads",
