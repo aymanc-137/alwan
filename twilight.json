@@ -1853,7 +1853,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": "https://cdn.salla.sa/form-builder/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.png",
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.webp",
                             "required": true
                         },
                         {
@@ -2789,7 +2789,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": "https://cdn.salla.sa/form-builder/gN1LhpGMUYgdc3YS5DWTSoIAwhbUL9zdqqdOCNpu.png",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/sideimage.png",
                     "required": false
                 },
                 {
@@ -2801,7 +2801,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": "https://cdn.salla.sa/form-builder/lspqrUg9UGI3O3EJwcRxBH3aTH5wLlBqpEbNot8s.png",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/product-image.webp",
                     "required": false
                 }
             ]
@@ -2986,7 +2986,7 @@
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
-                            "value": "https://cdn.salla.sa/form-builder/0OI8STPjWdsLSzWYQ4GrsgYBkqkyOoxaievKP3GB.png",
+                            "value": "https://cdn.lamsaweb.com/cdnAlwan/larage-category1.webp",
                             "required": false
                         },
                         {
@@ -3133,7 +3133,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": "https://cdn.salla.sa/form-builder/wovsrB2oHj4Ap4dHB6XmmNKVRghB023GCjEoCjbv.png",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/righimage.webp",
                     "required": false
                 },
                 {
@@ -3179,7 +3179,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
-                    "value": "https://cdn.salla.sa/form-builder/rtawq93sA2iA0sJAY5ErBDjbZZjabiX1lnhuFl9m.png",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/real-wrighimage.webp",
                     "required": false,
                     "conditions": [
                         {
