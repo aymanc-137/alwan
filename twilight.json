@@ -87,7 +87,7 @@
             "placeholder": "Placeholder text ..",
             "icon": "sicon-format-text-alt",
             "value": "123456789",
-            "multilanguage": true,
+            "multilanguage": false,
             "required": false,
             "minLength": 6,
             "maxLength": "100"
@@ -102,10 +102,10 @@
             "placeholder": "Placeholder text ..",
             "icon": "sicon-format-text-alt",
             "value": "123456789",
-            "multilanguage": true,
+            "multilanguage": false,
             "required": false,
             "minLength": 6,
-            "maxLength": 30
+            "maxLength": 100
         },
         {
             "id": "audience_id_email",
@@ -117,7 +117,7 @@
             "placeholder": "Placeholder text ..",
             "icon": "sicon-format-text-alt",
             "value": "123456789",
-            "multilanguage": true,
+            "multilanguage": false,
             "required": false,
             "minLength": 6,
             "maxLength": "100"
@@ -325,7 +325,7 @@
             "placeholder": "+966512345678",
             "icon": "sicon-format-text-alt",
             "value": null,
-            "multilanguage": true,
+            "multilanguage": false,
             "required": false,
             "minLength": 6,
             "maxLength": 30
@@ -1115,7 +1115,7 @@
                             "required": false,
                             "placeholder": "Your text here",
                             "minLength": 0,
-                            "maxLength": 255
+                            "maxLength": 400
                         }
                     ]
                 }
@@ -1202,7 +1202,7 @@
                             "placeholder": "اسم العميل",
                             "icon": "sicon-format-text-alt",
                             "value": null,
-                            "multilanguage": false,
+                            "multilanguage": true,
                             "required": false
                         },
                         {
@@ -1922,7 +1922,7 @@
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 100
+                    "maxLength": 300
                 },
                 {
                     "id": "sub_title",
@@ -2033,7 +2033,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": null,
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
@@ -2161,7 +2160,7 @@
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": "خصومات حصرية للعضوية المميزة",
-                            "multilanguage": false,
+                            "multilanguage": true,
                             "required": false,
                             "minLength": 6,
                             "maxLength": 300
@@ -2176,7 +2175,7 @@
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
-                            "multilanguage": false,
+                            "multilanguage": true,
                             "required": false,
                             "minLength": 6,
                             "maxLength": 400
@@ -2394,7 +2393,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": "عروض الدمى المحشوة",
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
@@ -2493,7 +2492,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#E8F9FD",
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
@@ -2514,7 +2512,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#91edff",
-                    "multilanguage": false,
                     "required": false
                 },
                 {
@@ -2670,7 +2667,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#fffdef",
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
@@ -2691,7 +2687,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#fff0fe",
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
@@ -2705,7 +2700,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": "#ffa723",
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300
@@ -2835,7 +2829,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": "إختر ما يحتاجه طفلك",
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
@@ -2913,7 +2907,7 @@
                     "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
                     "value": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل",
-                    "multilanguage": false,
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 6,
                     "maxLength": "300"
@@ -2960,10 +2954,10 @@
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": "حفز مخيلة طفلك",
-                            "multilanguage": false,
+                            "multilanguage": true,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": 100
                         },
                         {
                             "id": "urls.background_color",
@@ -3223,7 +3217,7 @@
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": "50"
+                    "maxLength": "100"
                 },
                 {
                     "id": "title_style",
@@ -3319,7 +3313,6 @@
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
                     "value": null,
-                    "multilanguage": false,
                     "required": false,
                     "minLength": 6,
                     "maxLength": 300,
@@ -3372,7 +3365,7 @@
                             "multilanguage": true,
                             "required": true,
                             "minLength": 6,
-                            "maxLength": "50"
+                            "maxLength": "100"
                         },
                         {
                             "id": "faq.answer",
@@ -3387,7 +3380,7 @@
                             "multilanguage": true,
                             "required": true,
                             "minLength": 6,
-                            "maxLength": "200"
+                            "maxLength": "300"
                         }
                     ],
                     "value": [],
@@ -3428,7 +3421,7 @@
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": "50"
+                    "maxLength": "100"
                 },
                 {
                     "id": "style_title",
@@ -3508,7 +3501,7 @@
                             "format": "text",
                             "label": "المدينة",
                             "required": true,
-                            "multilanguage": false
+                            "multilanguage": true
                         },
                         {
                             "id": "locations.address",
@@ -3516,7 +3509,7 @@
                             "format": "textarea",
                             "label": "العنوان",
                             "required": true,
-                            "multilanguage": false
+                            "multilanguage": true
                         },
                         {
                             "id": "locations.phone",
@@ -3524,7 +3517,7 @@
                             "format": "text",
                             "label": "رقم التواصل",
                             "required": false,
-                            "multilanguage": false
+                            "multilanguage": true
                         },
                         {
                             "id": "locations.hours",
@@ -3533,7 +3526,7 @@
                             "label": "ساعات العمل",
                             "required": false,
                             "value": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "multilanguage": false
+                            "multilanguage": true
                         },
                         {
                             "id": "locations.map_url",
@@ -3633,7 +3626,7 @@
                             "value": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
                             "required": false,
                             "minLength": 6,
-                            "maxLength": "400"
+                            "maxLength": "500"
                         },
                         {
                             "id": "category_ads.category",
@@ -3684,7 +3677,7 @@
                     "multilanguage": true,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": "100"
+                    "maxLength": "300"
                 },
                 {
                     "id": "style_title",
