@@ -74,7 +74,7 @@
             "icon": "sicon-link",
             "value": "https://salla.sa",
             "required": false,
-            "minLength": 6,
+            "minLength": 3,
             "maxLength": "1000"
         },
         {
@@ -89,7 +89,7 @@
             "value": "123456789",
             "multilanguage": false,
             "required": false,
-            "minLength": 6,
+            "minLength": 3,
             "maxLength": "100"
         },
         {
@@ -104,7 +104,7 @@
             "value": "123456789",
             "multilanguage": false,
             "required": false,
-            "minLength": 6,
+            "minLength": 3,
             "maxLength": 100
         },
         {
@@ -119,7 +119,7 @@
             "value": "123456789",
             "multilanguage": false,
             "required": false,
-            "minLength": 6,
+            "minLength": 3,
             "maxLength": "100"
         },
         {
@@ -327,7 +327,7 @@
             "value": null,
             "multilanguage": false,
             "required": false,
-            "minLength": 6,
+            "minLength": 3,
             "maxLength": 30
         },
         {
@@ -1521,7 +1521,7 @@
                             "value": "تسوق الان",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "100"
                         },
                         {
@@ -1536,7 +1536,7 @@
                             "value": "هدايا عيد الميلاد المثالية",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "100"
                         },
                         {
@@ -1921,7 +1921,7 @@
                     "value": "لماذا يختارنا الجميع؟",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -1936,7 +1936,7 @@
                     "value": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!",
                     "multilanguage": true,
                     "required": true,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -2034,7 +2034,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": null,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -2054,7 +2054,7 @@
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -2104,7 +2104,7 @@
                                     "value": true
                                 }
                             ],
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": 300
                         },
                         {
@@ -2162,7 +2162,7 @@
                             "value": "خصومات حصرية للعضوية المميزة",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": 300
                         },
                         {
@@ -2177,7 +2177,7 @@
                             "value": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": 400
                         }
                     ],
@@ -2218,7 +2218,7 @@
                     "value": "الماركات التجارية",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -2244,7 +2244,7 @@
                     "value": "استمتع بتجربة تسوق مع الماركات المفضلة لدى الأطفال والآباء.",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -2395,7 +2395,7 @@
                     "value": "عروض الدمى المحشوة",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "300"
                 },
                 {
@@ -2493,7 +2493,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": "#E8F9FD",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -2574,7 +2574,7 @@
                     "icon": "sicon-link",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/7351796-uhd_2160_4096_25fps%20(1)%20(1).mp4",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -2668,7 +2668,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": "#fffdef",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -2688,7 +2688,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": "#fff0fe",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -2701,7 +2701,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": "#ffa723",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300
                 },
                 {
@@ -2831,7 +2831,7 @@
                     "value": "إختر ما يحتاجه طفلك",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "300"
                 },
                 {
@@ -2909,7 +2909,7 @@
                     "value": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "300"
                 },
                 {
@@ -2956,7 +2956,7 @@
                             "value": "حفز مخيلة طفلك",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": 100
                         },
                         {
@@ -3154,7 +3154,7 @@
                     "icon": "sicon-link",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/7351796-uhd_2160_4096_25fps%20(1)%20(1).mp4",
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -3216,7 +3216,7 @@
                     "value": "الأسئلة الاكثر شيوعاً",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "100"
                 },
                 {
@@ -3314,7 +3314,7 @@
                     "icon": "sicon-format-text-alt",
                     "value": null,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": 300,
                     "conditions": [
                         {
@@ -3364,7 +3364,7 @@
                             "value": "هل لدي الحق  الإسترجاع",
                             "multilanguage": true,
                             "required": true,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "100"
                         },
                         {
@@ -3379,7 +3379,7 @@
                             "value": "نعم لديك الحق في الإسترجاع",
                             "multilanguage": true,
                             "required": true,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "300"
                         }
                     ],
@@ -3420,7 +3420,7 @@
                     "value": "نتشرف بزيارتكم",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "100"
                 },
                 {
@@ -3586,7 +3586,7 @@
                             "value": "أناقة   -  حداثة  -  عصرية",
                             "multilanguage": true,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "500"
                         },
                         {
@@ -3625,7 +3625,7 @@
                             "icon": "sicon-link",
                             "value": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
                             "required": false,
-                            "minLength": 6,
+                            "minLength": 3,
                             "maxLength": "500"
                         },
                         {
@@ -3676,7 +3676,7 @@
                     "value": "اخر التدوينات",
                     "multilanguage": true,
                     "required": false,
-                    "minLength": 6,
+                    "minLength": 3,
                     "maxLength": "300"
                 },
                 {
