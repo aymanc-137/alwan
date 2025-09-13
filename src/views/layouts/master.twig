@@ -113,6 +113,12 @@
 
 {# <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marhey:wght@300..700&family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet"> #}
 
+
+
+{% set font_name = theme.font.name | default('Playpen Sans Arabic') %}
+{% if theme.font.name == "PingARLT" %}
+{% set font_name = 'Playpen Sans Arabic' %}
+
 <style>
 
 /* text-shadow: 1px 1px 2px black; */
@@ -137,7 +143,7 @@
 }       
      
         :root {
-            --font-main: 'Playpen Sans Arabic';
+            --font-main: {{ font_name }};
             --color-primary: {{ theme.color.primary }};
             --color-primary-dark: {{ theme.color.darker(0.15) }};
             --color-primary-light: {{ theme.color.lighter(0.15) }};
