@@ -108,7 +108,7 @@
                     <salla-button
                             class="btn--wishlist animated sws main-wish-btn"
                             data-id="{{ product.id }}"
-                            onclick="salla.wishlist.toggle({{ product.id }})"
+                            onclick="salla.wishlist.toggle('{{ product.id }}')"
                             shape="icon"
                             fill="outline"
                             color="light">
@@ -328,7 +328,7 @@
                             <div class="mt-1 sm:mt-0 sm:col-span-2 text-end">
                                 <div class="flex rtl:space-x-reverse space-x-3">
                                     <a href="#!"
-                                       onclick="salla.event.dispatch('scopes::open', {mode: 'availability', product_id: {{ product.id }} })"
+                                       onclick="salla.event.dispatch('scopes::open', {mode: 'availability', product_id: '{{ product.id }} '})"
                                        class="group text-primary flex items-center justify-center">
                                         <span>{{ trans('pages.products.select_branch') }}</span>
                                         <span class="sicon-keyboard_arrow_left mr-2 transition-all group-hover:-translate-x-1"></span>
@@ -426,7 +426,7 @@
 
             {% if product_position_under %}
 
-            {% if product.description or user.can_comment %}
+            {% if product.description or store.settings.rating.show_on_product %}
 
             <div class="product_tabs w-5/6 mx-auto" >
                 <salla-tabs >
@@ -459,12 +459,12 @@
                             </div>
                         </p>
 
-                    {% if user.can_comment == false %}
+                    {% if store.settings.rating.show_on_product %}
                     <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
                     {% endif %}
                         </salla-tab-content>
                         {% endif %}
-                        {% if user.can_comment %}
+                        {% if store.settings.rating.show_on_product %}
 
                         <!-- Tab Two -->
                         <salla-tab-header slot="header" name="tab_two">
@@ -483,7 +483,7 @@
 
             {% else %}
 
-                {% if user.can_comment %}
+                {% if store.settings.rating.show_on_product %}
             
                     <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
                     
