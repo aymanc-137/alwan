@@ -3,7 +3,7 @@
         "ar": "Alwan",
         "en": "Alwan"
     },
-    "repository": "https://github.com/musta20/alwan",
+    "repository": "https://github.com/aymanc-137/alwan",
     "author_email": "saif.muh2020@gmail.com",
     "features": [
         "mega-menu",
@@ -1415,7 +1415,8 @@
                             "value": true
                         }
                     ]
-                },{
+                },
+                {
                     "id": "category",
                     "type": "items",
                     "format": "dropdown-list",
@@ -1431,8 +1432,6 @@
                     "required": true,
                     "value": []
                 }
-                
-                
             ]
         },
         {
