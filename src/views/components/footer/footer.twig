@@ -2,7 +2,9 @@
 			{% set is_email = theme.settings.get('enable_email_subscription', false) %}
 {% if theme.settings.get('enable_footer_wavey', false) %}
 
-    <div class="store-footer__wave absolute left-0 -top-16 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+    <div
+	style="color:{{ theme.settings.get('footer_color', '#60a5fa')}}"
+	 class="store-footer__wave absolute left-0 -top-16 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
         <svg 
 		
 		style="fill: {{ theme.settings.get('footer_color', '#60a5fa') }}"

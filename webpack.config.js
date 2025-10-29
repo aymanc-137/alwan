@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ThemeWatcher = require('@salla.sa/twilight/watcher.js');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
@@ -64,5 +65,11 @@ module.exports = {
         new CopyPlugin({patterns: [{from: asset('images'), to: public('images')}]}),
         new CopyPlugin({patterns: [{from: asset('fonts'), to: public('fonts')}]}),
     ],
+    optimization: {
+        minimizer: [
+            `...`,
+            new CssMinimizerPlugin(),
+        ],
+    },
 }
 ;
