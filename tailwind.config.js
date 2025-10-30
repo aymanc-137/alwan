@@ -5,8 +5,8 @@ module.exports = {
         "src/assets/js/**/*.js",
         //todo:: inject it via the plugin or easier way
         'node_modules/@salla.sa/twilight-tailwind-theme/safe-list-css.txt',
-        './safelist.txt', // Add custom safelist file
     ],
+    safelist: ['border-y'],
     darkMode: 'class', // or 'media' or 'class'
     theme   : {
         container : {
