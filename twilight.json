@@ -227,7 +227,7 @@
             "id": "general_section",
             "format": "title",
             "label": "الإعدادات العامة",
-            "value": "⚙️ الإعدادات العامة للثيم",
+            "value": "الإعدادات العامة للثيم",
             "variant": "h2",
             "icon": "sicon-settings"
         },
@@ -251,7 +251,7 @@
             "type": "static",
             "format": "title",
             "label": "إعداد القائمة البريدية",
-            "value": "📧 إعداد القائمة البريدية",
+            "value": "إعداد القائمة البريدية",
             "variant": "h4",
             "icon": "sicon-inbox"
         },
@@ -337,7 +337,7 @@
             "type": "static",
             "format": "title",
             "id": "colors_section_title",
-            "value": "🎨 الألوان والتنسيقات",
+            "value": "الألوان والتنسيقات",
             "variant": "h3",
             "icon": "sicon-color-fill"
         },
@@ -375,7 +375,7 @@
             "type": "static",
             "format": "title",
             "id": "header_section_title",
-            "value": "🔝 إعدادات القائمة العلوية",
+            "value": "إعدادات القائمة العلوية",
             "variant": "h3",
             "icon": "sicon-list"
         },
@@ -457,7 +457,7 @@
             "type": "static",
             "format": "title",
             "id": "footer_section_title",
-            "value": "🔻 إعدادات القائمة السفلية",
+            "value": " إعداد ذيل الصفحة ",
             "variant": "h3",
             "icon": "sicon-layout-bottom"
         },
@@ -517,7 +517,7 @@
             "type": "static",
             "format": "title",
             "id": "product_card_section_title",
-            "value": "🛍️ إعدادات بطاقة المنتج",
+            "value": "إعدادات بطاقة المنتج",
             "variant": "h3",
             "icon": "sicon-shopping-bag"
         },
@@ -567,7 +567,7 @@
             "type": "static",
             "format": "title",
             "id": "homepage_section_title",
-            "value": "🏠 إعدادات الصفحة الرئيسية",
+            "value": "إعدادات الصفحة الرئيسية",
             "variant": "h3",
             "icon": "sicon-home"
         },
@@ -603,7 +603,7 @@
             "type": "static",
             "format": "title",
             "id": "product_page_section_title",
-            "value": "📦 إعدادات صفحة المنتج",
+            "value": "إعدادات صفحة المنتج",
             "variant": "h3",
             "icon": "sicon-box-bankers"
         },
@@ -704,7 +704,7 @@
             "type": "static",
             "format": "title",
             "id": "fixed_buttons_section_title",
-            "value": "📱 الأزرار الثابتة",
+            "value": "الأزرار الثابتة",
             "variant": "h3",
             "icon": "sicon-phone"
         },
