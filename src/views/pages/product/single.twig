@@ -83,7 +83,7 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
-{% set product_position_under = theme.settings.get('product_description_position_under',false) %}
+{% set product_description_next_image = theme.settings.get('product_description_position_under',false) %}
 
     <div class="container">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
@@ -229,8 +229,8 @@
                           <h2 class=" font-bold text-xl inline-block"> {{product.starting_price ? product.starting_price|money : product.price|money }}</h2>
                   </div>
                 </div>
-
-                {% if product_position_under %}
+                    <h1>{{product_description_next_image | json_encode}}</h1>
+                {% if product_description_next_image %}
                     <div class="product__description p-2 px-5 sm:p-1 leading-7 mb-3">
                         {% set product_desc = product.description|replace({"&nbsp;":"\n"}) %}
                         {% if product.has_read_more %}
@@ -431,7 +431,7 @@
 
     {# Comments Area #}
 
-            {% if product_position_under %}
+            {% if not product_description_next_image %}
 
             {% if product.description or user.can_comment %}
 
@@ -466,7 +466,7 @@
                             </div>
                         </p>
 
-                    {% if user.can_comment == false %}
+                    {% if user.can_comment %}
                     <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
                     {% endif %}
                         </salla-tab-content>
