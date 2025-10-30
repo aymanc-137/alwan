@@ -433,7 +433,7 @@
 
             {% if product_position_under %}
 
-            {% if product.description or store.settings.rating.show_on_product %}
+            {% if product.description or user.can_comment %}
 
             <div class="product_tabs w-5/6 mx-auto" >
                 <salla-tabs >
@@ -466,12 +466,12 @@
                             </div>
                         </p>
 
-                    {% if store.settings.rating.show_on_product %}
+                    {% if user.can_comment == false %}
                     <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
                     {% endif %}
                         </salla-tab-content>
                         {% endif %}
-                        {% if store.settings.rating.show_on_product %}
+                        {% if user.can_comment %}
 
                         <!-- Tab Two -->
                         <salla-tab-header slot="header" name="tab_two">
@@ -490,7 +490,7 @@
 
             {% else %}
 
-                {% if store.settings.rating.show_on_product %}
+                {% if user.can_comment %}
             
                     <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
                     
