@@ -391,16 +391,16 @@ isElementLoaded(selector){
       const observer = new MutationObserver((mutations) => {
         const cartIcon = document.querySelector('#s-cart-icon');
         if (cartIcon) {
-          // Replace the icon with the SVG image
-          cartIcon.innerHTML = `<img src="${salla.url.asset('images/shopping-bag-svgrepo-com.svg')}" alt="cart">`;
+          // Replace the icon with the SVG image from CDN
+          cartIcon.innerHTML = `<img src="https://cdn.lamsaweb.com/cdnAlwan/shopping-bag-svgrepo-com.svg" alt="cart">`;
           observer.disconnect(); // Stop observing once the replacement is done
         }
       });
-      
+
       // Start observing the document body for changes
-      observer.observe(document.body, { 
-        childList: true, 
-        subtree: true 
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
       });
     });
   }

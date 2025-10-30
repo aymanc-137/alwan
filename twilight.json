@@ -28,27 +28,36 @@
     "settings": [
         {
             "type": "static",
-            "id": "email_Line",
-            "format": "line",
-            "label": null
-        },
-        {
-            "id": "iaadad_alqaemt_albredet",
-            "type": "static",
+            "id": "general_section",
             "format": "title",
-            "label": "إعداد القائمة البريدية",
-            "value": "إعداد القائمة البريدية",
-            "variant": "h3",
-            "icon": "sicon-format-text"
+            "label": "عام",
+            "value": "عام",
+            "variant": "h2",
+            "icon": "sicon-settings"
         },
         {
             "id": "description",
             "type": "static",
             "format": "description",
-            "label": "Description",
-            "value": "تصفح دليل الثيم للمساعدة : https://lamsaweb.com/alwan",
+            "label": "مساعدة",
+            "value": "📖 تصفح دليل الثيم للمساعدة : <a href='https://lamsaweb.com/alwan' target='_blank' style='color:#3b82f6;text-decoration:underline;'>https://lamsaweb.com/alwan</a>",
             "variant": "h1",
-            "icon": "sicon-format-size"
+            "icon": "sicon-book-open"
+        },
+        {
+            "type": "static",
+            "id": "email_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "id": "email_section_title",
+            "type": "static",
+            "format": "title",
+            "label": "إعداد القائمة البريدية",
+            "value": "📧 إعداد القائمة البريدية",
+            "variant": "h3",
+            "icon": "sicon-inbox"
         },
         {
             "id": "enable_email_subscription",
@@ -123,22 +132,74 @@
             "maxLength": "100"
         },
         {
-            "id": "footer_background_image",
+            "type": "static",
+            "id": "colors_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "colors_section_title",
+            "value": "🎨 الألوان والتنسيقات",
+            "variant": "h3",
+            "icon": "sicon-color-fill"
+        },
+        {
+            "id": "main_background_color",
             "type": "string",
-            "format": "image",
-            "label": "خلفية القائمة السفلية",
-            "description": "* المقاس المناسب للصورة هو 1600×1500 بكسل .",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية الموقع",
+            "description": "اللون الرئيسي لخلفية الموقع",
             "labelHTML": null,
             "icon": "sicon-format-fill",
-            "value": "https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png",
+            "value": "#fff5f0",
             "required": false
+        },
+        {
+            "id": "style_title_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية العناوين",
+            "description": "لون الخلفية للعناوين في الصفحات",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#FFAB5B",
+            "required": false
+        },
+        {
+            "type": "static",
+            "id": "header_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "header_section_title",
+            "value": "🔝 إعدادات القائمة العلوية",
+            "variant": "h3",
+            "icon": "sicon-list"
+        },
+        {
+            "id": "header_is_sticky",
+            "label": "تثبيت القائمة الرئيسية أعلى الصفحة",
+            "description": "تثبيت القائمة أعلى الصفحة عند التمرير لأسفل. يُنصح بإلغاء تفعيلها في حالة وجود عناصر كثيرة في القائمة المنسدلة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
         },
         {
             "id": "show_mega_menu",
             "type": "boolean",
             "format": "switch",
-            "label": "إظهار القائمة العلوية",
-            "description": null,
+            "label": "إظهار القائمة العلوية الموسعة",
+            "description": "عرض القائمة العلوية مع خيارات البحث والفروع واللغات",
             "labelHTML": null,
             "icon": "sicon-toggle-off",
             "value": true,
@@ -158,122 +219,10 @@
             "required": false
         },
         {
-            "id": "main_background_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون الخلفية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#fff5f0",
-            "required": false
-        },
-        {
-            "id": "product_description_position_under",
-            "type": "boolean",
-            "format": "switch",
-            "label": "مكان وصف المنتج",
-            "description": "إضافة وصف المنتج بجانب الصورة",
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "selected": false,
-            "required": false
-        },
-        {
-            "id": "style_title_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون خلفية العناوين",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#FFAB5B",
-            "required": false
-        },
-        {
-            "id": "mutile_color_product_card",
-            "type": "boolean",
-            "format": "switch",
-            "label": "ألوان متعددة لبطاقة المنتج",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "selected": false,
-            "required": false
-        },
-        {
-            "id": "add_spacing_product_card",
-            "type": "boolean",
-            "format": "switch",
-            "label": "إضافة ابعاد لبطاقة المنتج",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "selected": false,
-            "required": false
-        },
-        {
-            "id": "product_card_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون بطاقة المنتج",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#EDF7F8",
-            "required": false
-        },
-        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
-            "description": null,
-            "id": "vertical_fixed_products",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "id": "is_more_button_enabled",
-            "label": "عرض (زر الكل) في الصفحة الرئيسية",
-            "format": "switch"
-        },
-        {
-            "type": "static",
-            "id": "static-line1",
-            "format": "line"
-        },
-        {
-            "type": "static",
-            "format": "title",
-            "id": "static-label2",
-            "value": "خيارات أعلى الصفحة",
-            "variant": "h6"
-        },
-        {
-            "id": "header_is_sticky",
-            "label": "تثبت القائمة الرئيسية أعلى الصفحة عند التمرير لأسفل",
-            "description": "يُنصح بالغاء تفعيلها في حالة وجود عناصر كثيرة في القائمة المنسدلة",
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "شريط علوي داكن",
-            "description": null,
+            "label": "وضع داكن للشريط العلوي",
+            "description": "تطبيق الوضع الداكن على الشريط العلوي",
             "id": "topnav_is_dark",
             "format": "switch",
             "required": false,
@@ -283,8 +232,19 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
+            "label": "عرض روابط الصفحات الهامة في الشريط العلوي",
+            "description": "مثل صفحة الهبوط، المدونة، الصفحات التعريفية",
+            "id": "important_links",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
             "label": "إظهار شريط الإعلان أسفل السلايدر",
-            "description": "إذا تم التفعيل، سيتم عرض شريط الإعلان أسفل السلايدر في الصفحة الرئيسية.",
+            "description": "إذا تم التفعيل، سيتم عرض شريط الإعلان أسفل السلايدر في الصفحة الرئيسية",
             "id": "advert_bar_under",
             "format": "switch",
             "required": false,
@@ -292,55 +252,29 @@
             "selected": false
         },
         {
-            "id": "is_scroll_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الرجوع للأعلى",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": true,
-            "selected": false,
-            "required": false
+            "type": "static",
+            "id": "footer_section_line",
+            "format": "line",
+            "label": null
         },
         {
-            "id": "is_whatsapp_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الواتساب",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": true,
-            "selected": false,
-            "required": false
+            "type": "static",
+            "format": "title",
+            "id": "footer_section_title",
+            "value": "🔻 إعدادات القائمة السفلية",
+            "variant": "h3",
+            "icon": "sicon-layout-bottom"
         },
         {
-            "id": "whatsapp_number",
-            "type": "string",
-            "format": "text",
-            "label": "رقم الواتساب",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "+966512345678",
-            "icon": "sicon-format-text-alt",
-            "value": null,
-            "multilanguage": false,
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "الوضع الداكن للذيل",
+            "description": "تطبيق الوضع الداكن على ذيل الصفحة",
+            "id": "footer_is_dark",
+            "format": "switch",
             "required": false,
-            "minLength": 3,
-            "maxLength": 30
-        },
-        {
-            "id": "enable_footer_wavey",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تمكين شكل مموج في  رأس ذيل الصفحة",
-            "description": "",
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
             "value": true,
-            "selected": false,
-            "required": false
+            "selected": false
         },
         {
             "id": "footer_color",
@@ -355,34 +289,109 @@
             "required": false
         },
         {
+            "id": "footer_background_image",
+            "type": "string",
+            "format": "image",
+            "label": "صورة خلفية ذيل الصفحة",
+            "description": "* المقاس المناسب للصورة هو 1600×1500 بكسل",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png",
+            "required": false
+        },
+        {
+            "id": "enable_footer_wavey",
             "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "عرض روابط الصفحات الهامة في الشريط العلوي",
-            "description": "مثل صفحة الهبوط ، المدونة ،الصفحات التعريفية",
-            "id": "important_links",
             "format": "switch",
-            "required": false,
+            "label": "تفعيل الشكل المموج في رأس ذيل الصفحة",
+            "description": "إضافة تأثير مموج جمالي أعلى ذيل الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
             "value": true,
-            "selected": true
+            "selected": false,
+            "required": false
         },
         {
             "type": "static",
-            "id": "static-line3",
-            "format": "line"
+            "id": "product_card_section_line",
+            "format": "line",
+            "label": null
         },
         {
             "type": "static",
             "format": "title",
-            "id": "static-label4",
-            "value": "خيارات أسفل الصفحة",
-            "variant": "h6"
+            "id": "product_card_section_title",
+            "value": "🛍️ إعدادات بطاقة المنتج",
+            "variant": "h3",
+            "icon": "sicon-shopping-bag"
+        },
+        {
+            "id": "mutile_color_product_card",
+            "type": "boolean",
+            "format": "switch",
+            "label": "ألوان متعددة لبطاقة المنتج",
+            "description": "عرض خيارات الألوان المتعددة على بطاقة المنتج",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "add_spacing_product_card",
+            "type": "boolean",
+            "format": "switch",
+            "label": "إضافة مسافات لبطاقة المنتج",
+            "description": "إضافة مسافات بين عناصر بطاقة المنتج",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "product_card_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية بطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#EDF7F8",
+            "required": false
+        },
+        {
+            "type": "static",
+            "id": "homepage_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "homepage_section_title",
+            "value": "🏠 إعدادات الصفحة الرئيسية",
+            "variant": "h3",
+            "icon": "sicon-home"
         },
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "الوضع الداكن",
-            "description": null,
-            "id": "footer_is_dark",
+            "label": "وضع عمودي للمنتجات الثابتة",
+            "description": "عرض المنتجات في مربع المنتجات الثابتة بشكل عمودي في الصفحة الرئيسية",
+            "id": "vertical_fixed_products",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "id": "is_more_button_enabled",
+            "label": "عرض زر (المزيد/الكل) في الصفحة الرئيسية",
+            "description": "إظهار زر لعرض جميع المنتجات",
+            "icon": "sicon-toggle-off",
             "format": "switch",
             "required": false,
             "value": true,
@@ -390,21 +399,35 @@
         },
         {
             "type": "static",
-            "id": "static-line5",
-            "format": "line"
+            "id": "product_page_section_line",
+            "format": "line",
+            "label": null
         },
         {
             "type": "static",
             "format": "title",
-            "id": "static-label6",
-            "value": "خيارات صفحة المنتج",
-            "variant": "h6"
+            "id": "product_page_section_title",
+            "value": "📦 إعدادات صفحة المنتج",
+            "variant": "h3",
+            "icon": "sicon-box-bankers"
+        },
+        {
+            "id": "product_description_position_under",
+            "type": "boolean",
+            "format": "switch",
+            "label": "وضع وصف المنتج بجانب الصورة",
+            "description": "عرض وصف المنتج بجانب الصورة بدلاً من أسفلها",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "selected": false,
+            "required": false
         },
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "تثبيت زر الإضافة والكمية أسفل شاشة الجوال",
-            "description": null,
+            "label": "تثبيت زر الإضافة للسلة أسفل الشاشة",
+            "description": "تثبيت زر الإضافة للسلة والكمية أسفل الشاشة في الجوال لسهولة الوصول",
             "id": "sticky_add_to_cart",
             "format": "switch",
             "required": false,
@@ -414,8 +437,8 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "اظهار الوسوم",
-            "description": null,
+            "label": "إظهار الوسوم (Tags)",
+            "description": "عرض وسوم المنتج في صفحة المنتج",
             "id": "show_tags",
             "format": "switch",
             "required": false,
@@ -426,8 +449,8 @@
             "id": "wishlist-btn",
             "type": "boolean",
             "format": "switch",
-            "label": "زر المفضلة بالقرب من إضافة للسلة",
-            "description": null,
+            "label": "زر المفضلة بجانب زر الإضافة للسلة",
+            "description": "عرض زر المفضلة بالقرب من زر إضافة للسلة",
             "labelHTML": null,
             "icon": "sicon-toggle-off",
             "value": true,
@@ -438,25 +461,25 @@
             "id": "slider_background_size",
             "type": "items",
             "format": "dropdown-list",
-            "label": "طريقة عرض الصور في سليدر صور المنتج",
-            "description": null,
+            "label": "طريقة عرض الصور في سلايدر المنتج",
+            "description": "اختر كيفية عرض صور المنتج في السلايدر",
             "labelHTML": null,
-            "icon": "sicon-list",
+            "icon": "sicon-image-carousel",
             "selected": [
                 {
-                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "label": "إظهار الصورة كاملة في المنتصف (Contain)",
                     "value": "contain",
                     "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
                 }
             ],
             "options": [
                 {
-                    "label": "تغطية الصورة كامل المساحة مع المحافظة على النسبة الصورة (Cover)",
+                    "label": "تغطية الصورة لكامل المساحة (Cover)",
                     "value": "cover",
                     "key": "e9c8ea8f-c5c6-438e-9d45-3bce269afde4"
                 },
                 {
-                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "label": "إظهار الصورة كاملة في المنتصف (Contain)",
                     "value": "contain",
                     "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
                 }
@@ -467,13 +490,73 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "تكبير الصور في سليدر صور المنتج",
-            "description": "هذه الخاصية تمكنك من تكبير الصورة لتسهل رؤية المزيد من التفاصيل بها",
+            "label": "تكبير الصور عند التمرير",
+            "description": "تفعيل خاصية تكبير الصورة عند التمرير عليها لرؤية المزيد من التفاصيل",
             "id": "imageZoom",
             "format": "switch",
             "required": false,
             "value": false,
             "selected": false
+        },
+        {
+            "type": "static",
+            "id": "fixed_buttons_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "fixed_buttons_section_title",
+            "value": "📱 الأزرار الثابتة",
+            "variant": "h3",
+            "icon": "sicon-phone"
+        },
+        {
+            "id": "is_whatsapp_enable",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل زر الواتساب الثابت",
+            "description": "إظهار زر واتساب ثابت في الصفحة للتواصل السريع",
+            "labelHTML": null,
+            "icon": "sicon-whatsapp",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "whatsapp_number",
+            "type": "string",
+            "format": "text",
+            "label": "رقم الواتساب",
+            "description": "أدخل رقم الواتساب مع رمز الدولة (مثال: +966512345678)",
+            "labelHTML": null,
+            "placeholder": "+966512345678",
+            "icon": "sicon-phone",
+            "value": null,
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": 30,
+            "conditions": [
+                {
+                    "id": "is_whatsapp_enable",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "is_scroll_enable",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل زر الرجوع للأعلى",
+            "description": "إظهار زر ثابت للعودة إلى أعلى الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-arrow-up",
+            "value": true,
+            "selected": false,
+            "required": false
         }
     ],
     "components": [
