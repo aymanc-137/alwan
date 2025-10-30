@@ -27,24 +27,6 @@
     ],
     "settings": [
         {
-            "type": "static",
-            "id": "general_section",
-            "format": "title",
-            "label": "الإعدادات العامة",
-            "value": "⚙️ الإعدادات العامة للثيم",
-            "variant": "h2",
-            "icon": "sicon-settings"
-        },
-        {
-            "id": "description",
-            "type": "static",
-            "format": "description",
-            "label": "مساعدة",
-            "value": "📖 تصفح دليل الثيم للمساعدة : <a href='https://tajerkit.com/themes/alwan' target='_blank' style='color:#3b82f6;text-decoration:underline;'>https://tajerkit.com/themes/alwan</a>",
-            "variant": "h1",
-            "icon": "sicon-book-open"
-        },
-        {
             "id": "squar_photo_bg_image_size",
             "type": "items",
             "format": "dropdown-list",
@@ -242,12 +224,21 @@
         },
         {
             "type": "static",
-            "id": "custom_settings_section",
+            "id": "general_section",
             "format": "title",
-            "label": "إعدادات إضافية مخصصة",
-            "value": "🎨 إعدادات إضافية مخصصة",
+            "label": "الإعدادات العامة",
+            "value": "⚙️ الإعدادات العامة للثيم",
             "variant": "h2",
-            "icon": "sicon-settings-slider"
+            "icon": "sicon-settings"
+        },
+        {
+            "id": "description",
+            "type": "static",
+            "format": "description",
+            "label": "مساعدة",
+            "value": "📖 تصفح دليل الثيم للمساعدة : <a href='https://tajerkit.com/themes/alwan' target='_blank' style='color:#3b82f6;text-decoration:underline;'>https://tajerkit.com/themes/alwan</a>",
+            "variant": "h1",
+            "icon": "sicon-book-open"
         },
         {
             "type": "static",
