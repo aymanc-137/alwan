@@ -229,8 +229,7 @@
                           <h2 class=" font-bold text-xl inline-block"> {{product.starting_price ? product.starting_price|money : product.price|money }}</h2>
                   </div>
                 </div>
-                    <h1>{{product_description_next_image | json_encode}}</h1>
-                {% if product_description_next_image %}
+                 {% if product_description_next_image %}
                     <div class="product__description p-2 px-5 sm:p-1 leading-7 mb-3">
                         {% set product_desc = product.description|replace({"&nbsp;":"\n"}) %}
                         {% if product.has_read_more %}
@@ -428,14 +427,14 @@
         </div>
         <salla-offer></salla-offer>
     </div>
-
+ 
     {# Comments Area #}
 
             {% if not product_description_next_image %}
 
             {% if product.description or store.settings.rating.show_on_product %}
 
-            <div class="product_tabs w-5/6 mx-auto" >
+            <div class="tab-comment-description-box   product_tabs w-5/6 mx-auto" >
                 <salla-tabs >
                         <!-- Tab One -->
                 
@@ -466,9 +465,7 @@
                             </div>
                         </p>
 
-                    {% if store.settings.rating.show_on_product %}
-                    <salla-comments item-id="{{product.id}}" type="product"></salla-comments>
-                    {% endif %}
+                  
                         </salla-tab-content>
                         {% endif %}
                         {% if store.settings.rating.show_on_product %}
@@ -503,6 +500,11 @@
     <div class="container">
         <salla-products-slider source="related" source-value="{{product.id}}" block-title="{{trans('pages.products.similar_products')}}" display-all-url></salla-products-slider>
     </div>
+
+
+   {{ product | json_encode }}
+
+
 {% endblock %}
 
 {% block scripts %}
