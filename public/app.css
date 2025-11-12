@@ -1350,6 +1350,9 @@ select{
 .\!w-full{
     width: 100% !important;
 }
+.w-1\/2{
+    width: 50%;
+}
 .w-1\/6{
     width: 16.666667%;
 }
@@ -1434,9 +1437,6 @@ select{
 }
 .w-full{
     width: 100%;
-}
-.w-1\/2{
-    width: 50%;
 }
 .min-w-0{
     min-width: 0px;
