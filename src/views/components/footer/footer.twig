@@ -49,12 +49,7 @@
 					<salla-social class="mb-6"></salla-social>
 				</div>
 
-				{% if store.settings.is_multilingual or store.settings.currencies_enabled %}
-				<button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
-					<span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
-					<span class="mx-1.5">|</span> <span>{{ currency.symbol }}</span>
-				</button>
-				{% endif %}
+
           {# vat #}
           {% if store.settings.tax.number %}
             <div class="flex rtl:space-x-reverse space-x-2 items-end">
@@ -128,10 +123,19 @@
 			</div>
 			{% endif %}
 			
+				<div class="my-5 w-1/2">
  						<salla-apps-icons class="mx-auto"  apps-title="{{ trans('blocks.footer.apps_title') }}" vertical="true" ></salla-apps-icons>
-
+						{% if store.settings.is_multilingual or store.settings.currencies_enabled %}
+						<button type="button" onclick="salla.event.dispatch('localization::open')" class="btn--rounded-gray basis-0">
+							<span class="flag iti__flag iti__{{ user.language.country_code }} rounded-sm"></span>
+							<span class="mx-1.5">|</span> <span>{{ currency.symbol }}</span>
+						</button>
+						{% endif %}
+				</div>	
  		
 		</div>
+
+
 	</div>
 
 	<div class="md:flex items-center justify-between py-4 container text-center">
