@@ -105,9 +105,10 @@
 				
 				<div class="main-bg p-1 rounded-xl flex items-center">
 					<input
+					id="maillistsub"
 						type="email"
 						name="{{theme.settings.get('email_input_filed')}}"
-						placeholder="أدخل بريدك الإلكتروني"
+						placeholder="البريد الإلكتروني"
 						class="w-full px-2 py-2 rounded-xl focus:outline-none text-gray-900 neo-shadow" 
 					/>
 					<input type="hidden" name="u" value="{{theme.settings.get('user_id_email')}}">
@@ -157,4 +158,4 @@
 		  <salla-search inline oval height="36"></salla-search>
 	  </div>
 	 </salla-modal>
- 
+         <salla-localization-modal></salla-localization-modal>

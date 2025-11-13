@@ -739,3 +739,10 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
     @apply text-primary text-3xl;
   }
 }
+.maillistsub{
+
+input::placeholder {
+  font-size: 10px; /* Adjust the pixel value as needed for smaller text */
+}
+
+}

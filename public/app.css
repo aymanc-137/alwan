@@ -1350,9 +1350,6 @@ select{
 .\!w-full{
     width: 100% !important;
 }
-.w-1\/2{
-    width: 50%;
-}
 .w-1\/6{
     width: 16.666667%;
 }
@@ -18510,6 +18507,12 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
     line-height: 2.25rem;
     color: #414042;
     color: var(--color-primary);
+}
+.maillistsub input::-moz-placeholder {
+  font-size: 10px; /* Adjust the pixel value as needed for smaller text */
+}
+.maillistsub input::placeholder {
+  font-size: 10px; /* Adjust the pixel value as needed for smaller text */
 }
 .tooltip-content {
   position: absolute;
