@@ -419,7 +419,7 @@ The theme supports dynamic font selection via Twilight's font system:
 - Component logic is split: view templates (`.twig`) + scripts (`.js`) + styles (`.scss`)
 - Theme uses Twilight's component system - check official Salla docs for component APIs
 - Arabic is the primary language (RTL support via `user.language.dir`)
-- Theme documentation: https://tajerkit.com/themes/alwan
+- Theme documentation: https://aymanc-137.github.io/ar/alwan
 
 ## Testing & Quality Assurance
 
