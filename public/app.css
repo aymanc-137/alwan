@@ -23007,6 +23007,7 @@ input[type=radio].sr-only:checked ~ div.model-viewer__poster {
 }
 .s-product-card-horizontal .s-product-card-content{
     margin-bottom: 0px;
+    overflow: auto;
 }
 @media (max-width: 480px) {
   .s-product-card-horizontal salla-button.s-product-card-wishlist-btn{

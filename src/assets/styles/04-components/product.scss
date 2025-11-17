@@ -321,7 +321,7 @@
 // Horizontal card
 .s-product-card-horizontal{
   .s-product-card-content{
-    @apply mb-0;
+    @apply mb-0 overflow-auto;
   }
 
   @media(max-width: 480px){
