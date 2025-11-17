@@ -39,7 +39,7 @@ const cat_id = CatElement.dataset.catid;
                         CatElement.style.color = element?.title_color ?? 'black';
                  
     
-                        if (element?.title) CatElement.innerHTML = `<h3 class="place-self-center font-[${element?.title_font[0]}] text-3xl">${element.title}</h3>`;
+                        if (element?.title) CatElement.innerHTML = `<h3 class="place-self-center font-[${element?.title_font[0] ?? 'default'}] text-3xl">${element.title}</h3>`;
                     }
                 }
                 
