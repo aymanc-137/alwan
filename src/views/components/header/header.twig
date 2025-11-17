@@ -129,7 +129,7 @@
         // Get advert_bar_under value from backend (injected as a JS variable)
         var advertBarUnder = {{ theme.settings.get('advert_bar_under')|default(false)|json_encode|raw }};
 
-console.log(advertBarUnder);
+     //console.log(advertBarUnder);
         // Helper to move the ad below the slider if needed
         function moveAdvertisementIfNeeded() {
             if (!advertBarUnder) return;
@@ -220,7 +220,7 @@ console.log(advertBarUnder);
                     return await tryToFindElement();
                 } catch (error) {
                     if (retryCount < maxRetries) {
-                        console.log(`Retry ${retryCount + 1}/${maxRetries} finding element: ${selector}`);
+                       // console.log(`Retry ${retryCount + 1}/${maxRetries} finding element: ${selector}`);
                         retryCount++;
                         // Wait before retrying
                         await new Promise(resolve => setTimeout(resolve, retryDelay));
@@ -248,11 +248,11 @@ console.log(advertBarUnder);
                 adElement
                 // Validate the element exists and is a proper DOM element
                 if (!adElement || !(adElement instanceof Element)) {
-                    console.log('Ad element found but is not valid, skipping marquee initialization');
+                   // console.log('Ad element found but is not valid, skipping marquee initialization');
                     return;
                 }
                 
-                console.log('Advertisement element found, initializing marquee');
+               // console.log('Advertisement element found, initializing marquee');
                 
                 // Add wrapper class for CSS encapsulation
                 adElement.classList.add('s-advertisement-wrapper');
@@ -273,7 +273,7 @@ console.log(advertBarUnder);
                 // Get the main content element that we want to duplicate
                 const contentElement = adElement.querySelector('.s-advertisement-content-main');
                 if (!contentElement) {
-                    console.log('Content element not found, skipping marquee initialization');
+                  //  console.log('Content element not found, skipping marquee initialization');
                     return;
                 }
 
@@ -352,7 +352,7 @@ console.log(advertBarUnder);
                     
                     // Add the marquee container after the close button
                     adContentElement.appendChild(marqueeContainer);
-                    console.log('Marquee initialized successfully');
+                    // console.log('Marquee initialized successfully');
                 }
             } catch (error) {
                 console.error('Error initializing ad marquee:', error);
