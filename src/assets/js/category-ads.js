@@ -35,10 +35,10 @@ const cat_id = CatElement.dataset.catid;
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style.backgroundImage = `url(${element.image})`;
                         CatElement.style.display = 'flex';
-                       // CatElement.style.fontFamily = element.title_font[0];
+                        CatElement.style.fontFamily = element.title_font[0];
                         CatElement.style.color = element.title_color;
-                        console.log(element);
-                     //   console.log(element.title_color);
+                 
+    
                         if (element?.title) CatElement.innerHTML = `<h3 class="place-self-center text-3xl">${element.title}</h3>`;
                     }
                 }
