@@ -322,6 +322,9 @@
 .s-product-card-horizontal{
   .s-product-card-content{
     @apply mb-0 overflow-auto;
+    .s-product-card-content-title {
+      white-space: normal !important;
+    }
   }
 
   @media(max-width: 480px){
