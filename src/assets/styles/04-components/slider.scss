@@ -45,6 +45,14 @@ salla-slider{
   @apply absolute z-10 top-4 rtl:right-0 ltr:left-0 font-bold text-sm bg-red-800 text-white rtl:rounded-l-md ltr:rounded-r-md;
   @apply w-auto m-0 px-3 py-2 #{!important};
 }
+.main-index-slider{
+  
+  .s-slider-container{
+    margin-left: 0px !important;
+  }
+
+}
+
 
 .home-slider {
   &__slide {
@@ -195,3 +203,12 @@ model-viewer[style*="width"]:before{
     @apply min-h-[380px] max-h-[480px] md:max-h-[680px];
   }
 }
+
+
+// .main-index-slider{
+
+//   .swiper:where([dir="rtl"], [dir="rtl"] *)
+//  {
+//     padding-left: 0px !important;
+// }
+// }

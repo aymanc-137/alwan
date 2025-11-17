@@ -22282,6 +22282,9 @@ input[type=radio].sr-only:checked ~ div.promotion-title {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
 }
+.main-index-slider .s-slider-container {
+  margin-left: 0px !important;
+}
 .home-slider__slide {
   background-repeat: no-repeat;
   background-size: cover;
