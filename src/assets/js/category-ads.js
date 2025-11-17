@@ -34,7 +34,9 @@ const cat_id = CatElement.dataset.catid;
                         CatElement.style = 'display: block;'; // Adjust display style for video
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style =   `background-image: url(${element.image}); display: flex;`;
-                       if (element?.title) CatElement.innerHTML = `<h3 class=" place-self-center text-white text-3xl" >${element?.title}</h3>`;
+                        CatElement.style =   `font-famliy: ${element.title_font[0]};`;
+                        CatElement.style =   `color: ${element.title_color};`;
+                       if (element?.title) CatElement.innerHTML = `<h3  class=" place-self-center text-3xl" ></h3>`;
                     }
                 }
                 
