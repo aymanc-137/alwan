@@ -35,7 +35,7 @@ const cat_id = CatElement.dataset.catid;
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style.backgroundImage = `url(${element.image})`;
                         CatElement.style.display = 'flex';
-                        CatElement.style.fontFamily = element?.title_font?.[0] ?? 'inherit';
+                        CatElement.style.fontFamily = element?.title_font[0] ?? 'Change';
                         CatElement.style.color = element?.title_color ?? 'black';
                  
     
