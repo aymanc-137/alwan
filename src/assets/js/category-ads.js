@@ -35,8 +35,8 @@ const cat_id = CatElement.dataset.catid;
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style.backgroundImage = `url(${element.image})`;
                         CatElement.style.display = 'flex';
-                        CatElement.style.fontFamily = element.title_font[0];
-                        CatElement.style.color = element.title_color;
+                        CatElement.style.fontFamily = element?.title_font?.[0] ?? 'inherit';
+                        CatElement.style.color = element?.title_color ?? 'black';
                  
     
                         if (element?.title) CatElement.innerHTML = `<h3 class="place-self-center text-3xl">${element.title}</h3>`;
