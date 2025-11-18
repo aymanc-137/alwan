@@ -1527,14 +1527,6 @@ select{
 .transform{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-@keyframes pulse{
-    50%{
-        opacity: .5;
-    }
-}
-.animate-pulse{
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
 @keyframes ping{
     75%, 100%{
         transform: scale(2);
@@ -1543,19 +1535,6 @@ select{
 }
 .animate-ping{
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-@keyframes bounce{
-    0%, 100%{
-        transform: translateY(-25%);
-        animation-timing-function: cubic-bezier(0.8,0,1,1);
-    }
-    50%{
-        transform: none;
-        animation-timing-function: cubic-bezier(0,0,0.2,1);
-    }
-}
-.animate-bounce{
-    animation: bounce 1s infinite;
 }
 .cursor-pointer{
     cursor: pointer;
@@ -18726,6 +18705,24 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
+}
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulseScale {
+  animation-name: pulseScale;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .swiper-lazy{
     opacity: 0;
