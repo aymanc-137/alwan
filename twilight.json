@@ -3228,6 +3228,17 @@
                     "required": false
                 },
                 {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
                     "id": "background_color",
                     "type": "string",
                     "format": "color",
