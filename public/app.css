@@ -18180,7 +18180,6 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   height: 2em;
 }
 .s-product-card-content-title {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
