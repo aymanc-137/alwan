@@ -165,11 +165,14 @@ style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0
   {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
   ">
   <div class="loader-init">
-    {% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '128' )  %}
-    <img 
+      {% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '128' )  %}
+
+  <img 
     style="width: {{pre_loade_logo}}px"
-    class=" animate-animate-pulse " src="{{store.logo}}" >
-   </div>
+    class=" animate-ping " src="{{store.logo}}">
+
+
+</div>
 <noscript>
     To get full functionality of this site you need to enable JavaScript. Here is how
     <a href="https://www.enable-javascript.com/" rel="noreferrer"
