@@ -31,7 +31,13 @@ const cat_id = CatElement.dataset.catid;
                         video.style.height = '100%';
                         video.style.objectFit = 'cover'; // Make video cover the container
                         CatElement.appendChild(video);
-                        CatElement.style = 'display: block;'; // Adjust display style for video
+                        CatElement.style.display = 'flex';
+                        CatElement.style.color = element?.title_color ?? 'black';
+
+                        // Add title text overlay for video mode
+                        if (element?.title) {
+                            CatElement.innerHTML += `<h3 class="place-self-center font-[${element?.title_font?.[0] ?? 'default'}] text-3xl">${element.title}</h3>`;
+                        }
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style.backgroundImage = `url(${element.image})`;
                         CatElement.style.display = 'flex';
