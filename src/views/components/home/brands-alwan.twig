@@ -2,7 +2,7 @@
 
 >
        <div class="shape-container ">
-        <div class="primary-side">
+        <div class="primary-side-{{position}}">
             {% if theme.is_rtl %}
 
             <div 
@@ -82,7 +82,7 @@
         </div>
 
 
-        <div class="secondary-side">
+        <div class="secondary-side-{{position}}">
 
         {% if theme.is_rtl %}
 
@@ -149,9 +149,9 @@
             /* No background on container, as child elements will provide it */
         }
 
-        .primary-side,
+        .primary-side-{{position}},
         .stroke-divider,
-        .secondary-side {
+        .secondary-side-{{position}} {
             position: absolute;
             top: 0;
             left: 0;
@@ -161,7 +161,7 @@
             overflow: hidden; /* Clips content to the shape */
         }
 
-        .primary-side {
+        .primary-side-{{position}} {
             {% if theme.is_rtl %}
             background-color: {{component.brand_background | default('#FCFFEC')}}; /* Light yellow */
             {% else %}
@@ -177,7 +177,7 @@
             /* No padding needed for stroke element */
         }
 
-        .secondary-side {
+        .secondary-side-{{position}} {
             {% if theme.is_rtl %}
             background-color:  {{component.text_Background | default('#7ACBCB')}} ; /* Teal */
             {% else %}
@@ -213,7 +213,7 @@
         /* --- Default: HORIZONTAL LAYOUT (Mobile) --- */
 
         /* Primary Side (Top Part) */
-        .primary-side {
+        .primary-side-{{position}} {
             clip-path: polygon(
                 0% 0%, /* top-left */
                 100% 0%, /* top-right */
@@ -256,7 +256,7 @@
         }
 
         /* Secondary Side (Bottom Part) */
-        .secondary-side {
+        .secondary-side-{{position}} {
             clip-path: polygon(
                 /* Top zig-zag edge of the teal area */
                 0%     calc(var(--hz-peak-y) + var(--stroke-half-width)),
@@ -293,7 +293,7 @@
             }
 
             /* Primary Side (Left Part) */
-            .primary-side {
+            .primary-side-{{position}} {
                 clip-path: polygon(
                     0% 0%, /* top-left */
                     calc(var(--vz-peak-x) - var(--stroke-half-width)) 0%,
@@ -336,7 +336,7 @@
             }
 
             /* Secondary Side (Right Part) */
-            .secondary-side {
+            .secondary-side-{{position}} {
                 clip-path: polygon(
                     /* Left zig-zag edge of the teal area */
                     calc(var(--vz-peak-x) + var(--stroke-half-width)) 0%,
@@ -356,11 +356,11 @@
         }
 
         /* Example content styling */
-        .primary-side h2, .secondary-side h2 {
+        .primary-side-{{position}} h2, .secondary-side-{{position}} h2 {
             margin-top: 0;
             font-size: 1.5em; /* Adjust based on container size */
         }
-        .primary-side p, .secondary-side p {
+        .primary-side-{{position}} p, .secondary-side-{{position}} p {
          
             /* font-size: 1em;  */
             /* Adjust based on container size */
@@ -369,13 +369,13 @@
 
         /* For very small screens, you might want to adjust padding or font sizes further */
         @media (max-width: 400px) {
-            .primary-side, .secondary-side {
+            .primary-side-{{position}}, .secondary-side-{{position}} {
                 padding: 10px;
             }
-            .primary-side h2, .secondary-side h2 {
+            .primary-side-{{position}} h2, .secondary-side-{{position}} h2 {
                 font-size: 1.2em;
             }
-            .primary-side p, .secondary-side p {
+            .primary-side-{{position}} p, .secondary-side-{{position}} p {
                 font-size: 0.9em;
             }
         }
