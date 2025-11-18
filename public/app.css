@@ -1208,10 +1208,6 @@ select{
 .aspect-square{
     aspect-ratio: 1 / 1;
 }
-.size-6{
-    width: 1.5rem;
-    height: 1.5rem;
-}
 .\!h-36{
     height: 9rem !important;
 }
@@ -18171,6 +18167,18 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   content: "" !important;
 }
 .sicon-shopping-bag::before { /* Hide the original content */
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+}
+.user-avatar-cartoon-logo::before {
+  content: "" !important;
+}
+.user-avatar-cartoon-logo::before {
   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping.svg");
   background-repeat: no-repeat;
   background-position: center;
