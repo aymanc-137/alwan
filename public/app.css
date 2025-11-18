@@ -18179,7 +18179,7 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   content: "" !important;
 }
 .user-avatar-cartoon-logo::before {
-  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/shopping.svg");
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
