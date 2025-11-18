@@ -2358,8 +2358,6 @@
                     "icon": "sicon-image",
                     "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
-                    "minLength": 3,
-                    "maxLength": 300,
                     "conditions": [
                         {
                             "id": "enable_backgroud",
@@ -4195,7 +4193,7 @@
                     "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
-                    "value": "",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
                     "conditions": [
                         {
