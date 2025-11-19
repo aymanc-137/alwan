@@ -360,13 +360,14 @@
 		</div>
 		<salla-offer></salla-offer>
 	</div>
-	<hr
-	class="w-5/6 mx-auto my-5 border-primary border">
-	{# Comments Area #}
-	<div class="container rounded-lg neo-shadow bg-white p-5">
-		{% if not product_description_next_image %}
 
-			{% if product.description or store.settings.rating.show_on_product %}
+	{# Comments Area #}
+
+	{% if not product_description_next_image %}
+
+		{% if product.description or store.settings.rating.show_on_product %}
+			<hr class="w-5/6 mx-auto my-5 border-primary border">
+			<div class="container rounded-lg neo-shadow bg-white p-5">
 
 				<div class="tab-comment-description-box w-5/6 mx-auto">
 					{% if product.description %}
@@ -399,18 +400,18 @@
 					{% endif %}
 				</div>
 
-			{% endif %}
+			</div>
+		{% endif %}
 
-		{% else %}
+	{% else %}
 
-			{% if store.settings.rating.show_on_product %}
+		{% if store.settings.rating.show_on_product %}
 
-				<salla-comments item-id="{{product.id}}" type="product"></salla-comments>
-
-			{% endif %}
+			<salla-comments item-id="{{product.id}}" type="product"></salla-comments>
 
 		{% endif %}
-	</div>
+
+	{% endif %}
 	<hr
 	class="w-5/6 mx-auto my-5 border-primary border">
 	{# Similar Products Area #}

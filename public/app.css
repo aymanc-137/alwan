@@ -1431,9 +1431,6 @@ select{
 .w-full{
     width: 100%;
 }
-.w-auto{
-    width: auto;
-}
 .min-w-0{
     min-width: 0px;
 }
