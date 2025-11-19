@@ -826,16 +826,19 @@ salla-modal {
 
 
  
-
+// 2. HR Styles (Fixed)
 hr.condition-salla-comment-hr {
+  // Default: Green (Empty State)
+  border-color: green;
+  border-top-width: 1px; // Ensure width is set
+  border-style: solid;   // Ensure style is set
 
-  border-color: #00ff95 ;
-
-  // If the sibling is <salla-comments>, look inside it for the wrapper
-  &:has(+ salla-comments .s-reviews-summary-wrapper),
-  &:has(+ salla-comments salla-comment-item) {
-    border-color: #f98181;
-
+  // THE FIX:
+  // Change "+ salla-comments" to "+ .s-condition-comments-container"
+  // We check if the sibling is the container, and if THAT container holds the content.
+  
+  &:has(+ .s-condition-comments-container .s-reviews-summary-wrapper),
+  &:has(+ .s-condition-comments-container salla-comment-item) {
+    border-color: #f98181; // Red (Filled State)
   }
-
 }
