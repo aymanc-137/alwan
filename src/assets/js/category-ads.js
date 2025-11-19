@@ -36,7 +36,7 @@ const cat_id = CatElement.dataset.catid;
 
                         // Add title text overlay for video mode
                         if (element?.title) {
-                            CatElement.innerHTML += `<h3 class="place-self-center font-[${element?.title_font?.[0] ?? 'default'}] text-3xl">${element.title}</h3>`;
+                            CatElement.innerHTML += `<h3 class="place-self-center absolute font-[${element?.title_font?.[0] ?? 'default'}] text-3xl">${element.title}</h3>`;
                         }
                     } else if (element.image) { // Keep original logic if no video or image exists
                         CatElement.style.backgroundImage = `url(${element.image})`;
