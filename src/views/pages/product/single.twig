@@ -360,7 +360,8 @@
 		</div>
 		<salla-offer></salla-offer>
 	</div>
-
+	<hr
+	class="w-5/6 mx-auto my-5 border-primary border">
 	{# Comments Area #}
 
 	{% if not product_description_next_image %}
@@ -369,7 +370,7 @@
 
 			<div class="tab-comment-description-box w-5/6 mx-auto">
 				{% if product.description %}
-					<div class="product__description p-5 leading-7 mb-5 bg-white neo-shadow rounded-2xl">
+					<div class="product__description p-5 leading-7 mb-5 ">
 						<h3 class="mb-4 font-bold text-lg">{{ trans('pages.products.description') }}</h3>
 						{% set product_desc = product.description|replace({"&nbsp;":"\n"}) %}
 						{% if product.has_read_more %}
@@ -390,10 +391,10 @@
 				{% endif %}
 
 				{% if store.settings.rating.show_on_product %}
-					<div class="product-comments-section bg-white neo-shadow rounded-2xl p-5">
-						<h3 class="mb-4 font-bold text-lg">{{ trans('pages.products.ratting') }}</h3>
-						<salla-comments item-id="{{product.id}}" type="product"></salla-comments>
-					</div>
+
+
+					<salla-comments item-id="{{product.id}}" type="product"></salla-comments>
+
 				{% endif %}
 			</div>
 

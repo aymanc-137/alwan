@@ -7,7 +7,7 @@ html {
   pointer-events: none;
 }
 
-.flip-x{
+.flip-x {
   transform: scaleX(-1);
 }
 
@@ -15,15 +15,30 @@ input[type="file"] {
   display: none;
 }
 
-body{
+body {
   @apply bg-gray-50;
-  [type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select{
+
+  [type='text'],
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
     @apply focus:ring-0;
   }
 }
 
-.text-start{
-	@apply rtl:text-right ltr:text-left;
+.text-start {
+  @apply rtl:text-right ltr:text-left;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -33,7 +48,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-[type='submit']{
+[type='submit'] {
   -webkit-appearance: listitem; // safari fix, none: disable css on web component
 }
 
@@ -157,6 +172,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -197,10 +213,13 @@ body {
     img {
       margin: 15px 0 25px;
     }
-     ul , li{
+
+    ul,
+    li {
       list-style: inherit !important;
     }
-     ol{
+
+    ol {
       list-style: auto !important;
     }
   }
@@ -209,7 +228,8 @@ body {
 /* Components Init*/
 
 salla-modal {
-  &:not(.hydrated) { // hide modal component till it was loaded
+  &:not(.hydrated) {
+    // hide modal component till it was loaded
     display: none;
   }
 }
@@ -218,10 +238,11 @@ salla-modal {
 /* video aspect ratio*/
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
 
-  > * {
+  >* {
     position: absolute;
     top: 0;
     left: 0;
@@ -232,30 +253,30 @@ salla-modal {
 }
 
 // grid trigger
-.grid-trigger{
+.grid-trigger {
   @apply cursor-pointer mx-1 text-xl w-10 h-10 rounded-md flex items-center justify-center text-gray-400;
 }
 
 
 // center classes
-.flex-center{
+.flex-center {
   @apply flex justify-center items-center;
 }
 
-.center-between{
+.center-between {
   @apply flex justify-between items-center;
 }
 
-.grow-0{
+.grow-0 {
   flex-grow: 0 !important;
 }
 
-.basis-0{
+.basis-0 {
   flex-basis: 0;
 }
 
 // Gradient Background
-.gradient-bg{
+.gradient-bg {
   @apply from-primary to-primary-d;
 
   [dir="ltr"] & {
@@ -266,11 +287,12 @@ salla-modal {
     @apply bg-gradient-to-l;
   }
 
-  @media (max-width: 1024px){
-    &.profile-header{
+  @media (max-width: 1024px) {
+    &.profile-header {
       background-image: none;
 
       .breadcrumbs {
+
         a,
         span,
         .arrow {
@@ -285,14 +307,14 @@ salla-modal {
 .badge {
   @apply p-1 min-w-[20px] h-5 rounded-full inline-flex items-center justify-center text-xs;
 
-  &--red{
+  &--red {
     @apply bg-red-400 text-white;
   }
 }
 
 
 // copy icon
-.copy-icon{
+.copy-icon {
   @apply text-xs;
 }
 
@@ -301,15 +323,16 @@ salla-modal {
 }
 
 // fix rating modal when there is multiple products in mobile
-.s-rating-modal-wrap .s-modal-body{
+.s-rating-modal-wrap .s-modal-body {
   position: relative !important;
 }
 
 .s-verify-back {
   top: 0.5rem;
+
   svg {
     max-width: 18px;
-    fill: rgba(107,114,128,var(--tw-text-opacity));
+    fill: rgba(107, 114, 128, var(--tw-text-opacity));
   }
 }
 
@@ -321,7 +344,7 @@ salla-modal {
   left: 0.5rem;
 }
 
-@media (max-width: 639px){
+@media (max-width: 639px) {
   .s-verify-back {
     display: none;
   }
@@ -332,7 +355,8 @@ salla-modal {
     iframe {
       width: 100%;
       height: 30vw;
-      @media (max-width: 639px){
+
+      @media (max-width: 639px) {
         height: 50vw;
       }
     }
@@ -340,57 +364,71 @@ salla-modal {
 }
 
 // cart submit actions buttons
-.cart-submit-wrap{
+.cart-submit-wrap {
   @apply flex ltr:flex-wrap justify-between items-center -mx-[5px] gap-2.5;
 
-  > *{
-    @apply grow mx-[5px]; 
+  >* {
+    @apply grow mx-[5px];
   }
 }
 
-.s-button-btn, .s-price-range-number-input{
+.s-button-btn,
+.s-price-range-number-input {
   @apply rounded;
 }
 
 // salla app install banner
 .s-app-install-banner {
   @apply hidden flex-row items-center fixed left-0 right-0 w-[95%] my-4 mx-auto z-[999] rounded-md p-3 gap-2 drop-shadow-md;
-  background-color:  color-mix(in srgb, var(--color-primary) 15%, white);
+  background-color: color-mix(in srgb, var(--color-primary) 15%, white);
+
   &[open=false] {
     @apply hidden;
   }
+
   &[open=true][position=top] {
     @apply flex transform duration-500;
   }
+
   &[open=true][position=bottom] {
     @apply flex animate-slideUpFromBottom;
   }
+
   &[position=top] {
     @apply top-0 relative m-0 w-full rounded-none;
   }
+
   &[position=bottom] {
     @apply bottom-0;
   }
+
   &[closing][position=bottom] {
     @apply animate-slideDownFromBottom;
     animation-fill-mode: forwards;
   }
+
   &-title {
     @apply text-base font-bold text-primary;
   }
+
   &-sub-title {
     @apply text-sm font-normal max-w-[95%];
   }
+
   &-cta {
     @apply text-primary underline;
   }
+
   &-cancel-button {
     @apply absolute top-2 rtl:left-3 ltr:right-3;
   }
 }
 
 .blog-category {
-  ol,ul,li {
+
+  ol,
+  ul,
+  li {
     list-style: auto;
   }
 
@@ -398,44 +436,48 @@ salla-modal {
     @apply text-primary hover:text-primary-d;
   }
 }
- .categorylin-container{
-  .s-slider-container{
+
+.categorylin-container {
+  .s-slider-container {
     //@apply overflow-visible;
   }
- }
+}
 
- 
- .category-link{
- 
+
+.category-link {
+
 
   border-radius: 100px 109px 12.5px 12.5px;
-     
+
   border-right-width: 4px;
   border-bottom-width: 4px;
-   
-
-    border-color: #000000;
-    //background-color: #05DDDC;
 
 
+  border-color: #000000;
+  //background-color: #05DDDC;
 
-  div, .footer-content-text{
-  position: relative;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-property: transform;
- 
+
+
+  div,
+  .footer-content-text {
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+
   }
- 
-  &:hover{
-    div, .footer-content-text{
+
+  &:hover {
+
+    div,
+    .footer-content-text {
       transform: translate3d(-0.9rem, -0.3rem, 0px);
     }
   }
 }
 
 
-.s-button-btn{
+.s-button-btn {
   // border-width: 1px;
   // border-color: #000000;
   // border-right-width: 3px;
@@ -445,14 +487,16 @@ salla-modal {
   font-size: 14px;
   @apply border border-black hover:translate-x-[var(--spacing-boxShadowX)] hover:translate-y-[var(--spacing-boxShadowY)] hover:shadow-none;
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
-  &:hover{
+
+  &:hover {
     background-color: #61C0C1 !important;
   }
 
 }
 
 .sicon-shopping-bag::before {
-  content: none !important; /* Hide the original content */
+  content: none !important;
+  /* Hide the original content */
 }
 
 .sicon-shopping-bag::before {
@@ -462,7 +506,7 @@ salla-modal {
   background-position: center;
   background-size: contain;
   display: inline-block;
-   width: 2em;
+  width: 2em;
   height: 2em;
 }
 
@@ -474,11 +518,12 @@ salla-modal {
   background-position: center;
   background-size: contain;
   display: inline-block;
-   width: 2em;
+  width: 2em;
   height: 2em;
 }
+
 .s-product-card-content-title {
- // white-space: nowrap;
+  // white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -491,12 +536,12 @@ salla-modal {
     // Hide the original SVG
     display: none;
   }
-  
+
   .s-button-text span {
     // Position relative to contain the pseudo-element
     position: relative;
     display: inline-block;
-    
+
     // Add the new SVG as a pseudo-element
     &::after {
       content: '';
@@ -514,35 +559,38 @@ salla-modal {
 
 
 .s-social-share-btn {
-  button{
+  button {
     //@apply border !border-black border-b-2 border-r-2;
     // box-shadow: 3px 3px 0px rgb(0, 0, 0);
     // border-color: #000000 !important;
     background-color: #d9feff;
-    &:hover{
+
+    &:hover {
       border-color: #000000 !important;
       @apply translate-x-[var(--spacing-boxShadowX)] translate-y-[var(--spacing-boxShadowY)] shadow-none;
     }
-    
+
 
     @apply transition-all duration-300 neo-shadow border !border-black;
   }
 }
 
-.neo-shadow{
+.neo-shadow {
   border-color: #000000 !important;
   border-width: 1px !important;
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
-.s-comments-container{
-  @apply bg-white neo-shadow p-3 rounded-2xl;
-  
-  textarea{
+
+.s-comments-container {
+  //@apply bg-white neo-shadow p-3 rounded-2xl;
+
+  textarea {
     @apply border-black;
   }
 }
-.s-slider-block__title-nav{
-  button{
+
+.s-slider-block__title-nav {
+  button {
     @apply bg-white neo-shadow;
   }
 }
@@ -555,93 +603,91 @@ salla-modal {
 .fixed-buttons {
   @apply relative z-[9999] pointer-events-none;
 
-  > * {
+  >* {
     @apply pointer-events-auto;
   }
 }
 
 .whatsapp-button {
   @apply fixed z-[9999] w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center cursor-pointer hover:bg-green-600 transition-all duration-300 shadow-lg;
-  
+
   // Position bottom with more space on small screens
   bottom: 6rem; // Default position
-  
+
   // Add more space on smaller screens where the bottom nav appears
   @media (max-width: 767px) {
     bottom: 8rem; // Increased space to avoid overlap with bottom nav
   }
-  
+
   // RTL Support
   [dir="ltr"] & {
     @apply right-8;
   }
-  
+
   [dir="rtl"] & {
     @apply left-8;
   }
-  
+
   &:hover {
     animation: pulse 1s infinite;
   }
-  
+
   .whatsapp-icon {
     @apply w-6 h-6;
   }
 }
 
 .scroll-button {
-  @apply fixed w-12 h-12 rounded-full bg-primary hover:bg-primary text-white opacity-0 invisible 
-         flex items-center justify-center cursor-pointer  
-         transition-all duration-300 ease-in-out z-[9998]; // Reduced z-index to be behind whatsapp button
-  
+  @apply fixed w-12 h-12 rounded-full bg-primary hover:bg-primary text-white opacity-0 invisible flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out z-[9998]; // Reduced z-index to be behind whatsapp button
+
   // Position bottom with more space on small screens
   bottom: 2rem; // Default position
-  
+
   // Add more space on smaller screens where the bottom nav appears
   @media (max-width: 767px) {
     bottom: 12rem; // Positioned above the whatsapp button to avoid overlap
   }
-  
+
   // RTL Support
   [dir="ltr"] & {
     @apply right-8;
   }
-  
+
   [dir="rtl"] & {
     @apply left-8;
   }
-  
+
   &.show {
     @apply opacity-100 visible;
   }
-  
+
   .progress-ring {
     @apply absolute;
-    
+
     [dir="ltr"] & {
       @apply -rotate-90;
     }
-    
+
     [dir="rtl"] & {
       @apply rotate-90;
     }
-    
+
     &__circle {
       transform-origin: 50% 50%;
       transition: stroke-dashoffset 0.1s;
-      
+
       .scroll-button:hover & {
         @apply stroke-blue-400;
-         }
+      }
     }
   }
-  
+
   .arrow-up {
     @apply absolute text-2xl;
   }
 }
 
- 
+
 
 
 
@@ -652,68 +698,71 @@ salla-modal {
 
 .faq-component {
   // FAQ Component Variables
-$faq-transition-duration: 0.8s;
-$faq-arrow-transition: 0.6s;
-$faq-hover-transition: 0.3s;
-$faq-max-height: 500px;
-$faq-padding-horizontal: 1rem;
-$faq-padding-vertical: 0.75rem;
-$faq-easing: cubic-bezier(0.4, 0, 0.2, 1);
-$faq-hover-bg: rgba(0, 0, 0, 0.02);
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: all $faq-transition-duration $faq-easing;
-        padding: 0 $faq-padding-horizontal;
-        
-        &.open {
-            max-height: $faq-max-height;
-            padding: $faq-padding-vertical $faq-padding-horizontal;
-            transition: all $faq-transition-duration $faq-easing;
-        }
-    }
+  $faq-transition-duration: 0.8s;
+  $faq-arrow-transition: 0.6s;
+  $faq-hover-transition: 0.3s;
+  $faq-max-height: 500px;
+  $faq-padding-horizontal: 1rem;
+  $faq-padding-vertical: 0.75rem;
+  $faq-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  $faq-hover-bg: rgba(0, 0, 0, 0.02);
 
-    .faq-arrow {
-        transition: transform $faq-arrow-transition $faq-easing;
-        
-        &.rotated {
-            transform: rotate(180deg);
-        }
-    }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all $faq-transition-duration $faq-easing;
+    padding: 0 $faq-padding-horizontal;
 
-    .faq-question {
-        transition: background-color $faq-hover-transition ease;
-        
-        &:hover {
-            background-color: $faq-hover-bg;
-        }
+    &.open {
+      max-height: $faq-max-height;
+      padding: $faq-padding-vertical $faq-padding-horizontal;
+      transition: all $faq-transition-duration $faq-easing;
     }
+  }
+
+  .faq-arrow {
+    transition: transform $faq-arrow-transition $faq-easing;
+
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  .faq-question {
+    transition: background-color $faq-hover-transition ease;
+
+    &:hover {
+      background-color: $faq-hover-bg;
+    }
+  }
 }
 
 
 
 
 
-.s-reviews-header-wrapper{
+.s-reviews-header-wrapper {
   display: none;
 }
+
 .s-reviews-container {
   @apply transition-all duration-300 ease-in-out;
 
-.swiper-slide {
-  height: 60% !important;
+  .swiper-slide {
+    height: 60% !important;
+  }
 }
-}
+
 // Override default Salla testimonials classes with Harir theme styles
 .s-reviews-testimonial {
 
   //@apply w-4/6 mx-auto  border-4 border-primary-l rounded-[5rem] rounded-ee-none border-dotted p-6;
-  @apply w-4/6 mx-auto  neo-shadow rounded-[1.5rem] m-10;
+  @apply w-4/6 mx-auto neo-shadow rounded-[1.5rem] m-10;
 
 
   .s-reviews-testimonial__avatar {
-    @apply neo-shadow rounded-full -mr-14  border;
-    
+    @apply neo-shadow rounded-full -mr-14 border;
+
     img {
       @apply rounded-full;
     }
@@ -724,7 +773,7 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
 
   .s-reviews-testimonial__inner {
     @apply flex justify-evenly w-full;
-    
+
     .s-reviews-testimonial__text {
       @apply mx-auto w-5/6;
     }
@@ -736,6 +785,7 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
       margin-top: -20px;
       color: #ff6767;
     }
+
     &::before {
       content: '"';
       @apply text-6xl font-bold leading-none;
@@ -747,14 +797,16 @@ $faq-hover-bg: rgba(0, 0, 0, 0.02);
     }
   }
 
-  .s-reviews-testimonial__info{
+  .s-reviews-testimonial__info {
     @apply text-primary text-3xl;
   }
 }
-.maillistsub{
 
-input::placeholder {
-  font-size: 10px; /* Adjust the pixel value as needed for smaller text */
-}
+.maillistsub {
+
+  input::placeholder {
+    font-size: 10px;
+    /* Adjust the pixel value as needed for smaller text */
+  }
 
 }
