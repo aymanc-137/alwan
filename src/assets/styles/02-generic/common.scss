@@ -818,7 +818,6 @@ salla-modal {
   &:has(.s-reviews-summary-wrapper),
   // 2. OR check if it contains specific comment items
   &:has(salla-comment-item) {
-    
     // APPLY YOUR CSS STYLES HERE
     // This is effectively the same as adding a class
      @apply neo-shadow bg-white p-5;
@@ -829,11 +828,14 @@ salla-modal {
  
 
 hr.condition-salla-comment-hr {
-  display: none;
+
+  border-color: #f98181;
 
   // If the sibling is <salla-comments>, look inside it for the wrapper
   &:has(+ salla-comments .s-reviews-summary-wrapper),
   &:has(+ salla-comments salla-comment-item) {
-    display: block;
+    border-color: #00ff95;
+
   }
+
 }
