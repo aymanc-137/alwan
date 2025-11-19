@@ -829,7 +829,7 @@ salla-modal {
 // 2. HR Styles (Fixed)
 hr.condition-salla-comment-hr {
   // Default: Green (Empty State)
-  border-color: green;
+  display: none;
   border-top-width: 1px; // Ensure width is set
   border-style: solid;   // Ensure style is set
 
@@ -839,6 +839,6 @@ hr.condition-salla-comment-hr {
   
   &:has(+ .s-condition-comments-container .s-reviews-summary-wrapper),
   &:has(+ .s-condition-comments-container salla-comment-item) {
-    border-color: #f98181; // Red (Filled State)
+    display: block; // Red (Filled State)
   }
 }
