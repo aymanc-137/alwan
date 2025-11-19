@@ -19026,6 +19026,9 @@ salla-add-product-button{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
 }
+salla-add-product-button salla-button button {
+  padding: 0.5rem !important;
+}
 salla-add-product-button[width=wide]{
     width: 75%;
 }

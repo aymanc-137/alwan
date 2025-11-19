@@ -2,8 +2,12 @@
 * Buttons
 */
 salla-add-product-button {
-  s-button-text {
-    padding: .5rem !important;
+  salla-button {
+    button {
+
+
+      padding: .5rem !important;
+    }
   }
 
   @apply transition duration-300;
