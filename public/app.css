@@ -18159,7 +18159,7 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   transform: translate3d(-0.9rem, -0.3rem, 0px);
 }
 .s-button-btn {
-  background-color: #61C0C1;
+  background-color: var(--color-button);
   color: #ffffff;
   font-size: 14px;
   border-width: 1px;
@@ -18181,7 +18181,7 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
 .s-button-btn:hover {
-  background-color: #61C0C1 !important;
+  background-color: var(--color-button) !important;
 }
 .sicon-shopping-bag::before {
   content: none !important;

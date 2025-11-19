@@ -50,187 +50,190 @@
 | theme.settings.get(settingName, default=null)      | mixed    | get theme setting ex `theme.settings.get('my_var', 'fallback')`                                          |
 #}
 <!DOCTYPE html>
-<html lang="{{ user.language.code }}" dir="{{ user.language.dir }}">
-<!-- بسم الله الرحمن الرحيم -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ theme.settings.set('placeholder', 'images/placeholder.png') }}
+<html
+	lang="{{ user.language.code }}" dir="{{ user.language.dir }}">
+	<!-- بسم الله الرحمن الرحيم -->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{ theme.settings.set('placeholder', 'images/placeholder.png') }}
 
-    {% include 'pages.partials.loading-screen-assets' %}
+		{% include 'pages.partials.loading-screen-assets' %}
 
-    <script defer data-cfasync="false" src="{{ 'product-card.js'|asset }}"></script>
-    <script defer src="{{ 'main-menu.js'|asset }}"></script>
+		<script defer data-cfasync="false" src="{{ 'product-card.js'|asset }}"></script>
+		<script defer src="{{ 'main-menu.js'|asset }}"></script>
 
-    {% block head_scripts %}{% endblock %}
-
-
-    <script data-cfasync="false">
-        window.header_is_sticky = "{{theme.settings.get('header_is_sticky', 'Default Value')}}"
-        window.imageZoom = "{{theme.settings.get('imageZoom')}}"
-        window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
-
-        window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
-        window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
-        window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
-        window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
-
-        // Store wishlist button setting in localStorage for product-card.js
-        //localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
-        //localStorage.setItem('mutile_color_product_card', "{{ theme.settings.get('mutile_color_product_card', false) }}");
-        //localStorage.setItem('add_spacing_product_card', "{{ theme.settings.get('add_spacing_product_card', false) }}");
-        //localStorage.setItem('product_card_color', "{{ theme.settings.get('product_card_color', '#EDF7F8') }}");
-         //product_card_color 
-    </script>
-    
-    {% hook 'head:start' %}
-    {% hook head %}
-    {% block styles %}{% endblock %}
-    <link rel="stylesheet" href="{{ 'app.css' | asset }}">
-    <link rel="stylesheet" href="{{ theme.font.path|cdn }}"/>
-    <link rel="stylesheet" href="{{ 'fonts/sallaicons.css'|cdn }}"/>
-    
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Oi&family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet">
-    {# Font files moved to CDN #}
-
-{# {[
-    GraphicSchoolRegular,
-    BackToSchool,
-    CooperArabic,
-    Oi,
-    PlaypenSansArabic,
-]} #}
-
-{# <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marhey:wght@300..700&display=swap" rel="stylesheet"> #}
-
-{# <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marhey:wght@300..700&family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet"> #}
+		{% block head_scripts %}{% endblock %}
 
 
+		<script data-cfasync="false">
+			window.header_is_sticky = "{{ theme.settings.get('header_is_sticky', 'Default Value') }}"
+window.imageZoom = "{{ theme.settings.get('imageZoom') }}"
+window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
 
-{% set font_name = theme.font.name | default('Playpen Sans Arabic') %}
-{% if theme.font.name == "PingARLT" %}
-{% set font_name = 'Playpen Sans Arabic' %}
-{% endif %}
+window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
+window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
+window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
+window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
 
-<style>
+// Store wishlist button setting in localStorage for product-card.js
+// localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
+// localStorage.setItem('mutile_color_product_card', "{{ theme.settings.get('mutile_color_product_card', false) }}");
+// localStorage.setItem('add_spacing_product_card', "{{ theme.settings.get('add_spacing_product_card', false) }}");
+// localStorage.setItem('product_card_color', "{{ theme.settings.get('product_card_color', '#EDF7F8') }}");
+// product_card_color
+		</script>
+
+		{% hook 'head:start' %}
+		{% hook head %}
+		{% block styles %}{% endblock %}
+		<link rel="stylesheet" href="{{ 'app.css' | asset }}">
+		<link rel="stylesheet" href="{{ theme.font.path|cdn }}"/>
+		<link rel="stylesheet" href="{{ 'fonts/sallaicons.css'|cdn }}"/>
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Oi&family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet">
+		{# Font files moved to CDN #}
+
+		{# {[
+		    GraphicSchoolRegular,
+		    BackToSchool,
+		    CooperArabic,
+		    Oi,
+		    PlaypenSansArabic,
+		]} #}
+
+		{# <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marhey:wght@300..700&display=swap" rel="stylesheet"> #}
+
+		{# <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Marhey:wght@300..700&family=Playpen+Sans+Arabic:wght@100..800&display=swap" rel="stylesheet"> #}
+
+
+		{% set font_name = theme.font.name | default('Playpen Sans Arabic') %}
+			{% if theme.font.name == "PingARLT" %}
+		{% set font_name = 'Playpen Sans Arabic' %}
+		{% endif %}
+
+			<style>
 
 /* text-shadow: 1px 1px 2px black; */
 @font-face {
-    font-family: 'GraphicSchoolRegular';
-    src: url(https://cdn.lamsaweb.com/cdnAlwan/GraphicSchool-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'GraphicSchoolRegular';
+	src: url('https://cdn.lamsaweb.com/cdnAlwan/GraphicSchool-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'BackToSchool';
-    src: url(https://cdn.lamsaweb.com/cdnAlwan/BackToSchool.otf);
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'BackToSchool';
+	src: url('https://cdn.lamsaweb.com/cdnAlwan/BackToSchool.otf');
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-    font-family: 'CooperArabic';
-    src: url(https://cdn.lamsaweb.com/cdnAlwan/CooperArabic.ttf);
-    font-weight: 400;
-    font-style: normal;
-}       
-     
-        :root {
-            --font-main: {{ font_name }};
-            --color-primary: {{ theme.color.primary }};
-            --color-primary-dark: {{ theme.color.darker(0.15) }};
-            --color-primary-light: {{ theme.color.lighter(0.15) }};
-            --color-primary-reverse: {{ theme.color.reverse_text }};
-            --color-nav-header-color: {{ theme.settings.get('nav_header_color', '#fff5f0') }};
-        }
-    </style>
-    {# tracking services, custom css feature. #}
-    {% hook 'head:end' %}
-</head>
-                {# F4E2D8
-                  DBFB3E   ECF7FF#}
-<body id="app"
-style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}"
- class=" antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
-  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
-  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
-  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
-  ">
-  <div class="loader-init">
-      {% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '248' )  %}
+	font-family: 'CooperArabic';
+	src: url('https://cdn.lamsaweb.com/cdnAlwan/CooperArabic.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
 
-  <img 
-    style="width: {{pre_loade_logo}}px"
-    class="pulseScale " src="{{store.logo}}">
+:root {
+	--font-main: {{font_name}}
+	;
+	--color-primary: {{theme.color.primary}}
+	;
+	--color-primary-dark: {{theme.color.darker(0.15)}}
+	;
+	--color-primary-light: {{theme.color.lighter(0.15)}}
+	;
+	--color-primary-reverse: {{theme.color.reverse_text}}
+	;
+	--color-nav-header-color: {{theme.settings.get('nav_header_color', '#fff5f0')}}
+	;
+	--color-button: {{theme.settings.get('button_color', '#61C0C1')}}
+	;
+}
+		</style>
+		{# tracking services, custom css feature. #}
+	{% hook 'head:end' %}
+	</head>
+	{# F4E2D8
+	                  DBFB3E   ECF7FF#}
+		<body id="app" style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}" class=" antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
+			  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
+			  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
+			  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
+			  "> <div class="loader-init">
+			{% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '248' )  %}
 
-
-</div>
-<noscript>
-    To get full functionality of this site you need to enable JavaScript. Here is how
-    <a href="https://www.enable-javascript.com/" rel="noreferrer"
-       target="_blank">To enable JavaScript on webpage</a>.
-</noscript>
-<div class="app-inner flex flex-col min-h-full">
-    {% hook 'body:start' %}
-    {% component 'header.header' %}
-    {% block content %}{% endblock %}
-    {% component 'footer.footer' %}
-</div>
-{% hook 'body:end' %}
-<script defer src="{{ 'app.js' | asset }}"></script>
-
-{# Twilight Components #}
-<salla-offer-modal></salla-offer-modal>
-<salla-search></salla-search>
-
-{% if user.type=='guest' %}
-    <salla-login-modal></salla-login-modal>
-{% endif %}
+			<img style="width: {{pre_loade_logo}}px" class="pulseScale " src="{{store.logo}}">
 
 
-{% set is_whatsapp_enable = theme.settings.get('is_whatsapp_enable', false) %}
-{% set whatsapp_number = theme.settings.get('whatsapp_number') %}
-{% set is_scroll_enable = theme.settings.get('is_scroll_enable') %}
-<div class="fixed-buttons  " dir="auto">
-  <!-- WhatsApp Button -->
-  {% if is_whatsapp_enable and whatsapp_number %}
+		</div>
+		<noscript>
+			To get full functionality of this site you need to enable JavaScript. Here is how
+			<a href="https://www.enable-javascript.com/" rel="noreferrer" target="_blank">To enable JavaScript on webpage</a>.
+		</noscript>
+		<div class="app-inner flex flex-col min-h-full">
+			{% hook 'body:start' %}
+			{% component 'header.header' %}
+			{% block content %}{% endblock %}
+			{% component 'footer.footer' %}
+		</div>
+		{% hook 'body:end' %}
+		<script defer src="{{ 'app.js' | asset }}"></script>
 
-  <a href="https://wa.me/{{whatsapp_number}}" target="_blank" class="whatsapp-button">
-    <svg class="whatsapp-icon" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
-  </a>
-  {% endif %}
+		{# Twilight Components #}
+		<salla-offer-modal></salla-offer-modal>
+		<salla-search></salla-search>
 
-  {% if is_scroll_enable %}
-
-  <!-- Scroll to Top Button -->
-  <button id="scroll-to-top" class="scroll-button">
-    <svg class="progress-ring" width="48" height="48">
-      <circle class="progress-ring__circle" stroke="currentColor" stroke-width="4" fill="transparent" r="18" cx="24" cy="24"/>
-    </svg>
-    <i class="sicon-arrow-up text-lg"></i>
-  </button>
-  {% endif %}
-
-</div>
+		{% if user.type=='guest' %}
+			<salla-login-modal></salla-login-modal>
+		{% endif %}
 
 
-{% block scripts %}{% endblock %}
+		{% set is_whatsapp_enable = theme.settings.get('is_whatsapp_enable', false) %}
+		{% set whatsapp_number = theme.settings.get('whatsapp_number') %}
+		{% set is_scroll_enable = theme.settings.get('is_scroll_enable') %}
+		<div
+			class="fixed-buttons  " dir="auto">
+			<!-- WhatsApp Button -->
+			{% if is_whatsapp_enable and whatsapp_number %}
+
+				<a href="https://wa.me/{{whatsapp_number}}" target="_blank" class="whatsapp-button">
+					<svg class="whatsapp-icon" fill="currentColor" viewbox="0 0 24 24">
+						<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+					</svg>
+				</a>
+			{% endif %}
+
+			{% if is_scroll_enable %}
+
+				<!-- Scroll to Top Button -->
+				<button id="scroll-to-top" class="scroll-button">
+					<svg class="progress-ring" width="48" height="48">
+						<circle class="progress-ring__circle" stroke="currentColor" stroke-width="4" fill="transparent" r="18" cx="24" cy="24"/>
+					</svg>
+					<i class="sicon-arrow-up text-lg"></i>
+				</button>
+			{% endif %}
+
+		</div>
 
 
-<div class="font-[Changa]"></div>
-<div class="font-[BackToSchool]"></div>
-<div class="font-[Marhey]"></div>
-<div class="font-[Oi]"></div>
-<div class="font-[CooperArabic]"></div>
-</body>
+		{% block scripts %}{% endblock %}
+
+
+		<div class="font-[Changa]"></div>
+		<div class="font-[BackToSchool]"></div>
+		<div class="font-[Marhey]"></div>
+		<div class="font-[Oi]"></div>
+		<div class="font-[CooperArabic]"></div>
+	</body>
 </html>
