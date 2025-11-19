@@ -406,9 +406,11 @@
 	{% else %}
 
 		{% if store.settings.rating.show_on_product %}
+	<hr class="w-5/6 mx-auto my-5 border-primary border">
+			<div class="container rounded-lg s-condition-comments-container p-5">
 
 			<salla-comments item-id="{{product.id}}" type="product"></salla-comments>
-
+			</div>
 		{% endif %}
 
 	{% endif %}

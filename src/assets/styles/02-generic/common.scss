@@ -810,3 +810,17 @@ salla-modal {
   }
 
 }
+
+
+.s-condition-comments-container {
+  
+  // 1. Check if it contains the Summary Wrapper (Filled state)
+  &:has(.s-reviews-summary-wrapper),
+  // 2. OR check if it contains specific comment items
+  &:has(salla-comment-item) {
+    
+    // APPLY YOUR CSS STYLES HERE
+    // This is effectively the same as adding a class
+     @apply neo-shadow;
+  }
+}
