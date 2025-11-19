@@ -821,6 +821,14 @@ salla-modal {
     
     // APPLY YOUR CSS STYLES HERE
     // This is effectively the same as adding a class
-     @apply neo-shadow;
+     @apply neo-shadow bg-white p-5;
+  }
+}
+
+
+hr.condition-salla-comment-hr {
+  // Check if the next sibling is the COMPONENT, and if that component contains the wrapper
+  &:has(+ salla-comments .s-reviews-summary-wrapper) {
+    display: block;
   }
 }

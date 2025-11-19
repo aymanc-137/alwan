@@ -18535,10 +18535,17 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   font-size: 10px;
   /* Adjust the pixel value as needed for smaller text */
 }
-.s-condition-comments-container:has(.s-reviews-summary-wrapper), .s-condition-comments-container:has(salla-comment-item) {
+.s-condition-comments-container:has(.s-reviews-summary-wrapper), .s-condition-comments-container:has(salla-comment-item){
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity, 1));
+    padding: 1.25rem;
   border-color: #000000;
   border-width: 1px;
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+}
+hr.condition-salla-comment-hr:has(+ salla-comments .s-reviews-summary-wrapper) {
+  display: block;
 }
 .tooltip-content {
   position: absolute;
