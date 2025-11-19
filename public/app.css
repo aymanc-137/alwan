@@ -18159,6 +18159,9 @@ input[type=radio].sr-only:checked ~ div.s-app-install-banner-cancel-button {
   transform: translate3d(-0.9rem, -0.3rem, 0px);
 }
 .s-button-btn {
+  padding: 0.4rem !important;
+}
+.s-button-btn {
   background-color: var(--color-button);
   color: #ffffff;
   font-size: 14px;

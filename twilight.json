@@ -366,6 +366,18 @@
             "required": false
         },
         {
+            "id": "button_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون الأزرار",
+            "description": "لون خلفية الأزرار",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#61C0C1",
+            "required": false
+        },
+        {
             "type": "static",
             "id": "header_section_line",
             "format": "line",
