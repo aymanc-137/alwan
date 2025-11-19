@@ -18545,12 +18545,12 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
 hr.condition-salla-comment-hr {
-  border-color: green;
+  display: none;
   border-top-width: 1px;
   border-style: solid;
 }
 hr.condition-salla-comment-hr:has(+ .s-condition-comments-container .s-reviews-summary-wrapper), hr.condition-salla-comment-hr:has(+ .s-condition-comments-container salla-comment-item) {
-  border-color: #f98181;
+  display: block;
 }
 .tooltip-content {
   position: absolute;
