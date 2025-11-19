@@ -18545,10 +18545,10 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
 hr.condition-salla-comment-hr {
-  border-color: #f98181;
+  border-color: #00ff95;
 }
 hr.condition-salla-comment-hr:has(+ salla-comments .s-reviews-summary-wrapper), hr.condition-salla-comment-hr:has(+ salla-comments salla-comment-item) {
-  border-color: #00ff95;
+  border-color: #f98181;
 }
 .tooltip-content {
   position: absolute;
