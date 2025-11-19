@@ -826,9 +826,14 @@ salla-modal {
 }
 
 
+ 
+
 hr.condition-salla-comment-hr {
-  // Check if the next sibling is the COMPONENT, and if that component contains the wrapper
-  &:has(+ salla-comments .s-reviews-summary-wrapper) {
+  display: none;
+
+  // If the sibling is <salla-comments>, look inside it for the wrapper
+  &:has(+ salla-comments .s-reviews-summary-wrapper),
+  &:has(+ salla-comments salla-comment-item) {
     display: block;
   }
 }

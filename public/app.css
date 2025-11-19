@@ -18544,7 +18544,10 @@ input[type=radio].sr-only:checked ~ div.scroll-button .arrow-up {
   border-width: 1px;
   box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
 }
-hr.condition-salla-comment-hr:has(+ salla-comments .s-reviews-summary-wrapper) {
+hr.condition-salla-comment-hr {
+  display: none;
+}
+hr.condition-salla-comment-hr:has(+ salla-comments .s-reviews-summary-wrapper), hr.condition-salla-comment-hr:has(+ salla-comments salla-comment-item) {
   display: block;
 }
 .tooltip-content {
