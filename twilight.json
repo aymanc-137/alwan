@@ -378,6 +378,18 @@
             "required": false
         },
         {
+            "id": "wishlist_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون المفضلة",
+            "description": "لون خلفية زر المفضلة",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#F8B5EB",
+            "required": false
+        },
+        {
             "type": "static",
             "id": "header_section_line",
             "format": "line",
