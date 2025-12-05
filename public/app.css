@@ -23208,14 +23208,14 @@ salla-quantity-input[max="1"] .s-quantity-input-button{
 }
 .s-product-card-image{
     overflow: hidden;
-    border-bottom-width: 1px;
-    --tw-border-opacity: 1;
-    border-color: rgba(0, 0, 0, 1);
-    border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1));
   background-color: transparent;
 }
 .s-product-card-image img{
     max-height: 18rem;
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1));
     transition-property: transform;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
