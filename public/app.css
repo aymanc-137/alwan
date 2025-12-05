@@ -23206,7 +23206,8 @@ salla-quantity-input[max="1"] input{
 salla-quantity-input[max="1"] .s-quantity-input-button{
     cursor: not-allowed;
 }
-.s-product-card-image {
+.s-product-card-image{
+    overflow: hidden;
   background-color: transparent;
 }
 .s-product-card-image img{
@@ -23215,11 +23216,31 @@ salla-quantity-input[max="1"] .s-quantity-input-button{
     --tw-border-opacity: 1;
     border-color: rgba(0, 0, 0, 1);
     border-color: rgba(0, 0, 0, var(--tw-border-opacity, 1));
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .s-product-card-image img:hover{
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.25) scaleY(1.25);
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.s-product-card-image:hover {
+  opacity: 1;
+}
+.s-product-card-image-full{
+    overflow: hidden;
+}
+.s-product-card-image-full img{
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.s-product-card-image-full img:hover{
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1.1) scaleY(1.1);
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .s-product-card-wishlist-btn{

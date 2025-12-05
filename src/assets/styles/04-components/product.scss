@@ -426,11 +426,26 @@
   }
 
   .s-product-card-image {
+    @apply overflow-hidden;
+    
     img {
-      @apply border-b border-black max-h-72 hover:scale-125;
+      @apply border-b border-black max-h-72 transition-transform duration-300 ease-in-out hover:scale-110;
+    }
+
+    // Override base Twilight hover opacity
+    &:hover {
+      opacity: 1;
     }
 
     background-color: transparent;
+  }
+
+  .s-product-card-image-full {
+    @apply overflow-hidden;
+    
+    img {
+      @apply transition-transform duration-300 ease-in-out hover:scale-110;
+    }
   }
 
   .s-product-card-wishlist-btn {
