@@ -1,32 +1,35 @@
 
 <section class="w-full py-20 {{ component.enable_border ? 'border-t border-b border-black' : '' }}"
 
-{% if component.enable_backgroud %}
+            {% if component.enable_backgroud %}
 
-      {% if component.background_image %}
-        style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
-      {% else %}
-        style="background-color: {{ component.background_color | default('#ffffff') }};"
-      {% endif %}
+                  {% if component.background_image %}
+                    style="background-color: {{ component.background_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ component.background_image }}'); background-repeat: repeat;"
+                  {% else %}
+                    style="background-color: {{ component.background_color | default('#ffffff') }};"
+                  {% endif %}
 
-{% endif %}
+            {% endif %}
 
 >
-<div               style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
- class="mx-auto text-center my-5">
 
 
-{% if component.title_style %}
-                 <div class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
-                 {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
-                </div>
 
-    {% else %}
-  <h2
-    style="color: {{ component.title_color | default('#eea929') }}"
-     class="text-5xl font-bold ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
-{# shadow-1-text #}
-  {% endif %}
+<div               
+        style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
+        class="mx-auto text-center my-5">
+
+
+                {% if component.title_style %}
+                                <div class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
+                                {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
+                                </div>
+
+                    {% else %}
+                            <h2
+                              style="color: {{ component.title_color | default('#eea929') }}"
+                              class="text-5xl font-bold ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
+                             {% endif %}
   
   
     <h3 class="text-2xl text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</h3>
