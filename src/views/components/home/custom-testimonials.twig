@@ -1,4 +1,20 @@
-<section class="s-block s-block--testimonials s-block--custom-testimonials container ">
+{% set enable_sections_backgroud = theme.settings.get('enable_sections_backgroud',false)%}
+{% set enable_sections_border = theme.settings.get('enable_sections_border',false)%}
+{% set background_sections_color = theme.settings.get('background_sections_color','#ffffff')%}
+{% set background_sections_image = theme.settings.get('background_sections_image')%}
+<section class="s-block s-block--testimonials s-block--custom-testimonials container {{ enable_sections_border ? 'border-y border-black' : '' }}"
+
+          {% if enable_sections_backgroud %}
+
+                {% if background_sections_image %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ background_sections_image }}'); background-repeat: repeat;"
+                {% else %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }};"
+                {% endif %}
+
+          {% endif %}
+          >
+
     <div>
         <div class="flex hidden justify-between">
             <h1 class="mb-4 mr-2 text-lg font-bold leading-[1.2]">{{ trans('blocks.home.testimonials') }}</h1>

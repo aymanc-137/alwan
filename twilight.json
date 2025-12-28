@@ -667,10 +667,10 @@
         },
                         
         {
-                    "id": "enable_backgroud",
+                    "id": "enable_section_backgroud",
                     "type": "boolean",
                     "format": "switch",
-                    "label": "تمكين الخلفية",
+                    "label": " تمكين خلفية الاقسام الاساسية",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
@@ -678,7 +678,7 @@
                     "required": false
                 },
                 {
-                    "id": "enable_border",
+                    "id": "enable_sections_border",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الحدود",
@@ -689,10 +689,10 @@
                     "required": false
                 },
                 {
-                    "id": "background_color",
+                    "id": "background_sections_color",
                     "type": "string",
                     "format": "color",
-                    "label": "لون الخلفية",
+                    "label": "لون خلفية الاقسام الاساسية",
                     "description": "لون الخلفية",
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
@@ -700,17 +700,17 @@
                     "required": false,
                     "conditions": [
                         {
-                            "id": "enable_backgroud",
+                            "id": "enable_section_backgroud",
                             "operator": "=",
                             "value": true
                         }
                     ]
                 },
                 {
-                    "id": "background_image",
+                    "id": "background_sections_image",
                     "type": "string",
                     "format": "image",
-                    "label": "صورة الخلفية",
+                    "label": "صور خلفية الاقسام الاساسية",
                     "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
@@ -718,7 +718,7 @@
                     "required": false,
                     "conditions": [
                         {
-                            "id": "enable_backgroud",
+                            "id": "enable_section_backgroud",
                             "operator": "=",
                             "value": true
                         }

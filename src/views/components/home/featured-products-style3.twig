@@ -13,7 +13,22 @@
 | items[].id                    | string    | Section id                                                          |
 | position                      | int       | Sorting number starts from zero                                     |
 #}
-<section class="s-block s-block--features-products {% if items | length > 1 %}two-cols{% endif %} container">
+{% set enable_sections_backgroud = theme.settings.get('enable_sections_backgroud',false)%}
+{% set enable_sections_border = theme.settings.get('enable_sections_border',false)%}
+{% set background_sections_color = theme.settings.get('background_sections_color','#ffffff')%}
+{% set background_sections_image = theme.settings.get('background_sections_image')%}
+<section class="s-block s-block--features-products {% if items | length > 1 %}two-cols{% endif %} container {{ enable_sections_border ? 'border-y border-black' : '' }}"
+
+          {% if enable_sections_backgroud %}
+
+                {% if background_sections_image %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ background_sections_image }}'); background-repeat: repeat;"
+                {% else %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }};"
+                {% endif %}
+
+          {% endif %}
+          >
     <div class="inner">
         {% for section in items %}
             <div>

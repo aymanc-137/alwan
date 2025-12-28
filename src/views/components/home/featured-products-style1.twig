@@ -17,7 +17,32 @@
 | position                 | int       | sorting block                                                       |
 #}
 {% set component_id='featured-products-style1-' ~ position %}
-<section class="s-block s-block-tabs s-block--special-products container" id="{{ component_id }}">
+{% set enable_sections_backgroud = theme.settings.get('enable_sections_backgroud',false)%}
+{% set enable_sections_border = theme.settings.get('enable_sections_border',false)%}
+{% set background_sections_color = theme.settings.get('background_sections_color','#ffffff')%}
+{% set background_sections_image = theme.settings.get('background_sections_image')%}
+
+<section id="{{ component_id }}"  class="s-block s-block-tabs s-block--special-products container {{ enable_sections_border ? 'border-y border-black' : '' }}"
+
+          {% if enable_sections_backgroud %}
+
+                {% if background_sections_image %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }}; background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('{{ background_sections_image }}'); background-repeat: repeat;"
+                {% else %}
+                  style="background-color: {{ background_sections_color | default('#ffffff') }};"
+                {% endif %}
+
+          {% endif %}
+          >
+
+
+
+
+
+
+
+
+
     <div class="s-block__title"> 
       <div class="right-side">
         <h2>{{ main_product.title }}</h2>
