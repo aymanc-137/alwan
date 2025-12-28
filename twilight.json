@@ -665,6 +665,65 @@
             "value": true,
             "selected": true
         },
+                        
+        {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": "لون الخلفية",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "id": "background_image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "صورة الخلفية",
+                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
+                    "labelHTML": null,
+                    "icon": "sicon-image",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+                    "required": false,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operator": "=",
+                            "value": true
+                        }
+                    ]
+                },
         {
             "id": "wishlist-btn",
             "type": "boolean",
