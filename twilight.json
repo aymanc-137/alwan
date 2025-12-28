@@ -681,7 +681,7 @@
                     "id": "enable_sections_border",
                     "type": "boolean",
                     "format": "switch",
-                    "label": "تمكين الحدود",
+                    "label": "تمكين حدود الاقسام الاساسية",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
