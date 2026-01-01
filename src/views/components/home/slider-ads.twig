@@ -9,72 +9,59 @@
 | position          | Int     | Sorting number start from zero                                   |
 #}
 
- <section class="{{ is_repeated ? 'repeated-block' : '' }} slanted-layers ">
-  
-      <salla-slider 
-        type="carousel" 
-        class="home-slider main-index-slider main-slider !w-full  "
-        centered 
-        auto-play 
-        show-controls="false"
-        pagination
-         id="photos-{{ position }}-slider"> 
-        <div slot="items">
+<section class="{{ is_repeated ? 'repeated-block' : '' }} slanted-layers ">
 
-          {% for index, item in component.slides_ads %}
-           {% if item.url and not item.button_title %}
-           <a href="{{ item.url }}" class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[90vh] bg-center bg-cover bg-no-repeat cursor-pointer" style="background-image: url({{ item.image }});">
-           {% else %}
-           <div class="swiper-slide flex justify-center flex-col h-[50vh] md:!h-[90vh] bg-center bg-cover bg-no-repeat" style="background-image: url({{ item.image }});">
-           {% endif %}
-               
-                {% set postion = 'text-center' %}
+	<salla-slider type="carousel" class="home-slider main-index-slider main-slider !w-full  " centered auto-play show-controls="false" pagination id="photos-{{ position }}-slider">
+		<div slot="items">
 
-                  {% if item.postion[0] == "right" %}
-                    
-                        {% set postion = 'ltr:text-start  rtl:text-end' %}
-                    
-                        {% elseif item.postion[0] == "left" %}
+			{% for index, item in component.slides_ads %}
+				{% if item.url and not item.button_title %}
+					<a href="{{ item.url }}" class="swiper-slide flex justify-center flex-col h-[50vh] min-h-[300px] md:!h-[90vh] bg-center bg-cover bg-no-repeat cursor-pointer" style="background-image: url({{ item.image }});">
+					{% else %}
+						<div class="swiper-slide flex justify-center flex-col h-[50vh] min-h-[300px] md:!h-[90vh] bg-center bg-cover bg-no-repeat" style="background-image: url({{ item.image }});">
+						{% endif %}
 
-                        {% set postion = 'ltr:text-end rtl:text-start' %}
-                        
-                {% endif %}
+						{% set postion = 'text-center' %}
 
-                 
-                <div class="md:w-4/6 place-self-center {{postion}}">
-                  <h1
-                  style=" 
-                  color: {{item.title_color}};
-                   text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
+						{% if item.postion[0] == "right" %}
 
-              
-                 " 
-                 {# text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 004956
-                 
-                  #}
-                   class=" font-[{{item.title_font[0] | default('BackToSchool')}}]  md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
+							{% set postion = 'ltr:text-start  rtl:text-end' %}
 
-                  <h2 class="my-5">{{item.description}}</h2>
-                  {% if item.button_title %}
-                    <salla-button href="{{item.url }}" color="primary" class="btn--rounded-full !text-white my-2">
-                      {{item.button_title}}
-                    </salla-button>
-                  {% endif %}
-                  
-                
-                </div>
+						{% elseif item.postion[0] == "left" %}
 
-          {% if item.url and not item.button_title %}
-          </a>
-          {% else %}
-          </div>
-          {% endif %}
-          {% endfor %}
-          
-        </div>
-      </salla-slider>
-  </section> 
+							{% set postion = 'ltr:text-end rtl:text-start' %}
 
- 
+						{% endif %}
 
-    <div id="advert-bar-placeholder"></div>
+
+						<div class="md:w-4/6 place-self-center {{postion}}">
+							<h1 style="
+								                  color: {{item.title_color}};
+								                   text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
+								
+								
+								                 " {# text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); 004956 #} class=" font-[{{item.title_font[0] | default('BackToSchool')}}]  md:text-6xl font-extrabold my-2 text-[var(--color-primary)] text-stroke">{{item.title}}</h1>
+
+							<h2 class="my-5">{{item.description}}</h2>
+							{% if item.button_title %}
+								<salla-button href="{{item.url }}" color="primary" class="btn--rounded-full !text-white my-2">
+									{{item.button_title}}
+								</salla-button>
+							{% endif %}
+
+
+						</div>
+
+						{% if item.url and not item.button_title %}
+						</a>
+				{% else %}
+					</div>
+				{% endif %}
+			{% endfor %}
+
+		</div>
+	</salla-slider>
+</section>
+
+
+<div id="advert-bar-placeholder"></div>
