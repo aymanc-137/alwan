@@ -289,6 +289,13 @@
 					</section>
 				{% endif %}
 
+				{# Digital Files Settings #}
+				{% if product.digital_files_settings %}
+					<digital-files-settings settings='{{ product.digital_files_settings|json_encode }}'></digital-files-settings>
+				{% endif %}
+				{# End Digital Files Settings #}
+
+
 				<form class="form product-form" enctype="multipart/form-data" method="post" onsubmit="return salla.form.onSubmit('cart.addItem', event)">
 					<input type="hidden" name="id" value="{{ product.id }}">
 
@@ -345,7 +352,11 @@
 							</div>
 						{% endif %}
 						{# Add to cart #}
-						<salla-add-product-button {{product.can_quick_buy ? 'quick-buy' : ''}} {{theme.settings.get('sticky_add_to_cart') ? ' support-sticky-bar' : ''}} {{product.is_require_shipping ? 'required-shipping' : ''}} amount="{{ product.base_currency_price }}" class="mt-5 w-full sticky-product-bar__btn product-page-button" product-status="{{ product.status }}" product-type="{{ product.type }}" product-id="{{ product.id }}" loader-position="end" type="submit" width="wide" {# Notify availability props#} {% if product.notify_availability %} {{ product.notify_availability.subscribed ? 'is-subscribed' : '' }} channels="{{ product.notify_availability.channels|join(',') }}" subscribed-options="{{ product.notify_availability.subscribed_options|json_encode }}" {{ product.notify_availability.options ? 'notify-options-availability' : '' }} {% endif %}>
+						<salla-add-product-button {{product.can_quick_buy ? 'quick-buy' : ''}} 
+						{{theme.settings.get('sticky_add_to_cart') ? ' support-sticky-bar' : ''}} 
+						{{product.is_require_shipping ? 'required-shipping' : ''}} 
+						{{product.has_preorder_campaign ? 'has-pre-order' : ''}}
+						amount="{{ product.base_currency_price }}" class="mt-5 w-full sticky-product-bar__btn product-page-button" product-status="{{ product.status }}" product-type="{{ product.type }}" product-id="{{ product.id }}" loader-position="end" type="submit" width="wide" {# Notify availability props#} {% if product.notify_availability %} {{ product.notify_availability.subscribed ? 'is-subscribed' : '' }} channels="{{ product.notify_availability.channels|join(',') }}" subscribed-options="{{ product.notify_availability.subscribed_options|json_encode }}" {{ product.notify_availability.options ? 'notify-options-availability' : '' }} {% endif %}>
 							{{ product.add_to_cart_label }}
 						</salla-add-product-button>
 					</section>

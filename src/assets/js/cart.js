@@ -1,6 +1,5 @@
 import BasePage from './base-page';
 import {validateProductOptions} from './partials/validate-product-options';
-
 class Cart extends BasePage {
     onReady() {
         // keep update the dom base in the events
@@ -36,8 +35,7 @@ class Cart extends BasePage {
         }
         
         app.onClick(submitBtn, event => {
-        let cartForms = document.querySelectorAll('form[id^="item-"]');
-
+            let cartForms = document.querySelectorAll('form[id^="item-"]');
             let isValid = true;
             cartForms.forEach(form => {
                 isValid = isValid && form.reportValidity();
@@ -62,7 +60,7 @@ class Cart extends BasePage {
       const arrayTwoId = options.map((item) => (item.id));
 
       document.querySelectorAll('.cart-options form')?.forEach((form) => {
-        if (!arrayTwoId.includes(parseInt(form.id.value))) {
+        if (!arrayTwoId.includes(form.id.value)) {
           form.remove();
         }
       })
@@ -79,10 +77,10 @@ class Cart extends BasePage {
             return window.location.reload();
         }
         // toggle physical gifting depned on giftable flag
-        app.toggleElementClassIf(app.cartGifting, 'active', 'hidden', () => cartData.gift.enabled);
+        app.toggleElementClassIf(app.cartGifting, 'active', 'hidden', () => cartData?.gift?.enabled);
         // Use toggleAttribute to handle the `physical-products` attribute
-        app.sallaGifting?.toggleAttribute('physical-products', cartData.gift.type === 'physical');
-        app.sallaGifting?.toggleAttribute('digital-products', cartData.gift.type === 'digital');
+        app.sallaGifting?.toggleAttribute('physical-products', cartData?.gift?.type === 'physical');
+        app.sallaGifting?.toggleAttribute('digital-products', cartData?.gift?.type === 'digital');
 
         // update the dom for cart options
         this.updateCartOptions(cartData?.options);
@@ -95,7 +93,8 @@ class Cart extends BasePage {
         if (app.orderOptionsTotal) app.orderOptionsTotal.innerHTML = salla.money(cartData.options_total);
         
         app.toggleElementClassIf(app.totalDiscount, 'discounted', 'hidden', () => !!cartData.total_discount)
-        .toggleElementClassIf(app.shippingCost, 'has_shipping', 'hidden', () => !!cartData.real_shipping_cost && !cartData.free_shipping_bar?.has_free_shipping)             .toggleElementClassIf(app.freeShipping, 'has_free', 'hidden', () => !!cartData.free_shipping_bar);
+            .toggleElementClassIf(app.shippingCost, 'has_shipping', 'hidden', () => !!cartData.real_shipping_cost && !cartData.free_shipping_bar?.has_free_shipping) 
+            .toggleElementClassIf(app.freeShipping, 'has_free', 'hidden', () => !!cartData.free_shipping_bar);
 
         app.totalDiscount.querySelector('b').innerHTML = '- ' + salla.money(cartData.total_discount);
         app.shippingCost.querySelector('b').innerHTML = salla.money(cartData.real_shipping_cost);
@@ -128,29 +127,38 @@ class Cart extends BasePage {
         let totalElement = cartItem.querySelector('.item-total'),
             priceElement = cartItem.querySelector('.item-price'),
             regularPriceElement = cartItem.querySelector('.item-regular-price'),
+            itemOriginalPrice = cartItem.querySelector('.item-original-price'),
             offerElement = cartItem.querySelector('.offer-name'),
+            oldOffers = cartItem.querySelector('.old-offers'),
+            freeRibbon = cartItem.querySelector('.free-ribbon'),
             offerIconElement = cartItem.querySelector('.offer-icon'),
-            hasSpecialPrice = item.offer || item.special_price > 0;
-
-        let total = salla.money(item.total);
+            hasSpecialPrice = item.offer || item.special_price > 0,
+            hasSalePrice = item.is_on_sale,
+            newOffersActive = item.detailed_offers?.length > 0 ;
+        let item_total = item.detailed_offers?.length > 0 ? item.total_special_price : item.total;
+        let total = salla.money(item_total);
         if (total !== totalElement.innerHTML) {
             totalElement.innerHTML = total;
-            app.anime(totalElement, { scale: [.88, 1] });
+            // app.anime(totalElement, { scale: [.88, 1] });
         }
 
-        app.toggleElementClassIf(offerElement, 'offer-applied', 'hidden', () => hasSpecialPrice)
-            .toggleElementClassIf(offerIconElement, 'offer-applied', 'hidden', () => hasSpecialPrice)
-            .toggleElementClassIf(regularPriceElement, 'offer-applied', 'hidden', () => hasSpecialPrice)
-            .toggleElementClassIf(priceElement, 'text-red-400', 'text-sm text-gray-400', () => hasSpecialPrice);
+        app.toggleElementClassIf([offerElement, oldOffers], 'offer-applied', 'hidden', () => hasSpecialPrice && !newOffersActive)
+            .toggleElementClassIf([regularPriceElement, offerIconElement], 'offer-applied', 'hidden', () => hasSpecialPrice)
+            .toggleElementClassIf([itemOriginalPrice], 'offer-applied', 'hidden', () => hasSalePrice)
+            .toggleElementClassIf(priceElement, 'text-red-400', 'text-sm text-gray-400', () => hasSpecialPrice)
+            .toggleElementClassIf(freeRibbon, 'active', 'hidden', () => item.price == 0);
 
         priceElement.innerHTML = salla.money(item.price);
-        if (hasSpecialPrice) {
-            offerElement.innerHTML = item.offer.names;
-            regularPriceElement.innerHTML = salla.money(item.product_price);
+
+        // Update original price when item is on sale
+        if (hasSalePrice) {
+            itemOriginalPrice.innerHTML = salla.money(item.original_price);
         }
+
+        if (!hasSpecialPrice){return;}
+        if (!newOffersActive) {offerElement.innerHTML = item.offer.names;}
+        regularPriceElement.innerHTML = salla.money(item.product_price);
     }
-
-
     //=================== Coupon Method ========================//
     initiateCoupon() {
         if (!app.couponCodeInput) {

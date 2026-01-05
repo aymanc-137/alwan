@@ -43,7 +43,7 @@ id="{{ component_id }}"
           >
   
   <div class="container">
-
+      {% if items|length > 1 %}
       <div class="tabs hide-scroll">
           {% for section in items %}
               <salla-button 
@@ -55,6 +55,8 @@ id="{{ component_id }}"
               </salla-button>
           {% endfor %}
       </div>
+                      {% endif %}
+
 
       <div class="tabs-wrapper">
         {% for section in items %}

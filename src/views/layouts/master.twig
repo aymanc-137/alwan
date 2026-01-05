@@ -63,7 +63,7 @@
 
 		<script defer data-cfasync="false" src="{{ 'product-card.js'|asset }}"></script>
 		<script defer src="{{ 'main-menu.js'|asset }}"></script>
-
+    <script defer src="{{ 'add-product-toast.js'|asset }}"></script>
 		{% block head_scripts %}{% endblock %}
 
 
@@ -71,6 +71,9 @@
 			window.header_is_sticky = "{{ theme.settings.get('header_is_sticky', 'Default Value') }}"
 			window.imageZoom = "{{ theme.settings.get('imageZoom') }}"
 			window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
+
+       		window.enable_more_menu = "{{ theme.settings.get('enable_more_menu', true) }}"
+        	window.enable_add_product_toast = "{{ theme.settings.get('enable_add_product_toast') }}"
 
 			window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
 			window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
@@ -145,7 +148,8 @@
 	</head>
 	{# F4E2D8
 				                  DBFB3E   ECF7FF#}
-		<body id="app" style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}" class=" antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
+		<body id="app" style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}" 
+		class="theme-raed antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
 												  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
 												  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
 												  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
@@ -163,10 +167,16 @@
 		<div class="app-inner flex flex-col min-h-full">
 			{% hook 'body:start' %}
 			{% component 'header.header' %}
+			    <main id="main-content" role="main">
 			{% block content %}{% endblock %}
+
+			    </main>
 			{% component 'footer.footer' %}
 		</div>
 		{% hook 'body:end' %}
+		{% if theme.settings.get('enable_add_product_toast') %}
+    <salla-add-product-toast></salla-add-product-toast>
+{% endif %}
 		<script defer src="{{ 'app.js' | asset }}"></script>
 
 		{# Twilight Components #}
@@ -177,6 +187,9 @@
 			<salla-login-modal></salla-login-modal>
 		{% endif %}
 
+		{% if store.scope %}
+			<salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
+		{% endif %}
 
 		{% set is_whatsapp_enable = theme.settings.get('is_whatsapp_enable', false) %}
 		{% set whatsapp_number = theme.settings.get('whatsapp_number') %}
