@@ -147,7 +147,7 @@ class NavigationMenu extends HTMLElement {
  
         const mainMenu = this.querySelector('.main-menu');
         if (!mainMenu) return;
-
+ 
         // Check if more menu is enabled from global window variable set in master.twig
         const isMoreMenuEnabled = window.enable_more_menu;
 
@@ -173,9 +173,10 @@ class NavigationMenu extends HTMLElement {
     checkMenuOverflow() {
         const mainMenu = this.querySelector('.main-menu');
         if (!mainMenu) return;
-
+        console.log('start checking container')
         const container = mainMenu.closest('.container');
         if (!container) return;
+        console.log('container found')
 
         // Reset menus
         this.visibleMenus = [...this.menus];
