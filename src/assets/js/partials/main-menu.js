@@ -141,22 +141,21 @@ class NavigationMenu extends HTMLElement {
     * Initialize responsive menu functionality
     */
     initializeResponsiveMenu() {
-                console.log("initializeResponsiveMenu");
 
-                        console.log(window.innerWidth);
-
+ 
         if (window.innerWidth < 1024) return; // Only for desktop
-        console.log(window.innerWidth);
-
+ 
         const mainMenu = this.querySelector('.main-menu');
         if (!mainMenu) return;
 
         // Check if more menu is enabled from global window variable set in master.twig
         const isMoreMenuEnabled = window.enable_more_menu;
+
         if (!isMoreMenuEnabled) {
             // If disabled, keep the menu behavior as original (no More dropdown / overflow handling)
             return;
         }
+                console.log("initializeResponsiveMenu");
 
         this.checkMenuOverflow();
 
