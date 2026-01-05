@@ -173,11 +173,9 @@ class NavigationMenu extends HTMLElement {
     checkMenuOverflow() {
         const mainMenu = this.querySelector('.main-menu');
         if (!mainMenu) return;
-        console.log('start checking container')
-        const container = mainMenu.closest('.container');
+         const container = mainMenu.closest('.nav-container-overfollow');
         if (!container) return;
-        console.log('container found')
-
+ 
         // Reset menus
         this.visibleMenus = [...this.menus];
         this.overflowMenus = [];
