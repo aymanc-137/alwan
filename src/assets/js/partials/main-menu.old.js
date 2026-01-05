@@ -21,8 +21,10 @@ class NavigationMenu extends HTMLElement {
                         brandsMenu.title = brandsTranslation;
                     }
                     return this.render()
-                                    }).then(() => {
+                    
+                    }).then(() => {
                     this.initializeResponsiveMenu();
+
                 }).catch((error) => salla.logger.error('salla-menu::Error fetching menus', error));
             });
     }

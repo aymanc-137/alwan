@@ -141,7 +141,12 @@ class NavigationMenu extends HTMLElement {
     * Initialize responsive menu functionality
     */
     initializeResponsiveMenu() {
+                console.log("initializeResponsiveMenu");
+
+                        console.log(window.innerWidth);
+
         if (window.innerWidth < 1024) return; // Only for desktop
+        console.log(window.innerWidth);
 
         const mainMenu = this.querySelector('.main-menu');
         if (!mainMenu) return;
