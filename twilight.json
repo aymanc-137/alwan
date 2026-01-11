@@ -82,7 +82,8 @@
             "type": "static",
             "format": "title",
             "id": "static-label2",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أعلى الصفحة</h6></div>",            "variant": "h6"
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أعلى الصفحة</h6></div>",
+            "variant": "h6"
         },
         {
             "id": "header_is_sticky",
@@ -106,7 +107,7 @@
             "value": true,
             "selected": false
         },
-                {
+        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "تفعيل قائمة المزيد في القائمة الرئيسية",
@@ -137,7 +138,8 @@
             "type": "static",
             "format": "title",
             "id": "static-label4",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أسفل الصفحة</h6></div>",            "variant": "h6"
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أسفل الصفحة</h6></div>",
+            "variant": "h6"
         },
         {
             "type": "boolean",
@@ -159,10 +161,10 @@
             "type": "static",
             "format": "title",
             "id": "static-label6",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات صفحة المنتج</h6></div>",            
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات صفحة المنتج</h6></div>",
             "variant": "h6"
         },
-                {
+        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "تفعيل إشعار الإضافة للسلة المحسن",
@@ -552,6 +554,18 @@
             "required": false
         },
         {
+            "id": "show_trust_badges",
+            "type": "boolean",
+            "format": "switch",
+            "label": "إظهار شارات التوثيق (معروف وغيرها)",
+            "description": "إظهار شارات التوثيق في ذيل الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": true,
+            "required": false
+        },
+        {
             "type": "static",
             "id": "product_card_section_line",
             "format": "line",
@@ -685,65 +699,64 @@
             "value": true,
             "selected": true
         },
-                        
         {
+            "id": "enable_section_backgroud",
+            "type": "boolean",
+            "format": "switch",
+            "label": " تمكين خلفية الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "enable_sections_border",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تمكين حدود الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "background_sections_color",
+            "type": "string",
+            "format": "color",
+            "label": "لون خلفية الاقسام الاساسية",
+            "description": "لون الخلفية",
+            "labelHTML": null,
+            "icon": "sicon-format-text-alt",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
                     "id": "enable_section_backgroud",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": " تمكين خلفية الاقسام الاساسية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "required": false
-                },
+                    "operator": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "background_sections_image",
+            "type": "string",
+            "format": "image",
+            "label": "صور خلفية الاقسام الاساسية",
+            "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+            "required": false,
+            "conditions": [
                 {
-                    "id": "enable_sections_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين حدود الاقسام الاساسية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "required": false
-                },
-                {
-                    "id": "background_sections_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون خلفية الاقسام الاساسية",
-                    "description": "لون الخلفية",
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#ffffff",
-                    "required": false,
-                    "conditions": [
-                        {
-                            "id": "enable_section_backgroud",
-                            "operator": "=",
-                            "value": true
-                        }
-                    ]
-                },
-                {
-                    "id": "background_sections_image",
-                    "type": "string",
-                    "format": "image",
-                    "label": "صور خلفية الاقسام الاساسية",
-                    "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
-                    "labelHTML": null,
-                    "icon": "sicon-image",
-                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-                    "required": false,
-                    "conditions": [
-                        {
-                            "id": "enable_section_backgroud",
-                            "operator": "=",
-                            "value": true
-                        }
-                    ]
-                },
+                    "id": "enable_section_backgroud",
+                    "operator": "=",
+                    "value": true
+                }
+            ]
+        },
         {
             "id": "wishlist-btn",
             "type": "boolean",
@@ -864,7 +877,7 @@
             "title": {
                 "en": "Enhances Animated Images",
                 "ar": "صور متحركة (محسنة)"
-            },            
+            },
             "icon": "sicon-image-carousel",
             "path": "home.enhanced-slider",
             "fields": [
@@ -872,12 +885,14 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1'></div>"                },
-                {                   "type": "static",
+                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/images-slider-enhancement.png?v=1.1'></div>"
+                },
+                {
+                    "type": "static",
                     "format": "description",
                     "id": "enhance-slider-note",
                     "value": "<div >هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً منه لتظهر صورة البنر بشكل كامل</div>"
-               },
+                },
                 {
                     "id": "slides",
                     "type": "collection",
@@ -948,7 +963,7 @@
             "title": {
                 "en": "Quick Links",
                 "ar": "روابط سريعة"
-            },            
+            },
             "icon": "sicon-layout-grid-rearrange",
             "path": "home.main-links",
             "fields": [
@@ -1202,7 +1217,7 @@
             "title": {
                 "en": "Animated products with a background",
                 "ar": "منتجات متحركة مع خلفية"
-            },            
+            },
             "icon": "sicon-list-play",
             "path": "home.slider-products-with-header",
             "fields": [
@@ -1344,7 +1359,7 @@
             "title": {
                 "en": "Enhanced square images",
                 "ar": "صور مربعة (محسنة)"
-            },            
+            },
             "icon": "sicon-image",
             "path": "home.enhanced-square-banners",
             "fields": [
@@ -1354,7 +1369,7 @@
                     "id": "with-bg",
                     "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
                 },
-                                {
+                {
                     "type": "static",
                     "format": "description",
                     "id": "banners-note",
@@ -1519,7 +1534,7 @@
             "title": {
                 "en": "Brands",
                 "ar": "الماركات التجارية"
-            },            
+            },
             "icon": "sicon-award-ribbon",
             "path": "home.brands",
             "fields": [
@@ -1527,7 +1542,8 @@
                     "type": "static",
                     "format": "description",
                     "id": "with-bg",
-                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/brands.png?v=1.1'></div>"                },
+                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/brands.png?v=1.1'></div>"
+                },
                 {
                     "type": "string",
                     "icon": "sicon-format-text-alt",
@@ -1566,7 +1582,7 @@
             "title": {
                 "en": "Custom testimonials",
                 "ar": "آراء عملاء مخصصة"
-            },            
+            },
             "icon": "sicon-chat-bubbles",
             "path": "home.custom-testimonials",
             "fields": [
@@ -1574,7 +1590,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/custom-testimonials.png?v=1.1'></div>"                    
+                    "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/custom-testimonials.png?v=1.1'></div>"
                 },
                 {
                     "id": "items",
@@ -3288,7 +3304,7 @@
                     "required": false
                 },
                 {
-                    "id":"url_text",
+                    "id": "url_text",
                     "type": "string",
                     "format": "text",
                     "label": "نص الرابط",
