@@ -557,7 +557,7 @@
             "id": "show_trust_badges",
             "type": "boolean",
             "format": "switch",
-            "label": "إظهار شارات التوثيق (معروف وغيرها)",
+            "label": "إظهار شارات التوثيق",
             "description": "إظهار شارات التوثيق في ذيل الصفحة",
             "labelHTML": null,
             "icon": "sicon-toggle-off",
