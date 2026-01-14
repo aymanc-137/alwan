@@ -170,7 +170,7 @@ salla-contacts {
  // a[href^="tel:"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/phone.svg'); }
   a[href^="mailto:"]     .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/email.svg'); }
   a[href*="t.me"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/telegram.svg'); }
-  a[href*="mailto:"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/whatsapp.svg'); }
+  a[href*="tel:"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/whatsapp.svg'); }
  // a[href*="wa.me"]        .s-contacts-icon::before {   background-image: url('https://cdn.lamsaweb.com/social-media/whatsapp.svg'); }
 
 }

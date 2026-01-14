@@ -21560,16 +21560,15 @@ salla-contacts .s-contacts-icon::before {
   background-repeat: no-repeat;
   background-size: contain;
 }
-salla-contacts a[href^="tel:"] .s-contacts-icon::before {
-  background-image: url("https://cdn.lamsaweb.com/social-media/phone.svg");
-}
 salla-contacts a[href^="mailto:"] .s-contacts-icon::before {
   background-image: url("https://cdn.lamsaweb.com/social-media/email.svg");
 }
 salla-contacts a[href*="t.me"] .s-contacts-icon::before {
   background-image: url("https://cdn.lamsaweb.com/social-media/telegram.svg");
 }
-/*  ===== End contacts override ===== */
+salla-contacts a[href*="tel:"] .s-contacts-icon::before {
+  background-image: url("https://cdn.lamsaweb.com/social-media/whatsapp.svg");
+}
 .main-menu > li > a[href*=offer]{
     --tw-text-opacity: 1;
     color: rgba(153, 27, 27, 1);
