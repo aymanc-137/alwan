@@ -1381,7 +1381,7 @@
                     "format": "collection",
                     "required": true,
                     "minLength": 1,
-                    "maxLength": 5,
+                    "maxLength": 10,
                     "label": "قائمة الصور",
                     "item_label": "صورة ",
                     "value": [
@@ -2101,7 +2101,7 @@
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": 10
                 }
             ]
         },
@@ -3600,7 +3600,7 @@
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": 10
                 }
             ]
         },
@@ -3954,7 +3954,7 @@
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": 10
                 }
             ]
         },
