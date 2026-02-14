@@ -59,11 +59,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{ theme.settings.set('placeholder', 'images/placeholder.png') }}
 
-		{% include 'pages.partials.loading-screen-assets' %}
 
-		<script defer data-cfasync="false" src="{{ 'product-card.js'|asset }}"></script>
+    <script defer data-cfasync="false" crossorigin="anonymous" src="{{ 'product-card.js'|asset }}"></script>
 		<script defer src="{{ 'main-menu.js'|asset }}"></script>
-    <script defer src="{{ 'add-product-toast.js'|asset }}"></script>
+ 	{% if theme.settings.get('enable_add_product_toast', true) %}
+        <script defer src="{{ 'add-product-toast.js'|asset }}"></script>
+    {% endif %}
 		{% block head_scripts %}{% endblock %}
 
 
@@ -73,7 +74,7 @@
 			window.can_access_wallet = {{ user.can_access_wallet | json_encode }}
 
        		window.enable_more_menu = "{{ theme.settings.get('enable_more_menu', true) }}"
-        	window.enable_add_product_toast = "{{ theme.settings.get('enable_add_product_toast') }}"
+        	window.enable_add_product_toast = "{{ theme.settings.get('enable_add_product_toast', true) }}"
 
 			window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
 			window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
@@ -153,7 +154,8 @@
 												  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
 												  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
 												  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
-												  "> <div class="loader-init">
+												  ">
+			 <div class=" hidden loader-init">
 			{% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '248' )  %}
 
 			<img style="width: {{pre_loade_logo}}px" class="pulseScale " src="{{store.logo}}">
@@ -174,10 +176,11 @@
 			{% component 'footer.footer' %}
 		</div>
 		{% hook 'body:end' %}
-		{% if theme.settings.get('enable_add_product_toast') %}
+
+		{% if theme.settings.get('enable_add_product_toast', true) %}
     <salla-add-product-toast></salla-add-product-toast>
 {% endif %}
-		<script defer src="{{ 'app.js' | asset }}"></script>
+		<script defer crossorigin="anonymous" src="{{ 'app.js' | asset }}"></script>
 
 		{# Twilight Components #}
 		<salla-offer-modal></salla-offer-modal>

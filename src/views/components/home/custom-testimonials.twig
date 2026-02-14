@@ -26,10 +26,9 @@
                     <div class="swiper-slide p-10">
                         <div class="neo-shadow flex justify-between  relative bg-white rounded-xl p-6 sm:p-8 max-w-md sm:max-w-lg w-full">
                             <!-- Profile Image: Absolutely Positioned -->
-   					<img src="{{ 'images/s-empty.png' | asset }}" data-src="{{ item.avatar }}" alt="{{ item.name|trim ? item.name : 'testimonial-' ~ index }}" class="lazy loaded">
 
-                            <!-- Using style for transform because Tailwind's translate-x-1/2 might not be exactly what's needed when combined with RTL absolute positioning -->
-                            <div class="flex mr-5 place-self-end   justify-between items-end mb-4">
+                            <img src="{{ item.avatar }}" loading="lazy" alt="{{ item.name|trim ? item.name : 'testimonial-' ~ index }}" class="loaded" width="68" height="68">
+                               <div class="flex mr-5 place-self-end   justify-between items-end mb-4">
                                 <!-- Quotation Marks -->
  
                                 <!-- Reviewer Info -->

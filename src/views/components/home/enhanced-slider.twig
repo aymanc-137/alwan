@@ -11,7 +11,10 @@
 <section class="s-block s-block--hero-slider s-block--full-bg wide-placeholder">
 	<salla-slider id="main-slider-{{ position }}" auto-play slider-config='{
 		        "lazy": "false"
-		      }' type="fullwidth">
+		      }' 
+			  
+			        {{ component.slides|length > 1 ? '' : 'show-controls="false"' }}
+			  type="fullwidth">
 		<div slot="items">
 			{% for slide in component.slides %}
 				<div class="swiper-slide w-full min-h-[300px] lg:min-h-[528px] bg-dark relative">

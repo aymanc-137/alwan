@@ -229,11 +229,10 @@ class ProductCard extends HTMLElement {
                 ? 'contain'
                 : this.fitImageHeight
                 ? this.fitImageHeight
-                : 'cover'} lazy"
-              src="${this.placeholder}"
+                : 'cover'}"
+              src="${this.product?.image?.url || this.product?.thumbnail || this.placeholder || ''}"
               alt="${this.escapeHTML(this.product?.image?.alt || this.product.name)}"
-              data-src="${this.product?.image?.url || this.product?.thumbnail || ''}"
-            />
+              loading="lazy"            />
             ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
           </a>
           ${this.fullImage ? `<a href="${this.product?.url}" aria-label=${this.product.name} class="s-product-card-overlay"></a>`:''}
@@ -394,8 +393,7 @@ class ProductCard extends HTMLElement {
         });
       })
 
-      document.lazyLoadInstance?.update(this.querySelectorAll('.lazy'));
-
+ 
       if (this.product?.quantity && this.isSpecial) {
         this.initCircleBar();
       }
