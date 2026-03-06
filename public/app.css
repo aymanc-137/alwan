@@ -21564,6 +21564,24 @@ salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:hover i::before
   background-position: center;
   background-size: contain;
 }
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 .s-user-menu-inline .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
   content: "";
   display: block;
