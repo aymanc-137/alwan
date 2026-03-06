@@ -370,23 +370,23 @@ salla-user-menu{
       }
       
             // Settings icon
-            &:nth-child(6) i::before {
-              content: '';
-              display: block;
-              width: 32px;
-              height: 32px;
+            // &:nth-child(6) i::before {
+            //   content: '';
+            //   display: block;
+            //   width: 32px;
+            //   height: 32px;
              
-              [dir="rtl"] & {
-                margin-left: 3px;
-              }
-              [dir="ltr"] & {
-                margin-right: 3px;
-              }
-              background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: contain;
-            }
+            //   [dir="rtl"] & {
+            //     margin-left: 3px;
+            //   }
+            //   [dir="ltr"] & {
+            //     margin-right: 3px;
+            //   }
+            //   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
+            //   background-repeat: no-repeat;
+            //   background-position: center;
+            //   background-size: contain;
+            // }
 
 
       
@@ -533,24 +533,24 @@ salla-user-menu{
       background-size: contain;
     }
 
-                // Settings icon
-                &:nth-child(6) i::before {
-                  content: '';
-                  display: block;
-                  width: 32px;
-                  height: 32px;
+                // // Settings icon
+                // &:nth-child(6) i::before {
+                //   content: '';
+                //   display: block;
+                //   width: 32px;
+                //   height: 32px;
                  
-                  [dir="rtl"] & {
-                    margin-left: 3px;
-                  }
-                  [dir="ltr"] & {
-                    margin-right: 3px;
-                  }
-                  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
-                  background-repeat: no-repeat;
-                  background-position: center;
-                  background-size: contain;
-                }
+                //   [dir="rtl"] & {
+                //     margin-left: 3px;
+                //   }
+                //   [dir="ltr"] & {
+                //     margin-right: 3px;
+                //   }
+                //   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
+                //   background-repeat: no-repeat;
+                //   background-position: center;
+                //   background-size: contain;
+                // }
     
     
           
