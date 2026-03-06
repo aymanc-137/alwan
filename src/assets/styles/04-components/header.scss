@@ -369,6 +369,27 @@ salla-user-menu{
         background-size: contain;
       }
       
+            // Profile icon
+            &:nth-child(6) i::before {
+              content: '';
+              display: block;
+              width: 32px;
+              height: 32px;
+             
+              [dir="rtl"] & {
+                margin-left: 3px;
+              }
+              [dir="ltr"] & {
+                margin-right: 3px;
+              }
+              background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+            }
+
+
+      
       // Logout icon
       &.s-user-menu-dropdown-item-logout i::before {
         content: '';
