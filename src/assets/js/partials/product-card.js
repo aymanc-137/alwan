@@ -332,7 +332,7 @@ class ProductCard extends HTMLElement {
               </salla-add-product-button>
 
 
-              ${!this.horizontal && this.wishlistBtn ?
+              ${!this.horizontal && !this.fullImage && this.wishlistBtn ?
                 `<salla-button 
                   shape="icon" 
                   fill="solid" 
