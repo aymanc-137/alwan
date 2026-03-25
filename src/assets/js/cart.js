@@ -49,8 +49,7 @@ class Cart extends BasePage {
             if (isValid) {
                 /** @type HTMLSallaButtonElement */
                 let btn = event.currentTarget;
-
-                                if (salla.config.get('user.type') !== 'guest') {
+                if (salla.config.get('user.type') !== 'guest') {
                     btn.load();
                     // Keep loading state until page redirects
                     new MutationObserver(() => {
@@ -60,7 +59,6 @@ class Cart extends BasePage {
                     }).observe(btn, { attributes: true, attributeFilter: ['loading'] });
                 }
                 salla.cart.submit();
-
             }
         });
     }

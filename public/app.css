@@ -21460,19 +21460,19 @@ salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(5) i:
   background-position: center;
   background-size: contain;
 }
-Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
   content: "";
   display: block;
   width: 32px;
   height: 32px;
 }
-[dir=rtl] Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+[dir=rtl] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
   margin-left: 3px;
 }
-[dir=ltr] Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+[dir=ltr] salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
   margin-right: 3px;
 }
-Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-position: center;
