@@ -43,8 +43,9 @@ img {
   max-width: 100%;
 }
 
-a:focus {
-  outline: none;
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
   text-decoration: none;
 }
 

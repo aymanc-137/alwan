@@ -276,6 +276,10 @@
 }
 .s-user-menu-trigger{
   @apply bg-transparent border-none outline-none;
+
+  &:focus-visible {
+    @apply ring-2 ring-primary ring-offset-2 rounded-full;
+  }
 }
 .s-product-card-entry{
   @apply  neo-shadow;

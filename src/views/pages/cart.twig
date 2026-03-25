@@ -71,11 +71,14 @@
                                             {% if loop.first %}
 												<img src="{{ item.product_image }}"
 													alt="{{ item.product_name }}"
+													loading="eager"
+													decoding="async"
 													class="flex-none w-24 h-20 border border-gray-200 bg-gray-100 rounded-md object-center object-cover">
 											{% else %}
 												<img src="{{ item.product_image }}"
 													alt="{{ item.product_name }}"
-loading="lazy"
+													loading="lazy"
+													decoding="async"
 													class="flex-none w-24 h-20 border border-gray-200 bg-gray-100 rounded-md object-center object-cover">
                                             {% endif %}
 

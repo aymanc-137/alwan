@@ -13,7 +13,7 @@
                     <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
                     {% for brand in component.brands %}
                     <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
-                            <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
+                            <img src="{{brand.logo}}" width="100" height="100" alt="{{brand.name}}" loading="lazy" decoding="async">
                     
                     </a>
                     {% endfor %}
@@ -115,7 +115,7 @@
                         <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
                         {% for brand in component.brands %}
                         <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
-                                <img src="{{brand.logo}}" width="100" height="100"  alt="{{brand.name}}">
+                                <img src="{{brand.logo}}" width="100" height="100" alt="{{brand.name}}" loading="lazy" decoding="async">
                         
                         </a>
                         {% endfor %}

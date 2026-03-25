@@ -1,7 +1,10 @@
 {
   "blocks": {
     "header": {
-      "cart": "السلة"
+      "cart": "السلة",
+      "login": "تسجيل الدخول",
+      "search": "بحث",
+      "skip_to_content": "تخطى إلى المحتوى الرئيسي"
     },
     "appBanner": {
       "download_now": "حمله الان"
@@ -16,6 +19,7 @@
       "pages_links": "الروابط",
       "search": "بحث",
       "Subscribe": "اشترك",
+      "email_label": "البريد الإلكتروني",
       "apps_title": "حمل التطبيق الآن"
     }
   },

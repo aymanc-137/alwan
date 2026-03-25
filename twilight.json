@@ -167,6 +167,17 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
+            "label": "تفعيل شاشة التحميل",
+            "description": "عرض شاشة تحميل مؤقتة عند فتح الصفحة",
+            "id": "enable_preloader",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
             "label": "تفعيل إشعار الإضافة للسلة المحسن",
             "description": null,
             "id": "enable_add_product_toast",

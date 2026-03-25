@@ -2,6 +2,10 @@
 .dropdown__trigger {
   @apply rounded-full overflow-hidden w-10 h-10 font-medium focus:ring-offset-transparent;
 
+  &:focus-visible {
+    @apply ring-2 ring-primary ring-offset-2;
+  }
+
   &.filter{
     @apply rounded-none w-auto h-auto overflow-visible;
   }

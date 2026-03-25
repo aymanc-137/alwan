@@ -59,7 +59,7 @@
                         <i class="sicon-menu text-primary mx-2 text-2xl"></i>
                       </a>
                       <a class="navbar-brand" href="{{ store.url }}">
-                          <img fetchpriority="high" width="100%" height="100%" loading="eager" src="{{ store.logo|cdn(175) }}" alt="{{ store.name }} logo">
+                          <img fetchpriority="high" width="100%" height="100%" loading="eager" decoding="async" src="{{ store.logo|cdn(175) }}" alt="{{ store.name }} logo">
                           {% if is_page('index') %}
                             <h1 class="sr-only">{{ store.name }}</h1>
                           {% else %}
@@ -74,7 +74,7 @@
                         {% if user.type=='user' %}
                             <salla-user-menu avatar-only show-header></salla-user-menu>
                         {% else %}
-                                <button class="header-btn s-cart-summary" aria-label="user-icon" onclick="salla.event.dispatch('login::open')">
+                                <button class="header-btn s-cart-summary" aria-label="{{ trans('blocks.header.login') }}" onclick="salla.event.dispatch('login::open')">
                                 <i class="user-avatar-cartoon-logo"></i>
                    
                                     </button>
@@ -83,6 +83,7 @@
                                 <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4"></salla-cart-summary>
 
                                 <button id="search-btn"
+                                                aria-label="{{ trans('blocks.header.search') }}"
                                                 onclick="(function(){event.preventDefault();
                                                 document.querySelector('#search-modal-harir').open();
                                                 return false;})();

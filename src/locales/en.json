@@ -1,7 +1,10 @@
 {
   "blocks": {
     "header": {
-      "cart": "Cart"
+      "cart": "Cart",
+      "login": "Login",
+      "search": "Search",
+      "skip_to_content": "Skip to main content"
     },
     "appBanner": {
       "download_now": "download now"
@@ -16,6 +19,7 @@
       "pages_links": "Pages Links",
       "search": "Search",
       "Subscribe": "Subscribe",
+      "email_label": "Email address",
       "apps_title": "Download the app now"
     }
   },

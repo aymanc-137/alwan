@@ -59,7 +59,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{ theme.settings.set('placeholder', 'images/placeholder.png') }}
 
-
+		{% if theme.settings.get('enable_preloader', true) %}
+		{% include 'pages.partials.loading-screen-assets' %}
+		{% endif %}
     <script defer data-cfasync="false" crossorigin="anonymous" src="{{ 'product-card.js'|asset }}"></script>
 		<script defer src="{{ 'main-menu.js'|asset }}"></script>
  	{% if theme.settings.get('enable_add_product_toast', true) %}
@@ -149,19 +151,21 @@
 	</head>
 	{# F4E2D8
 				                  DBFB3E   ECF7FF#}
-		<body id="app" style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}" 
+		<body id="app" style="background-color: {{ theme.settings.get('main_background_color', '#fff5f0') }}"
 		class="theme-raed antialiased text-slate-600 overflow-x-hidden {% hook 'body:classes' %}
 												  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
 												  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
 												  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
 												  ">
-			 <div class=" hidden loader-init">
-			{% set pre_loade_logo =   theme.settings.get('preloader_logo_size', '248' )  %}
-
-			<img style="width: {{pre_loade_logo}}px" class="pulseScale " src="{{store.logo}}">
-
-
+		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:start-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-primary">
+			{{ trans('blocks.header.skip_to_content') }}
+		</a>
+		{% if theme.settings.get('enable_preloader', true) %}
+		<div class="loader-init">
+			{% set pre_loade_logo = theme.settings.get('preloader_logo_size', '248') %}
+			<img style="width: {{pre_loade_logo}}px" class="pulseScale" src="{{store.logo}}" alt="{{ store.name }}" loading="eager" decoding="async">
 		</div>
+		{% endif %}
 		<noscript>
 			To get full functionality of this site you need to enable JavaScript. Here is how
 			<a href="https://www.enable-javascript.com/" rel="noreferrer" target="_blank">To enable JavaScript on webpage</a>.

@@ -159,6 +159,10 @@
 .header-btn{
   @apply border-none outline-none transition-opacity hover:opacity-80;
 
+  &:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 rounded-md;
+  }
+
   &__icon{
     @apply text-xl w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700;
     &.icon{
