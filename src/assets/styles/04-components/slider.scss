@@ -46,9 +46,15 @@ salla-slider{
   @apply w-auto m-0 px-3 py-2 #{!important};
 }
 .main-index-slider{
-  
+
   .s-slider-container{
     padding-left: 0px !important;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
   }
 
 }
