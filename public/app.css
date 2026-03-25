@@ -21460,6 +21460,24 @@ salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(5) i:
   background-position: center;
   background-size: contain;
 }
+Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+[dir=rtl] Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-right: 3px;
+}
+Settings icon salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:nth-child(6) i::before {
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item.s-user-menu-dropdown-item-logout i::before {
   content: "";
   display: block;
@@ -21583,6 +21601,24 @@ salla-user-menu .s-user-menu-dropdown .s-user-menu-dropdown-item:hover i::before
 }
 .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(5) i::before {
   background-image: url("https://cdn.lamsaweb.com/cdnAlwan/profile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+[dir=rtl] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-left: 3px;
+}
+[dir=ltr] .s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  margin-right: 3px;
+}
+.s-user-menu-inline .s-user-menu-dropdown-item:nth-child(6) i::before {
+  background-image: url("https://cdn.lamsaweb.com/cdnAlwan/settings-gear-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -23807,6 +23843,11 @@ input[type=radio].sr-only:checked ~ div.promotion-title {
 }
 .main-index-slider .s-slider-container {
   padding-left: 0px !important;
+}
+.main-index-slider .swiper-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 .home-slider__slide {
   background-repeat: no-repeat;
