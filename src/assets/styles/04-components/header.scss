@@ -177,15 +177,15 @@ salla-user-menu{
   // Custom user avatar replacement - Only for default avatar
   .s-user-menu-avatar-wrap {
     position: relative;
-    
+
     // Only override the default avatar image
     // Keep user's custom profile images
     .s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] {
       display: none !important;
     }
-    
-    // Only apply custom avatar when using default image
-    .s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] ~ &::before {
+
+    // Only apply custom avatar when wrap contains the default image
+    &:has(.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"])::before {
       content: '';
       display: block;
       width: 40px;
@@ -194,7 +194,6 @@ salla-user-menu{
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      border-radius: 50%;
       background-color: #fff;
       border: 1.5px solid #141414;
       border-radius: 999px;
