@@ -21325,7 +21325,7 @@ salla-user-menu .s-user-menu-avatar-wrap {
 salla-user-menu .s-user-menu-avatar-wrap .s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] {
   display: none !important;
 }
-.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"] ~ salla-user-menu .s-user-menu-avatar-wrap::before {
+salla-user-menu .s-user-menu-avatar-wrap:has(.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"])::before {
   content: "";
   display: block;
   width: 40px;
@@ -21334,7 +21334,6 @@ salla-user-menu .s-user-menu-avatar-wrap .s-user-menu-trigger-avatar[src="https:
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-radius: 50%;
   background-color: #fff;
   border: 1.5px solid #141414;
   border-radius: 999px;
