@@ -181,15 +181,15 @@
 		</div>
 		{% hook 'body:end' %}
 
-		{% if theme.settings.get('enable_add_product_toast', true) %}
-    <salla-add-product-toast></salla-add-product-toast>
-{% endif %}
+	
 		<script defer crossorigin="anonymous" src="{{ 'app.js' | asset }}"></script>
 
 		{# Twilight Components #}
 		<salla-offer-modal></salla-offer-modal>
 		<salla-search></salla-search>
-
+	{% if theme.settings.get('enable_add_product_toast', true) %}
+    <salla-add-product-toast></salla-add-product-toast>
+	{% endif %}
 		{% if user.type=='guest' %}
 			<salla-login-modal></salla-login-modal>
 		{% endif %}
