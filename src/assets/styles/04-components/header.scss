@@ -184,6 +184,12 @@ salla-user-menu{
       display: none !important;
     }
 
+    // Keep wrap dimensions when default image is hidden
+    &:has(.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"]) {
+      width: 40px;
+      height: 40px;
+    }
+
     // Only apply custom avatar when wrap contains the default image
     &:has(.s-user-menu-trigger-avatar[src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png"])::before {
       content: '';
