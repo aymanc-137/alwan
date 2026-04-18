@@ -6,9 +6,9 @@ class Cart extends BasePage {
         salla.event.cart.onUpdated(data => this.updateCartPageInfo(data));
 
         app.watchElements({
-            couponCodeInput: '#coupon-input',
-            couponBtn: '#coupon-btn',
-            couponError: '#coupon-error',
+            // couponCodeInput: '#coupon-input',
+            // couponBtn: '#coupon-btn',
+            // couponError: '#coupon-error',
             subTotal: '#sub-total',
             orderOptionsTotal: '#cart-options-total',
             totalDiscount: '#total-discount',
@@ -22,7 +22,7 @@ class Cart extends BasePage {
             sallaGifting:'#salla-gifting'
         });
 
-        this.initiateCoupon();
+     //   this.initiateCoupon();
         this.initSubmitCart();
         validateProductOptions();
     }

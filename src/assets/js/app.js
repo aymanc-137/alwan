@@ -23,7 +23,7 @@ class App extends AppHelpers {
     this.initiateDropdowns();
     this.initiateModals();
     this.initiateCollapse();
-    this.initAttachWishlistListeners();
+   // this.initAttachWishlistListeners();
 
     // Ensure #more-menu-dropdown exists before running changeMenuDirection
     const menuDirInterval = setInterval(() => {
