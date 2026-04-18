@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Read(//home/musta/Documents/ayman/**)"
+      "Read(//home/musta/Documents/ayman/**)",
+      "Bash(gh api *)",
+      "WebFetch(domain:github.com)",
+      "Read(//tmp/**)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SallaApp/theme-raed/1.310.0/src/assets/js/partials/product-card.js -o raed-310-pc.js)",
+      "Bash(curl -sL https://raw.githubusercontent.com/SallaApp/theme-raed/1.322.0/src/assets/js/partials/product-card.js -o raed-322-pc.js)"
     ],
     "deny": [],
     "ask": []
