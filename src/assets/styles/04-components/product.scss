@@ -584,3 +584,9 @@
   .s-product-card-content-footer {
     @apply justify-between md:justify-around;
   }
+
+
+  .s-product-card-wishlist-btn{
+
+    @apply main-wish-btn;
+  }

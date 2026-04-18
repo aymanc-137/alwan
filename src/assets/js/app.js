@@ -192,6 +192,7 @@ isElementLoaded(selector){
         app.toggleElementClassIf(btn, 's-product-card-wishlist-added', 'not-added', () => isAdded);
         app.toggleElementClassIf(btn, 'pulse-anime', 'un-favorited', () => isAdded);
       });
+      
       document.querySelectorAll('.s-product-card-wishlist-btn[data-id="' + id + '"]').forEach(btn => {
         app.toggleElementClassIf(btn, 's-product-card-wishlist-added', 'not-added', () => isAdded);
         app.toggleElementClassIf(btn, 'pulse-anime', 'un-favorited', () => isAdded);

@@ -339,7 +339,7 @@ class ProductCard extends HTMLElement {
                   color="light" 
                   id="card-wishlist-btn-${this.product.id}-horizontal"
                   aria-label="Add or remove to wishlist"
-                  class=" main-wish-btn animated   ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
+                  class=" s-product-card-wishlist-btn animated   ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
                   onclick="salla.wishlist.toggle(${this.product.id})"
                   data-id="${this.product.id}">
 
@@ -363,7 +363,7 @@ class ProductCard extends HTMLElement {
                   color="light" 
                   id="card-wishlist-btn-${this.product.id}-horizontal"
                   aria-label="Add or remove to wishlist"
-                  class=" main-wish-btn animated ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
+                  class=" s-product-card-wishlist-btn animated ${this.isInWishlist ? 's-product-card-wishlist-added pulse-anime' : 'not-added un-favorited'}"
                   onclick="salla.wishlist.toggle(${this.product.id})"
                   data-id="${this.product.id}">
 
