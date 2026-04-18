@@ -1135,9 +1135,6 @@ input:where([type='file']):focus{
 .mt-2{
     margin-top: 0.5rem;
 }
-.mt-2\.5{
-    margin-top: 0.625rem;
-}
 .mt-20{
     margin-top: 5rem;
 }
@@ -2403,11 +2400,6 @@ input:where([type='file']):focus{
     --tw-text-opacity: 1;
     color: rgba(220, 38, 38, 1);
     color: rgba(220, 38, 38, var(--tw-text-opacity, 1));
-}
-.text-red-700{
-    --tw-text-opacity: 1;
-    color: rgba(185, 28, 28, 1);
-    color: rgba(185, 28, 28, var(--tw-text-opacity, 1));
 }
 .text-red-800{
     --tw-text-opacity: 1;
