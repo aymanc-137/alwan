@@ -22,7 +22,7 @@ class Cart extends BasePage {
             sallaGifting:'#salla-gifting'
         });
 
-        this.initiateCoupon();
+        //this.initiateCoupon();
         this.initSubmitCart();
         validateProductOptions();
     }
@@ -168,34 +168,7 @@ class Cart extends BasePage {
         if (!newOffersActive) {offerElement.innerHTML = item.offer.names;}
         regularPriceElement.innerHTML = salla.money(item.product_price);
     }
-    //=================== Coupon Method ========================//
-    initiateCoupon() {
-        if (!app.couponCodeInput) {
-            return;
-        }
-
-        app.onKeyUp(app.couponCodeInput, event => {
-            event.keyCode === 13 && app.couponBtn.click();
-            app.couponError.value = '';
-            app.removeClass(app.couponCodeInput, 'has-error');
-        });
-
-        app.onClick(app.couponBtn, event => {
-            //if it's remove coupon, will have `btn--danger` class
-            let hasCoupon = app.couponBtn.classList.contains('btn--danger');
-            /** @type HTMLSallaButtonElement */
-            let btn = event.currentTarget;
-            if (!hasCoupon && !app.couponCodeInput.value.length) {
-                this.showCouponError('* ' + salla.lang.get('pages.checkout.enter_coupon'));
-                return;
-            }
-            btn.load()
-                .then(() => hasCoupon ? salla.cart.deleteCoupon() : salla.cart.addCoupon(app.couponCodeInput.value))
-                .then(res => this.toggleCoupon(res, !hasCoupon))
-                .catch(err => this.showCouponError(err.response?.data?.error.message, !hasCoupon))
-                .finally(() => btn.stop());
-        });
-    }
+  
 
     /**
      * @param {CartResponse.update} res
