@@ -17,14 +17,14 @@
         {% set component = {title:trans('testimonials.title')} %}
 
                 <div class=" my-5 flex flex-col items-center justify-center w-full" >
-                    <div 
+                    <div
                         style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
-                        class="w-96 mb-5 mx-auto  ">
+                        class="w-96 mb-5 mx-auto in-view in-view--bounce-up">
 
                         {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
                     </div>
 
-                    <a href="{{ page('testimonials')}}" class="text-center my-3 hover:underline hover:text-primary mx-auto text-lg lg:text-lg text-slate-600">
+                    <a href="{{ page('testimonials')}}" class="text-center my-3 hover:underline hover:text-primary mx-auto text-lg lg:text-lg text-slate-600 in-view in-view--bounce-up" style="--in-view-delay: 150ms">
                         {{trans('testimonials.show_all')}}
                     </a>                                            
                 </div>
@@ -38,5 +38,5 @@
 
 
 
-    <salla-reviews {{ display_all_url ? "display-all-link" : "" }} limit="{{ limit }}" sort="{{ sort }}" {{ hide_customer_info ? 'hide-customer-info' : '' }} type="{{type}}"></salla-reviews>
+    <salla-reviews class="in-view in-view--bounce-up" style="--in-view-delay: 250ms" {{ display_all_url ? "display-all-link" : "" }} limit="{{ limit }}" sort="{{ sort }}" {{ hide_customer_info ? 'hide-customer-info' : '' }} type="{{type}}"></salla-reviews>
 </section> 

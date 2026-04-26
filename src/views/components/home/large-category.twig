@@ -21,25 +21,25 @@
 
 
                 {% if component.title_style %}
-                                <div class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
+                                <div class="w-96 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}] in-view in-view--bounce-up">
                                 {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
                                 </div>
 
                     {% else %}
                             <h2
                               style="color: {{ component.title_color | default('#eea929') }}"
-                              class="text-5xl font-bold ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
+                              class="text-5xl font-bold in-view in-view--bounce-up">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
                              {% endif %}
   
   
-    <h3 class="text-2xl text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</h3>
+    <h3 class="text-2xl text-gray-700 in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</h3>
 </div>
 
     <div class="md:flex grid grid-cols-2 mx-auto justify-evenly flex-col md:flex-row gap-4" >
 {# <div class="mx-auto gap-4 my-16 md:flex grid md:grid-cols-2 justify-center items-center" > #}
 
 {% for index,item in component.urls %}
-<a class="md:w-80 mx-auto w-40 hover:scale-105 transition-all duration-300 ease-in-out" href="{{item.url}}" >
+<a class="md:w-80 mx-auto w-40 hover:scale-105 transition-all duration-300 ease-in-out in-view in-view--bounce-up" href="{{item.url}}" style="--in-view-delay: {{ loop.index0 * 120 }}ms">
 
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 993 904" preserveAspectRatio="xMidYMid meet" fill="none">
     <defs>

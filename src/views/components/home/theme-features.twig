@@ -23,13 +23,13 @@
 
                 {% if component.title_style %}
 
-                <div class="w-72 font-[{{component.title_font | default('BackToSchool')}}] sm:w-80 md:w-96 mx-auto mb-5">
+                <div class="w-72 font-[{{component.title_font | default('BackToSchool')}}] sm:w-80 md:w-96 mx-auto mb-5 in-view in-view--bounce-up">
                     {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
                 </div>
                 {% else %}
-                <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mx-auto mb-5 text-center">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+                <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mx-auto mb-5 text-center in-view in-view--bounce-up">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
                 {% endif %}
-                <p class="text-center text-xl">{{ component.sub_title | default('لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!') }}</p>
+                <p class="text-center text-xl in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.sub_title | default('لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!') }}</p>
         </div>
     {% endif %}
 
@@ -46,7 +46,7 @@
     }
 </style>
 
-<div class="bg-item-[{{ item.background_color | default('#EBFFFF') }}] relative rounded-[70%/50%] border-2 border-black w-full aspect-square max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-xs mx-auto">
+<div class="bg-item-[{{ item.background_color | default('#EBFFFF') }}] relative rounded-[70%/50%] border-2 border-black w-full aspect-square max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-xs mx-auto in-view in-view--bounce-up" style="--in-view-delay: {{ loop.index0 * 120 }}ms">
 
             <div class="rounded-full border-2 border-black bg-item-[{{ item.icon_color | default('#C971C2') }}] mx-auto w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 -mt-8 md:-mt-10 absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex items-center justify-center">
 

@@ -17,22 +17,22 @@ class=" py-20 {{ component.enable_border ? 'border-y border-black' : '' }}"
       {% if component.title %}
             {% if component.title_style %}
 
-                <div 
+                <div
                 style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
-                 class="text-center my-5 mx-auto  ">
+                 class="text-center my-5 mx-auto in-view in-view--bounce-up">
                         {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto font-[{{component.title_font | default("BackToSchool")}}] mb-5'} %}
                         
 
                         <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
                 </div>
             {% else %}
-                <h1 
+                <h1
                               style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
-                 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center">{{component.title | default(' استكشف حسب فئتك المفضلة!') }}</h1>
+                 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center in-view in-view--bounce-up">{{component.title | default(' استكشف حسب فئتك المفضلة!') }}</h1>
                 {% if component.sub_title %}
-                        <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
+                        <p class="text-center text-xl in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
                 {% endif %}
             {% endif %}
       {% endif %}

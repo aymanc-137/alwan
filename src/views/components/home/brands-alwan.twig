@@ -10,7 +10,7 @@
                           style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
              class=" md:w-[45%] mx-auto w-full my-auto md:-translate-x-[60%] md:translate-y-[100%]  translate-y-1/2 ">
-                    <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
+                    <p class="brand-grid grid grid-cols-4  gap-4 mx-10 in-view in-view--bounce-up">
                     {% for brand in component.brands %}
                     <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
                             <img src="{{brand.logo}}" width="100" height="100" alt="{{brand.name}}" loading="lazy" decoding="async">
@@ -31,7 +31,7 @@
 
                         {% if component.title_style %}
 
-                            <div class="md:w-96 font-[{{component.title_font | default('BackToSchool')}}]  mb-5">
+                            <div class="md:w-96 font-[{{component.title_font | default('BackToSchool')}}]  mb-5 in-view in-view--bounce-up">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                             <g filter="url(#filter0_d_3119_200)" {% if not theme.is_rtl %}transform="translate(4200 0) scale(-1 1)"{% endif %}>
                                                 <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}"/>
@@ -62,10 +62,10 @@
                                     </svg>
                             </div>
                         {% else %}
-                        <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mb-5 mt-5">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+                        <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
                         {% endif %}
 
-                            <p class="text-white text-lg sm:text-xl md:text-4xl rtl:text-right ltr:text-left leading-relaxed md:w-[45%] w-full">
+                            <p class="text-white text-lg sm:text-xl md:text-4xl rtl:text-right ltr:text-left leading-relaxed md:w-[45%] w-full in-view in-view--bounce-up" style="--in-view-delay: 150ms">
                                     {{component.subtitle}}
                             </p>
 
@@ -95,16 +95,16 @@
 
                         {% if component.title_style %}
 
-                            <div class="md:w-96 font-[{{component.title_font | default('BackToSchool')}}] mb-5">
+                            <div class="md:w-96 font-[{{component.title_font | default('BackToSchool')}}] mb-5 in-view in-view--bounce-up">
 
                                   {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                             </div>
                         {% else %}
-                        <h1 class="text-5xl mb-5 mt-5">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+                        <h1 class="text-5xl mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
                         {% endif %}
 
-                            <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full">
+                            <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full in-view in-view--bounce-up" style="--in-view-delay: 150ms">
                                     {{component.subtitle}}
                             </p>
 
@@ -112,7 +112,7 @@
             {% else %}
 
                 <div class=" md:w-[45%] mx-auto w-full my-auto md:translate-x-[60%] md:translate-y-[100%] translate-y-96 ">
-                        <p class="brand-grid grid grid-cols-4  gap-4 mx-10">
+                        <p class="brand-grid grid grid-cols-4  gap-4 mx-10 in-view in-view--bounce-up">
                         {% for brand in component.brands %}
                         <a href="{{brand.url}}" class="hover:scale-110 brand-image transition-all" style="animation-delay: {{ loop.index0 * 0.3 }}s;">
                                 <img src="{{brand.logo}}" width="100" height="100" alt="{{brand.name}}" loading="lazy" decoding="async">

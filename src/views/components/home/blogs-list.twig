@@ -14,10 +14,10 @@
 >
      {% if component.title %}
  
-              <div 
+              <div
                             style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
-              class="w-96 mx-auto mb-5 font-[{{component.title_font | default('BackToSchool')}}] ">
+              class="w-96 mx-auto mb-5 font-[{{component.title_font | default('BackToSchool')}}] in-view in-view--bounce-up">
               {% if component.title_style %}
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
               {% else %}
@@ -31,7 +31,8 @@
         {% for blog in component.blogs %}
         <a
         href="{{blog.url}}"
-        class="relative w-full h-80 rounded-lg border border-black neo-shadow overflow-hidden bg-cover bg-center "
+        class="relative w-full h-80 rounded-lg border border-black neo-shadow overflow-hidden bg-cover bg-center in-view in-view--bounce-up"
+        style="--in-view-delay: {{ loop.index0 * 120 }}ms"
        >
        <img src="{{blog.thumbnail}}" class="w-full h-1/2 object-cover hover:scale-105  transition-all duration-300" alt="{{ blog.title }}" loading="lazy" decoding="async">
         <!-- Dark Gradient Overlay at the Bottom -->

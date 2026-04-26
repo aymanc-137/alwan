@@ -46,12 +46,12 @@
         {% if component.title %}
             {% if component.title_style %}
             <div style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
-                 class="w-80 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}]">
+                 class="w-80 mb-5 mx-auto font-[{{component.title_font | default('BackToSchool')}}] in-view in-view--bounce-up">
             {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
             </div>
             {% else %}
             <h2 style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
-                class="text-2xl md:text-3xl font-bold text-center mb-10">{{ component.title }}</h2>
+                class="text-2xl md:text-3xl font-bold text-center mb-10 in-view in-view--bounce-up">{{ component.title }}</h2>
             {% endif %}
         {% endif %}
 
@@ -66,7 +66,7 @@
             {% for column in [col1, col2] %}
                 <div class="space-y-4">
                     {% for item in column %}
-                        <div class="neo-shadow rounded-md overflow-hidden bg-white">
+                        <div class="neo-shadow rounded-md overflow-hidden bg-white in-view in-view--bounce-up" style="--in-view-delay: {{ loop.index0 * 100 }}ms">
                             <div class="faq-question flex justify-between items-center cursor-pointer py-3 px-4" 
                                  onclick="toggleFAQ(this)">
                                 <span class="font-medium">{{ item.question }}</span>

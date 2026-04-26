@@ -17,11 +17,9 @@
         transform: translateY(40px);
     }
 
-    &.is-visible {
-        &.in-view--bounce-up {
-            animation: inViewBounceUp 0.9s cubic-bezier(0.22, 1.2, 0.36, 1) both;
-            animation-delay: var(--in-view-delay, 0ms);
-        }
+    &.is-visible.in-view--bounce-up {
+        animation: inViewBounceUp 0.9s cubic-bezier(0.22, 1.2, 0.36, 1) forwards;
+        animation-delay: var(--in-view-delay, 0ms);
     }
 }
 

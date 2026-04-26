@@ -36,9 +36,9 @@
       {% if component.title_style %}
             {% set color = theme.settings.get('style_title_color', '#FFAB5B') %}
 
-              <div 
+              <div
               style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
-              class="w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5">
+              class="w-96 mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-5 in-view in-view--bounce-up">
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
 
                 {% if false %}
@@ -74,11 +74,11 @@
 
               </div>
               {% else %}
-              <h1 class="text-5xl mx-auto mb-5 text-center">{{component.title}}</h1>
+              <h1 class="text-5xl mx-auto mb-5 text-center in-view in-view--bounce-up">{{component.title}}</h1>
                
       {% endif %}
       {% if component.sub_title %}
-              <p class="text-center text-xl">{{ component.sub_title | default('') }}</p>
+              <p class="text-center text-xl in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.sub_title | default('') }}</p>
       {% endif %}
       </div>
       {% endif %}
@@ -87,7 +87,7 @@
     <div class="md:flex grid grid-cols-2 mx-auto justify-evenly flex-col md:flex-row" >
 
         {% for index,item in component.age %}
-            <div class="md:w-80 mx-auto w-40 age-edge hover:scale-105 transition-all duration-500" >
+            <div class="md:w-80 mx-auto w-40 age-edge hover:scale-105 transition-all duration-500 in-view in-view--bounce-up" style="--in-view-delay: {{ loop.index0 * 120 }}ms">
 
             <a href="{{ item.link }}">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1653 1805" fill="none" preserveAspectRatio="xMidYMid meet">
