@@ -63,62 +63,6 @@
         },
         {
             "type": "static",
-            "format": "title",
-            "id": "static-label2",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أعلى الصفحة</h6></div>",
-            "variant": "h6"
-        },
-        {
-            "id": "header_is_sticky",
-            "label": "تثبت القائمة الرئيسية أعلى الصفحة عند التمرير لأسفل",
-            "description": "يُنصح بالغاء تفعيلها في حالة وجود عناصر كثيرة في القائمة المنسدلة",
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "شريط علوي داكن",
-            "description": null,
-            "id": "topnav_is_dark",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "تفعيل قائمة المزيد في القائمة الرئيسية",
-            "description": "عند تفعيلها، ستظهر الروابط الإضافية في قائمة منسدلة تسمى 'المزيد' عند عدم وجود مساحة كافية",
-            "id": "enable_more_menu",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "عرض روابط الصفحات الهامة في الشريط العلوي",
-            "description": "مثل صفحة الهبوط ، المدونة ،الصفحات التعريفية",
-            "id": "important_links",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "type": "static",
-            "id": "static-line3",
-            "format": "line"
-        },
-        {
-            "type": "static",
             "id": "general_section",
             "format": "title",
             "label": "الإعدادات العامة",
@@ -468,6 +412,17 @@
             "value": true,
             "selected": false,
             "required": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تفعيل قائمة المزيد في القائمة الرئيسية",
+            "description": "عند تفعيلها، ستظهر الروابط الإضافية في قائمة منسدلة تسمى 'المزيد' عند عدم وجود مساحة كافية",
+            "id": "enable_more_menu",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
         },
         {
             "id": "nav_header_color",
