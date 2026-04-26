@@ -260,8 +260,8 @@
             "id": "general_section",
             "format": "title",
             "label": "الإعدادات العامة",
-            "value": "الإعدادات العامة للثيم",
-            "variant": "h2",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الإعدادات العامة للثيم</h6></div>",
+            "variant": "h6",
             "icon": "sicon-settings"
         },
         {
@@ -284,8 +284,8 @@
             "type": "static",
             "format": "title",
             "label": "إعداد القائمة البريدية",
-            "value": "إعداد القائمة البريدية",
-            "variant": "h4",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد القائمة البريدية</h6></div>",
+            "variant": "h6",
             "icon": "sicon-inbox"
         },
         {
@@ -370,8 +370,8 @@
             "type": "static",
             "format": "title",
             "id": "colors_section_title",
-            "value": "الألوان والتنسيقات",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الألوان والتنسيقات</h6></div>",
+            "variant": "h6",
             "icon": "sicon-color-fill"
         },
         {
@@ -432,8 +432,8 @@
             "type": "static",
             "format": "title",
             "id": "header_section_title",
-            "value": "إعدادات القائمة العلوية",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات القائمة العلوية</h6></div>",
+            "variant": "h6",
             "icon": "sicon-list"
         },
         {
@@ -514,8 +514,8 @@
             "type": "static",
             "format": "title",
             "id": "footer_section_title",
-            "value": " إعداد ذيل الصفحة ",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد ذيل الصفحة</h6></div>",
+            "variant": "h6",
             "icon": "sicon-layout-bottom"
         },
         {
@@ -586,8 +586,8 @@
             "type": "static",
             "format": "title",
             "id": "product_card_section_title",
-            "value": "إعدادات بطاقة المنتج",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات بطاقة المنتج</h6></div>",
+            "variant": "h6",
             "icon": "sicon-shopping-bag"
         },
         {
@@ -636,8 +636,8 @@
             "type": "static",
             "format": "title",
             "id": "homepage_section_title",
-            "value": "إعدادات الصفحة الرئيسية",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات الصفحة الرئيسية</h6></div>",
+            "variant": "h6",
             "icon": "sicon-home"
         },
         {
@@ -672,8 +672,8 @@
             "type": "static",
             "format": "title",
             "id": "product_page_section_title",
-            "value": "إعدادات صفحة المنتج",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات صفحة المنتج</h6></div>",
+            "variant": "h6",
             "icon": "sicon-box-bankers"
         },
         {
@@ -831,8 +831,8 @@
             "type": "static",
             "format": "title",
             "id": "fixed_buttons_section_title",
-            "value": "الأزرار الثابتة",
-            "variant": "h3",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الأزرار الثابتة</h6></div>",
+            "variant": "h6",
             "icon": "sicon-phone"
         },
         {
