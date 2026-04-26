@@ -6,7 +6,8 @@
       "WebFetch(domain:github.com)",
       "Read(//tmp/**)",
       "Bash(curl -sL https://raw.githubusercontent.com/SallaApp/theme-raed/1.310.0/src/assets/js/partials/product-card.js -o raed-310-pc.js)",
-      "Bash(curl -sL https://raw.githubusercontent.com/SallaApp/theme-raed/1.322.0/src/assets/js/partials/product-card.js -o raed-322-pc.js)"
+      "Bash(curl -sL https://raw.githubusercontent.com/SallaApp/theme-raed/1.322.0/src/assets/js/partials/product-card.js -o raed-322-pc.js)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('twilight.json'\\)\\); print\\('valid JSON'\\)\")"
     ],
     "deny": [],
     "ask": []

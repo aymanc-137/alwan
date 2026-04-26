@@ -45,7 +45,7 @@ class=" py-20 {{ component.enable_border ? 'border-y border-black' : '' }}"
 					{% set random_color = random(colors) %}
 					<div class="md:w-52 w-40 category-link relative z-10" style="background-color: {{ random_color }}">
 						<div class="rounded-t-full relative border-2 border-b-0 border-r-4 border-black md:h-64 h-52 w-full overflow-hidden flex-col  ">
-							<img src="{{ item.image }}" class="  w-full h-full object-cover" alt="{{ item.name }}" loading="lazy" decoding="async">
+							<img src="{{ item.image }}" width="208" height="256" class="  w-full h-full object-cover" alt="{{ item.name }}" loading="lazy" decoding="async">
 						</div>
 						<div class="bg-white footer-content-text flex w-full border-2 p-2 border-black  border-r-4 border-b-4 place-self-end text-center  rounded-b-lg">
 							<svg class="md:w-2/6 w-1/6 border-l-2 border-black " xmlns="http://www.w3.org/2000/svg" fill="#000000" width="30px" height="30px" viewbox="0 0 24 24">
