@@ -153,6 +153,86 @@
             "icon": "sicon-book-open"
         },
         {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تفعيل إشعار الإضافة للسلة المحسن",
+            "description": null,
+            "id": "enable_add_product_toast",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "إظهار الوسوم (Tags)",
+            "description": "عرض وسوم المنتج في صفحة المنتج",
+            "id": "show_tags",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "id": "enable_section_backgroud",
+            "type": "boolean",
+            "format": "switch",
+            "label": " تمكين خلفية الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "enable_sections_border",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تمكين حدود الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "background_sections_color",
+            "type": "string",
+            "format": "color",
+            "label": "لون خلفية الاقسام الاساسية",
+            "description": "لون الخلفية",
+            "labelHTML": null,
+            "icon": "sicon-format-text-alt",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "enable_section_backgroud",
+                    "operator": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "background_sections_image",
+            "type": "string",
+            "format": "image",
+            "label": "صور خلفية الاقسام الاساسية",
+            "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "enable_section_backgroud",
+                    "operator": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "static",
             "id": "email_section_line",
             "format": "line",
@@ -581,17 +661,6 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "تفعيل إشعار الإضافة للسلة المحسن",
-            "description": null,
-            "id": "enable_add_product_toast",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
             "label": "تثبيت زر الإضافة للسلة أسفل الشاشة",
             "description": "تثبيت زر الإضافة للسلة والكمية أسفل الشاشة في الجوال لسهولة الوصول",
             "id": "sticky_add_to_cart",
@@ -599,75 +668,6 @@
             "required": false,
             "value": true,
             "selected": true
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "إظهار الوسوم (Tags)",
-            "description": "عرض وسوم المنتج في صفحة المنتج",
-            "id": "show_tags",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "id": "enable_section_backgroud",
-            "type": "boolean",
-            "format": "switch",
-            "label": " تمكين خلفية الاقسام الاساسية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "required": false
-        },
-        {
-            "id": "enable_sections_border",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تمكين حدود الاقسام الاساسية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "required": false
-        },
-        {
-            "id": "background_sections_color",
-            "type": "string",
-            "format": "color",
-            "label": "لون خلفية الاقسام الاساسية",
-            "description": "لون الخلفية",
-            "labelHTML": null,
-            "icon": "sicon-format-text-alt",
-            "value": "#ffffff",
-            "required": false,
-            "conditions": [
-                {
-                    "id": "enable_section_backgroud",
-                    "operator": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "background_sections_image",
-            "type": "string",
-            "format": "image",
-            "label": "صور خلفية الاقسام الاساسية",
-            "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
-            "labelHTML": null,
-            "icon": "sicon-image",
-            "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-            "required": false,
-            "conditions": [
-                {
-                    "id": "enable_section_backgroud",
-                    "operator": "=",
-                    "value": true
-                }
-            ]
         },
         {
             "id": "wishlist-btn",
