@@ -57,23 +57,6 @@
             "required": true
         },
         {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
-            "description": null,
-            "id": "vertical_fixed_products",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "id": "is_more_button_enabled",
-            "label": "عرض (زر الكل) في الصفحة الرئيسية",
-            "format": "switch"
-        },
-        {
             "type": "static",
             "id": "static-line1",
             "format": "line"
@@ -277,6 +260,28 @@
             "value": true,
             "selected": false,
             "required": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "وضع عمودي للمنتجات الثابتة",
+            "description": "عرض المنتجات في مربع المنتجات الثابتة بشكل عمودي في الصفحة الرئيسية",
+            "id": "vertical_fixed_products",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "id": "is_more_button_enabled",
+            "label": "عرض زر (المزيد/الكل) في الصفحة الرئيسية",
+            "description": "إظهار زر لعرض جميع المنتجات",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": false
         },
         {
             "type": "static",
@@ -630,42 +635,6 @@
             "icon": "sicon-format-fill",
             "value": "#EDF7F8",
             "required": false
-        },
-        {
-            "type": "static",
-            "id": "homepage_section_line",
-            "format": "line",
-            "label": null
-        },
-        {
-            "type": "static",
-            "format": "title",
-            "id": "homepage_section_title",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات الصفحة الرئيسية</h6></div>",
-            "variant": "h6",
-            "icon": "sicon-home"
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "وضع عمودي للمنتجات الثابتة",
-            "description": "عرض المنتجات في مربع المنتجات الثابتة بشكل عمودي في الصفحة الرئيسية",
-            "id": "vertical_fixed_products",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "id": "is_more_button_enabled",
-            "label": "عرض زر (المزيد/الكل) في الصفحة الرئيسية",
-            "description": "إظهار زر لعرض جميع المنتجات",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": false
         },
         {
             "type": "static",
