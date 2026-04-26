@@ -233,6 +233,52 @@
             ]
         },
         {
+            "id": "is_whatsapp_enable",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل زر الواتساب الثابت",
+            "description": "إظهار زر واتساب ثابت في الصفحة للتواصل السريع",
+            "labelHTML": null,
+            "icon": "sicon-whatsapp",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "whatsapp_number",
+            "type": "string",
+            "format": "text",
+            "label": "رقم الواتساب",
+            "description": "أدخل رقم الواتساب مع رمز الدولة (مثال: +966512345678)",
+            "labelHTML": null,
+            "placeholder": "+966512345678",
+            "icon": "sicon-phone",
+            "value": null,
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": 30,
+            "conditions": [
+                {
+                    "id": "is_whatsapp_enable",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "is_scroll_enable",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل زر الرجوع للأعلى",
+            "description": "إظهار زر ثابت للعودة إلى أعلى الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-arrow-up",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
             "type": "static",
             "id": "email_section_line",
             "format": "line",
@@ -721,66 +767,6 @@
             "required": false,
             "value": false,
             "selected": false
-        },
-        {
-            "type": "static",
-            "id": "fixed_buttons_section_line",
-            "format": "line",
-            "label": null
-        },
-        {
-            "type": "static",
-            "format": "title",
-            "id": "fixed_buttons_section_title",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الأزرار الثابتة</h6></div>",
-            "variant": "h6",
-            "icon": "sicon-phone"
-        },
-        {
-            "id": "is_whatsapp_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الواتساب الثابت",
-            "description": "إظهار زر واتساب ثابت في الصفحة للتواصل السريع",
-            "labelHTML": null,
-            "icon": "sicon-whatsapp",
-            "value": true,
-            "selected": false,
-            "required": false
-        },
-        {
-            "id": "whatsapp_number",
-            "type": "string",
-            "format": "text",
-            "label": "رقم الواتساب",
-            "description": "أدخل رقم الواتساب مع رمز الدولة (مثال: +966512345678)",
-            "labelHTML": null,
-            "placeholder": "+966512345678",
-            "icon": "sicon-phone",
-            "value": null,
-            "multilanguage": false,
-            "required": false,
-            "minLength": 3,
-            "maxLength": 30,
-            "conditions": [
-                {
-                    "id": "is_whatsapp_enable",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "is_scroll_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الرجوع للأعلى",
-            "description": "إظهار زر ثابت للعودة إلى أعلى الصفحة",
-            "labelHTML": null,
-            "icon": "sicon-arrow-up",
-            "value": true,
-            "selected": false,
-            "required": false
         }
     ],
     "components": [
