@@ -1255,6 +1255,9 @@ input:where([type='file']):focus{
 .h-72{
     height: 18rem;
 }
+.h-8{
+    height: 2rem;
+}
 .h-80{
     height: 20rem;
 }
@@ -1296,9 +1299,6 @@ input:where([type='file']):focus{
 }
 .max-h-0{
     max-height: 0px;
-}
-.max-h-8{
-    max-height: 2rem;
 }
 .max-h-\[300px\]{
     max-height: 300px;
@@ -1422,9 +1422,6 @@ input:where([type='file']):focus{
 }
 .min-w-full{
     min-width: 100%;
-}
-.max-w-16{
-    max-width: 4rem;
 }
 .max-w-3xl{
     max-width: 48rem;

@@ -33,7 +33,7 @@
                                     <source
                                     src="{{ component.video_url }}" type="video/mp4">
                                     {# Fallback image if video doesn't load #}
-                                    <img src="{{ component.background }}" alt="{{ component.title|default('') }}" class="absolute z-0 w-full h-full object-cover" loading="lazy" decoding="async">
+                                    <img src="{{ component.background }}" alt="{{ component.title|default('') }}" width="1600" height="900" class="absolute z-0 w-full h-full object-cover" loading="lazy" decoding="async">
                                 </video>
                             {% else %}
 

@@ -53,7 +53,7 @@
                             {% if item.is_animated %}
                                 <dotlottie-player src="{{ item.url }}" autoplay loop style="width:85%;height:85%"></dotlottie-player>
                             {% else %}
-                                <img src="{{ item.image }}" alt="{{ item.title }}" class="w-[85%] h-[85%] object-contain" loading="lazy" decoding="async" />
+                                <img src="{{ item.image }}" alt="{{ item.title }}" width="80" height="80" class="w-[85%] h-[85%] object-contain" loading="lazy" decoding="async" />
                             {% endif %}
             
             </div>
