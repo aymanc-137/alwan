@@ -41,7 +41,7 @@ class=" py-20 {{ component.enable_border ? 'border-y border-black' : '' }}"
 	 controls-outer auto-play loop show-controls="false" id="main-links-{{ position }}">
 		<div slot="items">
 			{% for item in component.category %}
- 				<a href="{{ item.url }}" class="swiper-slide slide--one-category m-5">
+ 				<a href="{{ item.url }}" class="swiper-slide slide--one-category m-5 in-view in-view--bounce-up" style="--in-view-delay: {{ loop.index0 * 120 }}ms">
 					{% set random_color = random(colors) %}
 					<div class="md:w-52 w-40 category-link relative z-10" style="background-color: {{ random_color }}">
 						<div class="rounded-t-full relative border-2 border-b-0 border-r-4 border-black md:h-64 h-52 w-full overflow-hidden flex-col  ">

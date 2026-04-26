@@ -2,6 +2,7 @@ import MobileMenu from 'mmenu-light';
 import Swal from 'sweetalert2';
 import Anime from './partials/anime';
 import initTootTip from './partials/tooltip';
+import initInViewAnimations from './partials/in-view';
 import AppHelpers from "./app-helpers";
 
 class App extends AppHelpers {
@@ -33,6 +34,7 @@ class App extends AppHelpers {
     }, 100);
     
     initTootTip();
+    initInViewAnimations();
     this.loadModalImgOnclick();
     //this.replaceCartIcon();
 

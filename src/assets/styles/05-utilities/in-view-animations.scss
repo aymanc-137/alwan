@@ -1,0 +1,41 @@
+/**
+ * In-view animations
+ * Reusable entrance animations triggered when an element enters the viewport.
+ *
+ * Usage:
+ *   <div class="in-view in-view--bounce-up" style="--in-view-delay: 100ms"></div>
+ *
+ * The element starts hidden. JS adds `.is-visible` on intersection, which
+ * runs the keyframe animation and leaves the element in its final state.
+ */
+
+.in-view {
+    opacity: 0;
+    will-change: transform, opacity;
+
+    &.in-view--bounce-up {
+        transform: translateY(40px);
+    }
+
+    &.is-visible {
+        &.in-view--bounce-up {
+            animation: inViewBounceUp 0.9s cubic-bezier(0.22, 1.2, 0.36, 1) both;
+            animation-delay: var(--in-view-delay, 0ms);
+        }
+    }
+}
+
+@keyframes inViewBounceUp {
+    0%   { opacity: 0; transform: translateY(40px); }
+    60%  { opacity: 1; transform: translateY(-12px); }
+    80%  { transform: translateY(4px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .in-view {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}
