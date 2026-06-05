@@ -50,8 +50,7 @@
 | theme.settings.get(settingName, default=null)      | mixed    | get theme setting ex `theme.settings.get('my_var', 'fallback')`                                          |
 #}
 <!DOCTYPE html>
-<html
-	lang="{{ user.language.code }}" dir="{{ user.language.dir }}">
+<html lang="{{ language.code }}" dir="{{ theme.is_rtl ? 'rtl' : 'ltr' }}">
 	<!-- بسم الله الرحمن الرحيم -->
 	<head>
 		<meta charset="UTF-8">
@@ -190,9 +189,7 @@
 	{% if theme.settings.get('enable_add_product_toast', true) %}
     <salla-add-product-toast></salla-add-product-toast>
 	{% endif %}
-		{% if user.type=='guest' %}
-			<salla-login-modal></salla-login-modal>
-		{% endif %}
+<salla-login-modal></salla-login-modal>
 
 		{% if store.scope %}
 			<salla-scopes selection="{{ store.scope.display_as == 'popup' ? 'mandatory' : 'optional' }}"></salla-scopes>
