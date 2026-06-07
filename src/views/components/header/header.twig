@@ -69,7 +69,19 @@
 
      
                     <div class="flex items-center justify-items-center gap-3 justify-end">
-                      <salla-user-menu avatar-only show-header show-trigger></salla-user-menu>
+                      {# <salla-user-menu avatar-only show-header show-trigger></salla-user-menu> #}
+
+
+                        {% if user.type=='user' %}
+                            <salla-user-menu avatar-only show-header></salla-user-menu>
+                        {% else %}
+                                <button class="header-btn s-cart-summary" aria-label="{{ trans('blocks.header.login') }}" onclick="salla.event.dispatch('login::open')">
+                                <i class="user-avatar-cartoon-logo"></i>
+                   
+                                    </button>
+                        {% endif %}
+
+
 
                                 <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4"></salla-cart-summary>
 
