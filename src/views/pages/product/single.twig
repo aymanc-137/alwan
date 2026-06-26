@@ -85,14 +85,26 @@
 {% block content %}
 	{% set product_description_next_image = theme.settings.get('product_description_position_under',false) %}
 
+	{% if theme.settings.get('product_show_breadcrumbs', true) %}
+		<div class="container container--breadcrumbs">
+			{# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
+			<nav class="breadcrumbs w-full py-5">
+				<salla-breadcrumb></salla-breadcrumb>
+			</nav>
+		</div>
+	{% endif %}
+
+	{#
+		Hook: product.single.before_product_info
+		Fires before the main product information section (images, title, price, etc.).
+		Use this hook to inject custom content or components above the product details area.
+	#}
+	<div class="s-blocks-wrapper s-before-product-info !mt-0">{% hook 'product.single.before_product_info' %}</div>
+
 	<div
-		class="container">
-		{# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
-		<nav class="breadcrumbs w-full py-5">
-			<salla-breadcrumb></salla-breadcrumb>
-		</nav>
+		class="container container--product-details">
 		<div class="flex flex-col items-start md:flex-row" id="product-{{ product.id }}">
-			<div class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 pb-8   md:pb-16 overflow-hidden shrink-0">
+			<div class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 mb-5 md:mb-0 overflow-hidden shrink-0">
 				{% set has_many_images = product.images|length > 1 %}
 				<salla-slider id="details-slider-{{ product.id }}" class="details-slider image-slider bg-white neo-shadow mr-1 rounded-lg " type="thumbs" loop="false" auto-height listen-to-thumbnails-option show-thumbs-controls="false">
 					{% if product.promotion_title %}
@@ -160,7 +172,7 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 				</salla-slider>
 			</div>
 
-			<div class="bg-white neo-shadow p-3 rounded-lg main-content md:sticky md:overflow-hidden top-24 w-full md:w-2/4 md:pb-16">
+			<div class="bg-white neo-shadow p-3 rounded-lg main-content md:sticky md:overflow-hidden top-24 w-full md:w-2/4">
 
 				{% hook 'product:single.description.start' %}
 
@@ -382,6 +394,13 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 		<salla-offer></salla-offer>
 	</div>
 
+	{#
+		Hook: product.single.before_customer_reviews
+		Fires before the customer reviews/comments section.
+		Use this hook to inject content between the product info and the reviews block.
+	#}
+	<div class="s-blocks-wrapper s-before-reviews">{% hook 'product.single.before_customer_reviews' %}</div>
+
 	{# Comments Area #}
 
 	{% if not product_description_next_image %}
@@ -437,13 +456,26 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 	{% endif %}
 
 	
+	{#
+		Hook: product.single.before_product_recommendations
+		Fires before the similar/related products slider.
+		Use this hook to inject content between the reviews and the recommendations section.
+	#}
+	<div class="s-blocks-wrapper s-before-related">{% hook 'product.single.before_product_recommendations' %}</div>
+
 	<hr
 	class="w-5/6 mx-auto my-5 border-primary border">
 	{# Similar Products Area #}
-	<div class="container">
+	<div class="container mb-5 sm:mb-8">
 		<salla-products-slider source="related" source-value="{{product.id}}" block-title="{{trans('pages.products.similar_products')}}" display-all-url></salla-products-slider>
 	</div>
 
+	{#
+		Hook: product.single.after_product_recommendations
+		Fires after the similar/related products slider, at the very end of the product page content.
+		Use this hook to append content below the recommendations section.
+	#}
+	<div class="s-blocks-wrapper s-after-related">{% hook 'product.single.after_product_recommendations' %}</div>
 
 {% endblock %}
 
