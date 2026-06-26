@@ -397,3 +397,33 @@
 .s-block--tabs-produtcs + .s-block--tabs-produtcs {
   padding-top: 2em;
 }
+
+
+
+.s-blocks-wrapper{
+  @apply empty:hidden;
+
+  :not(.s-information-page) .s-block{ 
+    @apply first:mt-0;
+  }
+
+  &:empty {   
+    + .container--products-list,
+    + .container--product-details{
+      @apply mt-0 #{!important}
+    }
+  }
+
+  &.s-information-page{
+    &.s-block.s-block--full-bg:first-of-type{
+      @apply mt-0;
+    }
+  }
+}
+
+.container--breadcrumbs{
+  &, 
+  & + .s-blocks-wrapper{
+    @apply mt-0 #{!important}
+  }
+}
