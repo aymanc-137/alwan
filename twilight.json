@@ -1591,6 +1591,7 @@
             "title": "روابط أقسام - ألوان",
             "icon": "sicon-store",
             "path": "home.category-links",
+            "image":"https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
             "fields": [
                 {
                     "type": "static",
