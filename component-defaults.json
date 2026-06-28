@@ -1,0 +1,1499 @@
+{
+  "home.slider-ads": {
+    "key": "f13c0337-8968-491b-bb99-74b1f036e1d5",
+    "slides_ads": [
+      {
+        "ar": {
+          "title": "أكبر تشكيلة لألعاب الأطفال",
+          "description": "امنح طفلك لحظات لا تُنسى مع دمى محشوة ناعمة وألعاب بناء تنمي الإبداع وسيارات مثيرة تحفّز الخيال. نوفر لك ألعابًا آمنة بجودة عالية وبأسعار تنافسية تناسب جميع الأعمار.",
+          "button_title": "اكتشف المزيد"
+        },
+        "url": "https://s.salla.sa/",
+        "image": "https://cdn.files.salla.network/homepage/771160785/f7a01444-8338-4b80-b8ac-0cd564b14da9.webp",
+        "postion": [
+          "center"
+        ],
+        "title_font": [
+          "CooperArabic"
+        ],
+        "title_color": "#0ea7cd",
+        "title": "أكبر تشكيلة لألعاب الأطفال",
+        "description": "امنح طفلك لحظات لا تُنسى مع دمى محشوة ناعمة وألعاب بناء تنمي الإبداع وسيارات مثيرة تحفّز الخيال. نوفر لك ألعابًا آمنة بجودة عالية وبأسعار تنافسية تناسب جميع الأعمار.",
+        "button_title": "اكتشف المزيد"
+      },
+      {
+        "ar": {
+          "title": "هدايا عيد الميلاد المثالية",
+          "description": "نوفر لك مزيجًا مثاليًا من الألعاب المحشوة المريحة وأطقم البناء الممتعة وسيارات الأطفال التي تعزز الحركة والانطلاق.",
+          "button_title": ""
+        },
+        "en": {
+          "title": "",
+          "description": "",
+          "button_title": ""
+        },
+        "url": "https://s.salla.sa/",
+        "image": "https://cdn.files.salla.network/homepage/771160785/18c9cafe-37f9-4f9d-8dc3-cfd020055cae_1440x720.webp",
+        "postion": [
+          "center"
+        ],
+        "title_font": [
+          "default"
+        ],
+        "title_color": "#fbb05b",
+        "title": "هدايا عيد الميلاد المثالية",
+        "description": "نوفر لك مزيجًا مثاليًا من الألعاب المحشوة المريحة وأطقم البناء الممتعة وسيارات الأطفال التي تعزز الحركة والانطلاق.",
+        "button_title": ""
+      }
+    ]
+  },
+  "home.category-links": {
+    "key": "bd921942-db67-44b0-a8e5-18ceb623722a",
+    "title": "استكشف حسب فئتك المفضلة!",
+    "category": [
+      {
+        "name": "ألعاب البناء والتشييد",
+        "id": 1153616500,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-البناء-والتشييد/c1153616500",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/mOvCE5eXN4JI2wtsVWFYgyhMTugdt7gAjbUDcFQs.png"
+      },
+      {
+        "name": "ألعاب الأطفال والرضع",
+        "id": 380627317,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-الأطفال-والرضع/c380627317",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/LCrrsZwi6SR2iLf0qmmPRxSFo5dtzDamLdmlRIDf.png"
+      },
+      {
+        "name": "التعلم والتعليم",
+        "id": 97424243,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/التعلم-والتعليم/c97424243",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/pSU1TblqyXw2c5SCA4T9OUTDnoJdaIUHhBwq1XX8.png"
+      },
+      {
+        "name": "ألعاب محشوة",
+        "id": 421039210,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-محشوة/c421039210",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/MUJy6WqrFns3LflHuFPT2jeahjRmHba7BjStOLjf.png"
+      },
+      {
+        "name": "الدمى وإكسسواراتها",
+        "id": 561041789,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/الدمى-وإكسسواراتها/c561041789",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/wHp26ihskXORpg3Hxgsuq2G8APtofTItfgmWwniH.png"
+      },
+      {
+        "name": "ألعاب هوايات التجميع",
+        "id": 520568440,
+        "sub_categories": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-هوايات-التجميع/c520568440",
+        "icon": "sicon-store",
+        "image": "https://cdn.salla.sa/WlNGRn/categories/fcHKOhza8DA2MmW5wIyI4JwfMTsYatNYliq3Uawj.png"
+      }
+    ],
+    "sub_title": "تصفح أقسامنا المتنوعة واكتشف ألعابًا تناسب كل ذوق واهتمام.",
+    "title_font": "BackToSchool",
+    "title_style": false,
+    "enable_border": true,
+    "background_color": "#ffffff",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": true
+  },
+  "home.age-group": {
+    "ar": {
+      "title": "اختر اللعبة المناسبة لكل عمر",
+      "sub_title": "من أولى خطواته إلى سنوات الإبداع – ألعاب مُختارة بعناية لكل مرحلة عمرية."
+    },
+    "age": [
+      {
+        "ar": {
+          "title": "من 0 الى 1 سنوات"
+        },
+        "link": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/p1995117139",
+        "color": "#57e6ff",
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.webp",
+        "title": "من 0 الى 1 سنوات"
+      },
+      {
+        "ar": {
+          "title": "من 3 الى 4 سنوات"
+        },
+        "link": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/c421039210",
+        "color": "#ffa8db",
+        "image": "https://cdn.salla.sa/form-builder/BnL6cqa0yn55BwKxnpJhEdOjUn8dsRUXd3kDVPXm.png",
+        "title": "من 3 الى 4 سنوات"
+      },
+      {
+        "ar": {
+          "title": "من 4 الى 6 سنوات"
+        },
+        "link": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/c421039210",
+        "color": "#adffd1",
+        "image": "https://cdn.salla.sa/form-builder/uIGossl1O09FI4znDS7TeH2vt2iRvT4i29z01B6N.png",
+        "title": "من 4 الى 6 سنوات"
+      },
+      {
+        "ar": {
+          "title": "من 6 الى 10 سنوات"
+        },
+        "link": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/offers",
+        "color": "#e3d1ff",
+        "image": "https://cdn.salla.sa/form-builder/1KuEaDbL8Kdcrc39VJwSVdDJUV8vCjm2waEwXvbU.png",
+        "title": "من 6 الى 10 سنوات"
+      }
+    ],
+    "key": "8a9245f7-d969-4a83-b925-96e69afb4c10",
+    "title_font": "default",
+    "title_style": true,
+    "enable_border": true,
+    "background_color": "#febdff",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": true,
+    "title": "اختر اللعبة المناسبة لكل عمر",
+    "sub_title": "من أولى خطواته إلى سنوات الإبداع – ألعاب مُختارة بعناية لكل مرحلة عمرية."
+  },
+  "home.theme-features": {
+    "ar": {
+      "title": "لماذا يختارنا الجميع؟",
+      "sub_title": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!"
+    },
+    "key": "e72a4fa0-f42f-4064-8fcd-5f370b0173e7",
+    "title_font": "default",
+    "title_style": false,
+    "enable_border": false,
+    "theme_features": [
+      {
+        "ar": {
+          "text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
+          "title": "خصومات حصرية للعضوية المميزة"
+        },
+        "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+        "icon_color": "#C971C2",
+        "is_animated": true,
+        "background_color": "#EBFFFF",
+        "text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
+        "title": "خصومات حصرية للعضوية المميزة"
+      },
+      {
+        "ar": {
+          "text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
+          "title": "توصيل فوري الالعاب"
+        },
+        "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/valentines-day.json",
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+        "icon_color": "#dbffdc",
+        "is_animated": true,
+        "background_color": "#d1d9ff",
+        "text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
+        "title": "توصيل فوري الالعاب"
+      },
+      {
+        "ar": {
+          "text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
+          "title": "منصة مراجعات و تقييمات تفاعلية"
+        },
+        "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/hot-sale.json",
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+        "icon_color": "#8ff2ff",
+        "is_animated": true,
+        "background_color": "#f9ffeb",
+        "text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
+        "title": "منصة مراجعات و تقييمات تفاعلية"
+      }
+    ],
+    "background_color": "",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": true,
+    "title": "لماذا يختارنا الجميع؟",
+    "sub_title": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!"
+  },
+  "home.brands-alwan": {
+    "ar": {
+      "title": "الماركات التجارية",
+      "subtitle": "استمتع بتجربة تسوق مع الماركات المفضلة لدى الأطفال والآباء."
+    },
+    "key": "ab82a7dd-be10-4851-b0e9-616b581479dc",
+    "brands": [
+      {
+        "id": "hasbro/brand-1547489932",
+        "name": "Hasbro",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/hasbro/brand-1547489932",
+        "logo": "https://cdn.salla.sa/WlNGRn/aPzFJv4PRsuCs7o25EpDnXHq3oG3sNZTQ8LiGKHW.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "nerf/brand-39302019",
+        "name": "Nerf",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/nerf/brand-39302019",
+        "logo": "https://cdn.salla.sa/WlNGRn/G2ezxt02wzNmXwcYcW1YKlZVbeRZPD0QUKsrCoj8.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "lego/brand-814388354",
+        "name": "Lego",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/lego/brand-814388354",
+        "logo": "https://cdn.salla.sa/WlNGRn/ufEvpX56lBo0Tj6WVyNHbKuVGxU7nJcsYtSNnxYs.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "my-little-pony/brand-1722578305",
+        "name": "My little pony",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/my-little-pony/brand-1722578305",
+        "logo": "https://cdn.salla.sa/WlNGRn/TSluG2pa19YdCEBJqsEz4ugU03oBZV9voL03zfBq.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "fisher-price/brand-348608128",
+        "name": "Fisher Price",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/fisher-price/brand-348608128",
+        "logo": "https://cdn.salla.sa/WlNGRn/Xgs8CQXG2ng5zKutdA2tUk3EQRO5S9NyGRJ5HuFu.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "bandai-namco/brand-989476743",
+        "name": "Bandai namco",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/bandai-namco/brand-989476743",
+        "logo": "https://cdn.salla.sa/WlNGRn/GMGqtLLoDBqEYP4ui40YUrTOBKO8fRrfUNHximnt.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "barbie/brand-1763518598",
+        "name": "Barbie",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/barbie/brand-1763518598",
+        "logo": "https://cdn.salla.sa/WlNGRn/q99R894ZfpKYqqLxeK271voTv4zSNMjmCZYhXGIA.png",
+        "banner": null,
+        "description": ""
+      },
+      {
+        "id": "disney/brand-523241861",
+        "name": "Disney",
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/disney/brand-523241861",
+        "logo": "https://cdn.salla.sa/WlNGRn/n5KkXB43l95BzCjMOihHxtadhjhrMPpfvPIQuilH.png",
+        "banner": null,
+        "description": ""
+      }
+    ],
+    "title_font": "default",
+    "title_style": true,
+    "enable_edges": true,
+    "enable_border": true,
+    "text_Background": "#7ACBCB",
+    "brand_background": "#FCFFEC",
+    "title": "الماركات التجارية",
+    "subtitle": "استمتع بتجربة تسوق مع الماركات المفضلة لدى الأطفال والآباء."
+  },
+  "home.image-text-hero": {
+    "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
+    "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/p559715570",
+    "use_video": true,
+    "video_url": "https://cdn.lamsaweb.com/cdnAlwan/output.mp4",
+    "left_image": "https://cdn.lamsaweb.com/cdnAlwan/righimage.webp",
+    "right_image": "https://cdn.lamsaweb.com/cdnAlwan/real-wrighimage.webp"
+  },
+  "home.flash-offer": {
+    "ar": {
+      "url_text": "تسوق الآن"
+    },
+    "en": {
+      "url_text": ""
+    },
+    "key": "bc606f0c-cb80-49db-b356-cb83fd60ca55",
+    "title": "خصم 40% على دمية شخصية ديزني ستيتش مخملية متحركة",
+    "products": [
+      {
+        "id": 1423365810,
+        "name": "ديزني: دمية الملاك RealFX",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ديزني-دمية-الملاك-realfx/p1423365810",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>ديزني: دمية الملاك RealFX</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": "2026-11-03",
+        "discount_percentage": "33.333333333333%",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/HbuhvKNUgyvHDYrO30ZFe7dsXuni8MeUbGfh3roK.jpg",
+          "alt": "ديزني: دمية الملاك RealFX"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235581310,
+            "url": "https://cdn.salla.sa/WlNGRn/products/HbuhvKNUgyvHDYrO30ZFe7dsXuni8MeUbGfh3roK.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "ديزني: دمية الملاك RealFX",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 421039210,
+          "name": "ألعاب محشوة",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-محشوة/c421039210",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/MUJy6WqrFns3LflHuFPT2jeahjRmHba7BjStOLjf.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": true,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 100,
+        "price_as_float_for_payment": 100,
+        "currency_for_payment": "SAR",
+        "sale_end": "2026-11-03",
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      }
+    ],
+    "subtitle": "تسوق الآن مع خصم 40% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.",
+    "title_font": "default",
+    "title_color": "#ffa723",
+    "enable_border": true,
+    "product_image": "https://cdn.lamsaweb.com/cdnAlwan/product-image.webp",
+    "side_image_url": "https://cdn.lamsaweb.com/cdnAlwan/sideimage.png",
+    "background_color": "#fffdef",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": true,
+    "text_background_color": "#fff0fe",
+    "url_text": "تسوق الآن"
+  },
+  "home.large-category": {
+    "ar": {
+      "title": "إختر ما يحتاجه طفلك",
+      "subtitle": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل"
+    },
+    "key": "faebc639-5a8d-4b67-ba50-664bee5f5aaa",
+    "urls": [
+      {
+        "ar": {
+          "title": "حفز مخيلة طفلك"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/c1153616500",
+        "image": "https://cdn.salla.sa/form-builder/X0wdKpmcKGFmkL9WfUw5g1jJcSCXAQmmgdHmtmMM.png",
+        "background_color": "#C2FEFF",
+        "title": "حفز مخيلة طفلك"
+      },
+      {
+        "ar": {
+          "title": "مرح لا منتاهي"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/-/c1153616500",
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/larage-category1.webp",
+        "background_color": "#dfd5fb",
+        "title": "مرح لا منتاهي"
+      },
+      {
+        "ar": {
+          "title": "ألعاب تعليمية"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/offers",
+        "image": "https://cdn.salla.sa/form-builder/3odKZBgngTFv2FsQoszOwdeMOG2Zp2woVbSLkjym.png",
+        "background_color": "#ffc2f7",
+        "title": "ألعاب تعليمية"
+      }
+    ],
+    "title_font": "default",
+    "title_color": "#ffa723",
+    "title_style": true,
+    "enable_border": false,
+    "background_color": "#ffffff",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": false,
+    "title": "إختر ما يحتاجه طفلك",
+    "subtitle": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل"
+  },
+  "home.blogs-list": {
+    "ar": {
+      "title": "اخر التدوينات"
+    },
+    "en": {
+      "title": ""
+    },
+    "key": "ab7b038b-7cf6-477a-8317-e4fc4ff87e1e",
+    "blogs": [
+      {
+        "id": "-/a-779926008",
+        "title": "مستقبل الألعاب التعليمية في العالم العربي: من الفكرة إلى الابتكار",
+        "promotion_title": "",
+        "body": "<p>مع انتشار التكنولوجيا والوعي التربوي، يشهد العالم العربي طفرة في تطوير الألعاب التعليمية المحلية.</p><p> شركات عربية ناشئة بدأت بتصميم ألعاب ذكية <strong>تدمج اللغة العربية والثقافة المحلية</strong> في تجربة تعليمية حديثة.</p><p> فلم تعد الألعاب مقتصرة على الترفيه فقط، بل أصبحت وسيلة لتقوية اللغة، وتعليم العلوم، وتنمية مهارات البرمجة والمنطق.</p><p>كما تدعم الحكومات والمؤسسات التعليمية هذا التوجه، عبر إدخال الألعاب التفاعلية إلى المناهج، مما يُعزّز <strong>حب التعلم ويقلّل من التلقين التقليدي</strong>.</p><p> بهذا الاتجاه، نحن أمام جيل جديد من الأطفال العرب، يتعلم بطريقة ممتعة، ويفكر بطريقة مبدعة.</p>",
+        "summary": "مع انتشار التكنولوجيا والوعي التربوي، يشهد العالم العربي طفرة في تطوير الألعاب التعليمية المحلية. شركات عربية ناشئة بدأت...",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/cca4dfa8-f21f-46ac-a790-9a7ece36b8e8-1000x525.390625-9ABB7xcr69mOkRVkG0zsYflR8xuz2eBySoEaV1sH.png",
+          "alt": "مستقبل الألعاب التعليمية في العالم العربي: من الفكرة إلى الابتكار"
+        },
+        "thumbnail": "https://cdn.salla.sa/WlNGRn/b7baa634-4572-446d-8614-1294c428d626-500x262.6953125-9ABB7xcr69mOkRVkG0zsYflR8xuz2eBySoEaV1sH.png",
+        "has_image": true,
+        "created_at": {
+          "year": 2025,
+          "month": 10,
+          "day": 29,
+          "dayOfWeek": 3,
+          "dayOfYear": 302,
+          "hour": 20,
+          "minute": 10,
+          "second": 28,
+          "micro": 0,
+          "timestamp": 1761757828,
+          "formatted": "2025-10-29 20:10:28",
+          "timezone": "<object>"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/-/a-779926008",
+        "author": {
+          "name": "Demo Store",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/author/1855698035"
+        },
+        "tags": [],
+        "likes_count": 0,
+        "comments_count": 0
+      },
+      {
+        "id": "-/a-1553439487",
+        "title": "الألعاب التنموية: كيف نبني مهارات الحياة من الصغر؟",
+        "promotion_title": "",
+        "body": "<p>الألعاب التنموية لا تُعنى فقط بالمرح، بل تزرع في الطفل مهارات تدوم مدى الحياة.</p><p>من المكعبات وألعاب البناء إلى الألغاز والألعاب الحسية، تُسهم هذه التجارب في <strong>تنمية الإبداع، وتعزيز التوازن، وتطوير القدرات الحركية الدقيقة</strong>.</p><p>في العالم العربي، بدأت الأسر تُدرك أهمية هذه الألعاب في بناء شخصية الطفل، إذ تُساعده على <strong>اتخاذ القرار، وتنظيم أفكاره، وتطوير الاستقلالية</strong> منذ سنواته الأولى.</p><p>كما أن المشاركة العائلية أثناء اللعب تُقوّي الروابط الاجتماعية وتخلق ذكريات جميلة تُعزّز الثقة بالنفس.</p><p>باختصار، الألعاب التنموية ليست مجرد تسلية، بل هي <strong>أساس في بناء جيل قادر على الإبداع والتفكير الحر</strong>.</p>",
+        "summary": "الألعاب التنموية لا تُعنى فقط بالمرح، بل تزرع في الطفل مهارات تدوم مدى الحياة.من المكعبات وألعاب البناء إلى الألغاز والأ...",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/31a27e64-0372-4d4d-90e7-df9eba75c850-1000x571.25-oBhvWCjFtMO6mHyUAAXqgu21pRy2NGu1fgs3fX1z.png",
+          "alt": "الألعاب التنموية: كيف نبني مهارات الحياة من الصغر؟"
+        },
+        "thumbnail": "https://cdn.salla.sa/WlNGRn/19e81746-e2a2-471d-8a1e-816ecb32ef3b-500x285.625-oBhvWCjFtMO6mHyUAAXqgu21pRy2NGu1fgs3fX1z.png",
+        "has_image": true,
+        "created_at": {
+          "year": 2025,
+          "month": 10,
+          "day": 29,
+          "dayOfWeek": 3,
+          "dayOfYear": 302,
+          "hour": 20,
+          "minute": 9,
+          "second": 41,
+          "micro": 0,
+          "timestamp": 1761757781,
+          "formatted": "2025-10-29 20:09:41",
+          "timezone": "<object>"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/-/a-1553439487",
+        "author": {
+          "name": "Demo Store",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/author/1855698035"
+        },
+        "tags": [],
+        "likes_count": 0,
+        "comments_count": 0
+      },
+      {
+        "id": "-/a-46758910",
+        "title": "ثورة في أسلوب التعلم عند الأطفال العرب",
+        "promotion_title": "",
+        "body": "<p>لم يعد التعلم يعتمد فقط على الكتب والأقلام، بل أصبح <strong>اللعب وسيلة فعالة لبناء العقول</strong> وتنمية المهارات. في العالم العربي، تزايد الاهتمام بالألعاب التعليمية التي تجمع بين المتعة والفائدة، وتحوّل وقت الترفيه إلى وقت اكتساب معرفة.</p><p>من ألعاب الحروف والأرقام إلى الأجهزة التفاعلية التي تُنمّي التفكير المنطقي، صارت هذه الأدوات جزءًا أساسيًا في تطور الطفل العقلي والعاطفي.</p><p> يُلاحظ أن الأطفال الذين يتعلمون من خلال اللعب يمتلكون <strong>قدرات أفضل في التركيز، وحل المشكلات، والتعاون الجماعي</strong>.</p><p>في النهاية، التعليم باللعب ليس رفاهية، بل هو <strong>استثمار في مستقبل أكثر ذكاءً وابتكارًا لأجيالنا القادمة</strong>.</p>",
+        "summary": "لم يعد التعلم يعتمد فقط على الكتب والأقلام، بل أصبح اللعب وسيلة فعالة لبناء العقول وتنمية المهارات. في العالم العربي، تز...",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/6dffa19a-8aaf-4ebc-ad64-28caa817a164-1000x1000-4alIqHZuzbcSy3UGmWDIX1qkE8wxu9fryeM0E7mm.jpg",
+          "alt": "ثورة في أسلوب التعلم عند الأطفال العرب"
+        },
+        "thumbnail": "https://cdn.salla.sa/WlNGRn/a67a2dd3-2b60-4e08-9b5d-49bc08423a24-500x500-4alIqHZuzbcSy3UGmWDIX1qkE8wxu9fryeM0E7mm.jpg",
+        "has_image": true,
+        "created_at": {
+          "year": 2025,
+          "month": 10,
+          "day": 29,
+          "dayOfWeek": 3,
+          "dayOfYear": 302,
+          "hour": 20,
+          "minute": 6,
+          "second": 11,
+          "micro": 0,
+          "timestamp": 1761757571,
+          "formatted": "2025-10-29 20:06:11",
+          "timezone": "<object>"
+        },
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/-/a-46758910",
+        "author": {
+          "name": "Demo Store",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/blog/author/1855698035"
+        },
+        "tags": [],
+        "likes_count": 0,
+        "comments_count": 0
+      }
+    ],
+    "title_font": "default",
+    "style_title": true,
+    "enable_border": true,
+    "background_color": "#ffffff",
+    "background_image": "",
+    "enable_backgroud": true,
+    "title": "اخر التدوينات"
+  },
+  "home.faq-compnent": {
+    "ar": {
+      "title": "الأسئلة الاكثر شيوعاً"
+    },
+    "en": {
+      "title": ""
+    },
+    "faq": [
+      {
+        "ar": {
+          "answer": "نعم لديك الحق في الإسترجاع",
+          "question": "هل لدي الحق  الإسترجاع"
+        },
+        "answer": "نعم لديك الحق في الإسترجاع",
+        "question": "هل لدي الحق  الإسترجاع"
+      },
+      {
+        "ar": {
+          "answer": "وفر عدة خيارات مريحة للدفع، مثل:  الدفع الإلكتروني عبر بطاقات الائتمان والخصم  المحافظ الرقمية (مثل Apple Pay / STC Pay)  الدفع عند الاستلام (في بعض المناطق)",
+          "question": "ما هي خيارات الدفع المتاحة؟"
+        },
+        "answer": "وفر عدة خيارات مريحة للدفع، مثل:  الدفع الإلكتروني عبر بطاقات الائتمان والخصم  المحافظ الرقمية (مثل Apple Pay / STC Pay)  الدفع عند الاستلام (في بعض المناطق)",
+        "question": "ما هي خيارات الدفع المتاحة؟"
+      },
+      {
+        "ar": {
+          "answer": "يتم تجهيز الطلب خلال 24-48 ساعة، ومدة التوصيل تختلف حسب المدينة، لكنها عادة بين 2 إلى 5 أيام عمل داخل المملكة (أو حسب الدولة إن كنت تبيع دولياً).",
+          "question": "كم يستغرق توصيل الطلب؟"
+        },
+        "answer": "يتم تجهيز الطلب خلال 24-48 ساعة، ومدة التوصيل تختلف حسب المدينة، لكنها عادة بين 2 إلى 5 أيام عمل داخل المملكة (أو حسب الدولة إن كنت تبيع دولياً).",
+        "question": "كم يستغرق توصيل الطلب؟"
+      },
+      {
+        "ar": {
+          "answer": "نعم، يمكنك طلب الاسترجاع أو الاستبدال خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية وغير مستخدم. لمزيد من التفاصيل، راجع سياسة الاسترجاع.",
+          "question": "هل يمكن استرجاع أو استبدال المنتج؟"
+        },
+        "answer": "نعم، يمكنك طلب الاسترجاع أو الاستبدال خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية وغير مستخدم. لمزيد من التفاصيل، راجع سياسة الاسترجاع.",
+        "question": "هل يمكن استرجاع أو استبدال المنتج؟"
+      }
+    ],
+    "key": "6d82d61c-d056-499e-a563-e5da41f3ec5a",
+    "title_font": "default",
+    "title_style": true,
+    "enable_borders": false,
+    "background_color": "",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": true,
+    "title": "الأسئلة الاكثر شيوعاً"
+  },
+  "home.map": {
+    "ar": {
+      "title": "نتشرف بزيارتكم"
+    },
+    "en": {
+      "title": ""
+    },
+    "key": "5ba588b2-3f82-4053-82f2-bab416ff40c9",
+    "locations": [
+      {
+        "ar": {
+          "city": "خميس مشيط",
+          "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+          "phone": "0536576138",
+          "address": "طريق الملك خالد - حي الرصراص - بالقرب من بنك الراجحي"
+        },
+        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.5129241906561!2d42.72008036883277!3d18.275415764707816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb599b7ef02db7%3A0xeeb2499667bbdb12!2sKM%20Boulevard!5e0!3m2!1sen!2seg!4v1763228879825!5m2!1sen!2seg",
+        "city": "خميس مشيط",
+        "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+        "phone": "0536576138",
+        "address": "طريق الملك خالد - حي الرصراص - بالقرب من بنك الراجحي"
+      },
+      {
+        "ar": {
+          "city": "الرياض",
+          "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+          "phone": "0536576138",
+          "address": "طريق الملك فهد - حي الياسمين - بالقرب من البنك الاهلي"
+        },
+        "en": {
+          "city": "",
+          "hours": "",
+          "phone": "",
+          "address": ""
+        },
+        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
+        "city": "الرياض",
+        "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+        "phone": "0536576138",
+        "address": "طريق الملك فهد - حي الياسمين - بالقرب من البنك الاهلي"
+      }
+    ],
+    "title_font": "default",
+    "style_title": true,
+    "title": "نتشرف بزيارتكم"
+  },
+  "home.custom-testimonials": {
+    "key": "541cc423-90c7-4230-8a33-a0342cfde4ad",
+    "items": [
+      {
+        "ar": {
+          "text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ️"
+        },
+        "name": "ندى الحسيني",
+        "stars": 5,
+        "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
+        "text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ️"
+      },
+      {
+        "ar": {
+          "text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه"
+        },
+        "name": "خالد الأحمد",
+        "stars": 5,
+        "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+        "text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه"
+      },
+      {
+        "ar": {
+          "text": "رهيبين يفكون أزمة."
+        },
+        "name": "خالد المسعودي",
+        "stars": 5,
+        "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+        "text": "رهيبين يفكون أزمة."
+      },
+      {
+        "ar": {
+          "text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ️"
+        },
+        "name": "عبدالعزيز اليامي",
+        "stars": 5,
+        "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+        "text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ️"
+      }
+    ]
+  },
+  "home.category-ads": {
+    "key": "99e9351a-00ca-426d-8429-5c8fb076d98c",
+    "category_ads": [
+      {
+        "ar": {
+          "title": "أناقة   -  حداثة  -  عصرية"
+        },
+        "en": {
+          "title": ""
+        },
+        "image": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
+        "category": [
+          421039210
+        ],
+        "use_video": true,
+        "video_url": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
+        "title_font": [
+          "default"
+        ],
+        "title_color": "#60a5fa",
+        "title": "أناقة   -  حداثة  -  عصرية"
+      }
+    ]
+  },
+  "home.category-products": {
+    "ar": {
+      "title": "عروض الدمى المحشوة"
+    },
+    "en": {
+      "title": ""
+    },
+    "key": "59a5fc22-a380-4ca5-b13d-55c4235b024a",
+    "is_video": false,
+    "products": [
+      {
+        "id": 94600639,
+        "name": "العاب مكعبات اليدوية للاطفال من سن 3 الى 8 سنوات",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/العاب-مكعبات-اليدوية-للاطفال-من-سن-3-الى-8-سنوات/p94600639",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>العاب الرياضيات اليدوية للاطفال من سن 3 الى 8 سنوات- مكعبات ربط لمهارات العد في رياض الاطفال والابتدائية انشطة تعليمية ممتعة للمدرسة والفصول الدراسية والمنزل مجموعة 100 قطعة 10 الوان بلاستيك</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/e2af2490-834f-46e2-800f-028ced3a7f27-426.5x500-oZuMwcwtGzj4Ywg86g6wCGGX5Wz7PxC4QQhhvArh.jpg",
+          "alt": "العاب مكعبات اليدوية للاطفال من سن 3 الى 8 سنوات"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235585566,
+            "url": "https://cdn.salla.sa/WlNGRn/2480a421-2d1d-4aa8-98ae-47947df8db7d-853x1000-oZuMwcwtGzj4Ywg86g6wCGGX5Wz7PxC4QQhhvArh.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "العاب مكعبات اليدوية للاطفال من سن 3 الى 8 سنوات",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 561041789,
+          "name": "الدمى وإكسسواراتها",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/الدمى-وإكسسواراتها/c561041789",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/wHp26ihskXORpg3Hxgsuq2G8APtofTItfgmWwniH.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 65,
+        "price_as_float_for_payment": 65,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 1995117139,
+        "name": "مجموعة لعب شنطة السفر مع اكسسوارات لدمية فتاة",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/مجموعة-لعب-شنطة-السفر-مع-اكسسوارات-لدمية-فتاة/p1995117139",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>مجموعة لعب شنطة السفر مع ملابس واكسسوارات لدمية فتاة امريكية مقاس 18 انش من زنتوي، تتضمن النظارات الشمسية، الكاميرا، الكمبيوتر، الجوال، الايباد، ووسادة السفر، الخ، مقاس 18 انش، بلاستيك</p>",
+        "quantity": 299,
+        "max_quantity": 299,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/b5yn54wa8l7guy7AQFb6MJXZUZDifdhsxSyl1Rq1.jpg",
+          "alt": "مجموعة لعب شنطة السفر مع اكسسوارات لدمية فتاة"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235585312,
+            "url": "https://cdn.salla.sa/WlNGRn/products/b5yn54wa8l7guy7AQFb6MJXZUZDifdhsxSyl1Rq1.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "مجموعة لعب شنطة السفر مع اكسسوارات لدمية فتاة",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 561041789,
+          "name": "الدمى وإكسسواراتها",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/الدمى-وإكسسواراتها/c561041789",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/wHp26ihskXORpg3Hxgsuq2G8APtofTItfgmWwniH.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 65,
+        "price_as_float_for_payment": 65,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 1287773560,
+        "name": "ميرا دمية عصرية مع اكسسوارات",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ميرا-دمية-عصرية-مع-اكسسوارات/p1287773560",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>ميرا دمية عصرية مع اكسسوارات - دمية قابلة لاتخاذ وضعيات مقاس 11.5 انش مع فساتين اضافية وحذاء ومحفظة - مجموعة العاب عصرية مثالية للبنات</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/iKj63ntDEihZraKnVgEk8Jn8NSSgx1ML8Go8dXPM.jpg",
+          "alt": "ميرا دمية عصرية مع اكسسوارات"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235585204,
+            "url": "https://cdn.salla.sa/WlNGRn/products/iKj63ntDEihZraKnVgEk8Jn8NSSgx1ML8Go8dXPM.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "ميرا دمية عصرية مع اكسسوارات",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 561041789,
+          "name": "الدمى وإكسسواراتها",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/الدمى-وإكسسواراتها/c561041789",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/wHp26ihskXORpg3Hxgsuq2G8APtofTItfgmWwniH.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 80,
+        "price_as_float_for_payment": 80,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 1256896278,
+        "name": "مكعبات بناء، 168 قطعة",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/مكعبات-بناء،-168-قطعة/p1256896278",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>مكعبات بناء، 168 قطعة متنوعة من مكعبات بناء كرة منزلقة مكعبات صغيرة من الجسيمات لعبة تعليمية يدوية هدية عيد ميلاد للاطفال</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/9yy86BbAVIeooBXZCaXU45j7EhedvfhnM5tPAypy.jpg",
+          "alt": "مكعبات بناء، 168 قطعة"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235584967,
+            "url": "https://cdn.salla.sa/WlNGRn/products/9yy86BbAVIeooBXZCaXU45j7EhedvfhnM5tPAypy.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "مكعبات بناء، 168 قطعة",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 520568440,
+          "name": "ألعاب هوايات التجميع",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-هوايات-التجميع/c520568440",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/fcHKOhza8DA2MmW5wIyI4JwfMTsYatNYliq3Uawj.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 80,
+        "price_as_float_for_payment": 80,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 1599322117,
+        "name": "مجموعة مكعبات بناء مغناطيسية للمبتدئين",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/مجموعة-مكعبات-بناء-مغناطيسية-للمبتدئين/p1599322117",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>مجموعة مكعبات بناء مغناطيسية للمبتدئين من جيميك، ألعاب مغناطيسية للأطفال، ألعاب تعليمية معتمدة من العلوم والتكنولوجيا والهندسة والرياضيات، مكعبات تكديس أحجية مغناطيسية للأولاد والبنات، 55 قطعة</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/teiAXclq7D1jDgrCI8lAcD41BkwtecScrXgf5RgY.jpg",
+          "alt": "مجموعة مكعبات بناء مغناطيسية للمبتدئين"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235584918,
+            "url": "https://cdn.salla.sa/WlNGRn/products/teiAXclq7D1jDgrCI8lAcD41BkwtecScrXgf5RgY.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "مجموعة مكعبات بناء مغناطيسية للمبتدئين",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 1153616500,
+          "name": "ألعاب البناء والتشييد",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-البناء-والتشييد/c1153616500",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/mOvCE5eXN4JI2wtsVWFYgyhMTugdt7gAjbUDcFQs.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 90,
+        "price_as_float_for_payment": 90,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 1393295326,
+        "name": "مشاية اطفال",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/مشاية-اطفال/p1393295326",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>مشاية اطفال من تزويق، مشاية دائرية بارتفاع قابل للتعديل ومضادة للانقلاب، حزام مطور مضاد للصدمات ومقبض دفع قابل للازالة وصينية طعام، مناسبة لعمر 6-18 شهر</p>",
+        "quantity": 300,
+        "max_quantity": 300,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/ltRxc5XFYEJLhWJlCeWu0Vdyp864A0KCemwxMCGR.jpg",
+          "alt": "مشاية اطفال"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235584701,
+            "url": "https://cdn.salla.sa/WlNGRn/products/ltRxc5XFYEJLhWJlCeWu0Vdyp864A0KCemwxMCGR.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "مشاية اطفال",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 380627317,
+          "name": "ألعاب الأطفال والرضع",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-الأطفال-والرضع/c380627317",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/LCrrsZwi6SR2iLf0qmmPRxSFo5dtzDamLdmlRIDf.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 80,
+        "price_as_float_for_payment": 80,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      },
+      {
+        "id": 403701997,
+        "name": "لعبة قفز هابي جانجل",
+        "sku": null,
+        "mpn": null,
+        "subtitle": null,
+        "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/لعبة-قفز-هابي-جانجل/p403701997",
+        "promotion_title": null,
+        "status": "sale",
+        "type": "product",
+        "description": "<p>لعبة قفز هابي جانجل جومبيرو من بيبي لوف، تتضمن البطاريات: 33-63568</p>",
+        "quantity": 600,
+        "max_quantity": 500,
+        "sold_quantity": null,
+        "price": [],
+        "regular_price": [],
+        "sale_price": [],
+        "starting_price": null,
+        "discount_ends": null,
+        "discount_percentage": "",
+        "image": {
+          "url": "https://cdn.salla.sa/WlNGRn/products/ewrpmX5JHE2HiCwYG43fR6tA5PwpVQ91APKJhd4Y.jpg",
+          "alt": "لعبة قفز هابي جانجل"
+        },
+        "calories": null,
+        "weight": null,
+        "base_currency_price": [],
+        "currency": "SAR",
+        "donation": null,
+        "images": [
+          {
+            "id": 235584586,
+            "url": "https://cdn.salla.sa/WlNGRn/products/ewrpmX5JHE2HiCwYG43fR6tA5PwpVQ91APKJhd4Y.jpg",
+            "main": false,
+            "three_d_image_url": "",
+            "alt": "لعبة قفز هابي جانجل",
+            "video_url": "",
+            "type": "image",
+            "sort": 1
+          }
+        ],
+        "rating": null,
+        "options": [],
+        "tags": [],
+        "brand": null,
+        "notify_availability": null,
+        "category": {
+          "id": 380627317,
+          "name": "ألعاب الأطفال والرضع",
+          "url": "https://salla.design/ar/dev-jpgmogfsmazs9iwg/ألعاب-الأطفال-والرضع/c380627317",
+          "image": "https://cdn.salla.sa/WlNGRn/categories/LCrrsZwi6SR2iLf0qmmPRxSFo5dtzDamLdmlRIDf.png"
+        },
+        "bundle": null,
+        "advance_bundle_price": {
+          "amount": "0",
+          "currency": "SAR"
+        },
+        "can_add_note": false,
+        "can_donate": false,
+        "can_upload_file": false,
+        "can_show_sold": false,
+        "can_show_remained_quantity": false,
+        "has_3d_image": false,
+        "has_custom_form": false,
+        "has_options": false,
+        "has_read_more": false,
+        "has_size_guide": false,
+        "has_metadata": false,
+        "is_available": true,
+        "is_hidden_quantity": false,
+        "is_in_wishlist": false,
+        "is_on_sale": false,
+        "is_out_of_stock": false,
+        "is_require_shipping": false,
+        "is_taxable": false,
+        "is_giftable": false,
+        "can_quick_buy": true,
+        "has_bundle_products": false,
+        "is_donation": false,
+        "is_booking": false,
+        "brand_id": null,
+        "target_donating_enable": false,
+        "price_as_float": 66,
+        "price_as_float_for_payment": 66,
+        "currency_for_payment": "SAR",
+        "sale_end": null,
+        "customized_sku_quantity": null,
+        "auto_include_tax": null,
+        "with_tax": true,
+        "enabled_image_upload": null,
+        "max_quantity_per_order": null,
+        "source": null,
+        "available": null,
+        "notes": null,
+        "attachments": null,
+        "add_to_cart_label": "إضافة للسلة",
+        "show_availability": false,
+        "unlimited_quantity": false,
+        "preorder": null,
+        "has_preorder_campaign": false,
+        "digital_files_settings": null
+      }
+    ],
+    "video_url": "https://cdn.lamsaweb.com/cdnAlwan/7351796-uhd_2160_4096_25fps%20(1)%20(1).mp4",
+    "background": "https://cdn.lamsaweb.com/cdnAlwan/category-product-image.jpg",
+    "title_font": "default",
+    "title_style": false,
+    "enable_border": false,
+    "background_color": "#E8F9FD",
+    "background_image": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+    "enable_backgroud": false,
+    "product_backgroud_color": "#91edff",
+    "title": "عروض الدمى المحشوة"
+  }
+}

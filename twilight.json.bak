@@ -1591,7 +1591,7 @@
             "title": "روابط أقسام - ألوان",
             "icon": "sicon-store",
             "path": "home.category-links",
-            "image": "https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
+            "image":"https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
             "fields": [
                 {
                     "type": "static",
@@ -1689,7 +1689,7 @@
                     "multichoice": false,
                     "searchable": true,
                     "required": false,
-                    "value": "BackToSchool"
+                    "value": "default"
                 },
                 {
                     "id": "enable_backgroud",
@@ -1699,7 +1699,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -1710,7 +1710,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -2007,25 +2007,12 @@
                                 "center"
                             ],
                             "slides_ads.title_font": [
-                                "CooperArabic"
-                            ],
-                            "slides_ads.title_color": "#0ea7cd",
-                            "slides_ads.title": "أكبر تشكيلة لألعاب الأطفال",
-                            "slides_ads.description": "امنح طفلك لحظات لا تُنسى مع دمى محشوة ناعمة وألعاب بناء تنمي الإبداع وسيارات مثيرة تحفّز الخيال. نوفر لك ألعابًا آمنة بجودة عالية وبأسعار تنافسية تناسب جميع الأعمار.",
-                            "slides_ads.button_title": "اكتشف المزيد"
-                        },
-                        {
-                            "slides_ads.image": "https://cdn.files.salla.network/homepage/771160785/18c9cafe-37f9-4f9d-8dc3-cfd020055cae_1440x720.webp",
-                            "slides_ads.postion": [
-                                "center"
-                            ],
-                            "slides_ads.title_font": [
                                 "default"
                             ],
-                            "slides_ads.title_color": "#fbb05b",
-                            "slides_ads.title": "هدايا عيد الميلاد المثالية",
-                            "slides_ads.description": "نوفر لك مزيجًا مثاليًا من الألعاب المحشوة المريحة وأطقم البناء الممتعة وسيارات الأطفال التي تعزز الحركة والانطلاق.",
-                            "slides_ads.button_title": ""
+                            "slides_ads.title_color": "#33ff57",
+                            "slides_ads.title": "عروض حصرية 1765133425704",
+                            "slides_ads.description": "اكتشف أفضل العروض والخصومات 1765133430991",
+                            "slides_ads.button_title": "اكتشف المزيد 1765133424735"
                         }
                     ],
                     "minLength": 1,
@@ -2136,7 +2123,7 @@
                     "label": "شكل العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "value": true,
+                    "value": false,
                     "public": true
                 },
                 {
@@ -2146,7 +2133,7 @@
                     "label": "تمكين الخلفية",
                     "description": null,
                     "labelHTML": null,
-                    "value": true,
+                    "value": false,
                     "icon": "sicon-toggle-off",
                     "public": true,
                     "required": false
@@ -2158,7 +2145,7 @@
                     "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
-                    "value": true,
+                    "value": false,
                     "icon": "sicon-toggle-off",
                     "public": true,
                     "required": false
@@ -2447,7 +2434,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -2621,25 +2608,25 @@
                             "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
                             "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
                             "theme_features.icon_color": "#C971C2",
-                            "theme_features.is_animated": true,
+                            "theme_features.is_animated": false,
                             "theme_features.background_color": "#EBFFFF",
                             "theme_features.text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
                             "theme_features.title": "خصومات حصرية للعضوية المميزة"
                         },
                         {
-                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/valentines-day.json",
+                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
                             "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
                             "theme_features.icon_color": "#dbffdc",
-                            "theme_features.is_animated": true,
+                            "theme_features.is_animated": false,
                             "theme_features.background_color": "#d1d9ff",
                             "theme_features.text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
                             "theme_features.title": "توصيل فوري الالعاب"
                         },
                         {
-                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/hot-sale.json",
+                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
                             "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
                             "theme_features.icon_color": "#8ff2ff",
-                            "theme_features.is_animated": true,
+                            "theme_features.is_animated": false,
                             "theme_features.background_color": "#f9ffeb",
                             "theme_features.text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
                             "theme_features.title": "منصة مراجعات و تقييمات تفاعلية"
@@ -2692,7 +2679,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -3362,7 +3349,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
