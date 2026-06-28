@@ -1498,28 +1498,28 @@
                     "icon": "sicon-list-add",
                     "value": [
                         {
-                            "name": "ندى الحسيني",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
-                            "text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ️"
+                            "items.name": "ندى الحسيني",
+                            "items.stars": 5,
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
+                            "items.text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ️"
                         },
                         {
-                            "name": "خالد الأحمد",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه"
+                            "items.name": "خالد الأحمد",
+                            "items.stars": 5,
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه"
                         },
                         {
-                            "name": "خالد المسعودي",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "رهيبين يفكون أزمة."
+                            "items.name": "خالد المسعودي",
+                            "items.stars": 5,
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.text": "رهيبين يفكون أزمة."
                         },
                         {
-                            "name": "عبدالعزيز اليامي",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ️"
+                            "items.name": "عبدالعزيز اليامي",
+                            "items.stars": 5,
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ️"
                         }
                     ],
                     "fields": [
@@ -2001,17 +2001,17 @@
                     ],
                     "value": [
                         {
-                            "image": "https://cdn.files.salla.network/homepage/771160785/f7a01444-8338-4b80-b8ac-0cd564b14da9.webp",
-                            "postion": [
+                            "slides_ads.image": "https://cdn.files.salla.network/homepage/771160785/f7a01444-8338-4b80-b8ac-0cd564b14da9.webp",
+                            "slides_ads.postion": [
                                 "center"
                             ],
-                            "title_font": [
+                            "slides_ads.title_font": [
                                 "default"
                             ],
-                            "title_color": "#33ff57",
-                            "title": "عروض حصرية 1765133425704",
-                            "description": "اكتشف أفضل العروض والخصومات 1765133430991",
-                            "button_title": "اكتشف المزيد 1765133424735"
+                            "slides_ads.title_color": "#33ff57",
+                            "slides_ads.title": "عروض حصرية 1765133425704",
+                            "slides_ads.description": "اكتشف أفضل العروض والخصومات 1765133430991",
+                            "slides_ads.button_title": "اكتشف المزيد 1765133424735"
                         }
                     ],
                     "minLength": 1,
@@ -2287,24 +2287,24 @@
                     ],
                     "value": [
                         {
-                            "color": "#57e6ff",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.webp",
-                            "title": "من 0 الى 1 سنوات"
+                            "age.color": "#57e6ff",
+                            "age.image": "https://cdn.lamsaweb.com/cdnAlwan/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.webp",
+                            "age.title": "من 0 الى 1 سنوات"
                         },
                         {
-                            "color": "#ffa8db",
-                            "image": "https://cdn.salla.sa/form-builder/BnL6cqa0yn55BwKxnpJhEdOjUn8dsRUXd3kDVPXm.png",
-                            "title": "من 3 الى 4 سنوات"
+                            "age.color": "#ffa8db",
+                            "age.image": "https://cdn.salla.sa/form-builder/BnL6cqa0yn55BwKxnpJhEdOjUn8dsRUXd3kDVPXm.png",
+                            "age.title": "من 3 الى 4 سنوات"
                         },
                         {
-                            "color": "#adffd1",
-                            "image": "https://cdn.salla.sa/form-builder/uIGossl1O09FI4znDS7TeH2vt2iRvT4i29z01B6N.png",
-                            "title": "من 4 الى 6 سنوات"
+                            "age.color": "#adffd1",
+                            "age.image": "https://cdn.salla.sa/form-builder/uIGossl1O09FI4znDS7TeH2vt2iRvT4i29z01B6N.png",
+                            "age.title": "من 4 الى 6 سنوات"
                         },
                         {
-                            "color": "#e3d1ff",
-                            "image": "https://cdn.salla.sa/form-builder/1KuEaDbL8Kdcrc39VJwSVdDJUV8vCjm2waEwXvbU.png",
-                            "title": "من 6 الى 10 سنوات"
+                            "age.color": "#e3d1ff",
+                            "age.image": "https://cdn.salla.sa/form-builder/1KuEaDbL8Kdcrc39VJwSVdDJUV8vCjm2waEwXvbU.png",
+                            "age.title": "من 6 الى 10 سنوات"
                         }
                     ],
                     "minLength": 1,
@@ -2604,31 +2604,31 @@
                     ],
                     "value": [
                         {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#C971C2",
-                            "is_animated": false,
-                            "background_color": "#EBFFFF",
-                            "text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
-                            "title": "خصومات حصرية للعضوية المميزة"
+                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
+                            "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+                            "theme_features.icon_color": "#C971C2",
+                            "theme_features.is_animated": false,
+                            "theme_features.background_color": "#EBFFFF",
+                            "theme_features.text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
+                            "theme_features.title": "خصومات حصرية للعضوية المميزة"
                         },
                         {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#dbffdc",
-                            "is_animated": false,
-                            "background_color": "#d1d9ff",
-                            "text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
-                            "title": "توصيل فوري الالعاب"
+                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
+                            "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+                            "theme_features.icon_color": "#dbffdc",
+                            "theme_features.is_animated": false,
+                            "theme_features.background_color": "#d1d9ff",
+                            "theme_features.text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
+                            "theme_features.title": "توصيل فوري الالعاب"
                         },
                         {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#8ff2ff",
-                            "is_animated": false,
-                            "background_color": "#f9ffeb",
-                            "text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
-                            "title": "منصة مراجعات و تقييمات تفاعلية"
+                            "theme_features.url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
+                            "theme_features.image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
+                            "theme_features.icon_color": "#8ff2ff",
+                            "theme_features.is_animated": false,
+                            "theme_features.background_color": "#f9ffeb",
+                            "theme_features.text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
+                            "theme_features.title": "منصة مراجعات و تقييمات تفاعلية"
                         }
                     ],
                     "minLength": 1,
@@ -3579,19 +3579,19 @@
                     ],
                     "value": [
                         {
-                            "image": "https://cdn.salla.sa/form-builder/X0wdKpmcKGFmkL9WfUw5g1jJcSCXAQmmgdHmtmMM.png",
-                            "background_color": "#C2FEFF",
-                            "title": "حفز مخيلة طفلك"
+                            "urls.image": "https://cdn.salla.sa/form-builder/X0wdKpmcKGFmkL9WfUw5g1jJcSCXAQmmgdHmtmMM.png",
+                            "urls.background_color": "#C2FEFF",
+                            "urls.title": "حفز مخيلة طفلك"
                         },
                         {
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/larage-category1.webp",
-                            "background_color": "#dfd5fb",
-                            "title": "مرح لا منتاهي"
+                            "urls.image": "https://cdn.lamsaweb.com/cdnAlwan/larage-category1.webp",
+                            "urls.background_color": "#dfd5fb",
+                            "urls.title": "مرح لا منتاهي"
                         },
                         {
-                            "image": "https://cdn.salla.sa/form-builder/3odKZBgngTFv2FsQoszOwdeMOG2Zp2woVbSLkjym.png",
-                            "background_color": "#ffc2f7",
-                            "title": "ألعاب تعليمية"
+                            "urls.image": "https://cdn.salla.sa/form-builder/3odKZBgngTFv2FsQoszOwdeMOG2Zp2woVbSLkjym.png",
+                            "urls.background_color": "#ffc2f7",
+                            "urls.title": "ألعاب تعليمية"
                         }
                     ],
                     "minLength": 1,
@@ -3955,20 +3955,20 @@
                     ],
                     "value": [
                         {
-                            "answer": "نعم لديك الحق في الإسترجاع",
-                            "question": "هل لدي الحق  الإسترجاع"
+                            "faq.answer": "نعم لديك الحق في الإسترجاع",
+                            "faq.question": "هل لدي الحق  الإسترجاع"
                         },
                         {
-                            "answer": "وفر عدة خيارات مريحة للدفع، مثل:  الدفع الإلكتروني عبر بطاقات الائتمان والخصم  المحافظ الرقمية (مثل Apple Pay / STC Pay)  الدفع عند الاستلام (في بعض المناطق)",
-                            "question": "ما هي خيارات الدفع المتاحة؟"
+                            "faq.answer": "وفر عدة خيارات مريحة للدفع، مثل:  الدفع الإلكتروني عبر بطاقات الائتمان والخصم  المحافظ الرقمية (مثل Apple Pay / STC Pay)  الدفع عند الاستلام (في بعض المناطق)",
+                            "faq.question": "ما هي خيارات الدفع المتاحة؟"
                         },
                         {
-                            "answer": "يتم تجهيز الطلب خلال 24-48 ساعة، ومدة التوصيل تختلف حسب المدينة، لكنها عادة بين 2 إلى 5 أيام عمل داخل المملكة (أو حسب الدولة إن كنت تبيع دولياً).",
-                            "question": "كم يستغرق توصيل الطلب؟"
+                            "faq.answer": "يتم تجهيز الطلب خلال 24-48 ساعة، ومدة التوصيل تختلف حسب المدينة، لكنها عادة بين 2 إلى 5 أيام عمل داخل المملكة (أو حسب الدولة إن كنت تبيع دولياً).",
+                            "faq.question": "كم يستغرق توصيل الطلب؟"
                         },
                         {
-                            "answer": "نعم، يمكنك طلب الاسترجاع أو الاستبدال خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية وغير مستخدم. لمزيد من التفاصيل، راجع سياسة الاسترجاع.",
-                            "question": "هل يمكن استرجاع أو استبدال المنتج؟"
+                            "faq.answer": "نعم، يمكنك طلب الاسترجاع أو الاستبدال خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية وغير مستخدم. لمزيد من التفاصيل، راجع سياسة الاسترجاع.",
+                            "faq.question": "هل يمكن استرجاع أو استبدال المنتج؟"
                         }
                     ],
                     "minLength": 1,
@@ -4129,18 +4129,18 @@
                     ],
                     "value": [
                         {
-                            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.5129241906561!2d42.72008036883277!3d18.275415764707816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb599b7ef02db7%3A0xeeb2499667bbdb12!2sKM%20Boulevard!5e0!3m2!1sen!2seg!4v1763228879825!5m2!1sen!2seg",
-                            "city": "خميس مشيط",
-                            "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "phone": "0536576138",
-                            "address": "طريق الملك خالد - حي الرصراص - بالقرب من بنك الراجحي"
+                            "locations.map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.5129241906561!2d42.72008036883277!3d18.275415764707816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb599b7ef02db7%3A0xeeb2499667bbdb12!2sKM%20Boulevard!5e0!3m2!1sen!2seg!4v1763228879825!5m2!1sen!2seg",
+                            "locations.city": "خميس مشيط",
+                            "locations.hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+                            "locations.phone": "0536576138",
+                            "locations.address": "طريق الملك خالد - حي الرصراص - بالقرب من بنك الراجحي"
                         },
                         {
-                            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
-                            "city": "الرياض",
-                            "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "phone": "0536576138",
-                            "address": "طريق الملك فهد - حي الياسمين - بالقرب من البنك الاهلي"
+                            "locations.map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
+                            "locations.city": "الرياض",
+                            "locations.hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
+                            "locations.phone": "0536576138",
+                            "locations.address": "طريق الملك فهد - حي الياسمين - بالقرب من البنك الاهلي"
                         }
                     ],
                     "minLength": 1,
@@ -4314,14 +4314,14 @@
                     ],
                     "value": [
                         {
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
-                            "use_video": true,
-                            "video_url": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
-                            "title_font": [
+                            "category_ads.image": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
+                            "category_ads.use_video": true,
+                            "category_ads.video_url": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
+                            "category_ads.title_font": [
                                 "default"
                             ],
-                            "title_color": "#60a5fa",
-                            "title": "أناقة   -  حداثة  -  عصرية"
+                            "category_ads.title_color": "#60a5fa",
+                            "category_ads.title": "أناقة   -  حداثة  -  عصرية"
                         }
                     ],
                     "minLength": 1,

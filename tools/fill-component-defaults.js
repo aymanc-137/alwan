@@ -75,8 +75,10 @@ function cleanCollection(fieldDef, items) {
       if (sub.type === 'static') return;   // display-only
       const v = item[k];
       if (shouldStrip(sub, v)) return;     // strip entity sub-fields
-      if (sub.format === 'collection') { out[k] = cleanCollection(sub, v); return; }
-      out[k] = v;
+      // twilight.json keys collection-item defaults by the full sub-field id
+      // (e.g. "slides_ads.image"), not the runtime short key ("image").
+      if (sub.format === 'collection') { out[sub.id] = cleanCollection(sub, v); return; }
+      out[sub.id] = v;
     });
     return out;
   });
