@@ -731,7 +731,7 @@
             "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
             "title": {
                 "en": "Enhances Animated Images",
-                "ar": " صور متحركة (محسنة)"
+                "ar": " صور متحركة (محسنة)"            
             },
             "icon": "sicon-image-carousel",
             "path": "home.enhanced-slider",
@@ -1498,28 +1498,28 @@
                     "icon": "sicon-list-add",
                     "value": [
                         {
-                            "name": "ندى الحسيني",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
-                            "text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ️"
+                            "items.name": "ندى الحسيني",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
+                            "items.stars": 5,
+                            "items.text": "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ❤️"
                         },
                         {
-                            "name": "خالد الأحمد",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه"
+                            "items.name": "خالد الأحمد",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.stars": 5,
+                            "items.text": "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه 👏"
                         },
                         {
-                            "name": "خالد المسعودي",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "رهيبين يفكون أزمة."
+                            "items.name": "خالد المسعودي",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.stars": 5,
+                            "items.text": "رهيبين يفكون أزمة. 👌"
                         },
                         {
-                            "name": "عبدالعزيز اليامي",
-                            "stars": 5,
-                            "avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
-                            "text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ️"
+                            "items.name": "عبدالعزيز اليامي",
+                            "items.avatar": "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
+                            "items.stars": 5,
+                            "items.text": "أحب هذا المتجر وتعاملهم الراقي مع العملاء ❤️"
                         }
                     ],
                     "fields": [
@@ -1687,8 +1687,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "enable_backgroud",
@@ -1999,21 +1998,7 @@
                             "required": true
                         }
                     ],
-                    "value": [
-                        {
-                            "image": "https://cdn.files.salla.network/homepage/771160785/f7a01444-8338-4b80-b8ac-0cd564b14da9.webp",
-                            "postion": [
-                                "center"
-                            ],
-                            "title_font": [
-                                "default"
-                            ],
-                            "title_color": "#33ff57",
-                            "title": "عروض حصرية 1765133425704",
-                            "description": "اكتشف أفضل العروض والخصومات 1765133430991",
-                            "button_title": "اكتشف المزيد 1765133424735"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -2112,8 +2097,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "title_style",
@@ -2285,28 +2269,7 @@
                             ]
                         }
                     ],
-                    "value": [
-                        {
-                            "color": "#57e6ff",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/ZfyZYJ2ColFr9ZXBrA10jZHEveGaaNkSpsUAEPZY.webp",
-                            "title": "من 0 الى 1 سنوات"
-                        },
-                        {
-                            "color": "#ffa8db",
-                            "image": "https://cdn.salla.sa/form-builder/BnL6cqa0yn55BwKxnpJhEdOjUn8dsRUXd3kDVPXm.png",
-                            "title": "من 3 الى 4 سنوات"
-                        },
-                        {
-                            "color": "#adffd1",
-                            "image": "https://cdn.salla.sa/form-builder/uIGossl1O09FI4znDS7TeH2vt2iRvT4i29z01B6N.png",
-                            "title": "من 4 الى 6 سنوات"
-                        },
-                        {
-                            "color": "#e3d1ff",
-                            "image": "https://cdn.salla.sa/form-builder/1KuEaDbL8Kdcrc39VJwSVdDJUV8vCjm2waEwXvbU.png",
-                            "title": "من 6 الى 10 سنوات"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -2411,8 +2374,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "title_style",
@@ -2455,7 +2417,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
+                    "value": null,
                     "required": false,
                     "minLength": 3,
                     "maxLength": 300,
@@ -2602,35 +2564,7 @@
                             "maxLength": 400
                         }
                     ],
-                    "value": [
-                        {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#C971C2",
-                            "is_animated": false,
-                            "background_color": "#EBFFFF",
-                            "text": "يتضمن المتجر نظامًا تفاعليًّا لمراجعات اللاعبين وتقييماتهم، مما يساعد العملاء على اختيار الألعاب المناسبة بناءً على تجارب حقيقية لمستخدمين آخرين.",
-                            "title": "خصومات حصرية للعضوية المميزة"
-                        },
-                        {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#dbffdc",
-                            "is_animated": false,
-                            "background_color": "#d1d9ff",
-                            "text": "يوفر المتجر خدمة التوصيل الفوري للالعاب الرقمية عبر رموز التفعيل اول التزيل المباشر مما يسمح للعملا بالاستمتاع باللعبة بشكل مباشر بعد اتمام الشراء",
-                            "title": "توصيل فوري الالعاب"
-                        },
-                        {
-                            "url": "https://cdn.lamsaweb.com/cdnAlwan/json-animated/sale.json",
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/checkout.svg",
-                            "icon_color": "#8ff2ff",
-                            "is_animated": false,
-                            "background_color": "#f9ffeb",
-                            "text": "يتضمن المتجر نظاما تفاعيا لمراجعات اللعبين و تقييماتهم مما يساعد الاباء على اختبار الالعاب المناسبة لاطفالهم",
-                            "title": "منصة مراجعات و تقييمات تفاعلية"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -2746,8 +2680,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "enable_edges",
@@ -2769,7 +2702,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -2909,8 +2842,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "enable_backgroud",
@@ -2991,7 +2923,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": false,
+                    "value": true,
                     "selected": false,
                     "required": false
                 },
@@ -3079,7 +3011,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "خصم 40% على دمية شخصية ديزني ستيتش مخملية متحركة",
+                    "value": "خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة",
                     "required": false,
                     "minLength": 3,
                     "maxLength": 300
@@ -3092,7 +3024,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "تسوق الآن مع خصم 40% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.",
+                    "value": "تسوق الآن مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.",
                     "required": false,
                     "minLength": 3,
                     "maxLength": 500
@@ -3121,7 +3053,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -3132,7 +3064,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -3231,8 +3163,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "background_image",
@@ -3401,8 +3332,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "subtitle",
@@ -3577,23 +3507,7 @@
                             ]
                         }
                     ],
-                    "value": [
-                        {
-                            "image": "https://cdn.salla.sa/form-builder/X0wdKpmcKGFmkL9WfUw5g1jJcSCXAQmmgdHmtmMM.png",
-                            "background_color": "#C2FEFF",
-                            "title": "حفز مخيلة طفلك"
-                        },
-                        {
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/larage-category1.webp",
-                            "background_color": "#dfd5fb",
-                            "title": "مرح لا منتاهي"
-                        },
-                        {
-                            "image": "https://cdn.salla.sa/form-builder/3odKZBgngTFv2FsQoszOwdeMOG2Zp2woVbSLkjym.png",
-                            "background_color": "#ffc2f7",
-                            "title": "ألعاب تعليمية"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -3721,7 +3635,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://salla.sa",
                     "icon": "sicon-link",
-                    "value": "https://cdn.lamsaweb.com/cdnAlwan/output.mp4",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/7351796-uhd_2160_4096_25fps%20(1)%20(1).mp4",
                     "required": false,
                     "minLength": 3,
                     "maxLength": 300,
@@ -3796,7 +3710,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -3849,8 +3763,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "enable_backgroud",
@@ -3860,7 +3773,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -3882,7 +3795,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-text-alt",
-                    "value": "",
+                    "value": null,
                     "required": false,
                     "minLength": 3,
                     "maxLength": 300,
@@ -3953,24 +3866,7 @@
                             "maxLength": "300"
                         }
                     ],
-                    "value": [
-                        {
-                            "answer": "نعم لديك الحق في الإسترجاع",
-                            "question": "هل لدي الحق  الإسترجاع"
-                        },
-                        {
-                            "answer": "وفر عدة خيارات مريحة للدفع، مثل:  الدفع الإلكتروني عبر بطاقات الائتمان والخصم  المحافظ الرقمية (مثل Apple Pay / STC Pay)  الدفع عند الاستلام (في بعض المناطق)",
-                            "question": "ما هي خيارات الدفع المتاحة؟"
-                        },
-                        {
-                            "answer": "يتم تجهيز الطلب خلال 24-48 ساعة، ومدة التوصيل تختلف حسب المدينة، لكنها عادة بين 2 إلى 5 أيام عمل داخل المملكة (أو حسب الدولة إن كنت تبيع دولياً).",
-                            "question": "كم يستغرق توصيل الطلب؟"
-                        },
-                        {
-                            "answer": "نعم، يمكنك طلب الاسترجاع أو الاستبدال خلال 7 أيام من استلام الطلب، بشرط أن يكون المنتج بحالته الأصلية وغير مستخدم. لمزيد من التفاصيل، راجع سياسة الاسترجاع.",
-                            "question": "هل يمكن استرجاع أو استبدال المنتج؟"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -4072,8 +3968,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "locations",
@@ -4127,22 +4022,7 @@
                             "placeholder": "https://www.google.com/maps/embed?..."
                         }
                     ],
-                    "value": [
-                        {
-                            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.5129241906561!2d42.72008036883277!3d18.275415764707816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb599b7ef02db7%3A0xeeb2499667bbdb12!2sKM%20Boulevard!5e0!3m2!1sen!2seg!4v1763228879825!5m2!1sen!2seg",
-                            "city": "خميس مشيط",
-                            "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "phone": "0536576138",
-                            "address": "طريق الملك خالد - حي الرصراص - بالقرب من بنك الراجحي"
-                        },
-                        {
-                            "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.89134397995593!2d39.77842588766944!3d21.37473302018079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0500d747c1%3A0x5efad34a95844894!2sSalla%20HQ!5e1!3m2!1sen!2seg!4v1736921128997!5m2!1sen!2seg",
-                            "city": "الرياض",
-                            "hours": "يوميًا: 9:00 صباحًا - 12:45 صباحًا آخر موعد للدخول: 11:45 مساءً",
-                            "phone": "0536576138",
-                            "address": "طريق الملك فهد - حي الياسمين - بالقرب من البنك الاهلي"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": 10
                 }
@@ -4312,18 +4192,7 @@
                             "value": []
                         }
                     ],
-                    "value": [
-                        {
-                            "image": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
-                            "use_video": true,
-                            "video_url": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
-                            "title_font": [
-                                "default"
-                            ],
-                            "title_color": "#60a5fa",
-                            "title": "أناقة   -  حداثة  -  عصرية"
-                        }
-                    ],
+                    "value": [],
                     "minLength": 1,
                     "maxLength": "300"
                 }
@@ -4419,8 +4288,7 @@
                     "source": "Manual",
                     "multichoice": false,
                     "searchable": true,
-                    "required": false,
-                    "value": "default"
+                    "required": false
                 },
                 {
                     "id": "enable_backgroud",
@@ -4430,7 +4298,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -4441,7 +4309,7 @@
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
-                    "value": true,
+                    "value": false,
                     "required": false
                 },
                 {
@@ -4470,7 +4338,7 @@
                     "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
                     "labelHTML": null,
                     "icon": "sicon-image",
-                    "value": "",
+                    "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
                     "required": false,
                     "conditions": [
                         {
