@@ -13,5 +13,7 @@
     {% include 'pages.partials.component-default-dump' with { '_dump_path': 'home.slider-ads' } %}
 #}
 {% if theme.mode != 'live' %}
-<script type="application/json" class="js-component-default-dump" data-path="{{ _dump_path|default('') }}">{{ component|json_encode }}</script>
+{# json_encode|raw: Twig would otherwise HTML-escape the quotes (&quot;) and break JSON.parse.
+   replace '</' -> '<\/' (a valid JSON escape) so embedded markup can't close the <script> tag early. #}
+<script type="application/json" class="js-component-default-dump" data-path="{{ _dump_path|default('') }}">{{ component|json_encode|replace({'</': '<\\/'})|raw }}</script>
 {% endif %}
