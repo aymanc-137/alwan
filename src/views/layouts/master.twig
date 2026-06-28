@@ -233,50 +233,5 @@
 		<div class="font-[Marhey]"></div>
 		<div class="font-[Oi]"></div>
 		<div class="font-[CooperArabic]"></div>
-
-		{# TEMPORARY: harvests component default dumps (non-live only). Remove with pages.partials.component-default-dump after extraction. #}
-		{% if theme.mode != 'live' %}
-		<script data-cfasync="false">
-			(function () {
-				// Defined synchronously so the helpers exist immediately — they
-				// re-read the DOM on each call, so timing doesn't matter.
-				function collect() {
-					var out = {};
-					document.querySelectorAll('script.js-component-default-dump').forEach(function (el) {
-						var path = el.dataset.path || ('unknown-' + Object.keys(out).length);
-						try { out[path] = JSON.parse(el.textContent); }
-						catch (e) { console.warn('[component-defaults] failed to parse', path, e); }
-					});
-					return out;
-				}
-
-				window.collectComponentDefaults = function () {
-					window.__componentDefaults = collect();
-					return window.__componentDefaults;
-				};
-
-				window.downloadComponentDefaults = function () {
-					var data = window.collectComponentDefaults();
-					var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-					var a = document.createElement('a');
-					a.href = URL.createObjectURL(blob);
-					a.download = 'component-defaults.json';
-					document.body.appendChild(a);
-					a.click();
-					a.remove();
-					return data;
-				};
-
-				// Convenience auto-log once everything has rendered.
-				window.addEventListener('load', function () {
-					setTimeout(function () {
-						var data = window.collectComponentDefaults();
-						console.log('%c[component-defaults] captured ' + Object.keys(data).length + ' components', 'color:#61C0C1;font-weight:bold;', data);
-						console.log('[component-defaults] run downloadComponentDefaults() to save component-defaults.json');
-					}, 1500);
-				});
-			})();
-		</script>
-		{% endif %}
 	</body>
 </html>
