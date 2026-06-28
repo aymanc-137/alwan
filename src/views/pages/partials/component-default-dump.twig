@@ -1,0 +1,17 @@
+{#
+  TEMPORARY INSTRUMENTATION — harvest component default values for twilight.json.
+
+  Emits the live `component` config (field id => value) as inert JSON so the
+  harvester in master.twig can collect it and you can bake the results into the
+  `value` defaults in twilight.json.
+
+  Safe for production: only renders in preview mode. Remove after extraction by
+  deleting this file and the `{% include 'pages.partials.component-default-dump' %}`
+  lines from the home component twigs.
+
+  Usage (inside a component twig):
+    {% include 'pages.partials.component-default-dump' with { '_dump_path': 'home.slider-ads' } %}
+#}
+{% if theme.mode == 'preview' %}
+<script type="application/json" class="js-component-default-dump" data-path="{{ _dump_path|default('') }}">{{ component|json_encode }}</script>
+{% endif %}

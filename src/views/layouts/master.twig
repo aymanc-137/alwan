@@ -233,5 +233,46 @@
 		<div class="font-[Marhey]"></div>
 		<div class="font-[Oi]"></div>
 		<div class="font-[CooperArabic]"></div>
+
+		{# TEMPORARY: harvests component default dumps (preview only). Remove with pages.partials.component-default-dump after extraction. #}
+		{% if theme.mode == 'preview' %}
+		<script data-cfasync="false">
+			(function () {
+				function collectComponentDefaults() {
+					var out = {};
+					document.querySelectorAll('script.js-component-default-dump').forEach(function (el) {
+						var path = el.dataset.path || ('unknown-' + Object.keys(out).length);
+						try { out[path] = JSON.parse(el.textContent); }
+						catch (e) { console.warn('[component-defaults] failed to parse', path, e); }
+					});
+					return out;
+				}
+
+				function download(data) {
+					var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+					var a = document.createElement('a');
+					a.href = URL.createObjectURL(blob);
+					a.download = 'component-defaults.json';
+					document.body.appendChild(a);
+					a.click();
+					a.remove();
+				}
+
+				window.addEventListener('load', function () {
+					setTimeout(function () {
+						window.__componentDefaults = collectComponentDefaults();
+						var count = Object.keys(window.__componentDefaults).length;
+						console.log('%c[component-defaults] captured ' + count + ' components', 'color:#61C0C1;font-weight:bold;', window.__componentDefaults);
+						console.log('[component-defaults] run downloadComponentDefaults() to save component-defaults.json');
+						// re-collect + download on demand from the console
+						window.downloadComponentDefaults = function () {
+							window.__componentDefaults = collectComponentDefaults();
+							download(window.__componentDefaults);
+						};
+					}, 1500);
+				});
+			})();
+		</script>
+		{% endif %}
 	</body>
 </html>
