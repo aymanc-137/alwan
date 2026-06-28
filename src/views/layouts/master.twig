@@ -234,11 +234,13 @@
 		<div class="font-[Oi]"></div>
 		<div class="font-[CooperArabic]"></div>
 
-		{# TEMPORARY: harvests component default dumps (preview only). Remove with pages.partials.component-default-dump after extraction. #}
-		{% if theme.mode == 'preview' %}
+		{# TEMPORARY: harvests component default dumps (non-live only). Remove with pages.partials.component-default-dump after extraction. #}
+		{% if theme.mode != 'live' %}
 		<script data-cfasync="false">
 			(function () {
-				function collectComponentDefaults() {
+				// Defined synchronously so the helpers exist immediately — they
+				// re-read the DOM on each call, so timing doesn't matter.
+				function collect() {
 					var out = {};
 					document.querySelectorAll('script.js-component-default-dump').forEach(function (el) {
 						var path = el.dataset.path || ('unknown-' + Object.keys(out).length);
@@ -248,7 +250,13 @@
 					return out;
 				}
 
-				function download(data) {
+				window.collectComponentDefaults = function () {
+					window.__componentDefaults = collect();
+					return window.__componentDefaults;
+				};
+
+				window.downloadComponentDefaults = function () {
+					var data = window.collectComponentDefaults();
 					var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
 					var a = document.createElement('a');
 					a.href = URL.createObjectURL(blob);
@@ -256,19 +264,15 @@
 					document.body.appendChild(a);
 					a.click();
 					a.remove();
-				}
+					return data;
+				};
 
+				// Convenience auto-log once everything has rendered.
 				window.addEventListener('load', function () {
 					setTimeout(function () {
-						window.__componentDefaults = collectComponentDefaults();
-						var count = Object.keys(window.__componentDefaults).length;
-						console.log('%c[component-defaults] captured ' + count + ' components', 'color:#61C0C1;font-weight:bold;', window.__componentDefaults);
+						var data = window.collectComponentDefaults();
+						console.log('%c[component-defaults] captured ' + Object.keys(data).length + ' components', 'color:#61C0C1;font-weight:bold;', data);
 						console.log('[component-defaults] run downloadComponentDefaults() to save component-defaults.json');
-						// re-collect + download on demand from the console
-						window.downloadComponentDefaults = function () {
-							window.__componentDefaults = collectComponentDefaults();
-							download(window.__componentDefaults);
-						};
 					}, 1500);
 				});
 			})();
