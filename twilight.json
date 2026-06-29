@@ -1606,6 +1606,14 @@
                     "value": "<h4 hidden >لتحصل على الشكل اعلاه اتبع  <a  href='https://aymanc-137.github.io/ar/alwan' target='_blank'> دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -1705,21 +1713,18 @@
                     "maxLength": 300
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
@@ -1761,6 +1766,17 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "required": false
                 },
                 {
                     "id": "category",
@@ -2066,6 +2082,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -2088,6 +2112,16 @@
                     "value": "من أولى خطواته إلى سنوات الإبداع – ألعاب مُختارة بعناية لكل مرحلة عمرية.",
                     "required": false,
                     "multilanguage": true
+                },
+                {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "value": true,
+                    "public": true
                 },
                 {
                     "id": "title_font",
@@ -2156,32 +2190,18 @@
                     "maxLength": 300
                 },
                 {
-                    "id": "title_style",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "شكل العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "value": true,
-                    "public": true
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
                 },
                 {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "value": true,
-                    "icon": "sicon-toggle-off",
-                    "public": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "value": true,
@@ -2224,6 +2244,18 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "value": true,
+                    "icon": "sicon-toggle-off",
+                    "public": true,
+                    "required": false
                 },
                 {
                     "id": "age",
@@ -2372,6 +2404,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -2400,6 +2440,17 @@
                     "required": true,
                     "minLength": 3,
                     "maxLength": 300
+                },
+                {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "title_font",
@@ -2468,15 +2519,12 @@
                     "maxLength": 300
                 },
                 {
-                    "id": "title_style",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "شكل العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": false,
-                    "required": false
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
                 },
                 {
                     "id": "enable_backgroud",
@@ -2487,17 +2535,6 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
                     "required": false
                 },
                 {
@@ -2537,6 +2574,17 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "theme_features",
@@ -2709,6 +2757,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -2724,17 +2780,6 @@
                     "maxLength": 300
                 },
                 {
-                    "id": "title_style",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "شكل العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": true,
-                    "required": false
-                },
-                {
                     "id": "subtitle",
                     "type": "string",
                     "format": "text",
@@ -2748,6 +2793,17 @@
                     "required": false,
                     "minLength": 3,
                     "maxLength": 300
+                },
+                {
+                    "id": "title_style",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "شكل العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": true,
+                    "required": false
                 },
                 {
                     "id": "title_font",
@@ -2900,6 +2956,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -2992,21 +3056,18 @@
                     "maxLength": 300
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
@@ -3034,17 +3095,6 @@
                     ]
                 },
                 {
-                    "id": "product_backgroud_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون خلفية المنتجات",
-                    "description": "لون خلفية المنتجات",
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#91edff",
-                    "required": false
-                },
-                {
                     "id": "background_image",
                     "type": "string",
                     "format": "image",
@@ -3061,6 +3111,28 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
+                },
+                {
+                    "id": "product_backgroud_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون خلفية المنتجات",
+                    "description": "لون خلفية المنتجات",
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#91edff",
+                    "required": false
                 },
                 {
                     "id": "is_video",
@@ -3151,6 +3223,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -3175,90 +3255,6 @@
                     "required": false,
                     "minLength": 3,
                     "maxLength": 500
-                },
-                {
-                    "id": "products",
-                    "type": "items",
-                    "format": "dropdown-list",
-                    "label": "المنتج الرئيسي",
-                    "description": "منتج العرض",
-                    "labelHTML": "بجب إضافة منتج عليه العرض الذي تريد الترويج له",
-                    "icon": "sicon-keyboard_arrow_down",
-                    "selected": [],
-                    "options": [],
-                    "source": "products",
-                    "multichoice": false,
-                    "searchable": true,
-                    "required": true,
-                    "value": []
-                },
-                {
-                    "id": "enable_backgroud",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": true,
-                    "required": false
-                },
-                {
-                    "id": "background_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#fffdef",
-                    "required": false,
-                    "minLength": 3,
-                    "maxLength": 300,
-                    "conditions": [
-                        {
-                            "id": "enable_backgroud",
-                            "operation": "=",
-                            "value": true
-                        }
-                    ]
-                },
-                {
-                    "id": "text_background_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون مربع النص",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#fff0fe",
-                    "required": false,
-                    "minLength": 3,
-                    "maxLength": 300
-                },
-                {
-                    "id": "title_color",
-                    "type": "string",
-                    "format": "color",
-                    "label": "لون عنوان النص",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-text-alt",
-                    "value": "#ffa723",
-                    "required": false,
-                    "minLength": 3,
-                    "maxLength": 300
                 },
                 {
                     "id": "title_font",
@@ -3314,6 +3310,74 @@
                     "value": "default"
                 },
                 {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffa723",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
+                },
+                {
+                    "id": "products",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "المنتج الرئيسي",
+                    "description": "منتج العرض",
+                    "labelHTML": "بجب إضافة منتج عليه العرض الذي تريد الترويج له",
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "products",
+                    "multichoice": false,
+                    "searchable": true,
+                    "required": true,
+                    "value": []
+                },
+                {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
+                },
+                {
+                    "id": "enable_backgroud",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "required": false
+                },
+                {
+                    "id": "background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون الخلفية",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#fffdef",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300,
+                    "conditions": [
+                        {
+                            "id": "enable_backgroud",
+                            "operation": "=",
+                            "value": true
+                        }
+                    ]
+                },
+                {
                     "id": "background_image",
                     "type": "string",
                     "format": "image",
@@ -3330,6 +3394,30 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "required": false
+                },
+                {
+                    "id": "text_background_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون مربع النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#fff0fe",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
                 },
                 {
                     "id": "side_image_url",
@@ -3392,6 +3480,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -3407,17 +3503,19 @@
                     "maxLength": "300"
                 },
                 {
-                    "id": "title_color",
+                    "id": "subtitle",
                     "type": "string",
-                    "format": "color",
-                    "label": "لون عنوان النص",
+                    "format": "text",
+                    "label": "العنوان الثاني",
                     "description": null,
                     "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": "#ffa723",
+                    "value": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل",
+                    "multilanguage": true,
                     "required": false,
                     "minLength": 3,
-                    "maxLength": 300
+                    "maxLength": "300"
                 },
                 {
                     "id": "title_style",
@@ -3484,36 +3582,31 @@
                     "value": "default"
                 },
                 {
-                    "id": "subtitle",
+                    "id": "title_color",
                     "type": "string",
-                    "format": "text",
-                    "label": "العنوان الثاني",
+                    "format": "color",
+                    "label": "لون عنوان النص",
                     "description": null,
                     "labelHTML": null,
-                    "placeholder": "Placeholder text ..",
                     "icon": "sicon-format-text-alt",
-                    "value": "لكل مرحلة عمرة عناية خاصة لتنمية المهارات المعرفية للطفل",
-                    "multilanguage": true,
+                    "value": "#ffa723",
                     "required": false,
                     "minLength": 3,
-                    "maxLength": "300"
+                    "maxLength": 300
+                },
+                {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
                 },
                 {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
@@ -3555,6 +3648,17 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "urls",
@@ -3853,6 +3957,14 @@
                     "value": "<h4 hidden style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -3945,6 +4057,14 @@
                     "maxLength": 300
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
@@ -3953,17 +4073,6 @@
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
                     "value": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_borders",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": false,
                     "required": false
                 },
                 {
@@ -4003,6 +4112,17 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_borders",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": false,
+                    "required": false
                 },
                 {
                     "id": "faq",
@@ -4086,6 +4206,14 @@
                     "format": "description",
                     "id": "static-note",
                     "value": "<h4 style='color: #2377CD;font-size: 14px;margin:1rem 0px;background: #E9F0FD;padding: 10px 15px;border-radius: 4px;'>لتحصل على الشكل اعلاه اتبع  <a style='text-decoration: underline;' href='https://aymanc-137.github.io/ar/alwan' target='_blank' > دليل العنصر </a></h4>"
+                },
+                {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
                 },
                 {
                     "id": "title",
@@ -4449,6 +4577,14 @@
                     "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.lamsaweb.com/cdnAlwan/blogs.png'></div>"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "title_group_header",
+                    "label": "إعدادات العنوان",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات العنوان</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "title",
                     "type": "string",
                     "format": "text",
@@ -4529,21 +4665,18 @@
                     "value": "default"
                 },
                 {
+                    "type": "static",
+                    "format": "title",
+                    "id": "background_group_header",
+                    "label": "إعدادات الخلفية",
+                    "value": "<h6 style='font-size:13px;font-weight:700;color:#21636d;margin:10px 0 4px;'>إعدادات الخلفية</h6>",
+                    "variant": "h6"
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
                     "label": "تمكين الخلفية",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-toggle-off",
-                    "value": true,
-                    "required": false
-                },
-                {
-                    "id": "enable_border",
-                    "type": "boolean",
-                    "format": "switch",
-                    "label": "تمكين الحدود",
                     "description": null,
                     "labelHTML": null,
                     "icon": "sicon-toggle-off",
@@ -4585,6 +4718,17 @@
                             "value": true
                         }
                     ]
+                },
+                {
+                    "id": "enable_border",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "تمكين الحدود",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "required": false
                 },
                 {
                     "id": "blogs",
