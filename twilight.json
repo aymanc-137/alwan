@@ -188,7 +188,7 @@
             "conditions": [
                 {
                     "id": "is_whatsapp_enable",
-                    "operation": "=",
+                    "operator": "=",
                     "value": true
                 }
             ]
@@ -847,7 +847,7 @@
                     "conditions": [
                         {
                             "id": "merge_with_top_component",
-                            "operation": "=",
+                            "operator": "=",
                             "value": true
                         }
                     ]
@@ -860,7 +860,7 @@
                     "conditions": [
                         {
                             "id": "merge_with_top_component",
-                            "operation": "=",
+                            "operator": "=",
                             "value": false
                         }
                     ]
@@ -934,7 +934,7 @@
                     "conditions": [
                         {
                             "id": "show_cats",
-                            "operation": "=",
+                            "operator": "=",
                             "value": true
                         }
                     ]
@@ -1082,7 +1082,7 @@
                     "conditions": [
                         {
                             "id": "show_cats",
-                            "operation": "=",
+                            "operator": "=",
                             "value": false
                         }
                     ]
@@ -2574,7 +2574,7 @@
                             "conditions": [
                                 {
                                     "id": "theme_features.is_animated",
-                                    "operation": "=",
+                                    "operator": "=",
                                     "value": true
                                 }
                             ],
@@ -2618,7 +2618,7 @@
                             "conditions": [
                                 {
                                     "id": "theme_features.is_animated",
-                                    "operation": "=",
+                                    "operator": "=",
                                     "value": false
                                 }
                             ],
@@ -4358,7 +4358,14 @@
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": "https://cdn.lamsaweb.com/cdnAlwan/place_holder3.png",
-                            "required": true
+                            "required": true,
+                            "conditions": [
+                                {
+                                    "id": "category_ads.use_video",
+                                    "operator": "=",
+                                    "value": false
+                                }
+                            ]
                         },
                         {
                             "id": "category_ads.use_video",
@@ -4385,7 +4392,14 @@
                             "value": "https://cdn.lamsaweb.com/cdnAlwan/output%20(1).mp4",
                             "required": false,
                             "minLength": 3,
-                            "maxLength": "500"
+                            "maxLength": "500",
+                            "conditions": [
+                                {
+                                    "id": "category_ads.use_video",
+                                    "operator": "=",
+                                    "value": true
+                                }
+                            ]
                         },
                         {
                             "id": "category_ads.category",
