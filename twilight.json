@@ -1692,6 +1692,19 @@
                     "value": "BackToSchool"
                 },
                 {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
+                },
+                {
                     "id": "enable_backgroud",
                     "type": "boolean",
                     "format": "switch",
@@ -2130,6 +2143,19 @@
                     "value": "default"
                 },
                 {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
+                },
+                {
                     "id": "title_style",
                     "type": "boolean",
                     "format": "switch",
@@ -2427,6 +2453,19 @@
                     "searchable": true,
                     "required": false,
                     "value": "default"
+                },
+                {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
                 },
                 {
                     "id": "title_style",
@@ -2764,6 +2803,19 @@
                     "value": "default"
                 },
                 {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
+                },
+                {
                     "id": "enable_edges",
                     "type": "boolean",
                     "format": "switch",
@@ -2925,6 +2977,19 @@
                     "searchable": true,
                     "required": false,
                     "value": "default"
+                },
+                {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
                 },
                 {
                     "id": "enable_backgroud",
@@ -3865,6 +3930,19 @@
                     "searchable": true,
                     "required": false,
                     "value": "default"
+                },
+                {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
                 },
                 {
                     "id": "enable_backgroud",

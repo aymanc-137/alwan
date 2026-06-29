@@ -1,5 +1,15 @@
-                                
-                                
+{#
+    Styled title (decorative SVG banner).
+    - banner fill : global theme setting `style_title_color`
+    - text color  : component `title_color`  (default #ffffff — preserves the original white)
+    - text font   : component `title_font`   (dropdown returns an array; `default`/empty => theme font)
+    Params: componentdata (the component/object), class (extra svg classes)
+#}
+{% set _font = componentdata.title_font %}
+{% if _font is iterable %}{% set _font = _font|first %}{% endif %}
+{% set _font_family = (_font in ['default', '', null]) ? 'var(--font-main)' : "'" ~ _font ~ "'" %}
+{% set _text_color = componentdata.title_color|default('#ffffff') %}
+
                                     <svg class=" overflow-visible {{ class }} "
                                     label="Styled Title"
                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
@@ -11,10 +21,11 @@
                                                 x="2300"
                                                 y="525"
                                                 font-size="400"
-                                                fill="white"
+                                                fill="{{ _text_color }}"
                                                 font-weight="bold"
                                                 text-anchor="middle"
                                                 dominant-baseline="middle"
+                                                style="font-family: {{ _font_family }};"
                                             >
                                                 {{componentdata.title}}
                                             </text>

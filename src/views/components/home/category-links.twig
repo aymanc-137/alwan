@@ -21,7 +21,7 @@ class=" py-20 {{ component.enable_border ? 'border-y border-black' : '' }}"
                 style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
                  class="text-center my-5 mx-auto in-view in-view--bounce-up">
-                        {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto font-[{{component.title_font | default("BackToSchool")}}] mb-5'} %}
+                        {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto mb-5'} %}
                         
 
                         <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
