@@ -33,7 +33,9 @@
                     </button>
                 {% endif %}
 
-                {# Search bar #}
+                {# Search bar — kept intentionally as part of the theme design. Search is
+                   also reachable from the global <salla-search> in master.twig via
+                   search::open, which is what the Salla app uses. #}
                 <div class="header-search flex-1">
                   <salla-search inline oval height="36"></salla-search>
                 </div>
@@ -87,10 +89,7 @@
 
                                 <button id="search-btn"
                                                 aria-label="{{ trans('blocks.header.search') }}"
-                                                onclick="(function(){event.preventDefault();
-                                                document.querySelector('#search-modal-harir').open();
-                                                return false;})();
-                                                "data-modal-id="search-modal-harir"
+                                                onclick="salla.event.dispatch('search::open')"
                                                 class=" w-10 h-10">
                                                 <img src="https://cdn.lamsaweb.com/cdnAlwan/Frame.svg" width="28" height="28" class="w-7 h-7" alt="search" loading="eager" decoding="async">
 
@@ -105,13 +104,9 @@
   </div>
 </header>
 
-  <salla-modal has-skeleton="true" position="top" class="rounded-md" id="search-modal-harir">
-    <h4>{{ trans('blocks.footer.search') }}</h4>
-		<hr>
-      <div class="m-3 flex-1 md:h-10 h-96">
-        <salla-search inline oval height="36"></salla-search>
-    </div>
-   </salla-modal>
+{# Search modal removed: the global <salla-search> in master.twig is opened via
+   salla.event.dispatch('search::open') so search also works inside the Salla app,
+   which hides the theme header/footer in its WebView. #}
 
    
 

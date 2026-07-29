@@ -17,7 +17,9 @@ export function validateProductOptions() {
         if (productOptions) {
             productOptions.addEventListener('changed', (e) => {
                 setTimeout(() => {
-                    if (!item.reportValidity() || e.detail?.event?.type == 'added') return;
+                    // checkValidity() so a still-empty required option doesn't steal
+                    // focus and scroll the page mid-entry; submit still reports it.
+                    if (!item.checkValidity() || e.detail?.event?.type == 'added') return;
                     if ((Number(itemId) === Number(e.detail?.productId))) {
                         appendLoadingOverlay(e.detail?.productId);
                     }
@@ -45,7 +47,7 @@ function observeQuantityChanges(quantityComponent, itemId, item) {
         if (quantityInput) {
             observer.disconnect(); // Stop observing once input is found
             quantityInput.addEventListener('change', (e) => {
-                if (!item.reportValidity()) return;
+                if (!item.checkValidity()) return;
                 if (Number(itemId) === Number(e.detail?.productId)) {
                     appendLoadingOverlay(e.detail?.productId);
                 }

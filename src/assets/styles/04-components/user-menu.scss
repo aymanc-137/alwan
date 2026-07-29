@@ -1,3 +1,10 @@
+// Wallet balance in the profile menu (salla-user-menu, twilight-components >= 2.14.525).
+// Mirrors the rule from twilight-tailwind-theme 2.14.525; declared here because the
+// tailwind theme package is pinned to 2.14.491 and doesn't ship it yet.
+.s-user-menu-dropdown-item-balance {
+  @apply mx-2;
+}
+
 // Dropdown toggler
 .dropdown__trigger {
   @apply rounded-full overflow-hidden w-10 h-10 font-medium focus:ring-offset-transparent;

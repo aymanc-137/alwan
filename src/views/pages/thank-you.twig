@@ -63,7 +63,11 @@
             {% hook 'thank-you:items.start' %}
 
             {% hook 'thank-you:items.end' %}
-        </div>        
+        </div>
+
+        {# Split order shipments — hides itself via empty:hidden for single-shipment orders #}
+        <salla-order-shipments class="block mb-6 md:mb-8 empty:hidden"></salla-order-shipments>
+
         <salla-next-order-coupon></salla-next-order-coupon>
 
 

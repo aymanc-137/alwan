@@ -26,7 +26,10 @@ class Product extends BasePage {
 
     initProductOptionValidations() {
       document.querySelector('.product-form')?.addEventListener('change', function(){
-        this.reportValidity() && salla.product.getPrice(new FormData(this));
+        // checkValidity() instead of reportValidity(): the latter focuses the first
+        // invalid field, which scrolled the page away while the customer was still
+        // filling in options. Required options are reported on add-to-cart submit.
+        this.checkValidity() && salla.product.getPrice(new FormData(this));
       });
     }
 
