@@ -3200,6 +3200,75 @@
                     "multichoice": true,
                     "searchable": true,
                     "required": false
+                },
+                {
+                    "id": "product_url",
+                    "type": "items",
+                    "icon": "sicon-link",
+                    "label": "رابط صورة القسم",
+                    "value": null,
+                    "description": null,
+                    "required": false,
+                    "format": "variable-list",
+                    "searchable": true,
+                    "source": "custom",
+                    "sources": [
+                        {
+                            "label": "منتج",
+                            "key": "products",
+                            "value": "products"
+                        },
+                        {
+                            "label": "منتجات مع وسم",
+                            "key": "products_tags",
+                            "value": "products_tags"
+                        },
+                        {
+                            "label": "تصنيف",
+                            "key": "categories",
+                            "value": "categories"
+                        },
+                        {
+                            "label": "ماركة تجارية",
+                            "key": "brands",
+                            "value": "brands"
+                        },
+                        {
+                            "label": "صفحة تعريفية",
+                            "key": "pages",
+                            "value": "pages"
+                        },
+                        {
+                            "label": "مقالة",
+                            "key": "blog_articles",
+                            "value": "blog_articles"
+                        },
+                        {
+                            "label": "تصنيف ضمن المدونة",
+                            "key": "blog_categories",
+                            "value": "blog_categories"
+                        },
+                        {
+                            "label": "التخفيضات",
+                            "key": "offers_link",
+                            "value": "offers_link"
+                        },
+                        {
+                            "label": "الماركات التجارية",
+                            "key": "brands_link",
+                            "value": "brands_link"
+                        },
+                        {
+                            "label": "المدونة",
+                            "key": "blog_link",
+                            "value": "blog_link"
+                        },
+                        {
+                            "label": "رابط خارجي",
+                            "key": "custom",
+                            "value": "custom"
+                        }
+                    ]
                 }
             ]
         },
@@ -4296,6 +4365,19 @@
                     "value": "default"
                 },
                 {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
+                },
+                {
                     "id": "locations",
                     "type": "collection",
                     "format": "collection",
@@ -4663,6 +4745,19 @@
                     "searchable": true,
                     "required": false,
                     "value": "default"
+                },
+                {
+                    "id": "title_color",
+                    "type": "string",
+                    "format": "color",
+                    "label": "لون عنوان النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-text-alt",
+                    "value": "#ffffff",
+                    "required": false,
+                    "minLength": 3,
+                    "maxLength": 300
                 },
                 {
                     "type": "static",

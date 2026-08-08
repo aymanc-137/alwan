@@ -18,7 +18,7 @@
                             style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
               class="w-96 mx-auto mb-5 font-[{{component.title_font | default('BackToSchool')}}] in-view in-view--bounce-up">
-              {% if component.title_style %}
+              {% if component.style_title %}
               {% include 'pages.partials.product.styledtitle' with {componentdata: component} %}
               {% else %}
               <h1 class="text-5xl mx-auto mb-5 text-center">{{component.title}}</h1>
