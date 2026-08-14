@@ -326,7 +326,7 @@
             "id": "colors_section_title",
             "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الألوان والتنسيقات</h6></div>",
             "variant": "h6",
-            "icon": "sicon-color-fill"
+            "icon": "sicon-format-fill"
         },
         {
             "id": "main_background_color",
@@ -481,7 +481,7 @@
             "id": "footer_section_title",
             "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد ذيل الصفحة</h6></div>",
             "variant": "h6",
-            "icon": "sicon-layout-bottom"
+            "icon": "sicon-window-layout"
         },
         {
             "type": "boolean",
@@ -924,7 +924,7 @@
                     "format": "dropdown-list",
                     "label": "حدد التصنيفات",
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "categories",
@@ -1151,7 +1151,7 @@
                 },
                 {
                     "type": "items",
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "label": "منتجات",
                     "id": "products",
                     "format": "dropdown-list",
@@ -1455,7 +1455,7 @@
                 },
                 {
                     "type": "items",
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "label": "الماركات التجارية",
                     "id": "brands",
                     "format": "dropdown-list",
@@ -1589,7 +1589,7 @@
         {
             "key": "bd921942-db67-44b0-a8e5-18ceb623722a",
             "title": "روابط أقسام - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-layout-grid",
             "path": "home.category-links",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/category-list.png",
             "fields": [
@@ -1653,7 +1653,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -1785,7 +1785,7 @@
                     "label": "التصنيفات",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "categories",
@@ -1912,7 +1912,7 @@
                             "label": "خط العنوان",
                             "description": null,
                             "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
+                            "icon": "sicon-arrow-down",
                             "selected": [
                                 {
                                     "label": "الخط الإفتراضي",
@@ -1976,7 +1976,7 @@
                             "label": "اتجاه النص",
                             "description": null,
                             "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
+                            "icon": "sicon-arrow-down",
                             "selected": [
                                 {
                                     "label": "نص الى الايمين",
@@ -2065,7 +2065,7 @@
         {
             "key": "8a9245f7-d969-4a83-b925-96e69afb4c10",
             "title": "الفئات العمرية",
-            "icon": "sicon-store",
+            "icon": "sicon-users",
             "path": "home.age-group",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/age-group.png",
             "fields": [
@@ -2130,7 +2130,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -2387,7 +2387,7 @@
         {
             "key": "e72a4fa0-f42f-4064-8fcd-5f370b0173e7",
             "title": "مميزات المتجر - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-badge",
             "path": "home.theme-features",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/store-fetsuer.png",
             "fields": [
@@ -2459,7 +2459,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -2740,7 +2740,7 @@
         {
             "key": "ab82a7dd-be10-4851-b0e9-616b581479dc",
             "title": "ماركات تجارية محسنة - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-tag-special",
             "path": "home.brands-alwan",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/brands-list.png",
             "fields": [
@@ -2812,7 +2812,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -2925,7 +2925,7 @@
                     "label": "الماركات التجارية",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "brands",
@@ -2939,7 +2939,7 @@
         {
             "key": "59a5fc22-a380-4ca5-b13d-55c4235b024a",
             "title": "منتجات قسم - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-shopping-basket",
             "path": "home.category-products",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/category-product.png",
             "fields": [
@@ -2996,7 +2996,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -3193,7 +3193,7 @@
                     "label": "المنتجات",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "products",
@@ -3275,7 +3275,7 @@
         {
             "key": "bc606f0c-cb80-49db-b356-cb83fd60ca55",
             "title": "عرض مؤقت - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-timer",
             "path": "home.flash-offer",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/limited-offer.png",
             "fields": [
@@ -3332,7 +3332,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -3398,7 +3398,7 @@
                     "label": "المنتج الرئيسي",
                     "description": "منتج العرض",
                     "labelHTML": "بجب إضافة منتج عليه العرض الذي تريد الترويج له",
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "products",
@@ -3532,7 +3532,7 @@
         {
             "key": "faebc639-5a8d-4b67-ba50-664bee5f5aaa",
             "title": "صور أقسام كبيرة - ألوان",
-            "icon": "sicon-store",
+            "icon": "sicon-photo-library",
             "path": "home.large-category",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/large-category.png",
             "fields": [
@@ -3604,7 +3604,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -3762,7 +3762,7 @@
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "e.g. #FFFFFF",
-                            "icon": "sicon-color",
+                            "icon": "sicon-format-fill",
                             "value": "#C2FEFF",
                             "required": false
                         },
@@ -3853,7 +3853,7 @@
         },
         {
             "key": "bd6d59c6-c9fc-4e6d-8bf1-a37b3af0fdf8",
-            "icon": "sicon-store",
+            "icon": "sicon-images",
             "title": "بنر صور كبيرة",
             "path": "home.image-text-hero",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/large-banner.png",
@@ -4009,7 +4009,7 @@
         {
             "key": "6d82d61c-d056-499e-a563-e5da41f3ec5a",
             "title": "الأسئلة الأكثر شيوعا",
-            "icon": "sicon-store",
+            "icon": "sicon-help",
             "path": "home.faq-compnent",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/faq.png",
             "fields": [
@@ -4066,7 +4066,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -4260,7 +4260,7 @@
         {
             "key": "5ba588b2-3f82-4053-82f2-bab416ff40c9",
             "title": "فروع المحل",
-            "icon": "sicon-store",
+            "icon": "sicon-map-location",
             "path": "home.map",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/map.png",
             "fields": [
@@ -4318,7 +4318,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -4383,7 +4383,7 @@
                     "format": "collection",
                     "label": "الفروع",
                     "item_label": "فرع",
-                    "icon": "sicon-location-pin",
+                    "icon": "sicon-map-location",
                     "fields": [
                         {
                             "id": "locations.city",
@@ -4453,7 +4453,7 @@
         {
             "key": "99e9351a-00ca-426d-8429-5c8fb076d98c",
             "title": "خلفية على صفحات الاقسام - أيقونة",
-            "icon": "sicon-store",
+            "icon": "sicon-photo",
             "path": "home.category-ads",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/category-ads.png",
             "fields": [
@@ -4501,7 +4501,7 @@
                             "label": "خط العنوان",
                             "description": null,
                             "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
+                            "icon": "sicon-arrow-down",
                             "selected": [
                                 {
                                     "label": "الخط الإفتراضي",
@@ -4618,7 +4618,7 @@
                             "label": "القسم",
                             "description": "اختر القسم الخاص بالصورة",
                             "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
+                            "icon": "sicon-arrow-down",
                             "selected": [],
                             "options": [],
                             "source": "categories",
@@ -4648,7 +4648,7 @@
         {
             "key": "ab7b038b-7cf6-477a-8317-e4fc4ff87e1e",
             "title": "أحدث التدوينات",
-            "icon": "sicon-store",
+            "icon": "sicon-newspaper",
             "path": "home.blogs-list",
             "image": "https://cdn.lamsaweb.com/cdnAlwan/blogs.png",
             "fields": [
@@ -4700,7 +4700,7 @@
                     "label": "خط العنوان",
                     "description": null,
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [
                         {
                             "label": "الخط الإفتراضي",
@@ -4832,7 +4832,7 @@
                     "label": "التدوينات",
                     "description": "اختر بحد اقصى اربع تدوينات",
                     "labelHTML": null,
-                    "icon": "sicon-keyboard_arrow_down",
+                    "icon": "sicon-arrow-down",
                     "selected": [],
                     "options": [],
                     "source": "blog_articles",
