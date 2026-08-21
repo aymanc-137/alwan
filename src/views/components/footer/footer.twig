@@ -135,7 +135,7 @@
 								{% if method_title is iterable %}
 									{% set method_title = method_title[user.language.code]|default(method_title|first) %}
 								{% endif %}
-								<img class="footer-payments__item" src="{{ method.image|cdn(160) }}" alt="{{ method_title|default(store.name) }}" title="{{ method_title }}" width="80" height="50" loading="lazy" decoding="async"/>
+								<img class="footer-payments__item" src="{{ method.image }}" alt="{{ method_title|default(store.name) }}" title="{{ method_title }}" width="60" height="24" loading="lazy" decoding="async"/>
 							{% endif %}
 						{% endfor %}
 					</div>

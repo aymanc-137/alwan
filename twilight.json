@@ -733,8 +733,29 @@
             "label": "صور طرق الدفع",
             "item_label": "طريقة دفع",
             "icon": "sicon-credit-card",
-            "description": "عمود إضافي في ذيل الصفحة لعرض صور طرق الدفع. لن يظهر العمود إذا لم تتم إضافة أي صورة.",
-            "value": [],
+            "description": "عمود إضافي في ذيل الصفحة لعرض صور طرق الدفع. يحتوي افتراضياً على أيقونات آبل باي وجوجل باي ومدى وماستركارد وفيزا، ويمكنك حذفها أو استبدالها. لن يظهر العمود إذا لم تتم إضافة أي صورة.",
+            "value": [
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/21257590-9ca5-4924-8665-0a85faccc598-original.webp",
+                    "footer_payment_methods.title": "apple"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/6903086e-d44a-4c6d-8531-587b582de5af-original.webp",
+                    "footer_payment_methods.title": "google pay"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/5c97329f-3c0d-4778-b2ba-929da046505a-original.webp",
+                    "footer_payment_methods.title": "mada"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/c766bdcd-9fbf-40fe-81c6-768444841334-original.webp",
+                    "footer_payment_methods.title": "master"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/203b1596-972b-4300-8688-5b1133023688-original.webp",
+                    "footer_payment_methods.title": "visa"
+                }
+            ],
             "conditions": [
                 {
                     "id": "footer_advanced_options",
