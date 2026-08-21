@@ -724,6 +724,24 @@
             ]
         },
         {
+            "id": "show_footer_payment_methods",
+            "label": "إظهار عمود طرق الدفع في ذيل الصفحة",
+            "description": "إضافة عمود جديد لعرض صور طرق الدفع. عند تفعيله يتحول ذيل الصفحة إلى ستة أعمدة.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "id": "footer_payment_methods",
             "type": "collection",
             "format": "collection",
@@ -759,6 +777,11 @@
             "conditions": [
                 {
                     "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "show_footer_payment_methods",
                     "operation": "=",
                     "value": true
                 }
@@ -803,6 +826,11 @@
             "conditions": [
                 {
                     "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "show_footer_payment_methods",
                     "operation": "=",
                     "value": true
                 }
