@@ -1,0 +1,211 @@
+/*
+ * Advanced theme options.
+ *
+ * Every rule here is driven by a CSS variable or a body class emitted from
+ * master.twig. The variable defaults declared in :root match the theme's stock
+ * values, so a merchant flipping a section's "advanced options" switch without
+ * editing anything sees no visual change. Body-class rules only exist when the
+ * matching switch is on, which is why they can safely use !important.
+ *
+ * Loaded last so it wins over the component layer and the Twilight base CSS.
+ */
+
+/* ---------------------------------------------------------------- Header */
+
+.navbar-brand img {
+  max-height: var(--header-logo-size);
+}
+
+/* Keep the pinned-header logo at its original 40/48 ratio of the full size. */
+.main-nav-container.fixed-pinned .navbar-brand img {
+  max-height: calc(var(--header-logo-size) * 0.8333);
+}
+
+/*
+ * The header glyphs are drawn by ::before pseudo-elements with their own fixed
+ * sizes, so the variable has to drive those directly — sizing only the button
+ * box would leave the icons unchanged. Each multiplier below reproduces the
+ * stock pixel size at the default 40px, e.g. 40 * 0.875 = 35px for the cart.
+ */
+.store-header {
+  #search-btn {
+    width: var(--header-icons-size);
+    height: var(--header-icons-size);
+  }
+
+  #search-btn img {
+    width: calc(var(--header-icons-size) * 0.7); /* 28px */
+    height: calc(var(--header-icons-size) * 0.7);
+  }
+
+  .user-avatar-cartoon-logo::before {
+    width: calc(var(--header-icons-size) * 0.8); /* 32px, was 2em */
+    height: calc(var(--header-icons-size) * 0.8);
+  }
+
+  .s-cart-summary-wrapper #s-cart-icon .s-cart-summary-icon::before {
+    width: calc(var(--header-icons-size) * 0.875); /* 35px */
+    height: calc(var(--header-icons-size) * 0.875);
+  }
+
+  .header-btn__icon {
+    width: var(--header-icons-size); /* 40px */
+    height: var(--header-icons-size);
+    font-size: calc(var(--header-icons-size) * 0.5); /* 20px */
+  }
+}
+
+/* Desktop menu only — the mobile drawer keeps its own sizing. */
+@media only screen and (min-width: 1024px) {
+  .main-menu > li > a {
+    font-size: var(--header-menu-text-size);
+  }
+}
+
+.main-menu .sub-menu,
+#more-menu-dropdown > .sub-menu {
+  background-color: var(--menu-dropdown-bg);
+}
+
+.mm-spn.mm-spn--light {
+  background: var(--menu-dropdown-bg);
+}
+
+/* ---------------------------------------------------------------- Footer */
+
+.store-footer__inner {
+  padding-top: var(--footer-height);
+  padding-bottom: calc(var(--footer-height) * 0.5);
+}
+
+.store-footer .footer-logo img {
+  width: var(--footer-logo-size);
+  height: calc(var(--footer-logo-size) * 0.5); /* keeps the stock 128x64 box */
+}
+
+.footer-payments {
+  &__list {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  &__item {
+    @apply h-8 w-auto object-contain rounded-sm bg-white/90 p-1;
+  }
+}
+
+/* ---------------------------------------------------- Product card: values */
+
+.s-product-card-entry {
+  border-radius: var(--card-border-radius);
+  border-color: var(--card-border-color);
+}
+
+.s-product-card-promotion-title {
+  background-color: var(--card-badge-color);
+}
+
+.s-product-card-content-title,
+.s-product-card-content-title a {
+  color: var(--card-text-color);
+}
+
+/* --------------------------------------------------- Product card: toggles */
+
+.hide-card-border {
+  .s-product-card-entry {
+    border-width: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .s-product-card-image img {
+    @apply border-b-0;
+  }
+}
+
+.hide-card-old-price .s-product-card-sale-price span {
+  display: none;
+}
+
+.center-card-text {
+  .s-product-card-content-main,
+  .s-product-card-content-title {
+    text-align: center;
+  }
+
+  .s-product-card-content-sub {
+    @apply justify-center;
+  }
+}
+
+.hide-card-rating .s-product-card-rating {
+  display: none;
+}
+
+.hide-card-availability {
+  .s-product-card-quantity,
+  .s-product-card-out-badge,
+  .s-product-card-content-pie {
+    display: none;
+  }
+}
+
+.hide-card-countdown .s-product-card-entry salla-count-down {
+  display: none;
+}
+
+.grayscale-oos-image .s-product-card-out-of-stock {
+  .s-product-card-image img,
+  .s-product-card-image-full img {
+    filter: grayscale(1);
+  }
+}
+
+.no-card-hover {
+  .s-product-card-entry {
+    @apply transition-none;
+
+    &:hover {
+      @apply shadow-none;
+    }
+  }
+
+  .s-product-card-image img,
+  .s-product-card-image-full img {
+    @apply transition-none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .s-product-card-wishlist-btn:hover {
+    transform: none;
+  }
+}
+
+/* Colour / image swatches rendered into the card by product-card.js. */
+.s-product-card-options {
+  @apply flex flex-wrap items-center gap-1.5 mt-2;
+
+  &__swatch {
+    @apply w-4 h-4 rounded-full border border-black/40 bg-cover bg-center shrink-0;
+  }
+
+  &__more {
+    @apply text-xxs opacity-70 leading-none;
+  }
+}
+
+.center-card-text .s-product-card-options {
+  @apply justify-center;
+}
+
+/* ---------------------------------------------------------- Product page */
+
+.product-single-category {
+  @apply mb-4 text-sm;
+
+  a {
+    @apply text-gray-500 hover:text-primary underline;
+  }
+}

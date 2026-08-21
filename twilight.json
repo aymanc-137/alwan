@@ -470,6 +470,117 @@
             "selected": false
         },
         {
+            "id": "header_advanced_options",
+            "label": "خيارات متقدمة للقائمة العلوية",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "id": "header_logo_image",
+            "type": "string",
+            "format": "image",
+            "label": "شعار بديل للقائمة العلوية",
+            "description": "في حال تركه فارغاً سيتم استخدام شعار المتجر الافتراضي",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": null,
+            "required": false,
+            "conditions": [
+                {
+                    "id": "header_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "header_logo_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم شعار القائمة العلوية",
+            "description": "أقصى ارتفاع للشعار بالبكسل",
+            "labelHTML": "القيمة الافتراضية 48 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 48,
+            "required": false,
+            "minimum": 20,
+            "maximum": 160,
+            "conditions": [
+                {
+                    "id": "header_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "header_icons_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم أيقونات القائمة العلوية",
+            "description": "حجم أزرار الأيقونات (البحث، السلة، الحساب) بالبكسل",
+            "labelHTML": "القيمة الافتراضية 40 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 40,
+            "required": false,
+            "minimum": 24,
+            "maximum": 72,
+            "conditions": [
+                {
+                    "id": "header_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "menu_dropdown_bg_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية القوائم المنسدلة والقائمة الجانبية",
+            "description": "يشمل القائمة المنسدلة في سطح المكتب والقائمة الجانبية في الجوال",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "header_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "header_menu_text_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم نص القائمة الرئيسية",
+            "description": "يُطبق على شاشات سطح المكتب فقط ولا يؤثر على قائمة الجوال",
+            "labelHTML": "القيمة الافتراضية 16 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 16,
+            "required": false,
+            "minimum": 10,
+            "maximum": 30,
+            "conditions": [
+                {
+                    "id": "header_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "static",
             "id": "footer_section_line",
             "format": "line",
@@ -542,6 +653,143 @@
             "required": false
         },
         {
+            "id": "footer_advanced_options",
+            "label": "خيارات متقدمة لذيل الصفحة",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "id": "footer_logo_image",
+            "type": "string",
+            "format": "image",
+            "label": "شعار بديل لذيل الصفحة",
+            "description": "في حال تركه فارغاً سيتم استخدام شعار المتجر الافتراضي",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": null,
+            "required": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_logo_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم شعار ذيل الصفحة",
+            "description": "عرض الشعار بالبكسل",
+            "labelHTML": "القيمة الافتراضية 128 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 128,
+            "required": false,
+            "minimum": 40,
+            "maximum": 320,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_height",
+            "type": "number",
+            "format": "integer",
+            "label": "ارتفاع ذيل الصفحة",
+            "description": "المسافة العلوية والسفلية داخل ذيل الصفحة بالبكسل",
+            "labelHTML": "القيمة الافتراضية 64 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 64,
+            "required": false,
+            "minimum": 16,
+            "maximum": 200,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_payment_methods",
+            "type": "collection",
+            "format": "collection",
+            "required": false,
+            "minLength": 0,
+            "maxLength": 12,
+            "label": "صور طرق الدفع",
+            "item_label": "طريقة دفع",
+            "icon": "sicon-credit-card",
+            "description": "عمود إضافي في ذيل الصفحة لعرض صور طرق الدفع. لن يظهر العمود إذا لم تتم إضافة أي صورة.",
+            "value": [],
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ],
+            "fields": [
+                {
+                    "type": "string",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "id": "footer_payment_methods.image",
+                    "label": "صورة طريقة الدفع",
+                    "format": "image",
+                    "required": true,
+                    "placeholder": null,
+                    "description": "* المقاس المناسب للصورة هو 80×50 بكسل"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "الاسم",
+                    "multilanguage": true,
+                    "id": "footer_payment_methods.title",
+                    "value": null,
+                    "required": false,
+                    "format": "text",
+                    "description": "يُستخدم كنص بديل للصورة (alt)",
+                    "placeholder": "مدى، فيزا، آبل باي...",
+                    "minLength": 0,
+                    "maxLength": 50
+                }
+            ]
+        },
+        {
+            "id": "footer_payment_title",
+            "type": "string",
+            "format": "text",
+            "label": "عنوان عمود طرق الدفع",
+            "multilanguage": true,
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-text-alt",
+            "value": "طرق الدفع",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "static",
             "id": "product_card_section_line",
             "format": "line",
@@ -592,6 +840,275 @@
             "required": false
         },
         {
+            "id": "product_card_advanced_options",
+            "label": "خيارات متقدمة لبطاقة المنتج",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "id": "product_card_border_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون حدود بطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#000000",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_card_badge_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون شارة العرض الترويجي",
+            "description": "لون خلفية الشارة التي تظهر أعلى صورة المنتج",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#991b1b",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_card_border_radius",
+            "type": "number",
+            "format": "integer",
+            "label": "انحناء حواف بطاقة المنتج",
+            "description": "نصف قطر الانحناء بالبكسل",
+            "labelHTML": "القيمة الافتراضية 12 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 12,
+            "required": false,
+            "minimum": 0,
+            "maximum": 48,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "hide_product_card_border",
+            "label": "إخفاء حدود بطاقة المنتج",
+            "description": "إخفاء الإطار والظل حول البطاقة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "hide_product_card_old_price",
+            "label": "إخفاء السعر قبل الخصم",
+            "description": "إخفاء السعر المشطوب الذي يظهر بجانب سعر التخفيض",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_card_text_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون نص بطاقة المنتج",
+            "description": "لون اسم المنتج والنصوص داخل البطاقة",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#1f2937",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "center_product_card_text",
+            "label": "توسيط نص بطاقة المنتج",
+            "description": null,
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "hide_product_card_rating",
+            "label": "إخفاء تقييم المنتج في البطاقة",
+            "description": null,
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "show_product_card_options",
+            "label": "إظهار خيارات المنتج في البطاقة",
+            "description": "عرض ألوان أو صور خيارات المنتج كدوائر مصغرة داخل البطاقة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "hide_product_card_availability",
+            "label": "إخفاء حالة توفر المنتج",
+            "description": "إخفاء الكمية المتبقية وشارة نفاد الكمية في البطاقة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "hide_product_card_countdown",
+            "label": "إخفاء العد التنازلي للمنتجات المخفّضة",
+            "description": "إخفاء مؤقت انتهاء الخصم في بطاقة المنتج",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "grayscale_out_of_stock_image",
+            "label": "تدرج رمادي لصور المنتجات غير المتوفرة",
+            "description": "إظهار صورة المنتج بدون ألوان عند نفاد الكمية",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "disable_product_card_hover",
+            "label": "تعطيل تأثير التمرير على بطاقة المنتج",
+            "description": "تعطيل تكبير الصورة والظل عند مرور المؤشر",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "products_autoload",
+            "label": "تحميل المنتجات تلقائياً بدون زر (المزيد)",
+            "description": "يُطبق على صفحات الأقسام والبحث والعروض والوسوم، وصفحة الماركة، وصفحة المفضلة. لا يؤثر على أقسام الصفحة الرئيسية.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "static",
             "id": "product_page_section_line",
             "format": "line",
@@ -611,17 +1128,6 @@
             "label": "إظهار مسار التنقل في صفحة المنتج",
             "description": null,
             "id": "product_show_breadcrumbs",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "إظهار مسار التنقل في صفحة قائمة المنتجات",
-            "description": null,
-            "id": "product_index_show_breadcrumbs",
             "format": "switch",
             "required": false,
             "value": true,
@@ -724,6 +1230,203 @@
             "required": false,
             "value": false,
             "selected": false
+        },
+        {
+            "id": "product_page_advanced_options",
+            "label": "خيارات متقدمة لصفحة المنتج",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "id": "show_product_category",
+            "label": "إظهار قسم المنتج في صفحة المنتج",
+            "description": "عرض رابط القسم الذي ينتمي إليه المنتج أسفل شعار الماركة. غير مفعّل افتراضياً حتى لا يتغير الشكل الحالي.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "enable_product_page_colors",
+            "label": "تخصيص ألوان خلفية صفحة المنتج",
+            "description": "عند تعطيله تُستخدم ألوان الثيم الافتراضية",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "product_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_page_bg_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية صفحة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#fff5f0",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "enable_product_page_colors",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_details_bg_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية تفاصيل المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "enable_product_page_colors",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_images_bg_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية صور المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "enable_product_page_colors",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "type": "static",
+            "id": "category_page_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "category_page_section_title",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعدادات صفحة الأقسام</h6></div>",
+            "variant": "h6",
+            "icon": "sicon-list"
+        },
+        {
+            "id": "category_page_advanced_options",
+            "label": "خيارات متقدمة لصفحة الأقسام",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "إظهار مسار التنقل في صفحة قائمة المنتجات",
+            "description": null,
+            "id": "product_index_show_breadcrumbs",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "id": "enable_category_page_bg",
+            "label": "تخصيص لون خلفية صفحة الأقسام",
+            "description": "عند تعطيله تُستخدم خلفية الموقع الافتراضية",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "category_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "category_page_bg_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية صفحة الأقسام",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#fff5f0",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "category_page_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "enable_category_page_bg",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
         }
     ],
     "components": [

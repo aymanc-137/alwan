@@ -106,7 +106,7 @@
 		<div class="flex flex-col items-start md:flex-row" id="product-{{ product.id }}">
 			<div class="sidebar md:sticky top-24 w-full md:!w-2/4 rtl:ml-8 ltr:mr-8 mb-5 md:mb-0 overflow-hidden shrink-0">
 				{% set has_many_images = product.images|length > 1 %}
-				<salla-slider id="details-slider-{{ product.id }}" class="details-slider image-slider bg-white neo-shadow mr-1 rounded-lg " type="thumbs" loop="false" auto-height listen-to-thumbnails-option show-thumbs-controls="false">
+				<salla-slider id="details-slider-{{ product.id }}" class="details-slider image-slider product-single-images bg-white neo-shadow mr-1 rounded-lg " type="thumbs" loop="false" auto-height listen-to-thumbnails-option show-thumbs-controls="false">
 					{% if product.promotion_title %}
 						<div class="promotion-title">{{ product.promotion_title }}</div>
 					{% endif %}
@@ -172,7 +172,7 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 				</salla-slider>
 			</div>
 
-			<div class="bg-white neo-shadow p-3 rounded-lg main-content md:sticky md:overflow-hidden top-24 w-full md:w-2/4">
+			<div class="bg-white neo-shadow p-3 rounded-lg main-content product-single-details md:sticky md:overflow-hidden top-24 w-full md:w-2/4">
 
 				{% hook 'product:single.description.start' %}
 
@@ -181,6 +181,14 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 						<a class="brand-logo" href="{{ product.brand.url }}" title="{{ product.brand.name }}">
 							<img width="100%" height="100%" class="max-h-full object-contain" src="{{ product.brand.logo }}" title="{{ product.brand.name }}" alt="{{ product.brand.name }}">
 						</a>
+					</div>
+				{% endif %}
+
+				{# Advanced option: product category link. Off by default so the
+				   stock layout is unchanged. #}
+				{% if theme.settings.get('show_product_category') and product.category.name %}
+					<div class="product-single-category">
+						<a href="{{ product.category.url }}" title="{{ product.category.name }}">{{ product.category.name }}</a>
 					</div>
 				{% endif %}
 

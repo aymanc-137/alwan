@@ -82,6 +82,7 @@
 			window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
 			window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
 			window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
+			window.show_product_card_options = {{ theme.settings.get('show_product_card_options', false)|json_encode|raw }}
 
 			// Store wishlist button setting in localStorage for product-card.js
 			// localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
@@ -144,7 +145,39 @@
 	--color-nav-header-color: {{theme.settings.get('nav_header_color', '#fff5f0')}};
 	--color-button: {{theme.settings.get('button_color', '#61C0C1')}};
 	--color-wishlist: {{theme.settings.get('wishlist_color', '#F8B5EB')}};
+
+	/* Advanced theme options. Every default below reproduces the theme's
+	   stock appearance, so turning a section's "advanced options" switch on
+	   without changing any value is a visual no-op. */
+	--header-logo-size: {{ theme.settings.get('header_logo_size', 48) }}px;
+	--header-icons-size: {{ theme.settings.get('header_icons_size', 40) }}px;
+	--header-menu-text-size: {{ theme.settings.get('header_menu_text_size', 16) }}px;
+	--menu-dropdown-bg: {{ theme.settings.get('menu_dropdown_bg_color', '#ffffff') }};
+	--footer-logo-size: {{ theme.settings.get('footer_logo_size', 128) }}px;
+	--footer-height: {{ theme.settings.get('footer_height', 64) }}px;
+	--card-border-color: {{ theme.settings.get('product_card_border_color', '#000000') }};
+	--card-badge-color: {{ theme.settings.get('product_card_badge_color', '#991b1b') }};
+	--card-border-radius: {{ theme.settings.get('product_card_border_radius', 12) }}px;
+	--card-text-color: {{ theme.settings.get('product_card_text_color', '#1f2937') }};
 }
+
+{% if theme.settings.get('product_page_advanced_options') and theme.settings.get('enable_product_page_colors') %}
+.is-product-single {
+	background-color: {{ theme.settings.get('product_page_bg_color', '#fff5f0') }} !important;
+}
+.is-product-single .product-single-details {
+	background-color: {{ theme.settings.get('product_details_bg_color', '#ffffff') }};
+}
+.is-product-single .product-single-images {
+	background-color: {{ theme.settings.get('product_images_bg_color', '#ffffff') }};
+}
+{% endif %}
+
+{% if theme.settings.get('category_page_advanced_options') and theme.settings.get('enable_category_page_bg') %}
+.is-product-index {
+	background-color: {{ theme.settings.get('category_page_bg_color', '#fff5f0') }} !important;
+}
+{% endif %}
 		</style>
 		{# tracking services, custom css feature. #}
 	{% hook 'head:end' %}
@@ -156,6 +189,16 @@
 												  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
 												  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
 												  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
+												  {{ theme.settings.get('hide_product_card_border') ? ' hide-card-border' : '' }}
+												  {{ theme.settings.get('hide_product_card_old_price') ? ' hide-card-old-price' : '' }}
+												  {{ theme.settings.get('center_product_card_text') ? ' center-card-text' : '' }}
+												  {{ theme.settings.get('hide_product_card_rating') ? ' hide-card-rating' : '' }}
+												  {{ theme.settings.get('hide_product_card_availability') ? ' hide-card-availability' : '' }}
+												  {{ theme.settings.get('hide_product_card_countdown') ? ' hide-card-countdown' : '' }}
+												  {{ theme.settings.get('grayscale_out_of_stock_image') ? ' grayscale-oos-image' : '' }}
+												  {{ theme.settings.get('disable_product_card_hover') ? ' no-card-hover' : '' }}
+												  {{ (page.slug == 'product.single') ? ' is-product-single' : '' }}
+												  {{ (page.slug starts with 'product.index') ? ' is-product-index' : '' }}
 												  ">
 		<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:start-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-primary">
 			{{ trans('blocks.header.skip_to_content') }}

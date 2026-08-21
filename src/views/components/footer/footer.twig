@@ -17,7 +17,8 @@
 		
 						 background-color: {{ theme.settings.get('footer_color', '#60a5fa') }}" class="    store-footer__inner {{theme.settings.get('enable_footer_wavey', false) ? '' : 'border-t-2'}}  text-gray-100   bg-center bg-no-repeat">
 
-		<div class="container mx-auto grid grid-col-1 lg:grid-cols-5 gap-8 ">
+		{% set payment_methods = theme.settings.get('footer_advanced_options') ? theme.settings.get('footer_payment_methods') : null %}
+		<div class="container mx-auto grid grid-col-1 {{ payment_methods|length ? 'lg:grid-cols-6' : 'lg:grid-cols-5' }} gap-8 ">
 
 			{% if not is_email %}
 				<div class=""></div>
@@ -27,8 +28,10 @@
 
 			<div class=" ">
 
-				<a href="{{ link('/') }}" class="flex flex-col items-center ">
-					<img src="{{ store.logo }}" alt="{{ store.name }}" width="128" height="64" class="w-32 h-16 object-contain" loading="lazy" decoding="async"/>
+				{# Advanced option: a dedicated footer logo and size, falling back to the store logo. #}
+				{% set footer_logo = theme.settings.get('footer_advanced_options') ? theme.settings.get('footer_logo_image') : null %}
+				<a href="{{ link('/') }}" class="footer-logo flex flex-col items-center ">
+					<img src="{{ footer_logo|default(store.logo) }}" alt="{{ store.name }}" width="128" height="64" class="w-32 h-16 object-contain" loading="lazy" decoding="async"/>
 				</a>
 				{% if store.description %}
 					<p class="max-w-xs leading-6 mb-6">
@@ -107,6 +110,21 @@
 						<button type="submit" name="subscribe" class="neo-shadow hover:bg-gray-700 mx-2 px-2 py-2 rounded-xl text-white font-semibold">
 							{{ trans('blocks.footer.Subscribe') }}
 						</button>
+					</div>
+				</div>
+			{% endif %}
+
+			{# Advanced option: payment-method images. The column is skipped entirely
+			   when the merchant has not uploaded any, so the stock grid is unchanged. #}
+			{% if payment_methods|length %}
+				<div class="footer-payments">
+					<h3>{{ theme.settings.get('footer_payment_title', 'طرق الدفع') }}</h3>
+					<div class="footer-payments__list">
+						{% for method in payment_methods %}
+							{% if method.image %}
+								<img class="footer-payments__item" src="{{ method.image|cdn(160) }}" alt="{{ method.title|default(store.name) }}" title="{{ method.title }}" width="80" height="50" loading="lazy" decoding="async"/>
+							{% endif %}
+						{% endfor %}
 					</div>
 				</div>
 			{% endif %}
