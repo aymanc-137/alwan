@@ -758,7 +758,6 @@
                     "type": "string",
                     "icon": "sicon-format-text-alt",
                     "label": "الاسم",
-                    "multilanguage": true,
                     "id": "footer_payment_methods.title",
                     "value": null,
                     "required": false,
@@ -775,7 +774,6 @@
             "type": "string",
             "format": "text",
             "label": "عنوان عمود طرق الدفع",
-            "multilanguage": true,
             "description": null,
             "labelHTML": null,
             "icon": "sicon-format-text-alt",
@@ -1241,24 +1239,6 @@
             "required": false,
             "value": false,
             "selected": false
-        },
-        {
-            "id": "show_product_category",
-            "label": "إظهار قسم المنتج في صفحة المنتج",
-            "description": "عرض رابط القسم الذي ينتمي إليه المنتج أسفل شعار الماركة. غير مفعّل افتراضياً حتى لا يتغير الشكل الحالي.",
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false,
-            "conditions": [
-                {
-                    "id": "product_page_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
         },
         {
             "id": "enable_product_page_colors",

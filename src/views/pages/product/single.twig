@@ -184,14 +184,6 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 					</div>
 				{% endif %}
 
-				{# Advanced option: product category link. Off by default so the
-				   stock layout is unchanged. #}
-				{% if theme.settings.get('show_product_category') and product.category.name %}
-					<div class="product-single-category">
-						<a href="{{ product.category.url }}" title="{{ product.category.name }}">{{ product.category.name }}</a>
-					</div>
-				{% endif %}
-
 				<h1 class="p-3 text-xl md:text-2xl leading-10 font-bold mb-6 text-gray-800">{{ product.name }}</h1>
 
 				{% if product.subtitle %}

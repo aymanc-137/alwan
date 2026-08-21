@@ -117,12 +117,25 @@
 			{# Advanced option: payment-method images. The column is skipped entirely
 			   when the merchant has not uploaded any, so the stock grid is unchanged. #}
 			{% if payment_methods|length %}
+				{# These titles were multilanguage in an earlier revision, so a saved
+				   value can still arrive as an {ar:.., en:..} map instead of a string.
+				   Flatten either shape before printing it. #}
+				{% set payment_title = theme.settings.get('footer_payment_title', 'طرق الدفع') %}
+				{% if payment_title is iterable %}
+					{% set payment_title = payment_title[user.language.code]|default(payment_title|first) %}
+				{% endif %}
 				<div class="footer-payments">
-					<h3>{{ theme.settings.get('footer_payment_title', 'طرق الدفع') }}</h3>
+					{% if payment_title %}
+						<h3>{{ payment_title }}</h3>
+					{% endif %}
 					<div class="footer-payments__list">
 						{% for method in payment_methods %}
 							{% if method.image %}
-								<img class="footer-payments__item" src="{{ method.image|cdn(160) }}" alt="{{ method.title|default(store.name) }}" title="{{ method.title }}" width="80" height="50" loading="lazy" decoding="async"/>
+								{% set method_title = method.title %}
+								{% if method_title is iterable %}
+									{% set method_title = method_title[user.language.code]|default(method_title|first) %}
+								{% endif %}
+								<img class="footer-payments__item" src="{{ method.image|cdn(160) }}" alt="{{ method_title|default(store.name) }}" title="{{ method_title }}" width="80" height="50" loading="lazy" decoding="async"/>
 							{% endif %}
 						{% endfor %}
 					</div>

@@ -199,13 +199,3 @@
 .center-card-text .s-product-card-options {
   @apply justify-center;
 }
-
-/* ---------------------------------------------------------- Product page */
-
-.product-single-category {
-  @apply mb-4 text-sm;
-
-  a {
-    @apply text-gray-500 hover:text-primary underline;
-  }
-}
