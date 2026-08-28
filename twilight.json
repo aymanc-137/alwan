@@ -27,356 +27,6 @@
     ],
     "settings": [
         {
-            "id": "squar_photo_bg_image_size",
-            "type": "items",
-            "format": "dropdown-list",
-            "label": "طريقة عرض الصور في قسم قائمة عناصر ",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-list",
-            "selected": [
-                {
-                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
-                    "value": "contain",
-                    "key": "f4adec13-6e4c-654b-b978-b2807935ced9"
-                }
-            ],
-            "options": [
-                {
-                    "label": "تغطية الصورة كامل المساحة مع المحافظة على أبعاد الصورة (Cover)",
-                    "value": "cover",
-                    "key": "e9c8ea8f-c5c6-234e-935-3bce269afde4"
-                },
-                {
-                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
-                    "value": "contain",
-                    "key": "f4adec13-6e4c-654b-b978-b2807935ced9"
-                }
-            ],
-            "source": "Manual",
-            "required": true
-        },
-        {
-            "type": "static",
-            "id": "static-line1",
-            "format": "line"
-        },
-        {
-            "type": "static",
-            "id": "general_section",
-            "format": "title",
-            "label": "الإعدادات العامة",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الإعدادات العامة للثيم</h6></div>",
-            "variant": "h6",
-            "icon": "sicon-settings"
-        },
-        {
-            "id": "description",
-            "type": "static",
-            "format": "description",
-            "label": "مساعدة",
-            "value": "📖 تصفح دليل الثيم للمساعدة : <a href='https://aymanc-137.github.io/ar/alwan' target='_blank' style='color:#3b82f6;text-decoration:underline;'>https://aymanc-137.github.io/ar/alwan</a>",
-            "variant": "h1",
-            "icon": "sicon-book-open"
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "تفعيل إشعار الإضافة للسلة المحسن",
-            "description": null,
-            "id": "enable_add_product_toast",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "إظهار الوسوم (Tags)",
-            "description": "عرض وسوم المنتج في صفحة المنتج",
-            "id": "show_tags",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
-        },
-        {
-            "id": "enable_section_backgroud",
-            "type": "boolean",
-            "format": "switch",
-            "label": " تمكين خلفية الاقسام الاساسية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "required": false
-        },
-        {
-            "id": "enable_sections_border",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تمكين حدود الاقسام الاساسية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": false,
-            "required": false
-        },
-        {
-            "id": "background_sections_color",
-            "type": "string",
-            "format": "color",
-            "label": "لون خلفية الاقسام الاساسية",
-            "description": "لون الخلفية",
-            "labelHTML": null,
-            "icon": "sicon-format-text-alt",
-            "value": "#ffffff",
-            "required": false,
-            "conditions": [
-                {
-                    "id": "enable_section_backgroud",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "background_sections_image",
-            "type": "string",
-            "format": "image",
-            "label": "صور خلفية الاقسام الاساسية",
-            "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
-            "labelHTML": null,
-            "icon": "sicon-image",
-            "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
-            "required": false,
-            "conditions": [
-                {
-                    "id": "enable_section_backgroud",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "is_whatsapp_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الواتساب الثابت",
-            "description": "إظهار زر واتساب ثابت في الصفحة للتواصل السريع",
-            "labelHTML": null,
-            "icon": "sicon-whatsapp",
-            "value": true,
-            "selected": false,
-            "required": false
-        },
-        {
-            "id": "whatsapp_number",
-            "type": "string",
-            "format": "text",
-            "label": "رقم الواتساب",
-            "description": "أدخل رقم الواتساب مع رمز الدولة (مثال: +966512345678)",
-            "labelHTML": null,
-            "placeholder": "+966512345678",
-            "icon": "sicon-phone",
-            "value": null,
-            "multilanguage": false,
-            "required": false,
-            "minLength": 3,
-            "maxLength": 30,
-            "conditions": [
-                {
-                    "id": "is_whatsapp_enable",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "is_scroll_enable",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل زر الرجوع للأعلى",
-            "description": "إظهار زر ثابت للعودة إلى أعلى الصفحة",
-            "labelHTML": null,
-            "icon": "sicon-arrow-up",
-            "value": true,
-            "selected": false,
-            "required": false
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "وضع عمودي للمنتجات الثابتة",
-            "description": "عرض المنتجات في مربع المنتجات الثابتة بشكل عمودي في الصفحة الرئيسية",
-            "id": "vertical_fixed_products",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false
-        },
-        {
-            "type": "boolean",
-            "id": "is_more_button_enabled",
-            "label": "عرض زر (المزيد/الكل) في الصفحة الرئيسية",
-            "description": "إظهار زر لعرض جميع المنتجات",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": false
-        },
-        {
-            "type": "static",
-            "id": "email_section_line",
-            "format": "line",
-            "label": null
-        },
-        {
-            "id": "email_section_title",
-            "type": "static",
-            "format": "title",
-            "label": "إعداد القائمة البريدية",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد القائمة البريدية</h6></div>",
-            "variant": "h6",
-            "icon": "sicon-inbox"
-        },
-        {
-            "id": "enable_email_subscription",
-            "type": "boolean",
-            "format": "switch",
-            "label": "تفعيل الاشتراك في القائمة البريدية",
-            "description": null,
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": true,
-            "selected": true,
-            "required": false
-        },
-        {
-            "id": "email_subscription_url",
-            "type": "string",
-            "format": "url",
-            "inputType": "url",
-            "label": "رابط الاشتراك في القائمة البريدية",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "e.g. https://salla.sa",
-            "icon": "sicon-link",
-            "value": "https://salla.sa",
-            "required": false,
-            "minLength": 3,
-            "maxLength": "1000"
-        },
-        {
-            "id": "user_id_email",
-            "type": "string",
-            "format": "text",
-            "label": "معرف المستخدم للقائمة البريدية",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "Placeholder text ..",
-            "icon": "sicon-format-text-alt",
-            "value": "123456789",
-            "multilanguage": false,
-            "required": false,
-            "minLength": 3,
-            "maxLength": "100"
-        },
-        {
-            "id": "email_input_filed",
-            "type": "string",
-            "format": "text",
-            "label": "حقل الإدخال للقائمة البريدية",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "Placeholder text ..",
-            "icon": "sicon-format-text-alt",
-            "value": "123456789",
-            "multilanguage": false,
-            "required": false,
-            "minLength": 3,
-            "maxLength": 100
-        },
-        {
-            "id": "audience_id_email",
-            "type": "string",
-            "format": "text",
-            "label": "معرف الجمهور للقائمة البريدية",
-            "description": null,
-            "labelHTML": null,
-            "placeholder": "Placeholder text ..",
-            "icon": "sicon-format-text-alt",
-            "value": "123456789",
-            "multilanguage": false,
-            "required": false,
-            "minLength": 3,
-            "maxLength": "100"
-        },
-        {
-            "type": "static",
-            "id": "colors_section_line",
-            "format": "line",
-            "label": null
-        },
-        {
-            "type": "static",
-            "format": "title",
-            "id": "colors_section_title",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الألوان والتنسيقات</h6></div>",
-            "variant": "h6",
-            "icon": "sicon-format-fill"
-        },
-        {
-            "id": "main_background_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون خلفية الموقع",
-            "description": "اللون الرئيسي لخلفية الموقع",
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#fff5f0",
-            "required": false
-        },
-        {
-            "id": "style_title_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون خلفية العناوين",
-            "description": "لون الخلفية للعناوين في الصفحات",
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#FFAB5B",
-            "required": false
-        },
-        {
-            "id": "button_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون الأزرار",
-            "description": "لون خلفية الأزرار",
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#61C0C1",
-            "required": false
-        },
-        {
-            "id": "wishlist_color",
-            "type": "string",
-            "format": "color",
-            "inputType": "color",
-            "label": "لون المفضلة",
-            "description": "لون خلفية زر المفضلة",
-            "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#F8B5EB",
-            "required": false
-        },
-        {
             "type": "static",
             "id": "header_section_line",
             "format": "line",
@@ -582,259 +232,204 @@
         },
         {
             "type": "static",
-            "id": "footer_section_line",
-            "format": "line",
-            "label": null
+            "id": "static-line1",
+            "format": "line"
         },
         {
             "type": "static",
+            "id": "general_section",
             "format": "title",
-            "id": "footer_section_title",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد ذيل الصفحة</h6></div>",
+            "label": "الإعدادات العامة",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الإعدادات العامة للثيم</h6></div>",
             "variant": "h6",
-            "icon": "sicon-window-layout"
+            "icon": "sicon-settings"
+        },
+        {
+            "id": "description",
+            "type": "static",
+            "format": "description",
+            "label": "مساعدة",
+            "value": "📖 تصفح دليل الثيم للمساعدة : <a href='https://aymanc-137.github.io/ar/alwan' target='_blank' style='color:#3b82f6;text-decoration:underline;'>https://aymanc-137.github.io/ar/alwan</a>",
+            "variant": "h1",
+            "icon": "sicon-book-open"
         },
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
-            "label": "الوضع الداكن للذيل",
-            "description": "تطبيق الوضع الداكن على ذيل الصفحة",
-            "id": "footer_is_dark",
+            "label": "تفعيل إشعار الإضافة للسلة المحسن",
+            "description": null,
+            "id": "enable_add_product_toast",
             "format": "switch",
             "required": false,
             "value": true,
             "selected": false
         },
         {
-            "id": "footer_color",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "إظهار الوسوم (Tags)",
+            "description": "عرض وسوم المنتج في صفحة المنتج",
+            "id": "show_tags",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "id": "enable_section_backgroud",
+            "type": "boolean",
+            "format": "switch",
+            "label": " تمكين خلفية الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "enable_sections_border",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تمكين حدود الاقسام الاساسية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": false,
+            "required": false
+        },
+        {
+            "id": "background_sections_color",
             "type": "string",
             "format": "color",
-            "inputType": "color",
-            "label": "لون خلفية ذيل الصفحة",
-            "description": null,
+            "label": "لون خلفية الاقسام الاساسية",
+            "description": "لون الخلفية",
             "labelHTML": null,
-            "icon": "sicon-format-fill",
-            "value": "#60a5fa",
-            "required": false
+            "icon": "sicon-format-text-alt",
+            "value": "#ffffff",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "enable_section_backgroud",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
         },
         {
-            "id": "footer_background_image",
+            "id": "background_sections_image",
             "type": "string",
             "format": "image",
-            "label": "صورة خلفية ذيل الصفحة",
-            "description": "* المقاس المناسب للصورة هو 1600×1500 بكسل",
+            "label": "صور خلفية الاقسام الاساسية",
+            "description": "* المقاس الموصى به للصورة هو  782 × 550 بكسل يمكنك استخدام اي مقاس مناسب.",
             "labelHTML": null,
             "icon": "sicon-image",
-            "value": "https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png",
-            "required": false
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/bg_g.png",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "enable_section_backgroud",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
         },
         {
-            "id": "enable_footer_wavey",
+            "id": "is_whatsapp_enable",
             "type": "boolean",
             "format": "switch",
-            "label": "تفعيل الشكل المموج في رأس ذيل الصفحة",
-            "description": "إضافة تأثير مموج جمالي أعلى ذيل الصفحة",
+            "label": "تفعيل زر الواتساب الثابت",
+            "description": "إظهار زر واتساب ثابت في الصفحة للتواصل السريع",
             "labelHTML": null,
-            "icon": "sicon-toggle-off",
+            "icon": "sicon-whatsapp",
             "value": true,
             "selected": false,
             "required": false
         },
         {
-            "id": "show_trust_badges",
+            "id": "whatsapp_number",
+            "type": "string",
+            "format": "text",
+            "label": "رقم الواتساب",
+            "description": "أدخل رقم الواتساب مع رمز الدولة (مثال: +966512345678)",
+            "labelHTML": null,
+            "placeholder": "+966512345678",
+            "icon": "sicon-phone",
+            "value": null,
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": 30,
+            "conditions": [
+                {
+                    "id": "is_whatsapp_enable",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "is_scroll_enable",
             "type": "boolean",
             "format": "switch",
-            "label": "إظهار شارات التوثيق",
-            "description": "إظهار شارات التوثيق في ذيل الصفحة",
+            "label": "تفعيل زر الرجوع للأعلى",
+            "description": "إظهار زر ثابت للعودة إلى أعلى الصفحة",
             "labelHTML": null,
-            "icon": "sicon-toggle-off",
+            "icon": "sicon-arrow-up",
             "value": true,
-            "selected": true,
+            "selected": false,
             "required": false
         },
         {
-            "id": "footer_advanced_options",
-            "label": "خيارات متقدمة لذيل الصفحة",
-            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
             "type": "boolean",
             "icon": "sicon-toggle-off",
+            "label": "وضع عمودي للمنتجات الثابتة",
+            "description": "عرض المنتجات في مربع المنتجات الثابتة بشكل عمودي في الصفحة الرئيسية",
+            "id": "vertical_fixed_products",
             "format": "switch",
             "required": false,
             "value": false,
             "selected": false
         },
         {
-            "id": "footer_logo_image",
-            "type": "string",
-            "format": "image",
-            "label": "شعار بديل لذيل الصفحة",
-            "description": "في حال تركه فارغاً سيتم استخدام شعار المتجر الافتراضي",
-            "labelHTML": null,
-            "icon": "sicon-image",
-            "value": null,
-            "required": false,
-            "conditions": [
-                {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "footer_logo_size",
-            "type": "number",
-            "format": "integer",
-            "label": "حجم شعار ذيل الصفحة",
-            "description": "عرض الشعار بالبكسل",
-            "labelHTML": "القيمة الافتراضية 128 بكسل",
-            "placeholder": "القيمة",
-            "icon": "sicon-pencil-ruler",
-            "value": 128,
-            "required": false,
-            "minimum": 40,
-            "maximum": 320,
-            "conditions": [
-                {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "footer_height",
-            "type": "number",
-            "format": "integer",
-            "label": "ارتفاع ذيل الصفحة",
-            "description": "المسافة العلوية والسفلية داخل ذيل الصفحة بالبكسل",
-            "labelHTML": "القيمة الافتراضية 64 بكسل",
-            "placeholder": "القيمة",
-            "icon": "sicon-pencil-ruler",
-            "value": 64,
-            "required": false,
-            "minimum": 16,
-            "maximum": 200,
-            "conditions": [
-                {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "show_footer_payment_methods",
-            "label": "إظهار عمود طرق الدفع في ذيل الصفحة",
-            "description": "إضافة عمود جديد لعرض صور طرق الدفع. عند تفعيله يتحول ذيل الصفحة إلى ستة أعمدة.",
             "type": "boolean",
+            "id": "is_more_button_enabled",
+            "label": "عرض زر (المزيد/الكل) في الصفحة الرئيسية",
+            "description": "إظهار زر لعرض جميع المنتجات",
             "icon": "sicon-toggle-off",
             "format": "switch",
             "required": false,
-            "value": false,
-            "selected": false,
-            "conditions": [
-                {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
+            "value": true,
+            "selected": false
         },
         {
-            "id": "footer_payment_methods",
-            "type": "collection",
-            "format": "collection",
-            "required": false,
-            "minLength": 0,
-            "maxLength": 12,
-            "label": "صور طرق الدفع",
-            "item_label": "طريقة دفع",
-            "icon": "sicon-credit-card",
-            "description": "عمود إضافي في ذيل الصفحة لعرض صور طرق الدفع. يحتوي افتراضياً على أيقونات آبل باي وجوجل باي ومدى وماستركارد وفيزا، ويمكنك حذفها أو استبدالها. لن يظهر العمود إذا لم تتم إضافة أي صورة.",
-            "value": [
-                {
-                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/21257590-9ca5-4924-8665-0a85faccc598-original.webp",
-                    "footer_payment_methods.title": "apple"
-                },
-                {
-                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/6903086e-d44a-4c6d-8531-587b582de5af-original.webp",
-                    "footer_payment_methods.title": "google pay"
-                },
-                {
-                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/5c97329f-3c0d-4778-b2ba-929da046505a-original.webp",
-                    "footer_payment_methods.title": "mada"
-                },
-                {
-                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/c766bdcd-9fbf-40fe-81c6-768444841334-original.webp",
-                    "footer_payment_methods.title": "master"
-                },
-                {
-                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/203b1596-972b-4300-8688-5b1133023688-original.webp",
-                    "footer_payment_methods.title": "visa"
-                }
-            ],
-            "conditions": [
-                {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
-                },
-                {
-                    "id": "show_footer_payment_methods",
-                    "operation": "=",
-                    "value": true
-                }
-            ],
-            "fields": [
-                {
-                    "type": "string",
-                    "icon": "sicon-image",
-                    "value": null,
-                    "id": "footer_payment_methods.image",
-                    "label": "صورة طريقة الدفع",
-                    "format": "image",
-                    "required": true,
-                    "placeholder": null,
-                    "description": "* المقاس المناسب للصورة هو 80×50 بكسل"
-                },
-                {
-                    "type": "string",
-                    "icon": "sicon-format-text-alt",
-                    "label": "الاسم",
-                    "id": "footer_payment_methods.title",
-                    "value": null,
-                    "required": false,
-                    "format": "text",
-                    "description": "يُستخدم كنص بديل للصورة (alt)",
-                    "placeholder": "مدى، فيزا، آبل باي...",
-                    "minLength": 0,
-                    "maxLength": 50
-                }
-            ]
-        },
-        {
-            "id": "footer_payment_title",
-            "type": "string",
-            "format": "text",
-            "label": "عنوان عمود طرق الدفع",
+            "id": "squar_photo_bg_image_size",
+            "type": "items",
+            "format": "dropdown-list",
+            "label": "طريقة عرض الصور في قسم قائمة عناصر ",
             "description": null,
             "labelHTML": null,
-            "icon": "sicon-format-text-alt",
-            "value": "طرق الدفع",
-            "required": false,
-            "conditions": [
+            "icon": "sicon-list",
+            "selected": [
                 {
-                    "id": "footer_advanced_options",
-                    "operation": "=",
-                    "value": true
+                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-654b-b978-b2807935ced9"
+                }
+            ],
+            "options": [
+                {
+                    "label": "تغطية الصورة كامل المساحة مع المحافظة على أبعاد الصورة (Cover)",
+                    "value": "cover",
+                    "key": "e9c8ea8f-c5c6-234e-935-3bce269afde4"
                 },
                 {
-                    "id": "show_footer_payment_methods",
-                    "operation": "=",
-                    "value": true
+                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-654b-b978-b2807935ced9"
                 }
-            ]
+            ],
+            "source": "Manual",
+            "required": true
         },
         {
             "type": "static",
@@ -1178,6 +773,155 @@
         },
         {
             "type": "static",
+            "id": "email_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "id": "email_section_title",
+            "type": "static",
+            "format": "title",
+            "label": "إعداد القائمة البريدية",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد القائمة البريدية</h6></div>",
+            "variant": "h6",
+            "icon": "sicon-inbox"
+        },
+        {
+            "id": "enable_email_subscription",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل الاشتراك في القائمة البريدية",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": true,
+            "required": false
+        },
+        {
+            "id": "email_subscription_url",
+            "type": "string",
+            "format": "url",
+            "inputType": "url",
+            "label": "رابط الاشتراك في القائمة البريدية",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "e.g. https://salla.sa",
+            "icon": "sicon-link",
+            "value": "https://salla.sa",
+            "required": false,
+            "minLength": 3,
+            "maxLength": "1000"
+        },
+        {
+            "id": "user_id_email",
+            "type": "string",
+            "format": "text",
+            "label": "معرف المستخدم للقائمة البريدية",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "Placeholder text ..",
+            "icon": "sicon-format-text-alt",
+            "value": "123456789",
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": "100"
+        },
+        {
+            "id": "email_input_filed",
+            "type": "string",
+            "format": "text",
+            "label": "حقل الإدخال للقائمة البريدية",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "Placeholder text ..",
+            "icon": "sicon-format-text-alt",
+            "value": "123456789",
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": 100
+        },
+        {
+            "id": "audience_id_email",
+            "type": "string",
+            "format": "text",
+            "label": "معرف الجمهور للقائمة البريدية",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "Placeholder text ..",
+            "icon": "sicon-format-text-alt",
+            "value": "123456789",
+            "multilanguage": false,
+            "required": false,
+            "minLength": 3,
+            "maxLength": "100"
+        },
+        {
+            "type": "static",
+            "id": "colors_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "colors_section_title",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> الألوان والتنسيقات</h6></div>",
+            "variant": "h6",
+            "icon": "sicon-format-fill"
+        },
+        {
+            "id": "main_background_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية الموقع",
+            "description": "اللون الرئيسي لخلفية الموقع",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#fff5f0",
+            "required": false
+        },
+        {
+            "id": "style_title_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية العناوين",
+            "description": "لون الخلفية للعناوين في الصفحات",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#FFAB5B",
+            "required": false
+        },
+        {
+            "id": "button_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون الأزرار",
+            "description": "لون خلفية الأزرار",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#61C0C1",
+            "required": false
+        },
+        {
+            "id": "wishlist_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون المفضلة",
+            "description": "لون خلفية زر المفضلة",
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#F8B5EB",
+            "required": false
+        },
+        {
+            "type": "static",
             "id": "product_page_section_line",
             "format": "line",
             "label": null
@@ -1494,6 +1238,262 @@
                 },
                 {
                     "id": "enable_category_page_bg",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "type": "static",
+            "id": "footer_section_line",
+            "format": "line",
+            "label": null
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "footer_section_title",
+            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> إعداد ذيل الصفحة</h6></div>",
+            "variant": "h6",
+            "icon": "sicon-window-layout"
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "الوضع الداكن للذيل",
+            "description": "تطبيق الوضع الداكن على ذيل الصفحة",
+            "id": "footer_is_dark",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": false
+        },
+        {
+            "id": "footer_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون خلفية ذيل الصفحة",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#60a5fa",
+            "required": false
+        },
+        {
+            "id": "footer_background_image",
+            "type": "string",
+            "format": "image",
+            "label": "صورة خلفية ذيل الصفحة",
+            "description": "* المقاس المناسب للصورة هو 1600×1500 بكسل",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": "https://cdn.lamsaweb.com/cdnAlwan/footer_bg5.png",
+            "required": false
+        },
+        {
+            "id": "enable_footer_wavey",
+            "type": "boolean",
+            "format": "switch",
+            "label": "تفعيل الشكل المموج في رأس ذيل الصفحة",
+            "description": "إضافة تأثير مموج جمالي أعلى ذيل الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "show_trust_badges",
+            "type": "boolean",
+            "format": "switch",
+            "label": "إظهار شارات التوثيق",
+            "description": "إظهار شارات التوثيق في ذيل الصفحة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": true,
+            "required": false
+        },
+        {
+            "id": "footer_advanced_options",
+            "label": "خيارات متقدمة لذيل الصفحة",
+            "description": "تفعيل الخيارات المتقدمة لإظهار إعدادات إضافية للتحكم الدقيق. جميع القيم الافتراضية مطابقة للشكل الحالي للثيم.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "id": "footer_logo_image",
+            "type": "string",
+            "format": "image",
+            "label": "شعار بديل لذيل الصفحة",
+            "description": "في حال تركه فارغاً سيتم استخدام شعار المتجر الافتراضي",
+            "labelHTML": null,
+            "icon": "sicon-image",
+            "value": null,
+            "required": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_logo_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم شعار ذيل الصفحة",
+            "description": "عرض الشعار بالبكسل",
+            "labelHTML": "القيمة الافتراضية 128 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 128,
+            "required": false,
+            "minimum": 40,
+            "maximum": 320,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_height",
+            "type": "number",
+            "format": "integer",
+            "label": "ارتفاع ذيل الصفحة",
+            "description": "المسافة العلوية والسفلية داخل ذيل الصفحة بالبكسل",
+            "labelHTML": "القيمة الافتراضية 64 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 64,
+            "required": false,
+            "minimum": 16,
+            "maximum": 200,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "show_footer_payment_methods",
+            "label": "إظهار عمود طرق الدفع في ذيل الصفحة",
+            "description": "إضافة عمود جديد لعرض صور طرق الدفع. عند تفعيله يتحول ذيل الصفحة إلى ستة أعمدة.",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "footer_payment_methods",
+            "type": "collection",
+            "format": "collection",
+            "required": false,
+            "minLength": 0,
+            "maxLength": 12,
+            "label": "صور طرق الدفع",
+            "item_label": "طريقة دفع",
+            "icon": "sicon-credit-card",
+            "description": "عمود إضافي في ذيل الصفحة لعرض صور طرق الدفع. يحتوي افتراضياً على أيقونات آبل باي وجوجل باي ومدى وماستركارد وفيزا، ويمكنك حذفها أو استبدالها. لن يظهر العمود إذا لم تتم إضافة أي صورة.",
+            "value": [
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/21257590-9ca5-4924-8665-0a85faccc598-original.webp",
+                    "footer_payment_methods.title": "apple"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/6903086e-d44a-4c6d-8531-587b582de5af-original.webp",
+                    "footer_payment_methods.title": "google pay"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/5c97329f-3c0d-4778-b2ba-929da046505a-original.webp",
+                    "footer_payment_methods.title": "mada"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/c766bdcd-9fbf-40fe-81c6-768444841334-original.webp",
+                    "footer_payment_methods.title": "master"
+                },
+                {
+                    "footer_payment_methods.image": "https://cdn.files.salla.network/homepage/1263400992/203b1596-972b-4300-8688-5b1133023688-original.webp",
+                    "footer_payment_methods.title": "visa"
+                }
+            ],
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "show_footer_payment_methods",
+                    "operation": "=",
+                    "value": true
+                }
+            ],
+            "fields": [
+                {
+                    "type": "string",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "id": "footer_payment_methods.image",
+                    "label": "صورة طريقة الدفع",
+                    "format": "image",
+                    "required": true,
+                    "placeholder": null,
+                    "description": "* المقاس المناسب للصورة هو 80×50 بكسل"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "الاسم",
+                    "id": "footer_payment_methods.title",
+                    "value": null,
+                    "required": false,
+                    "format": "text",
+                    "description": "يُستخدم كنص بديل للصورة (alt)",
+                    "placeholder": "مدى، فيزا، آبل باي...",
+                    "minLength": 0,
+                    "maxLength": 50
+                }
+            ]
+        },
+        {
+            "id": "footer_payment_title",
+            "type": "string",
+            "format": "text",
+            "label": "عنوان عمود طرق الدفع",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-text-alt",
+            "value": "طرق الدفع",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "footer_advanced_options",
+                    "operation": "=",
+                    "value": true
+                },
+                {
+                    "id": "show_footer_payment_methods",
                     "operation": "=",
                     "value": true
                 }
