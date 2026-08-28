@@ -107,7 +107,7 @@
  * border-color to currentColor / border-radius to 0. */
 .s-product-card-entry {
   border-style: solid;
-  border-width: 1px;
+  border-width: var(--card-border-width, 1px);
   border-color: var(--card-border-color, #000);
   border-radius: var(--card-border-radius, 12px);
   box-shadow: 3px 3px 0 0 var(--card-border-color, #000);

@@ -165,10 +165,12 @@
 	   border-color to currentColor instead of the stock black. #}
 	{% if theme.settings.get('product_card_advanced_options') %}
 		{% set card_border_color  = theme.settings.get('product_card_border_color') %}
+		{% set card_border_width  = theme.settings.get('product_card_border_width') %}
 		{% set card_badge_color   = theme.settings.get('product_card_badge_color') %}
 		{% set card_border_radius = theme.settings.get('product_card_border_radius') %}
 		{% set card_text_color    = theme.settings.get('product_card_text_color') %}
 		{% if card_border_color %}--card-border-color: {{ card_border_color }};{% endif %}
+		{% if card_border_width is not null and card_border_width != '' %}--card-border-width: {{ card_border_width }}px;{% endif %}
 		{% if card_badge_color %}--card-badge-color: {{ card_badge_color }};{% endif %}
 		{% if card_border_radius is not null and card_border_radius != '' %}--card-border-radius: {{ card_border_radius }}px;{% endif %}
 		{% if card_text_color %}--card-text-color: {{ card_text_color }};{% endif %}

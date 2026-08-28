@@ -12144,6 +12144,7 @@ body.font-dinnextltarabic-regular .btn--add-to-cart {
 .s-product-card-entry {
   border-style: solid;
   border-width: 1px;
+  border-width: var(--card-border-width, 1px);
   border-color: #000;
   border-color: var(--card-border-color, #000);
   border-radius: 12px;

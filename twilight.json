@@ -917,6 +917,27 @@
             ]
         },
         {
+            "id": "product_card_border_width",
+            "type": "number",
+            "format": "integer",
+            "label": "سماكة حدود بطاقة المنتج",
+            "description": "سماكة الحد حول البطاقة بالبكسل. اجعلها 0 لإخفاء الحد.",
+            "labelHTML": "القيمة الافتراضية 1 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 1,
+            "required": false,
+            "minimum": 0,
+            "maximum": 10,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "id": "product_card_badge_color",
             "type": "string",
             "format": "color",
