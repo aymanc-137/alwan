@@ -1236,6 +1236,27 @@
             "selected": true
         },
         {
+            "id": "preloader_logo_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم شعار شاشة التحميل",
+            "description": "عرض شعار المتجر في شاشة التحميل بالبكسل",
+            "labelHTML": "القيمة الافتراضية 248 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 248,
+            "required": false,
+            "minimum": 48,
+            "maximum": 512,
+            "conditions": [
+                {
+                    "id": "enable_preloader",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "تثبيت زر الإضافة للسلة أسفل الشاشة",

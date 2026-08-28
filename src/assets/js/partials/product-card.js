@@ -19,8 +19,8 @@ class ProductCard extends HTMLElement {
       this.fitImageHeight = salla.config.get('store.settings.product.fit_type');
       this.placeholder = salla.url.asset(salla.config.get('theme.settings.placeholder'));
 
-      // Try to get wishlistBtn from salla.config, fallback to localStorage
-      //this.wishlistBtn = salla.config.get('theme.settings.get("wishlist_btn")') || localStorage.getItem('wishlist_btn');
+      // true  -> wishlist button sits next to the add-to-cart button
+      // false -> wishlist button is overlaid on the product image
       this.wishlistBtn = window.wishlist_btn;
       this.mutileColorProductCard = window.mutile_color_product_card;
       this.addSpacingProductCard = window.add_spacing_product_card;

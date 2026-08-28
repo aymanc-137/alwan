@@ -78,18 +78,16 @@
         	window.enable_add_product_toast = "{{ theme.settings.get('enable_add_product_toast', true) }}"
         	window.notify_when_available_in_card = "{{ theme.settings.get('notify_when_available_in_card', true) }}"
 
-			window.wishlist_btn = "{{ theme.settings.get('wishlist_btn', 'default') }}"
+			{# Setting id is hyphenated in twilight.json; reading it as wishlist_btn
+			   never resolved, so the 'default' fallback (a truthy string) made this
+			   permanently true and the button could never move into the image.
+			   Emitted as a real boolean so `false` stays falsy in JS. #}
+			window.wishlist_btn = {{ theme.settings.get('wishlist-btn', true)|json_encode|raw }}
 			window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
 			window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
 			window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
 			window.show_product_card_options = {{ (theme.settings.get('product_card_advanced_options') and theme.settings.get('show_product_card_options'))|json_encode|raw }}
 
-			// Store wishlist button setting in localStorage for product-card.js
-			// localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
-			// localStorage.setItem('mutile_color_product_card', "{{ theme.settings.get('mutile_color_product_card', false) }}");
-			// localStorage.setItem('add_spacing_product_card', "{{ theme.settings.get('add_spacing_product_card', false) }}");
-			// localStorage.setItem('product_card_color', "{{ theme.settings.get('product_card_color', '#EDF7F8') }}");
-			// product_card_color
 		</script>
 
 		{% hook 'head:start' %}
@@ -226,7 +224,7 @@
 		</a>
 		{% if theme.settings.get('enable_preloader', true) %}
 		<div class="loader-init">
-			{% set pre_loade_logo = theme.settings.get('preloader_logo_size', '248') %}
+			{% set pre_loade_logo = theme.settings.get('preloader_logo_size', 248) %}
 			<img style="width: {{pre_loade_logo}}px" class="pulseScale" src="{{store.logo}}" alt="{{ store.name }}" loading="eager" decoding="async">
 		</div>
 		{% endif %}
