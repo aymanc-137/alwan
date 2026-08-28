@@ -97,23 +97,26 @@
 
 /* Sole owner of the card's border, radius and neo shadow.
  *
- * These are deliberately hardcoded rather than merchant-configurable. Driving
- * them from CSS variables meant an unset or empty setting produced a
- * declaration that was invalid at computed-value time, which silently
- * collapsed border-color to currentColor and border-radius to 0 -- the card
- * lost its border entirely. Literal values cannot fail that way.
+ * The fallbacks are the stock neobrutalist values and match the .neo-shadow
+ * class in 02-generic/common.scss, so this rule renders the default card on its
+ * own: with the merchant's "advanced options" switch off, master.twig emits no
+ * variables at all and the card falls back to exactly that. The fallbacks are
+ * also what keeps an unset or empty setting from producing a declaration that
+ * is invalid at computed-value time, which would silently collapse
+ * border-color to currentColor and border-radius to 0.
  *
- * The values match the .neo-shadow class in 02-generic/common.scss, so the card
- * stays visually consistent with the rest of the neobrutalist theme. They are
- * written out here instead of via `@apply neo-shadow` because @apply strips the
- * !important that class declares, which is what made this rule lose to more
- * specific selectors elsewhere in the first place. */
+ * Written out here rather than via `@apply neo-shadow` because @apply strips
+ * the !important that class declares, which is what made the old split rule
+ * lose to more specific selectors elsewhere.
+ *
+ * The shadow reads --card-border-color too, so it tracks the merchant's border
+ * colour instead of staying hardcoded black. */
 .s-product-card-entry {
   border-style: solid;
-  border-width: 1px;
-  border-color: #000;
-  border-radius: 12px;
-  box-shadow: 3px 3px 0 0 #000;
+  border-width: var(--card-border-width, 1px);
+  border-color: var(--card-border-color, #000);
+  border-radius: var(--card-border-radius, 12px);
+  box-shadow: 3px 3px 0 0 var(--card-border-color, #000);
 }
 
 /* Fallbacks match the stock Twilight values (#991b1b badge, #1f2937 title), so

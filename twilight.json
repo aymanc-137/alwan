@@ -898,6 +898,46 @@
             "selected": false
         },
         {
+            "id": "product_card_border_color",
+            "type": "string",
+            "format": "color",
+            "inputType": "color",
+            "label": "لون حدود بطاقة المنتج",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-format-fill",
+            "value": "#000000",
+            "required": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_card_border_width",
+            "type": "number",
+            "format": "integer",
+            "label": "سماكة حدود بطاقة المنتج",
+            "description": "سماكة الحد حول البطاقة بالبكسل. اجعلها 0 لإخفاء الحد.",
+            "labelHTML": "القيمة الافتراضية 1 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 1,
+            "required": false,
+            "minimum": 0,
+            "maximum": 10,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "id": "product_card_badge_color",
             "type": "string",
             "format": "color",
@@ -908,6 +948,27 @@
             "icon": "sicon-format-fill",
             "value": "#991b1b",
             "required": false,
+            "conditions": [
+                {
+                    "id": "product_card_advanced_options",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "id": "product_card_border_radius",
+            "type": "number",
+            "format": "integer",
+            "label": "انحناء حواف بطاقة المنتج",
+            "description": "نصف قطر الانحناء بالبكسل",
+            "labelHTML": "القيمة الافتراضية 12 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 12,
+            "required": false,
+            "minimum": 0,
+            "maximum": 48,
             "conditions": [
                 {
                     "id": "product_card_advanced_options",
