@@ -432,6 +432,17 @@
             "required": true
         },
         {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تفعيل شاشة التحميل",
+            "description": "عرض شاشة تحميل مؤقتة عند فتح الصفحة",
+            "id": "enable_preloader",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
             "id": "preloader_logo_size",
             "type": "number",
             "format": "integer",
@@ -982,17 +993,6 @@
             "value": false,
             "selected": false,
             "required": false
-        },
-        {
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "label": "تفعيل شاشة التحميل",
-            "description": "عرض شاشة تحميل مؤقتة عند فتح الصفحة",
-            "id": "enable_preloader",
-            "format": "switch",
-            "required": false,
-            "value": true,
-            "selected": true
         },
         {
             "type": "boolean",
