@@ -205,20 +205,3 @@
     transform: none;
   }
 }
-
-/* Colour / image swatches rendered into the card by product-card.js. */
-.s-product-card-options {
-  @apply flex flex-wrap items-center gap-1.5 mt-2;
-
-  &__swatch {
-    @apply w-4 h-4 rounded-full border border-black/40 bg-cover bg-center shrink-0;
-  }
-
-  &__more {
-    @apply text-xxs opacity-70 leading-none;
-  }
-}
-
-.center-card-text .s-product-card-options {
-  @apply justify-center;
-}

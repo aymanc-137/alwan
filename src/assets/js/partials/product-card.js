@@ -25,7 +25,6 @@ class ProductCard extends HTMLElement {
       this.mutileColorProductCard = window.mutile_color_product_card;
       this.addSpacingProductCard = window.add_spacing_product_card;
       this.productCardColor = window.product_card_color;
-      this.showOptions = window.show_product_card_options;
 
 
 
@@ -70,43 +69,6 @@ class ProductCard extends HTMLElement {
     let d = new Date(date);
     return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
   } 
-
-  /**
-   * Colour / image swatches for the card, behind the `show_product_card_options`
-   * setting. The products-list payload does not always carry `options`, so this
-   * renders nothing rather than failing when the data is absent.
-   */
-  getProductOptions() {
-    if (!this.showOptions || !Array.isArray(this.product?.options)) {
-      return '';
-    }
-
-    const swatches = this.product.options
-      .filter(option => ['color', 'image', 'thumbnail'].includes(option?.type))
-      .flatMap(option => option?.details || [])
-      .filter(detail => detail?.color || detail?.image || detail?.option_value);
-
-    if (!swatches.length) {
-      return '';
-    }
-
-    const shown = swatches.slice(0, 5);
-    const remaining = swatches.length - shown.length;
-
-    const items = shown.map(detail => {
-      const image = detail.image || (detail.color ? null : detail.option_value);
-      const style = image
-        ? `background-image:url('${this.escapeHTML(image)}')`
-        : `background-color:${this.escapeHTML(detail.color || detail.option_value)}`;
-
-      return `<span class="s-product-card-options__swatch" style="${style}" title="${this.escapeHTML(detail.name || '')}"></span>`;
-    }).join('');
-
-    return `<div class="s-product-card-options">
-              ${items}
-              ${remaining > 0 ? `<span class="s-product-card-options__more">+${salla.helpers.number(remaining)}</span>` : ''}
-            </div>`;
-  }
 
   getProductBadge() {
     if (this.product?.preorder?.label) {
@@ -323,7 +285,6 @@ class ProductCard extends HTMLElement {
             ${this.product?.subtitle && !this.minimal ?
               `<p class="s-product-card-content-subtitle opacity-80">${this.product?.subtitle}</p>`
               : ``}
-            ${!this.minimal ? this.getProductOptions() : ``}
           </div>
           ${this.product?.donation && !this.minimal && !this.fullImage ?
           `<salla-progress-bar donation=${JSON.stringify(this.product?.donation)}></salla-progress-bar>

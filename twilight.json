@@ -432,6 +432,27 @@
             "required": true
         },
         {
+            "id": "preloader_logo_size",
+            "type": "number",
+            "format": "integer",
+            "label": "حجم شعار شاشة التحميل",
+            "description": "عرض شعار المتجر في شاشة التحميل بالبكسل",
+            "labelHTML": "القيمة الافتراضية 248 بكسل",
+            "placeholder": "القيمة",
+            "icon": "sicon-pencil-ruler",
+            "value": 248,
+            "required": false,
+            "minimum": 48,
+            "maximum": 512,
+            "conditions": [
+                {
+                    "id": "enable_preloader",
+                    "operation": "=",
+                    "value": true
+                }
+            ]
+        },
+        {
             "type": "static",
             "id": "product_card_section_line",
             "format": "line",
@@ -479,6 +500,18 @@
             "labelHTML": null,
             "icon": "sicon-format-fill",
             "value": "#EDF7F8",
+            "required": false
+        },
+        {
+            "id": "wishlist-btn",
+            "type": "boolean",
+            "format": "switch",
+            "label": "زر المفضلة بجانب زر الإضافة للسلة",
+            "description": "عرض زر المفضلة بالقرب من زر إضافة للسلة",
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": true,
             "required": false
         },
         {
@@ -649,24 +682,6 @@
             "id": "hide_product_card_rating",
             "label": "إخفاء تقييم المنتج في البطاقة",
             "description": null,
-            "type": "boolean",
-            "icon": "sicon-toggle-off",
-            "format": "switch",
-            "required": false,
-            "value": false,
-            "selected": false,
-            "conditions": [
-                {
-                    "id": "product_card_advanced_options",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
-            "id": "show_product_card_options",
-            "label": "إظهار خيارات المنتج في البطاقة",
-            "description": "عرض ألوان أو صور خيارات المنتج كدوائر مصغرة داخل البطاقة",
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "format": "switch",
@@ -980,27 +995,6 @@
             "selected": true
         },
         {
-            "id": "preloader_logo_size",
-            "type": "number",
-            "format": "integer",
-            "label": "حجم شعار شاشة التحميل",
-            "description": "عرض شعار المتجر في شاشة التحميل بالبكسل",
-            "labelHTML": "القيمة الافتراضية 248 بكسل",
-            "placeholder": "القيمة",
-            "icon": "sicon-pencil-ruler",
-            "value": 248,
-            "required": false,
-            "minimum": 48,
-            "maximum": 512,
-            "conditions": [
-                {
-                    "id": "enable_preloader",
-                    "operation": "=",
-                    "value": true
-                }
-            ]
-        },
-        {
             "type": "boolean",
             "icon": "sicon-toggle-off",
             "label": "تثبيت زر الإضافة للسلة أسفل الشاشة",
@@ -1010,18 +1004,6 @@
             "required": false,
             "value": true,
             "selected": true
-        },
-        {
-            "id": "wishlist-btn",
-            "type": "boolean",
-            "format": "switch",
-            "label": "زر المفضلة بجانب زر الإضافة للسلة",
-            "description": "عرض زر المفضلة بالقرب من زر إضافة للسلة",
-            "labelHTML": null,
-            "icon": "sicon-toggle-off",
-            "value": true,
-            "selected": true,
-            "required": false
         },
         {
             "id": "slider_background_size",
