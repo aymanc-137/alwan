@@ -55,11 +55,8 @@
     .swiper-wrapper{
         @apply pb-5;
     }
-    .swiper-wrapper,.s-products-list-wrapper {
-        .s-product-card-entry {
-            @apply border border-[#eee];
-        }
-    }
+    /* Card border intentionally not overridden here: 05-utilities/advanced-options.scss
+     * is the single owner of the card's border and neo shadow. */
     &--quick-buy {
         @apply text-center mt-6;
         salla-mini-checkout-widget {

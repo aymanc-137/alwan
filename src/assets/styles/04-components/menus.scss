@@ -69,9 +69,8 @@
         }
       }
 
-      .s-product-card-entry{
-        @apply border border-gray-100  ;
-      }
+      /* Card border intentionally not overridden here: 05-utilities/advanced-options.scss
+       * is the single owner of the card's border and neo shadow. */
 
       .btn {
         padding: 8px 10px 10px;

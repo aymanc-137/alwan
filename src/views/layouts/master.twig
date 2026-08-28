@@ -156,23 +156,17 @@
 	--footer-logo-size: {{ theme.settings.get('footer_logo_size', 128) }}px;
 	--footer-height: {{ theme.settings.get('footer_height', 64) }}px;
 
-	{# Product-card overrides are emitted only while the merchant's "advanced
-	   options" switch is on. With it off no variable is written, so the card
-	   falls back to the stock values baked into advanced-options.scss, and
-	   switching it off again reverts a store that had customised values.
-	   Each value is also checked for emptiness: writing `--card-border-color: ;`
-	   would make the declaration invalid at computed-value time and collapse
-	   border-color to currentColor instead of the stock black. #}
+	{# The card's border, radius and shadow are no longer merchant-configurable:
+	   they are hardcoded in advanced-options.scss so they cannot be knocked out
+	   by an empty setting. Only the badge and title colours remain adjustable,
+	   and they are emitted only while the "advanced options" switch is on, so
+	   turning it off restores the stock card. Both are emptiness-checked --
+	   writing `--card-badge-color: ;` would make the declaration invalid at
+	   computed-value time and collapse the badge to transparent. #}
 	{% if theme.settings.get('product_card_advanced_options') %}
-		{% set card_border_color  = theme.settings.get('product_card_border_color') %}
-		{% set card_border_width  = theme.settings.get('product_card_border_width') %}
-		{% set card_badge_color   = theme.settings.get('product_card_badge_color') %}
-		{% set card_border_radius = theme.settings.get('product_card_border_radius') %}
-		{% set card_text_color    = theme.settings.get('product_card_text_color') %}
-		{% if card_border_color %}--card-border-color: {{ card_border_color }};{% endif %}
-		{% if card_border_width is not null and card_border_width != '' %}--card-border-width: {{ card_border_width }}px;{% endif %}
+		{% set card_badge_color = theme.settings.get('product_card_badge_color') %}
+		{% set card_text_color  = theme.settings.get('product_card_text_color') %}
 		{% if card_badge_color %}--card-badge-color: {{ card_badge_color }};{% endif %}
-		{% if card_border_radius is not null and card_border_radius != '' %}--card-border-radius: {{ card_border_radius }}px;{% endif %}
 		{% if card_text_color %}--card-text-color: {{ card_text_color }};{% endif %}
 	{% endif %}
 }

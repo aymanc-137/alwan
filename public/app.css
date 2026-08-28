@@ -7763,12 +7763,10 @@ input[type=radio].sr-only:checked ~ div.main-menu .sub-menu {
     left: 100%;
     right: auto;
   }
-  .main-menu .sub-menu .s-product-card-entry{
-        border-width: 1px;
-        --tw-border-opacity: 1;
-        border-color: rgba(243, 244, 246, 1);
-        border-color: rgba(243, 244, 246, var(--tw-border-opacity, 1));
-    }
+  .main-menu .sub-menu {
+    /* Card border intentionally not overridden here: 05-utilities/advanced-options.scss
+     * is the single owner of the card's border and neo shadow. */
+  }
   .main-menu .sub-menu .btn {
     padding: 8px 10px 10px;
   }
@@ -11426,11 +11424,9 @@ input[type=radio].sr-only:checked ~ div.landing-page > header:before {
 .landing-page .swiper-wrapper{
     padding-bottom: 1.25rem;
 }
-.landing-page .swiper-wrapper .s-product-card-entry, .landing-page .s-products-list-wrapper .s-product-card-entry{
-    border-width: 1px;
-    --tw-border-opacity: 1;
-    border-color: rgba(238, 238, 238, 1);
-    border-color: rgba(238, 238, 238, var(--tw-border-opacity, 1));
+.landing-page {
+  /* Card border intentionally not overridden here: 05-utilities/advanced-options.scss
+   * is the single owner of the card's border and neo shadow. */
 }
 .landing-page--quick-buy{
     margin-top: 1.5rem;
@@ -12131,26 +12127,25 @@ body.font-dinnextltarabic-regular .btn--add-to-cart {
     padding: 0.25rem;
 }
 /* ---------------------------------------------------- Product card: values */
-/* Sole owner of the card's border and neo shadow. It used to be split between
- * `@apply neo-shadow` in menus.scss (width + colour) and this file (colour +
- * radius), which left no rule holding all four properties and dropped the
- * !important that .neo-shadow carries, since @apply strips it.
+/* Sole owner of the card's border, radius and neo shadow.
  *
- * Every var carries the stock value as its fallback, so this rule renders the
- * default neobrutalist card on its own: the merchant's "advanced options"
- * switch only has to stop emitting the variables to restore it. Fallbacks also
- * keep an empty setting from invalidating the declaration and collapsing
- * border-color to currentColor / border-radius to 0. */
+ * These are deliberately hardcoded rather than merchant-configurable. Driving
+ * them from CSS variables meant an unset or empty setting produced a
+ * declaration that was invalid at computed-value time, which silently
+ * collapsed border-color to currentColor and border-radius to 0 -- the card
+ * lost its border entirely. Literal values cannot fail that way.
+ *
+ * The values match the .neo-shadow class in 02-generic/common.scss, so the card
+ * stays visually consistent with the rest of the neobrutalist theme. They are
+ * written out here instead of via `@apply neo-shadow` because @apply strips the
+ * !important that class declares, which is what made this rule lose to more
+ * specific selectors elsewhere in the first place. */
 .s-product-card-entry {
   border-style: solid;
   border-width: 1px;
-  border-width: var(--card-border-width, 1px);
   border-color: #000;
-  border-color: var(--card-border-color, #000);
   border-radius: 12px;
-  border-radius: var(--card-border-radius, 12px);
   box-shadow: 3px 3px 0 0 #000;
-  box-shadow: 3px 3px 0 0 var(--card-border-color, #000);
 }
 /* Fallbacks match the stock Twilight values (#991b1b badge, #1f2937 title), so
  * these render unchanged once the advanced switch stops emitting the variables.
