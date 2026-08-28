@@ -281,11 +281,6 @@
     @apply ring-2 ring-primary ring-offset-2 rounded-full;
   }
 }
-.s-product-card-entry{
-  @apply  neo-shadow;
-
-  // img{
-  //   border: none !important;
-  // }
-  
-}
+/* The card's border and neo shadow now live in 05-utilities/advanced-options.scss,
+ * which owns all four properties in one rule and loads last. Applying them here
+ * via @apply silently dropped the !important that .neo-shadow declares. */

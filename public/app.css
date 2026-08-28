@@ -889,6 +889,9 @@ input:where([type='file']):focus{
 .visible{
     visibility: visible;
 }
+.collapse{
+    visibility: collapse;
+}
 .static{
     position: static;
 }
@@ -8021,11 +8024,9 @@ input[type=radio].sr-only:checked ~ div.main-menu .sub-menu {
     --tw-ring-color: var(--color-primary);
     --tw-ring-offset-width: 2px;
 }
-.s-product-card-entry {
-  border-color: #000000;
-  border-width: 1px;
-  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
-}
+/* The card's border and neo shadow now live in 05-utilities/advanced-options.scss,
+ * which owns all four properties in one rule and loads last. Applying them here
+ * via @apply silently dropped the !important that .neo-shadow declares. */
 .s-user-menu-dropdown-item-balance{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -12130,16 +12131,38 @@ body.font-dinnextltarabic-regular .btn--add-to-cart {
     padding: 0.25rem;
 }
 /* ---------------------------------------------------- Product card: values */
+/* Sole owner of the card's border and neo shadow. It used to be split between
+ * `@apply neo-shadow` in menus.scss (width + colour) and this file (colour +
+ * radius), which left no rule holding all four properties and dropped the
+ * !important that .neo-shadow carries, since @apply strips it.
+ *
+ * Every var carries the stock value as its fallback, so this rule renders the
+ * default neobrutalist card on its own: the merchant's "advanced options"
+ * switch only has to stop emitting the variables to restore it. Fallbacks also
+ * keep an empty setting from invalidating the declaration and collapsing
+ * border-color to currentColor / border-radius to 0. */
 .s-product-card-entry {
-  border-radius: var(--card-border-radius);
-  border-color: var(--card-border-color);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  border-color: var(--card-border-color, #000);
+  border-radius: 12px;
+  border-radius: var(--card-border-radius, 12px);
+  box-shadow: 3px 3px 0 0 #000;
+  box-shadow: 3px 3px 0 0 var(--card-border-color, #000);
 }
+/* Fallbacks match the stock Twilight values (#991b1b badge, #1f2937 title), so
+ * these render unchanged once the advanced switch stops emitting the variables.
+ * Without them the declarations would be invalid at computed-value time and
+ * collapse to transparent / inherited. */
 .s-product-card-promotion-title {
-  background-color: var(--card-badge-color);
+  background-color: #991b1b;
+  background-color: var(--card-badge-color, #991b1b);
 }
 .s-product-card-content-title,
 .s-product-card-content-title a {
-  color: var(--card-text-color);
+  color: #1f2937;
+  color: var(--card-text-color, #1f2937);
 }
 /* --------------------------------------------------- Product card: toggles */
 .hide-card-border .s-product-card-entry {

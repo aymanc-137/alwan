@@ -46,7 +46,7 @@
             <div class="main-content w-full">
                 {% if products|length %}
                     {% hook 'brands:single.items.start' %}
-                        <salla-products-list source="{{page.slug}}" source-value="{{page.id}}" {{ theme.settings.get('products_autoload') ? 'autoload' : '' }}></salla-products-list>
+                        <salla-products-list source="{{page.slug}}" source-value="{{page.id}}" {{ (theme.settings.get('product_card_advanced_options') and theme.settings.get('products_autoload')) ? 'autoload' : '' }}></salla-products-list>
                     {% hook 'brands:single.items.end' %}
                 {% else %}
                     <div class="no-content-placeholder">

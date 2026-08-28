@@ -82,7 +82,7 @@
 			window.mutile_color_product_card = "{{ theme.settings.get('mutile_color_product_card', false) }}"
 			window.add_spacing_product_card = "{{ theme.settings.get('add_spacing_product_card', false) }}"
 			window.product_card_color = "{{ theme.settings.get('product_card_color', '#EDF7F8') }}"
-			window.show_product_card_options = {{ theme.settings.get('show_product_card_options', false)|json_encode|raw }}
+			window.show_product_card_options = {{ (theme.settings.get('product_card_advanced_options') and theme.settings.get('show_product_card_options'))|json_encode|raw }}
 
 			// Store wishlist button setting in localStorage for product-card.js
 			// localStorage.setItem('wishlist_btn', "{{ theme.settings.get('wishlist_btn', 'default') }}");
@@ -155,10 +155,24 @@
 	--menu-dropdown-bg: {{ theme.settings.get('menu_dropdown_bg_color', '#ffffff') }};
 	--footer-logo-size: {{ theme.settings.get('footer_logo_size', 128) }}px;
 	--footer-height: {{ theme.settings.get('footer_height', 64) }}px;
-	--card-border-color: {{ theme.settings.get('product_card_border_color', '#000000') }};
-	--card-badge-color: {{ theme.settings.get('product_card_badge_color', '#991b1b') }};
-	--card-border-radius: {{ theme.settings.get('product_card_border_radius', 12) }}px;
-	--card-text-color: {{ theme.settings.get('product_card_text_color', '#1f2937') }};
+
+	{# Product-card overrides are emitted only while the merchant's "advanced
+	   options" switch is on. With it off no variable is written, so the card
+	   falls back to the stock values baked into advanced-options.scss, and
+	   switching it off again reverts a store that had customised values.
+	   Each value is also checked for emptiness: writing `--card-border-color: ;`
+	   would make the declaration invalid at computed-value time and collapse
+	   border-color to currentColor instead of the stock black. #}
+	{% if theme.settings.get('product_card_advanced_options') %}
+		{% set card_border_color  = theme.settings.get('product_card_border_color') %}
+		{% set card_badge_color   = theme.settings.get('product_card_badge_color') %}
+		{% set card_border_radius = theme.settings.get('product_card_border_radius') %}
+		{% set card_text_color    = theme.settings.get('product_card_text_color') %}
+		{% if card_border_color %}--card-border-color: {{ card_border_color }};{% endif %}
+		{% if card_badge_color %}--card-badge-color: {{ card_badge_color }};{% endif %}
+		{% if card_border_radius is not null and card_border_radius != '' %}--card-border-radius: {{ card_border_radius }}px;{% endif %}
+		{% if card_text_color %}--card-text-color: {{ card_text_color }};{% endif %}
+	{% endif %}
 }
 
 {% if theme.settings.get('product_page_advanced_options') and theme.settings.get('enable_product_page_colors') %}
@@ -189,6 +203,9 @@
 												  {{ theme.settings.get('footer_is_dark') ? ' footer-is-dark' : ' footer-is-light' }}
 												  {{ theme.settings.get('topnav_is_dark') ? ' topnav-is-dark' : '' }}
 												  {{ theme.settings.get('sticky_add_to_cart') ? ' is-sticky-product-bar' : '' }}
+												  {# Card toggles ride on the same switch as the card variables above, so
+												     turning "advanced options" off restores the stock card everywhere. #}
+												  {% if theme.settings.get('product_card_advanced_options') %}
 												  {{ theme.settings.get('hide_product_card_border') ? ' hide-card-border' : '' }}
 												  {{ theme.settings.get('hide_product_card_old_price') ? ' hide-card-old-price' : '' }}
 												  {{ theme.settings.get('center_product_card_text') ? ' center-card-text' : '' }}
@@ -197,6 +214,7 @@
 												  {{ theme.settings.get('hide_product_card_countdown') ? ' hide-card-countdown' : '' }}
 												  {{ theme.settings.get('grayscale_out_of_stock_image') ? ' grayscale-oos-image' : '' }}
 												  {{ theme.settings.get('disable_product_card_hover') ? ' no-card-hover' : '' }}
+												  {% endif %}
 												  {{ (page.slug == 'product.single') ? ' is-product-single' : '' }}
 												  {{ (page.slug starts with 'product.index') ? ' is-product-index' : '' }}
 												  ">
