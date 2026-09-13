@@ -5,7 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-e2e-test.md
+#e2e-test.md
 advance-theme-settings.html
 seleiea-theme.html
 #test dependency
