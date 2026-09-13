@@ -311,6 +311,22 @@
     @apply rtl:rounded-r ltr:rounded-l;
   }
 
+  /* Twilight 2.14.582's Tailwind plugin renamed its card price rule to
+   * .s-product-card-price-value, but product-card.js still renders
+   * .s-product-card-price. These restore the styling the plugin used to
+   * provide so the regular price renders unchanged after the bump. */
+  .s-product-card-price {
+    @apply text-sm font-bold;
+  }
+
+  .s-product-card-full-image .s-product-card-price {
+    @apply text-white;
+  }
+
+  .s-product-card-compact .s-product-card-content-sub .s-product-card-price {
+    @apply font-normal;
+  }
+
   .s-product-card-starting-price {
     @apply justify-start gap-2.5;
 
