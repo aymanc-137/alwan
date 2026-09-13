@@ -41,7 +41,7 @@
                 <h2 class="text-2xl font-bold mb-2">{{blog.title}}</h2>
                 <p class="text-sm mb-4">{{blog.promotion_title}}</p>
                 <div class="flex justify-between text-xs">
-                    <span>{{blog.author.created_at}}</span>
+                    <span>{{blog.created_at|date}}</span>
                     <span>{{blog.author.name}}</span>
                 </div>
                 </div>

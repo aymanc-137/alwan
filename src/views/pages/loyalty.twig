@@ -110,7 +110,7 @@
                                             {{ point.url }}
                                         </h3>
                                     </div>
-                                {% elseif customer.is_profile_completed and point.type == 'profile' %}
+                                {% elseif user.is_profile_completed and point.type == 'profile' %}
                                     <div class="text-green-500 text-center border relative border-green-300 rounded-3xl bg-green-50 min-h-[34px] w-full pt-1 px-4">
                                         <i class="sicon-check-circle d-inline-block"></i>
                                         <span class="break-all">{{ trans('pages.loyalty_program.completed') }}</span>

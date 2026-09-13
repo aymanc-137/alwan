@@ -103,7 +103,7 @@
 
 					</p>
 
-					<div class="main-bg p-1 rounded-xl flex items-center">
+					<form action="{{ email_url }}" method="post" target="_blank" class="main-bg p-1 rounded-xl flex items-center">
 						<label for="maillistsub" class="sr-only">{{ trans('blocks.footer.email_label') }}</label>
 						<input id="maillistsub" type="email" name="{{theme.settings.get('email_input_filed')}}" placeholder="البريد الإلكتروني" class="w-full px-2 py-2 rounded-xl focus:ring-2 focus:ring-primary text-gray-900 neo-shadow"/>
 						<input type="hidden" name="u" value="{{theme.settings.get('user_id_email')}}">
@@ -111,7 +111,7 @@
 						<button type="submit" name="subscribe" class="neo-shadow hover:bg-gray-700 mx-2 px-2 py-2 rounded-xl text-white font-semibold">
 							{{ trans('blocks.footer.Subscribe') }}
 						</button>
-					</div>
+					</form>
 				</div>
 			{% endif %}
 
@@ -166,7 +166,5 @@
 		<span class="text-sm copyright-text">{% hook copyright %}</span>
 		<salla-payments></salla-payments>
 	</div>
-
-</div>
 
 <span class="hidden bottom-2 rtl:pl-24 ltr:pr-24 md:grid-cols-3 opacity-40"></span></footer><salla-localization-modal></salla-localization-modal>
