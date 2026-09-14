@@ -62,7 +62,7 @@
                                     </svg>
                             </div>
                         {% else %}
-                        <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+                        <h1 class="text-5xl font-[{{component.title_font | default('BackToSchool')}}] mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default(trans('blocks.home.why_choose_us')) }}</h1>
                         {% endif %}
 
                             <p class="text-white text-lg sm:text-xl md:text-4xl rtl:text-right ltr:text-left leading-relaxed md:w-[45%] w-full in-view in-view--bounce-up" style="--in-view-delay: 150ms">
@@ -101,7 +101,7 @@
 
                             </div>
                         {% else %}
-                        <h1 class="text-5xl mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+                        <h1 class="text-5xl mb-5 mt-5 in-view in-view--bounce-up">{{component.title | default(trans('blocks.home.why_choose_us')) }}</h1>
                         {% endif %}
 
                             <p class="text-white text-lg sm:text-xl md:text-4xl text-right leading-relaxed md:w-[45%] w-full in-view in-view--bounce-up" style="--in-view-delay: 150ms">

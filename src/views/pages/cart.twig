@@ -118,12 +118,12 @@
                                         {% if item.type == 'donating' %}
                                             <span></span>
                                         {% elseif item.is_hidden_quantity %}
-                                            <input type="hidden" value="{{ item.quantity }}" name="quantity" aria-label="Quantity"/>
+                                            <input type="hidden" value="{{ item.quantity }}" name="quantity" aria-label="{{ trans('pages.products.quantity') }}"/>
                                             <span class="w-10 text-center">{{ item.quantity }}</span>
                                         {% else %}
                                             <salla-quantity-input cart-item-id="{{ item.id }}"  max="{{ item.max_quantity }}"
                                                 class="transtion transition-color duration-300"
-												aria-label="Quantity"
+												aria-label="{{ trans('pages.products.quantity') }}"
                                                 value="{{ item.quantity }}" name="quantity">
                                             </salla-quantity-input>
                                         {% endif %}
@@ -137,7 +137,7 @@
 
                                 {% include 'pages.partials.product.options' with {product:item} %}
                             <span class="absolute top-1.5 rtl:left-1.5 ltr:right-1.5 rtl:xs:left-5 ltr:xs:right-5 xs:top-5">
-                                <salla-button type="button" shape="icon" size="small" color="danger" class="btn--delete" aria-label="Remove from the cart"
+                                <salla-button type="button" shape="icon" size="small" color="danger" class="btn--delete" aria-label="{{ trans('common.a11y.remove_from_cart') }}"
                                         onclick="salla.cart.deleteItem('{{ item.id }}').then(() => document.querySelector('#item-{{ item.id }}').remove())">
                                     <i class="sicon-cancel"></i>
                                 </salla-button>

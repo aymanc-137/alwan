@@ -23,8 +23,8 @@ class="min-h-[40rem] {{ component.enable_border ? 'border-y border-black' : '' }
        class="p-4 flex flex-col gap-2 text-center">
                         <h2
                         style="color: {{ component.title_color | default('#ffa723') }}"
-                         class="text-4xl font-extrabold  font-[{{component.title_font | default('BackToSchool')}}] ">{{ component.title|default('خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة ') }}</h2>
-                        <p class="text-lg text-gray-700">{{ component.subtitle|default('تسوق الآن  مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.') }}</p>
+                         class="text-4xl font-extrabold  font-[{{component.title_font | default('BackToSchool')}}] ">{{ component.title|default(trans('blocks.home.offer_title')) }}</h2>
+                        <p class="text-lg text-gray-700">{{ component.subtitle|default(trans('blocks.home.offer_subtitle')) }}</p>
                     </div>
 
               <div class="w-full flex flex-col justify-center">  
@@ -36,7 +36,7 @@ class="min-h-[40rem] {{ component.enable_border ? 'border-y border-black' : '' }
                   </div>
 
                     <salla-button href="{{component.products[0].url }}" color="primary" size="large" class="mx-auto my-2 !text-xl !text-white">
-                        {{component.url_text |default('تسوق الآن')}}
+                        {{component.url_text |default(trans('blocks.home.shop_now'))}}
                     </salla-button>
               </div>
               

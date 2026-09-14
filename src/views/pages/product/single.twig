@@ -244,9 +244,9 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 				{% endif %}
 
 				<div class="flex rtl:space-x-reverse space-x-3">
-					<salla-social-share class="inline-flex mb-5" aria-label="social share"></salla-social-share>
+					<salla-social-share class="inline-flex mb-5" aria-label="{{ trans('common.a11y.share') }}"></salla-social-share>
 
-					<salla-button class="btn--wishlist main-wish-btn-product animated hidden sm:inline-flex" data-id="{{ product.id }}" onclick="salla.wishlist.toggle('{{ product.id }}')" shape="icon" fill="outline" color="light" aria-label="add to wishlist">
+					<salla-button class="btn--wishlist main-wish-btn-product animated hidden sm:inline-flex" data-id="{{ product.id }}" onclick="salla.wishlist.toggle('{{ product.id }}')" shape="icon" fill="outline" color="light" aria-label="{{ trans('common.a11y.add_to_wishlist') }}">
 
 						<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewbox="0 0 65 65" fill="none" class="">
 							<path d="M59.6314 30.4454C59.6314 30.4454 59.0098 31.2071 57.7799 32.437C56.55 33.667 33.9361 56.2798 33.9361 56.2798C33.539 56.677 33.02 56.875 32.5 56.875C31.98 56.875 31.461 56.677 31.0639 56.2798C31.0639 56.2798 8.45 33.6659 7.22008 32.436C5.99016 31.2061 5.36859 30.4444 5.36859 30.4444C3.2957 27.9754 2.03125 24.8056 2.03125 21.3281C2.03125 13.4753 8.39719 7.10938 16.25 7.10938C20.1764 7.10938 23.7311 8.69984 26.3037 11.2745L26.3128 11.2653L31.0639 16.0154C31.8571 16.8086 33.1429 16.8086 33.9361 16.0154L38.6872 11.2653L38.6963 11.2745C41.2689 8.69984 44.8236 7.10938 48.75 7.10938C56.6028 7.10938 62.9688 13.4753 62.9688 21.3281C62.9688 24.8056 61.7043 27.9754 59.6314 30.4454Z"/>
@@ -365,13 +365,13 @@ class="h-full object-{{ theme.settings.get('slider_background_size') }} w-full {
 						class="sticky-product-bar bg-white p-3 rounded-md rounded-b-none">
 						{# Quantity #}
 						{% if product.is_hidden_quantity or product.type == 'booking' %}
-							<input type="hidden" value="1" name="quantity" aria-label="Quantity"/>
+							<input type="hidden" value="1" name="quantity" aria-label="{{ trans('pages.products.quantity') }}"/>
 						{% else %}
 							<div class="sticky-product-bar__quantity center-between mb-5">
 								<label class="form-label font-bold">
 									{{ trans('pages.products.quantity') }}
 								</label>
-								<salla-quantity-input max="{{ product.max_quantity }}" value="1" name="quantity" aria-label="Quantity" class="border-gray-200 flex justify-end"></salla-quantity-input>
+								<salla-quantity-input max="{{ product.max_quantity }}" value="1" name="quantity" aria-label="{{ trans('pages.products.quantity') }}" class="border-gray-200 flex justify-end"></salla-quantity-input>
 							</div>
 						{% endif %}
 						{# Add to cart #}

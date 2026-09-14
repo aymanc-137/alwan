@@ -74,7 +74,7 @@
                 {% endif %}
             </div>
 
-            <aside aria-label="Sidebar" class="sticky shrink-0 top-24 md:w-96 rtl:lg:mr-8 ltr:lg:ml-8 pb-11">
+            <aside aria-label="{{ trans('common.a11y.sidebar') }}" class="sticky shrink-0 top-24 md:w-96 rtl:lg:mr-8 ltr:lg:ml-8 pb-11">
                 {% if related|length %}
                     <h2 class="font-bold mb-3">{{ trans('pages.blog_articles.related') }}</h2>
 
@@ -96,7 +96,7 @@
                                         <img class="sm:h-full w-10 object-contain opacity-60"
                                              width="40" height="40"
                                              loading="lazy" decoding="async"
-                                             src="{{ 'images/placeholder.png' | asset }}" alt="post image"/>
+                                             src="{{ 'images/placeholder.png' | asset }}" alt="{{ article.title }}"/>
                                     {% endif %}
                                 </a>
                             </div>

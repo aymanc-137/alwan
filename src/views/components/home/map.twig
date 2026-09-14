@@ -40,10 +40,10 @@
                     <h3 class="text-2xl font-bold mb-2">{{ loc.city }}</h3>
                     <p class="mb-2 whitespace-pre-wrap">{{ loc.address }}</p>
                     {% if loc.phone %}
-                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.phone')|default('Phone') }}:</span> {{ loc.phone }}</p>
+                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.phone') }}:</span> {{ loc.phone }}</p>
                     {% endif %}
                     {% if loc.hours %}
-                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.hours')|default('Working Hours') }}:</span> {{ loc.hours }}</p>
+                        <p class="mb-2"><span class="font-semibold">{{ trans('blocks.home.map.hours') }}:</span> {{ loc.hours }}</p>
                     {% endif %}
                 </div>
                 <div class="border-2 border-black rounded overflow-hidden h-72 w-full">

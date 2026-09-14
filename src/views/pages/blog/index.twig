@@ -24,7 +24,7 @@
 
         {# Categories filter dropdown #}
         <div class="dropdown-toggler cat-filter lg:hidden">
-          <button aria-label="Categories Trigger" type="button" class="dropdown__trigger rtl:space-x-reverse space-x-1.5 flex text-sm text-primary" aria-expanded="true" aria-haspopup="true"> 
+          <button aria-label="{{ trans('pages.blog_categories.categories') }}" type="button" class="dropdown__trigger rtl:space-x-reverse space-x-1.5 flex text-sm text-primary" aria-expanded="true" aria-haspopup="true"> 
             <i class="sicon-filter text-xs pointer-events-none"></i>
             <span class="fix-align pointer-events-none">{{ trans('pages.blog_categories.categories') }}</span>
           </button>
@@ -54,7 +54,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-8 gap-8">
-            <nav aria-label="Sidebar" class="hidden lg:block lg:sticky shrink-0 top-24 col-span-2" id="filters-menu">
+            <nav aria-label="{{ trans('common.a11y.sidebar') }}" class="hidden lg:block lg:sticky shrink-0 top-24 col-span-2" id="filters-menu">
                 <h2 class="font-bold mb-3">{{ trans('pages.blog_categories.categories') }}</h2>
                 <ul>
                     {% for category in categories %}

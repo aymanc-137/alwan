@@ -9,7 +9,7 @@
     <span class="text-unicode">
       {{ reservation.day|date|number }}
       {% if reservation.from_timestamp is not empty %}
-        ({{ reservation.from|number({'PM':'م', 'AM':'ص'}) }} - {{ reservation.to|number({'PM':'م', 'AM':'ص'}) }})
+        ({{ reservation.from|number({'PM': trans('common.time.pm'), 'AM': trans('common.time.am')}) }} - {{ reservation.to|number({'PM': trans('common.time.pm'), 'AM': trans('common.time.am')}) }})
       {% endif %}
     </span>
   </li>

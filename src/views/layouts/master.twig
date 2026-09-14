@@ -228,8 +228,8 @@
 		</div>
 		{% endif %}
 		<noscript>
-			To get full functionality of this site you need to enable JavaScript. Here is how
-			<a href="https://www.enable-javascript.com/" rel="noreferrer" target="_blank">To enable JavaScript on webpage</a>.
+			{{ trans('common.noscript.message') }}
+			<a href="https://www.enable-javascript.com/" rel="noreferrer" target="_blank">{{ trans('common.noscript.link') }}</a>.
 		</noscript>
 		<div class="app-inner flex flex-col min-h-full">
 			{% hook 'body:start' %}

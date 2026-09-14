@@ -55,13 +55,13 @@
           <div class="inner-wrapper nav-container-overfollow mx-auto">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">
-                      <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="Open-menu">
+                      <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="{{ trans('blocks.header.open_menu') }}">
                         <i class="sicon-menu text-primary mx-2 text-2xl"></i>
                       </a>
                       {# Advanced option: a dedicated header logo, falling back to the store logo. #}
                       {% set header_logo = theme.settings.get('header_advanced_options') ? theme.settings.get('header_logo_image') : null %}
                       <a class="navbar-brand" href="{{ store.url }}">
-                          <img fetchpriority="high" width="100%" height="100%" loading="eager" decoding="async" src="{{ header_logo ? header_logo|cdn(175) : store.logo|cdn(175) }}" alt="{{ store.name }} logo">
+                          <img fetchpriority="high" width="100%" height="100%" loading="eager" decoding="async" src="{{ header_logo ? header_logo|cdn(175) : store.logo|cdn(175) }}" alt="{{ trans('blocks.header.logo_alt', {'name': store.name}) }}">
                           {% if is_page('index') %}
                             <h1 class="sr-only">{{ store.name }}</h1>
                           {% else %}
@@ -93,7 +93,7 @@
                                                 aria-label="{{ trans('blocks.header.search') }}"
                                                 onclick="salla.event.dispatch('search::open')"
                                                 class=" w-10 h-10">
-                                                <img src="https://cdn.lamsaweb.com/cdnAlwan/Frame.svg" width="28" height="28" class="w-7 h-7" alt="search" loading="eager" decoding="async">
+                                                <img src="https://cdn.lamsaweb.com/cdnAlwan/Frame.svg" width="28" height="28" class="w-7 h-7" alt="{{ trans('blocks.header.search') }}" loading="eager" decoding="async">
 
                                     </button>
                     </div>

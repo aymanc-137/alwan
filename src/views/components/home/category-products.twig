@@ -17,7 +17,7 @@
 </div>
     
     {% else %}
-    <h1 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-2 text-center">{{component.title | default('لماذا يختارنا الجميع؟') }}</h1>
+    <h1 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}] mb-2 text-center">{{component.title | default(trans('blocks.home.why_choose_us')) }}</h1>
     {% endif %}
     <div class="flex flex-col md:flex-row md:skew-x-3">
 

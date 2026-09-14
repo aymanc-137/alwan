@@ -4,7 +4,9 @@
       "cart": "Cart",
       "login": "Login",
       "search": "Search",
-      "skip_to_content": "Skip to main content"
+      "skip_to_content": "Skip to main content",
+      "open_menu": "Open menu",
+      "logo_alt": ":name logo"
     },
     "appBanner": {
       "download_now": "download now"
@@ -13,14 +15,28 @@
       "map": {
         "phone": "Phone",
         "hours": "Hours"
-      }
+      },
+      "why_choose_us": "Why does everyone choose us?",
+      "why_choose_us_subtitle": "Because we offer more than just toys – we deliver an experience full of trust, quality and fun!",
+      "explore_by_category": "Explore by your favorite category!",
+      "browse_categories": "Browse the store categories",
+      "offer_title": "30% off the animated plush Disney Stitch doll",
+      "offer_subtitle": "Shop now and get 30% off our lovely collection of cute stuffed animals.",
+      "shop_now": "Shop now",
+      "banner": "Banner",
+      "banner_number": "Banner :number",
+      "slide_image": "Slide image :number",
+      "customer_review": "Customer review"
     },
     "footer": {
       "pages_links": "Pages Links",
       "search": "Search",
       "Subscribe": "Subscribe",
       "email_label": "Email address",
-      "apps_title": "Download the app now"
+      "apps_title": "Download the app now",
+      "mail_list_title": "Follow us by email",
+      "mail_list_subtitle": "Get the latest news and updates straight to your inbox.",
+      "payment_methods": "Payment methods"
     }
   },
   "pages": {
@@ -44,7 +60,22 @@
   "common": {
     "Brands": "Brands",
     "bank_offer_sub_title_multiple": "Pay for your purchases via one of the following bank cards and get the specified discount",
-    "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount"
+    "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount",
+    "a11y": {
+      "sidebar": "Sidebar",
+      "footer": "Footer",
+      "remove_from_cart": "Remove from the cart",
+      "share": "Share",
+      "add_to_wishlist": "Add to wishlist"
+    },
+    "noscript": {
+      "message": "To get full functionality of this site you need to enable JavaScript. Here is how",
+      "link": "To enable JavaScript on webpage"
+    },
+    "time": {
+      "am": "AM",
+      "pm": "PM"
+    }
   },
   "testimonials":{
     "title":"Customer Reviews",

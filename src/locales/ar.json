@@ -4,7 +4,9 @@
       "cart": "السلة",
       "login": "تسجيل الدخول",
       "search": "بحث",
-      "skip_to_content": "تخطى إلى المحتوى الرئيسي"
+      "skip_to_content": "تخطى إلى المحتوى الرئيسي",
+      "open_menu": "فتح القائمة",
+      "logo_alt": "شعار :name"
     },
     "appBanner": {
       "download_now": "حمله الان"
@@ -13,14 +15,28 @@
       "map": {
         "phone": "الهاتف",
         "hours": "ساعات العمل"
-      }
+      },
+      "why_choose_us": "لماذا يختارنا الجميع؟",
+      "why_choose_us_subtitle": "لأننا نقدم أكثر من مجرد ألعاب – نقدم تجربة مليئة بالثقة، الجودة، والمتعة!",
+      "explore_by_category": "استكشف حسب فئتك المفضلة!",
+      "browse_categories": "تصفح اقسام المتجر",
+      "offer_title": "خصم 30% على دمية شخصية ديزني ستيتش مخملية متحركة",
+      "offer_subtitle": "تسوق الآن مع خصم 30% من تشكيلتنا الرائعة من الحيوانات المحشوة اللطيفة.",
+      "shop_now": "تسوق الآن",
+      "banner": "بانر إعلاني",
+      "banner_number": "بانر إعلاني :number",
+      "slide_image": "صورة الشريحة :number",
+      "customer_review": "رأي عميل"
     },
     "footer": {
       "pages_links": "الروابط",
       "search": "بحث",
       "Subscribe": "اشترك",
       "email_label": "البريد الإلكتروني",
-      "apps_title": "حمل التطبيق الآن"
+      "apps_title": "حمل التطبيق الآن",
+      "mail_list_title": "تابعنا عبر البريد الإلكتروني",
+      "mail_list_subtitle": "احصل على آخر الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.",
+      "payment_methods": "طرق الدفع"
     }
   },
   "pages": {
@@ -44,7 +60,22 @@
   "common": {
     "Brands": "الماركات التجارية",
     "bank_offer_sub_title_multiple": "ادفع قيمة مشترياتك عبر أحد البطاقات البنكة التالية واحصل على الخصم المحدد",
-    "bank_offer_sub_title_single": "ادفع قيمة مشترياتك عبر أحد بطاقات بنك :bank_name واحصل على خصم بنسبة "
+    "bank_offer_sub_title_single": "ادفع قيمة مشترياتك عبر أحد بطاقات بنك :bank_name واحصل على خصم بنسبة ",
+    "a11y": {
+      "sidebar": "القائمة الجانبية",
+      "footer": "تذييل الصفحة",
+      "remove_from_cart": "حذف من السلة",
+      "share": "مشاركة",
+      "add_to_wishlist": "إضافة إلى قائمة الأمنيات"
+    },
+    "noscript": {
+      "message": "للاستفادة من جميع مزايا هذا الموقع يجب تفعيل JavaScript. إليك الطريقة",
+      "link": "طريقة تفعيل JavaScript في المتصفح"
+    },
+    "time": {
+      "am": "ص",
+      "pm": "م"
+    }
   },
   "testimonials":{
     "title":"أراء العملاء",

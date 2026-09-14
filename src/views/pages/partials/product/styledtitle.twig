@@ -11,7 +11,7 @@
 {% set _text_color = componentdata.title_color|default('#ffffff') %}
 
                                     <svg class=" overflow-visible {{ class }} "
-                                    label="Styled Title"
+                                    role="img" aria-label="{{ componentdata.title }}"
                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 1038" fill="none" preserveAspectRatio="xMidYMid meet">
                                             <g filter="url(#filter0_d_3119_200)" {% if not theme.is_rtl %}transform="translate(4200 0) scale(-1 1)"{% endif %}>
                                                 <path d="M433.5 230.274L4153 0L3962 720.774V991.274H0L210 648.266L433.5 230.274Z" fill="{{theme.settings.get('style_title_color', '#FFAB5B')}}" />

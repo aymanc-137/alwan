@@ -12,7 +12,7 @@
 	{% endif %}
 
 
-	<div aria-label="footer" style="
+	<div aria-label="{{ trans('common.a11y.footer') }}" style="
 						 {{theme.settings.get('footer_background_image') ? 'background-image: url(' ~ theme.settings.get('footer_background_image') ~ ');' : ''}}
 		
 						 background-color: {{ theme.settings.get('footer_color', '#60a5fa') }}" class="    store-footer__inner {{theme.settings.get('enable_footer_wavey', false) ? '' : 'border-t-2'}}  text-gray-100   bg-center bg-no-repeat">
@@ -55,7 +55,7 @@
 						<div class="flex rtl:space-x-reverse space-x-2 items-end">
 							{% if store.settings.tax.certificate %}
 								<a class="load-img-onclick" data-modal-id="modal-value-tax" href="#/" alt="{{ store.settings.tax.number }}">
-                  <img width="40" height="50" src="{{'images/tax.png' | cdn(70,70)}}" loading="lazy" decoding="async" class="w-10 rounded-sm hover:opacity-80 transition-opacity" alt="value added tax">								</a>
+                  <img width="40" height="50" src="{{'images/tax.png' | cdn(70,70)}}" loading="lazy" decoding="async" class="w-10 rounded-sm hover:opacity-80 transition-opacity" alt="{{ trans('common.elements.tax_number') }}">								</a>
 							{% endif %}
 							<div>
 								<p class="text-sm text-text-grey mb-1">{{ trans('common.elements.tax_number') }}</p>
@@ -96,16 +96,16 @@
 				<div class=" ">
 					<h3 class="text-3xl font-bold mb-2">
 
-						{{ theme.settings.get('mail_list_title','تابعنا عبر البريد الإلكتروني') }}
+						{{ theme.settings.get('mail_list_title', trans('blocks.footer.mail_list_title')) }}
 					</h3>
 					<p class=" mb-4 dark:text-slate-200">
-						{{ theme.settings.get('mail_list_subtitle','احصل على آخر الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.') }}
+						{{ theme.settings.get('mail_list_subtitle', trans('blocks.footer.mail_list_subtitle')) }}
 
 					</p>
 
 					<form action="{{ email_url }}" method="post" target="_blank" class="main-bg p-1 rounded-xl flex items-center">
 						<label for="maillistsub" class="sr-only">{{ trans('blocks.footer.email_label') }}</label>
-						<input id="maillistsub" type="email" name="{{theme.settings.get('email_input_filed')}}" placeholder="البريد الإلكتروني" class="w-full px-2 py-2 rounded-xl focus:ring-2 focus:ring-primary text-gray-900 neo-shadow"/>
+						<input id="maillistsub" type="email" name="{{theme.settings.get('email_input_filed')}}" placeholder="{{ trans('blocks.footer.email_label') }}" class="w-full px-2 py-2 rounded-xl focus:ring-2 focus:ring-primary text-gray-900 neo-shadow"/>
 						<input type="hidden" name="u" value="{{theme.settings.get('user_id_email')}}">
 						<input type="hidden" name="id" value="{{theme.settings.get('audience_id_email')}}">
 						<button type="submit" name="subscribe" class="neo-shadow hover:bg-gray-700 mx-2 px-2 py-2 rounded-xl text-white font-semibold">
@@ -121,7 +121,7 @@
 				{# These titles were multilanguage in an earlier revision, so a saved
 				   value can still arrive as an {ar:.., en:..} map instead of a string.
 				   Flatten either shape before printing it. #}
-				{% set payment_title = theme.settings.get('footer_payment_title', 'طرق الدفع') %}
+				{% set payment_title = theme.settings.get('footer_payment_title', trans('blocks.footer.payment_methods')) %}
 				{% if payment_title is iterable %}
 					{% set payment_title = payment_title[user.language.code]|default(payment_title|first) %}
 				{% endif %}

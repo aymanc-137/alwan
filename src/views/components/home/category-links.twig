@@ -24,15 +24,15 @@ class=" py-20 {{ component.enable_border ? 'border-y border-black' : '' }}"
                         {% include 'pages.partials.product.styledtitle' with {componentdata: component , class: 'w-96 mx-auto mb-5'} %}
                         
 
-                        <p class="text-center text-xl">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
+                        <p class="text-center text-xl">{{ component.sub_title | default(trans('blocks.home.browse_categories')) }}</p>
                 </div>
             {% else %}
                 <h1
                               style="text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);"
 
-                 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center in-view in-view--bounce-up">{{component.title | default(' استكشف حسب فئتك المفضلة!') }}</h1>
+                 class="text-5xl mx-auto font-[{{component.title_font | default('BackToSchool')}}]  mb-5 text-center in-view in-view--bounce-up">{{component.title | default(trans('blocks.home.explore_by_category')) }}</h1>
                 {% if component.sub_title %}
-                        <p class="text-center text-xl in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.sub_title | default('تصفح اقسام المتجر') }}</p>
+                        <p class="text-center text-xl in-view in-view--bounce-up" style="--in-view-delay: 150ms">{{ component.sub_title | default(trans('blocks.home.browse_categories')) }}</p>
                 {% endif %}
             {% endif %}
       {% endif %}
